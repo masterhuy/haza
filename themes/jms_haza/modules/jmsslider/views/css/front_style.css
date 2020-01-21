@@ -1,0 +1,64 @@
+.fs-pager-wrapper {
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+	z-index: 998;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fs-pager-wrapper span {
+	width: 14px;
+	height: 14px;
+	background: #e1e1e1;
+	border-radius: 50%;
+	text-indent: -100px;
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 3.5px;
+}
+.fs-pager-wrapper .active span {
+	background: #ff4800;
+}
+.fs-pager-wrapper a {
+	display: flex;
+	align-items: center;
+}
+.jms-slider-wrapper {
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	margin:0px auto;
+}
+.jms-slider-wrapper .fs-pager-wrapper{
+	bottom: 65px;
+}
+.jms-slider-wrapper .slider{
+	position:relative;
+	width:100%; 
+	margin:0 auto;
+	background:#1b1b1b;
+}
+.jms-slider-wrapper .slide {
+	overflow: hidden;
+	position: absolute;
+	background-size: cover !important;
+}
+
+.shopnow span{
+	font-size: 1.4em;
+	vertical-align: middle;
+	padding-left: 1em;
+	line-height: 1;
+}
+.text-large {
+    font-family: "Neue Einstellung";
+    font-weight:600;
+}
+.text-small {
+    font-weight:300;
+}
+
+
+

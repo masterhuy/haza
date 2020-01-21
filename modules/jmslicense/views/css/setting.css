@@ -1,0 +1,256 @@
+.bootstrap .form-control, .bootstrap input[type=password], .bootstrap input[type=search], .bootstrap input[type=text], .bootstrap select, .bootstrap textarea {
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    background-color: #f5f8f9;
+    background-image: none;
+    border: 1px solid #c7d6db;
+    border-radius: 3px;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    height: 40px;
+    line-height: 1.42857;
+    padding: 6px 8px;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    width: 100%;
+}
+.bootstrap .switch {
+    height: 32px;
+}
+.bootstrap .prestashop-switch label {
+    line-height: 35px;
+}
+.panel-tabs {
+  width: 16.66667%;
+  float: left;
+}
+.jms-setting-tabs {
+    list-style-type: none;
+    background: #2f3339;
+    color: #fff;
+    padding: 0;
+}
+.jms-setting-tabs a,
+.jms-setting-tabs a:hover,
+.jms-setting-tabs a:focus,
+.jms-setting-tabs a:active {
+  text-decoration: none;
+}
+#jms-setting-tabs li.haschild.open>.submenu,
+.main-menu .open.link-leveltwo>.submenu {
+    display: block;
+}
+.jms-setting-tabs > .tab.active {
+    background: #131313;
+}
+
+.jms-setting-tabs > li > a {
+    color:rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    font-size:13px;
+    background: #363a41;
+
+}
+.jms-setting-tabs > li:hover > a,
+.jms-setting-tabs > li.open > a {
+    color:#fff;
+}
+.jms-setting-tabs > li.open > a {
+    border-left: .25rem solid #25b9d7;
+    background: #202226;
+}
+.jms-setting-tabs > li.open > a .ps-heading-icon {
+    color:#25b9d7;
+}
+.jms-setting-tabs > li > a .ps-heading-icon {
+    font-size:20px;
+    float:left;
+    margin-right:8px;
+    color:#fff;
+}
+.jms-setting-tabs > li > a .ps-togglable-row {
+    font-size:17px;
+    float:right;
+}
+.jms-setting-tabs > li > ul {
+    list-style-type: none;
+    background: #202226;
+    padding-left: 2.75rem;
+    display:none;
+}
+.jms-setting-tabs > li.open > ul {
+    display:block;
+}
+
+.jms-setting-tabs > li > ul a:hover,
+.jms-setting-tabs > li > ul a {
+  padding: 8px 0px;
+  display: block;
+  color:rgba(255, 255, 255, 0.7);
+  font-size:13px;
+  text-decoration: none;
+}
+.jms-setting-tabs > li > ul >li.active a {
+  color:#fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.jms-setting-panels {
+    width: 83.3333%;
+    float: left;
+}
+.jms-setting-panels .tab-panel {
+    display: none;
+}
+.jms-setting-panels .tab-panel.active {
+    display: block;
+}
+.image-select input {
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: none !important;
+}
+.image-select .image-option {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #bdced3;
+    padding: 10px 10px 10px 10px;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    -webkit-filter: grayscale(0.7) opacity(0.5);
+    -moz-filter: grayscale(0.7) opacity(0.5);
+    filter: grayscale(0.7) opacity(0.5);
+    margin: 0px 10px 10px 0px;
+    text-align:center;
+}
+.icon-image-select .image-option {
+    border-radius: 50%;
+}
+.icon-image-select .image-option-title {
+    display:none!important;
+}
+.image-select input:checked + .image-option {
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+    border-color: #2eacce;
+}
+.image-select .image-option-title {
+    margin: 10px -10px -10px -10px;
+    padding:7px 0px;
+    font-weight: bold;
+    display: block;
+    background:#2eacce;
+    color:#fff;
+}
+.image-select i {
+    font-size:40px;
+    color:#000;
+}
+.jms-setting-panels .hide-setting {
+    display: none;
+}
+.jms-setting-panels .show-setting {
+    display: block;
+}
+.title-reparator {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: #eeeeee;
+    padding: 12px 0;
+}
+.input-field input:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.input-field input {
+    margin: 0px 0px 0px -1px;
+    line-height: 38px;
+    width: 100px;
+    float: left;
+    text-align: center;
+    border: 1px solid #c7d6db;
+}
+.input-field .input-group-addon {
+    display: inline-block;
+    line-height: 28px;
+    width: 30px;
+}
+.input-label span {
+    width: 99px;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+}
+.field-group {
+    margin: 0px 0px 0px -1px;
+    line-height: 38px;
+    float: left;
+    text-align: left;
+    padding-right:20px;
+}
+.field-group .input-group-addon {
+  height:40px;
+}
+.panel-heading {
+    font-size: 18px!important;
+    height: 40px!important;
+    text-transform: CAPITALIZE!important;
+}
+.group-fields {
+    display:block;
+}
+.group-fields .col-lg-9 > div {
+    width: 50%;
+    padding: 5px;
+    float:left;
+}
+.group-fields .control-label {
+    width: 100%;
+    text-align: left!important;
+    margin-bottom: 5px!important;
+}
+.group-fields .input-group {
+    padding:0px!important;
+}
+.switch-label input:last-of-type:checked~a {
+    -webkit-box-shadow: "#1B7088" 0 -1px 0 inset!important;
+    background-color: #2eacce!important;
+    border: 1px solid #279cbb!important;
+    box-shadow: inset 0 -1px 0 "#1B7088"!important;
+}
+.fixed-width-260 {
+    width:260px;
+}
+.tab-panel .panel {
+    border-radius: 0px!important;
+    margin-bottom: 0px!important;
+    min-height: 527px;
+}
+.settingForm {
+    background: #363a41;
+    display: inline-block;
+    width: 100%;
+}
+.input-width-70 {
+  width:70px!important;
+}
+.text-preview {
+    font-size: 17px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    padding: 10px;
+    max-width: 600px;
+}
+.onboarding-navbar.displayed {
+    display:none!important;
+}

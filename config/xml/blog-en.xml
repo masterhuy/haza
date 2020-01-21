@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="https://www.prestashop.com/en/blog/feed.xml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" xmlns:product="http://ogp.me/ns/product#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <channel>
+    <title>Blog Feed</title>
+    <link>https://www.prestashop.com/en/blog/feed.xml</link>
+    <description></description>
+    <language>en</language>
+     <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
+      <item>
+    <title>Understanding your e-commerce activity: 5 templates for Google Analytics reports</title>
+    <link>https://www.prestashop.com/en/blog/5-templates-for-google-analytics-reports</link>
+    <description>The first impression which we get when someone talks about e-commerce is very much coherent for all of us.</description>
+     <pubDate>Thu, 16 Jan 2020 18:09:57 +0100</pubDate>
+ <dc:creator>Webkul</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/5-templates-for-google-analytics-reports</guid>
+  </item>
+  <item>
+    <title>Five tips for setting up an effective content strategy </title>
+    <link>https://www.prestashop.com/en/blog/five-tips-for-setting-up-effective-content-strategy</link>
+    <description>Content – whether that’s a video how-to-guide, a funny post on social media about your niche, or a list of helpful pointers – helps differentiate you from other webshops, builds your brand, and dri</description>
+     <pubDate>Thu, 09 Jan 2020 14:12:31 +0100</pubDate>
+ <dc:creator>Teapot</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/five-tips-for-setting-up-effective-content-strategy</guid>
+  </item>
+  <item>
+    <title>Security announcement: your store may be vulnerable to malware. Here is what you need to do</title>
+    <link>https://www.prestashop.com/en/security-announcement-your-store-vulnerable-malware</link>
+    <description>updated on 09/01/2020, 10 h 20
+Dear PrestaShop user,</description>
+     <pubDate>Tue, 07 Jan 2020 18:36:49 +0100</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/security-announcement-your-store-vulnerable-malware</guid>
+  </item>
+  <item>
+    <title>The PrestaShop year 2019 in numbers</title>
+    <link>https://www.prestashop.com/en/blog/prestashop-year-2019-in-numbers</link>
+    <description>2020 has just begun and this is a very special year to come for PrestaShop.</description>
+     <pubDate>Tue, 07 Jan 2020 16:32:09 +0100</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-year-2019-in-numbers</guid>
+  </item>
+  <item>
+    <title>Five steps to create your customer persona</title>
+    <link>https://www.prestashop.com/en/blog/five-steps-create-customer-persona</link>
+    <description>When we create a customer persona, we create a vivid impression of an imaginary member of our target demographic.</description>
+     <pubDate>Wed, 18 Dec 2019 14:42:55 +0100</pubDate>
+ <dc:creator>Teapot</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/five-steps-create-customer-persona</guid>
+  </item>
+  <item>
+    <title>Online retail: a list of ten mistakes to avoid</title>
+    <link>https://www.prestashop.com/en/blog/online-retail-a-list-of-ten-mistakes-to-avoid</link>
+    <description>To convert a customer and build customer loyalty, your site should provide a flawless experience.</description>
+     <pubDate>Mon, 16 Dec 2019 12:13:47 +0100</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/online-retail-a-list-of-ten-mistakes-to-avoid</guid>
+  </item>
+  <item>
+    <title>5 trends that will shape e-commerce in 2020</title>
+    <link>https://www.prestashop.com/en/blog/trends-e-commerce-2020</link>
+    <description>E-commerce is one of the world’s fastest-changing sectors. Every e-commerce business that wants to stay ahead has to know where things are heading. So what’s coming in 2020?</description>
+     <pubDate>Fri, 13 Dec 2019 16:21:24 +0100</pubDate>
+ <dc:creator>Sophie Mirza</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/trends-e-commerce-2020</guid>
+  </item>
+  <item>
+    <title>The key to choosing the best domain name</title>
+    <link>https://www.prestashop.com/en/blog/choosing-best-domain-name</link>
+    <description>You&#039;ve been busy laying the foundations for your start up business, and it&#039;s time to create a website that will do your vision justice.</description>
+     <pubDate>Mon, 09 Dec 2019 15:00:47 +0100</pubDate>
+ <dc:creator>Teapot</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/choosing-best-domain-name</guid>
+  </item>
+  <item>
+    <title>Expand your e-commerce business with local payments</title>
+    <link>https://www.prestashop.com/en/blog/expand-your-e-commerce-business-local-payments</link>
+    <description>Have you ever been in Latin America? Asia Pacific? The Middle East? Africa?</description>
+     <pubDate>Mon, 02 Dec 2019 15:00:23 +0100</pubDate>
+ <dc:creator>Sharon Franko</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/expand-your-e-commerce-business-local-payments</guid>
+  </item>
+  <item>
+    <title>Online store: How to meet the customer’s expectations?</title>
+    <link>https://www.prestashop.com/en/blog/online-store-meet-customer-expectations</link>
+    <description>The human mind is filled with ideas and imaginations. While ideas do not cost anything, the implementation demands a lot of time, effort and money.</description>
+     <pubDate>Wed, 27 Nov 2019 14:40:31 +0100</pubDate>
+ <dc:creator>NitinSrivastavaen</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/online-store-meet-customer-expectations</guid>
+  </item>
+  </channel>
+</rss>

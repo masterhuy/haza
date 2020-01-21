@@ -1,0 +1,81 @@
+@import url(product.css);
+@import url(product-list.css);
+@import url(contact.css);
+@import url(cart.css);
+@import url(checkout.css);
+/*@import url(order-detail.css);*/
+.container-fluid {
+  max-width: 1790px;
+  padding: 0 15px; }
+
+.form-control {
+  color: #555; }
+  .form-control::-webkit-input-placeholder {
+    color: #555; }
+  .form-control:-ms-input-placeholder {
+    color: #555; }
+  .form-control::-ms-input-placeholder {
+    color: #555; }
+  .form-control::placeholder {
+    color: #555; }
+
+a {
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s; }
+
+/* header! */
+#header .container-fluid > .row {
+  padding: 0; }
+
+#header-top {
+  position: relative; }
+  #header-top #hor-menu .nav > li > a {
+    display: block;
+    line-height: 72px;
+    letter-spacing: 0.3px; }
+  #header-top #hor-menu .dropdown-menu {
+    padding: 40px 0; }
+
+.header-2 #header-topbar .header-right .dropdown-menu {
+  min-width: 73px;
+  padding: 15px 10px;
+  text-align: center;
+  top: 12px !important;
+  left: -20px !important;
+  background: #282828;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35); }
+  .header-2 #header-topbar .header-right .dropdown-menu ul li a {
+    color: #9f9f9f; }
+    .header-2 #header-topbar .header-right .dropdown-menu ul li a:hover {
+      color: #ff794f; }
+
+.header-2 #header-topbar #_desktop_currency_selector {
+  position: relative;
+  margin-left: 37px; }
+  .header-2 #header-topbar #_desktop_currency_selector::before {
+    content: "";
+    position: absolute;
+    background-color: #ebebeb;
+    width: 1px;
+    height: 48px;
+    left: -21px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.header-2 #header-top .header-left {
+  margin-right: 58px; }
+
+.header-2 #header-top .megamenu {
+  position: static;
+  margin-right: 90px; }
+
+.header-2 #header-top .header-right .row > div {
+  padding: 0;
+  margin-left: 35px; }
+
+.header-2 #header-top .header-right #cart_block {
+  margin-right: 13px; }
