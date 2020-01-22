@@ -7,17 +7,22 @@
   padding:0px;
 }
 .jms-megamenu > ul > li {
-  padding:5px 12px;
+  padding:0 12px;
   margin: 0px;
 }
-.jms-megamenu li.group > a{
+#hor-menu .jms-megamenu li.group > a {
     text-transform: uppercase;
-    color: #fff !important;
+    color: #fff;
     font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 16px;
+    margin-top: -7px;
 }
 .jms-megamenu a {
   text-decoration:none;
-  line-height: 1.6;
+}
+.jms-megamenu ul li a{
+    line-height: 30px;
 }
 .jms-megamenu .nav > li.item-fullwidth{
     position: static;
@@ -29,11 +34,17 @@
     position:relative;
 }
 .jms-megamenu .nav > li.sub-home .mod-content .text{
-    display: block;
+    display: inline-block;
     color:#fff;
     text-transform: uppercase;
     text-align: center;
-    width: 100%;
+    letter-spacing: 0.8px;
+    margin-top: 9px;
+    transition: all 400ms;
+-webkit-transition: all 400ms;
+-moz-transition: all 400ms;
+-ms-transition: all 400ms;
+-o-transition: all 400ms;
 }
 .jms-megamenu .nav > li.sub-home .mod-content .image{
     display: block;
@@ -41,9 +52,16 @@
 .jms-megamenu .nav > li.sub-home .mod-content .image img{
     width: 100%;
 }
+.jms-megamenu .nav > li.sub-home .mod-content a:hover .text{
+    color: #ff794f;
+}
+.jms-megamenu .nav > li.sub-home .col-sm-3 ul li:not(:last-child){
+    margin-bottom: 29px;
+}
 .jms-megamenu .nav > li > a {
     font-size: 1.125rem;
     padding: 0px;
+    position: relative;
 }
 .jms-megamenu .nav > li.open > a,
 .jms-megamenu .nav > li > a:hover {
@@ -57,9 +75,9 @@
     background: #fff;
     border-radius: 0;
     display: block;
-    left: 0;
+    left: -18px;
     margin-top: 0;
-    min-width: 220px;
+    min-width: 200px;
     opacity: 0;
     padding: 0;
     position: absolute;
@@ -86,7 +104,7 @@
 .jms-megamenu .mega-nav > .mega > .dropdown-menu {
     left: 100%;
     margin: 0;
-    top: 0;
+    top: -33px;
 }
 .mega-nav > .mega {
     position: relative;
@@ -131,17 +149,33 @@
     max-width: 1164px;
     margin: auto;
 }
-.jms-megamenu .dropdown-menu > .mega-dropdown-inner > .row {
-    margin: 0;
-}
 .jms-megamenu .item-fullwidth .dropdown-menu > .mega-dropdown-inner > .row {
     margin: 0 -15px;
+}
+.jms-megamenu .item-fullwidth .dropdown-menu > .mega-dropdown-inner > .row ~ .row{
+    margin-top: 29px;
+}
+.jms-megamenu .item-fullwidth.sub-home .dropdown-menu > .mega-dropdown-inner > .row {
+    margin: 0 -7px;
+}
+.jms-megamenu .item-fullwidth.sub-home .dropdown-menu > .mega-dropdown-inner > .row .col-sm-3{
+    padding: 0 7px;
 }
 .jms-megamenu .nav > .menu-item .mega-nav li > a {
     border-bottom: medium none;
     display: block;
     position: relative;
+    letter-spacing: 0.3px;
+    padding: 0 30px;
+}
+.jms-megamenu .nav > .menu-item.item-fullwidth .mega-nav li > a{
+    padding: 0;
 }
 .jms-megamenu .nav > .menu-item .mega-nav li {
     position: relative;
+}
+.jms-megamenu .nav > .menu-item .mega-nav li.mega > a::before{
+    content: url("../images/right.png");
+    position: absolute;
+    right: 30px;
 }

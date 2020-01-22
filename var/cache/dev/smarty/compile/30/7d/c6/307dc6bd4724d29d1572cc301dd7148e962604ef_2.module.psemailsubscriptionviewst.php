@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-21 10:28:56
+/* Smarty version 3.1.33, created on 2020-01-22 09:12:06
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e26d26806d478_41478927',
+  'unifunc' => 'content_5e2811e652f481_72595167',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e26d26806d478_41478927 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e2811e652f481_72595167 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin D:\xamppp\htdocs\jms_haza/themes/jms_haza/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl -->
 <div class="email_subscription block">
   <h4 class="block-title"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Newsletter','d'=>'Modules.Emailsubscription.Shop'),$_smarty_tpl ) );?>

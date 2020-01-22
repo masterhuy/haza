@@ -17,6 +17,9 @@
 		color: #555;
 	}
 }
+.social-links .fa{
+	font-family: "Fontawesome" !important;
+}
 a{
 	transition: all .4s;
 }
@@ -31,13 +34,93 @@ a{
 }
 #header-top{
 	position: relative;
-	#hor-menu{
-		.nav > li > a{
-			display: block;
-			line-height: 72px;
-			letter-spacing: 0.3px;
+	.header-right .dropdown-menu{
+		top: calc(100% + 22px);
+		right: -13px;
+	}
+	.dropdown-menu.shoppingcart-box{
+		min-width: 370px;
+		max-width: 370px;
+	}
+	#_desktop_user_info .user-info-content a{
+		position: relative;
+		&:hover{
+			color: #fff;
+			&::after{
+				width: 100%;
+			}
 		}
-		.dropdown-menu{
+		&::after{
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 1px;
+			background-color: #fff;
+			left: 0;
+			bottom: -2px;
+			transition: all .4s;
+		}
+	}
+	#hor-menu{
+		.nav{
+			> li > a{
+				display: block;
+				line-height: 72px;
+			}
+			li{
+				&.sub-home .mod-content a{
+					display: block;
+					text-align: center;
+					&:hover .text{
+						color: #fff;
+						&::after{
+							width: 100%;
+						}
+					}
+					.text{
+						position: relative;
+						&::after{
+							content: "";
+							position: absolute;
+							width: 0;
+							height: 1px;
+							background-color: #fff;
+							left: 0;
+							bottom: 4px;
+							transition: all .4s;
+						}
+					}
+				}
+				&.open > a{
+					color: #fff;
+					span{
+						&::after{
+							width: 100%;
+						}
+					}
+				}
+				> a{
+					letter-spacing: 0.3px;
+					&:hover span::after{
+						width: 100%;
+					}
+					span{
+						position: relative;
+						&::after{
+							content: "";
+							position: absolute;
+							width: 0;
+							height: 1px;
+							background-color: #fff;
+							left: 0;
+							bottom: -3px;
+							transition: all .4s;
+						}
+					}
+				}
+			}
+		}
+		.item-fullwidth .dropdown-menu{
 			padding: 40px 0;
 		}
 	}
@@ -54,8 +137,22 @@ a{
 			box-shadow: 0 0 10px rgba(0,0,0,0.35);
 			ul li a{
 				color: #9f9f9f;
+				position: relative;
+				&::after{
+					content: "";
+					position: absolute;
+					width: 0;
+					height: 1px;
+					background-color: #fff;
+					left: 0;
+					bottom: -3px;
+					transition: all .4s;
+				}
 				&:hover{
-					color: $active;
+					color: #fff;
+					&::after{
+						width: 100%;
+					}
 				}
 			}
 		}
@@ -89,6 +186,52 @@ a{
 			}
 			#cart_block{
 				margin-right: 13px;
+			}
+		}
+	}
+}
+
+
+/* promobar! */
+.jms-row.promo-bar{
+	margin-top: 1px;
+	color: #fff;
+	background-color: $active;
+	padding: 8px 0;
+	.container-fluid{
+		max-width: 1250px;
+		> .row{
+			align-items: center;
+		}
+	}
+	p{
+		margin-bottom: 0;
+	}
+	.col{
+		font-size: 16px;
+		font-weight: 700;
+		text-align: center;
+		letter-spacing: 0.4px;
+	}
+	.btn{
+		padding: 5px 20px;
+		font-size: 16px;
+		letter-spacing: 0.3px;
+		color: #fff;
+		border-color: #fff;
+		background-color: transparent;
+		min-width: 109px;
+	}
+	.right p{
+		text-align: right;
+	}
+}
+
+#footer{
+	.block-content{
+		ul{
+			li{
+				line-height: 30px;
 			}
 		}
 	}

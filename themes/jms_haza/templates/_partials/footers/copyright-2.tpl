@@ -26,18 +26,18 @@
 {block name='footer-copyright'}
 <div id="footer-copyright" class="footer-copyright{if $jmsSetting.footer_copyright_class} {$jmsSetting.footer_copyright_class}{/if}">
     <div class="container">
-          <div class="row align-items-center">
-              {if isset($jmsSetting.footer_copyright_content) && $jmsSetting.footer_copyright_content}
-              <div class="layout-column col-auto">
+        <div class="row align-items-center">
+            {if isset($jmsSetting.footer_copyright_content) && $jmsSetting.footer_copyright_content}
+                <div class="layout-column col-auto">
                     {$jmsSetting.footer_copyright_content nofilter}
-              </div>
-              {/if}
-              {if isset($jmsSetting.footer_payment_image) && $jmsSetting.footer_payment_image}
-              <div class="layout-column col-auto payment-img text-right">
+                </div>
+            {/if}
+            {if isset($jmsSetting.footer_payment_image) && $jmsSetting.footer_payment_image}
+                <div class="layout-column col-auto payment-img text-right">
                     <img src="{$jmsSetting.footer_payment_image}" class="img-fluid" alt="{l s='Payments' d='Shop.jmstheme'}"/>
-              </div>
-              {/if}
-          </div>
+                </div>
+            {/if}
+        </div>
     </div>
 </div>
 {/block}

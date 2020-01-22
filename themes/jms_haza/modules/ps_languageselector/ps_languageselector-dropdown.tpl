@@ -32,7 +32,7 @@
 			<ul>
 				{foreach from=$languages key=k item=language name="languages"}
 					<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>
-						<a href="{url entity='language' id=$language.id_lang}" class="collapse-item">
+						<a href="{url entity='language' id=$language.id_lang}" class="collapse-item text-uppercase">
 							{$language.name_simple|truncate:3:''}
 						</a>
 					</li>

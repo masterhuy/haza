@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-21 10:28:55
+/* Smarty version 3.1.33, created on 2020-01-22 09:12:06
   from 'module:pscustomersigninpscustome' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e26d267e4ff79_06278097',
+  'unifunc' => 'content_5e2811e6337586_23521882',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e26d267e4ff79_06278097 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e2811e6337586_23521882 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin D:\xamppp\htdocs\jms_haza/themes/jms_haza/modules/ps_customersignin/ps_customersignin-dropdown.tpl --><div id="_desktop_user_info" class="col-auto">
 	<div class="user-info btn-group">
       <?php $_smarty_tpl->_assignInScope('str_at', strpos($_smarty_tpl->tpl_vars['jmsSetting']->value['customersignin_icon'],"_"));?>

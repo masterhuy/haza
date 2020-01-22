@@ -19,6 +19,9 @@
   .form-control::placeholder {
     color: #555; }
 
+.social-links .fa {
+  font-family: "Fontawesome" !important; }
+
 a {
   -webkit-transition: all .4s;
   -o-transition: all .4s;
@@ -30,11 +33,74 @@ a {
 
 #header-top {
   position: relative; }
+  #header-top .header-right .dropdown-menu {
+    top: calc(100% + 22px);
+    right: -13px; }
+  #header-top .dropdown-menu.shoppingcart-box {
+    min-width: 370px;
+    max-width: 370px; }
+  #header-top #_desktop_user_info .user-info-content a {
+    position: relative; }
+    #header-top #_desktop_user_info .user-info-content a:hover {
+      color: #fff; }
+      #header-top #_desktop_user_info .user-info-content a:hover::after {
+        width: 100%; }
+    #header-top #_desktop_user_info .user-info-content a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 1px;
+      background-color: #fff;
+      left: 0;
+      bottom: -2px;
+      -webkit-transition: all .4s;
+      -o-transition: all .4s;
+      transition: all .4s; }
   #header-top #hor-menu .nav > li > a {
     display: block;
-    line-height: 72px;
+    line-height: 72px; }
+  #header-top #hor-menu .nav li.sub-home .mod-content a {
+    display: block;
+    text-align: center; }
+    #header-top #hor-menu .nav li.sub-home .mod-content a:hover .text {
+      color: #fff; }
+      #header-top #hor-menu .nav li.sub-home .mod-content a:hover .text::after {
+        width: 100%; }
+    #header-top #hor-menu .nav li.sub-home .mod-content a .text {
+      position: relative; }
+      #header-top #hor-menu .nav li.sub-home .mod-content a .text::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        background-color: #fff;
+        left: 0;
+        bottom: 4px;
+        -webkit-transition: all .4s;
+        -o-transition: all .4s;
+        transition: all .4s; }
+  #header-top #hor-menu .nav li.open > a {
+    color: #fff; }
+    #header-top #hor-menu .nav li.open > a span::after {
+      width: 100%; }
+  #header-top #hor-menu .nav li > a {
     letter-spacing: 0.3px; }
-  #header-top #hor-menu .dropdown-menu {
+    #header-top #hor-menu .nav li > a:hover span::after {
+      width: 100%; }
+    #header-top #hor-menu .nav li > a span {
+      position: relative; }
+      #header-top #hor-menu .nav li > a span::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        background-color: #fff;
+        left: 0;
+        bottom: -3px;
+        -webkit-transition: all .4s;
+        -o-transition: all .4s;
+        transition: all .4s; }
+  #header-top #hor-menu .item-fullwidth .dropdown-menu {
     padding: 40px 0; }
 
 .header-2 #header-topbar .header-right .dropdown-menu {
@@ -47,9 +113,23 @@ a {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35); }
   .header-2 #header-topbar .header-right .dropdown-menu ul li a {
-    color: #9f9f9f; }
+    color: #9f9f9f;
+    position: relative; }
+    .header-2 #header-topbar .header-right .dropdown-menu ul li a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 1px;
+      background-color: #fff;
+      left: 0;
+      bottom: -3px;
+      -webkit-transition: all .4s;
+      -o-transition: all .4s;
+      transition: all .4s; }
     .header-2 #header-topbar .header-right .dropdown-menu ul li a:hover {
-      color: #ff794f; }
+      color: #fff; }
+      .header-2 #header-topbar .header-right .dropdown-menu ul li a:hover::after {
+        width: 100%; }
 
 .header-2 #header-topbar #_desktop_currency_selector {
   position: relative;
@@ -79,3 +159,36 @@ a {
 
 .header-2 #header-top .header-right #cart_block {
   margin-right: 13px; }
+
+/* promobar! */
+.jms-row.promo-bar {
+  margin-top: 1px;
+  color: #fff;
+  background-color: #ff794f;
+  padding: 8px 0; }
+  .jms-row.promo-bar .container-fluid {
+    max-width: 1250px; }
+    .jms-row.promo-bar .container-fluid > .row {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+  .jms-row.promo-bar p {
+    margin-bottom: 0; }
+  .jms-row.promo-bar .col {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.4px; }
+  .jms-row.promo-bar .btn {
+    padding: 5px 20px;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+    min-width: 109px; }
+  .jms-row.promo-bar .right p {
+    text-align: right; }
+
+#footer .block-content ul li {
+  line-height: 30px; }
