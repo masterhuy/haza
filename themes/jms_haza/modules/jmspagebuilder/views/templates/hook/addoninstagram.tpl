@@ -1,5 +1,5 @@
 {*
-* 2007-2019 PrestaShop
+* 2007-2017 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,25 +18,32 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2019 PrestaShop SA
+*  @copyright  2007-2017 PrestaShop SA
 *  @version  Release: $Revision$
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div class="addon-instagram">
-	<div class="addon-title">
-		<h3>
-			<a href="www.instagram.com/jmskasos/">
-				Follow <br>@Kasos Store
-			</a>
-		</h3>
-	</div>
-	<div class="instagram-carousel">
-		{foreach from=$insta_images item=img}
-			<a class="grouped_elements" data-fancybox-group="gallery" target="_blank" href="{$img.link nofilter}">
-				<img src="{$img.url nofilter}" alt="{l s='Instagram Image' d='Modules.JmsPagebuilder'}"/>
-			</a>
-		{/foreach}
-	</div>
+{if $addon_title}
+<div class="addon-title title-blog">
+    <h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
 </div>
+{/if}
+{if $addon_desc}
+<p class="addon-desc">{$addon_desc|escape:'htmlall':'UTF-8'}</p>
+{/if}
+<div class="instagram_block">
+    <div class="instagram-cs" data-index="{$index}">
+
+    </div>
+</div>
+<script type="text/javascript">
+    if (window.blockInstaSettings === undefined)
+        window.blockInstaSettings = [];
+    	window.blockInstaSettings[{$index}] = {
+        clientId      : '{$clientid}',
+        accessToken   : '{$token}',
+        userId        : '{$username}',
+        count         : {$count},
+    };
+</script>
 

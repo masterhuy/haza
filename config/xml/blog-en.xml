@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Does your shopping cart page have all these features? We made a checklist</title>
+    <link>https://www.prestashop.com/en/blog/does-your-shopping-cart-page-have-all-these-features-we-made-a-checklist</link>
+    <description>If you own an e-commerce website, then one of the most important things to think about would be your shopping cart usability.</description>
+     <pubDate>Mon, 27 Jan 2020 15:26:38 +0100</pubDate>
+ <dc:creator>Vytaure Banyte</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/does-your-shopping-cart-page-have-all-these-features-we-made-a-checklist</guid>
+  </item>
+  <item>
     <title>Understanding your e-commerce activity: 5 templates for Google Analytics reports</title>
     <link>https://www.prestashop.com/en/blog/5-templates-for-google-analytics-reports</link>
     <description>The first impression which we get when someone talks about e-commerce is very much coherent for all of us.</description>
@@ -77,14 +85,6 @@ Dear PrestaShop user,</description>
      <pubDate>Mon, 02 Dec 2019 15:00:23 +0100</pubDate>
  <dc:creator>Sharon Franko</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/expand-your-e-commerce-business-local-payments</guid>
-  </item>
-  <item>
-    <title>Online store: How to meet the customer’s expectations?</title>
-    <link>https://www.prestashop.com/en/blog/online-store-meet-customer-expectations</link>
-    <description>The human mind is filled with ideas and imaginations. While ideas do not cost anything, the implementation demands a lot of time, effort and money.</description>
-     <pubDate>Wed, 27 Nov 2019 14:40:31 +0100</pubDate>
- <dc:creator>NitinSrivastavaen</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/online-store-meet-customer-expectations</guid>
   </item>
   </channel>
 </rss>

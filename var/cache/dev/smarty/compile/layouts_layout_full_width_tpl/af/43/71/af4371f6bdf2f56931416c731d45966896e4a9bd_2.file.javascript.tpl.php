@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-22 09:12:05
+/* Smarty version 3.1.33, created on 2020-01-30 10:27:14
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\javascript.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e2811e5ab53a9_68372830',
+  'unifunc' => 'content_5e32af829420a0_01191929',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'af4371f6bdf2f56931416c731d45966896e4a9bd' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\_partials\\javascript.tpl',
-      1 => 1579509848,
+      1 => 1580379703,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e2811e5ab53a9_68372830 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e32af829420a0_01191929 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['javascript']->value['external'], 'js');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['js']->value) {
@@ -50,6 +50,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['js']->value) {
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+
 
 <?php if (isset($_smarty_tpl->tpl_vars['vars']->value) && count($_smarty_tpl->tpl_vars['vars']->value)) {?>
   <?php echo '<script'; ?>

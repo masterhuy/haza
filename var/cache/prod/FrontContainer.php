@@ -292,7 +292,7 @@ class FrontContainer extends Container
      */
     protected function getDoctrine_Dbal_DefaultConnectionService()
     {
-        return $this->services['doctrine.dbal.default_connection'] = ${($_ = isset($this->services['doctrine.dbal.connection_factory']) ? $this->services['doctrine.dbal.connection_factory'] : ($this->services['doctrine.dbal.connection_factory'] = new \Doctrine\Bundle\DoctrineBundle\ConnectionFactory([]))) && false ?: '_'}->createConnection(['driver' => 'pdo_mysql', 'host' => '127.0.0.1', 'port' => '', 'dbname' => 'jms_pagebuilder40', 'user' => 'root', 'password' => 'root', 'charset' => 'UTF8', 'driverOptions' => [1002 => 'SET sql_mode=(SELECT REPLACE(@@sql_mode,\'ONLY_FULL_GROUP_BY\',\'\'))'], 'serverVersion' => 5.1, 'defaultTableOptions' => []], new \Doctrine\DBAL\Configuration(), new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this), ['enum' => 'string']);
+        return $this->services['doctrine.dbal.default_connection'] = ${($_ = isset($this->services['doctrine.dbal.connection_factory']) ? $this->services['doctrine.dbal.connection_factory'] : ($this->services['doctrine.dbal.connection_factory'] = new \Doctrine\Bundle\DoctrineBundle\ConnectionFactory([]))) && false ?: '_'}->createConnection(['driver' => 'pdo_mysql', 'host' => '127.0.0.1', 'port' => '', 'dbname' => 'jms_haza', 'user' => 'root', 'password' => '', 'charset' => 'UTF8', 'driverOptions' => [1002 => 'SET sql_mode=(SELECT REPLACE(@@sql_mode,\'ONLY_FULL_GROUP_BY\',\'\'))'], 'serverVersion' => 5.0999999999999996, 'defaultTableOptions' => []], new \Doctrine\DBAL\Configuration(), new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this), ['enum' => 'string']);
     }
 
     /**
@@ -308,7 +308,7 @@ class FrontContainer extends Container
         $a->setQueryCacheImpl(${($_ = isset($this->services['doctrine_cache.providers.doctrine.orm.default_query_cache']) ? $this->services['doctrine_cache.providers.doctrine.orm.default_query_cache'] : $this->getDoctrineCache_Providers_Doctrine_Orm_DefaultQueryCacheService()) && false ?: '_'});
         $a->setResultCacheImpl(${($_ = isset($this->services['doctrine_cache.providers.doctrine.orm.default_result_cache']) ? $this->services['doctrine_cache.providers.doctrine.orm.default_result_cache'] : $this->getDoctrineCache_Providers_Doctrine_Orm_DefaultResultCacheService()) && false ?: '_'});
         $a->setMetadataDriverImpl(new \Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain());
-        $a->setProxyDir('/Applications/MAMP/htdocs/prestashop17/pagebuilder40/var/cache/prod//doctrine/orm/Proxies');
+        $a->setProxyDir('D:\\xamppp\\htdocs\\jms_haza/var/cache/prod//doctrine/orm/Proxies');
         $a->setProxyNamespace('Proxies');
         $a->setAutoGenerateProxyClasses(false);
         $a->setClassMetadataFactoryName('Doctrine\\ORM\\Mapping\\ClassMetadataFactory');
@@ -335,7 +335,7 @@ class FrontContainer extends Container
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_metadata_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf_orm_default_e6fb6fd3dc6d24ac4ecdc559d900f4443fc820ac1d5b142b5b7567e34963f600');
+        $instance->setNamespace('sf_orm_default_cc40b60d45eeee167b921bbdc199673d5bfb7c6fae1e1cb7c4fcb7e996b9df91');
 
         return $instance;
     }
@@ -349,7 +349,7 @@ class FrontContainer extends Container
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_query_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf_orm_default_e6fb6fd3dc6d24ac4ecdc559d900f4443fc820ac1d5b142b5b7567e34963f600');
+        $instance->setNamespace('sf_orm_default_cc40b60d45eeee167b921bbdc199673d5bfb7c6fae1e1cb7c4fcb7e996b9df91');
 
         return $instance;
     }
@@ -363,7 +363,7 @@ class FrontContainer extends Container
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_result_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf_orm_default_e6fb6fd3dc6d24ac4ecdc559d900f4443fc820ac1d5b142b5b7567e34963f600');
+        $instance->setNamespace('sf_orm_default_cc40b60d45eeee167b921bbdc199673d5bfb7c6fae1e1cb7c4fcb7e996b9df91');
 
         return $instance;
     }
@@ -435,7 +435,7 @@ class FrontContainer extends Container
      */
     protected function getPrestashop_Core_Localization_Cldr_Cache_AdapterService()
     {
-        return $this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, '/Applications/MAMP/htdocs/prestashop17/pagebuilder40/var/cache/prod//localization');
+        return $this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, 'D:\\xamppp\\htdocs\\jms_haza/var/cache/prod\\/localization');
     }
 
     /**
@@ -445,7 +445,7 @@ class FrontContainer extends Container
      */
     protected function getPrestashop_Core_Localization_Cldr_Datalayer_LocaleCacheService()
     {
-        $this->services['prestashop.core.localization.cldr.datalayer.locale_cache'] = $instance = new \PrestaShop\PrestaShop\Core\Localization\CLDR\DataLayer\LocaleCache(${($_ = isset($this->services['prestashop.core.localization.cldr.cache.adapter']) ? $this->services['prestashop.core.localization.cldr.cache.adapter'] : ($this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, '/Applications/MAMP/htdocs/prestashop17/pagebuilder40/var/cache/prod//localization'))) && false ?: '_'});
+        $this->services['prestashop.core.localization.cldr.datalayer.locale_cache'] = $instance = new \PrestaShop\PrestaShop\Core\Localization\CLDR\DataLayer\LocaleCache(${($_ = isset($this->services['prestashop.core.localization.cldr.cache.adapter']) ? $this->services['prestashop.core.localization.cldr.cache.adapter'] : ($this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, 'D:\\xamppp\\htdocs\\jms_haza/var/cache/prod\\/localization'))) && false ?: '_'});
 
         $instance->setLowerLayer(${($_ = isset($this->services['prestashop.core.localization.cldr.datalayer.locale_reference']) ? $this->services['prestashop.core.localization.cldr.datalayer.locale_reference'] : $this->getPrestashop_Core_Localization_Cldr_Datalayer_LocaleReferenceService()) && false ?: '_'});
 
@@ -1114,9 +1114,9 @@ class FrontContainer extends Container
         return [
             'database_host' => '127.0.0.1',
             'database_port' => '',
-            'database_name' => 'jms_pagebuilder40',
+            'database_name' => 'jms_haza',
             'database_user' => 'root',
-            'database_password' => 'root',
+            'database_password' => '',
             'database_prefix' => 'ps_',
             'database_engine' => 'InnoDB',
             'mailer_transport' => 'smtp',
@@ -1135,11 +1135,11 @@ class FrontContainer extends Container
             'kernel.bundles' => [
 
             ],
-            'kernel.root_dir' => '/Applications/MAMP/htdocs/prestashop17/pagebuilder40/app/',
+            'kernel.root_dir' => 'D:\\xamppp\\htdocs\\jms_haza/app/',
             'kernel.name' => 'app',
             'kernel.debug' => false,
             'kernel.environment' => 'prod',
-            'kernel.cache_dir' => '/Applications/MAMP/htdocs/prestashop17/pagebuilder40/var/cache/prod/',
+            'kernel.cache_dir' => 'D:\\xamppp\\htdocs\\jms_haza/var/cache/prod/',
             'kernel.active_modules' => [
                 0 => 'contactform',
                 1 => 'dashactivity',
@@ -1207,19 +1207,20 @@ class FrontContainer extends Container
                 63 => 'jmsadvsearch',
                 64 => 'jmsflashsales',
                 65 => 'jmsmegamenu',
-                66 => 'jmsvermegamenu',
-                67 => 'jmsslider',
-                68 => 'jmsproductvideo',
-                69 => 'jmsproducttab',
-                70 => 'jmsrecentlybought',
-                71 => 'jmsblog',
-                72 => 'jmsblogwidget',
-                73 => 'jmscustomhtmlleft',
-                74 => 'jmsfacebookconnect',
-                75 => 'jmspagebuilder',
-                76 => 'jmswishlist',
+                66 => 'jmsslider',
+                67 => 'jmsproductvideo',
+                68 => 'jmsproducttab',
+                69 => 'jmsrecentlybought',
+                70 => 'jmsblog',
+                71 => 'jmsblogwidget',
+                72 => 'jmscustomhtmlleft',
+                73 => 'jmsfacebookconnect',
+                74 => 'jmspagebuilder',
+                75 => 'jmswishlist',
+                76 => 'jmsthemesetting',
+                77 => 'jmslicense',
             ],
-            'ps_cache_dir' => '/Applications/MAMP/htdocs/prestashop17/pagebuilder40/var/cache/prod/',
+            'ps_cache_dir' => 'D:\\xamppp\\htdocs\\jms_haza/var/cache/prod\\',
             'mail_themes_uri' => '/mails/themes',
             'doctrine_cache.apc.class' => 'Doctrine\\Common\\Cache\\ApcCache',
             'doctrine_cache.apcu.class' => 'Doctrine\\Common\\Cache\\ApcuCache',
@@ -1330,7 +1331,7 @@ class FrontContainer extends Container
             'doctrine.orm.second_level_cache.cache_configuration.class' => 'Doctrine\\ORM\\Cache\\CacheConfiguration',
             'doctrine.orm.second_level_cache.regions_configuration.class' => 'Doctrine\\ORM\\Cache\\RegionsConfiguration',
             'doctrine.orm.auto_generate_proxy_classes' => false,
-            'doctrine.orm.proxy_dir' => '/Applications/MAMP/htdocs/prestashop17/pagebuilder40/var/cache/prod//doctrine/orm/Proxies',
+            'doctrine.orm.proxy_dir' => 'D:\\xamppp\\htdocs\\jms_haza/var/cache/prod//doctrine/orm/Proxies',
             'doctrine.orm.proxy_namespace' => 'Proxies',
         ];
     }

@@ -715,7 +715,9 @@ header .row .col-auto {
 /***** SHOP PAGE *****/
 .old.price {
   text-decoration: line-through;
-  opacity: 0.5;
+  font-weight: 400;
+  font-size: 15px;
+  margin-right: 12px;
 }
 .quickview-modal .modal-dialog {
     max-width: 1200px;
@@ -1119,8 +1121,18 @@ header .row .col-auto {
 .owl-nav {
   width:100%;
   text-align: center;
+}
+.owl-nav .owl-prev {
   position: absolute;
-  top:calc(50% - 1rem);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
 }
 .owl-nav button span {
   font-size:1.5rem;

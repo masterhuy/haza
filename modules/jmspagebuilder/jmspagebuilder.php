@@ -280,6 +280,7 @@ class JmsPageBuilder extends Module
         $this->context->controller->registerStylesheet('jmspb-bootstrap-css', 'modules/jmsthemesetting/views/css/custom.css', ['media' => 'all', 'priority' => 200]);
         $this->context->controller->registerStylesheet('jmspb-owlcarousel-css', 'modules/'.$this->name.'/views/css/owl.carousel.css', ['media' => 'all', 'priority' => 2]);
         $this->context->controller->registerStylesheet('jmspb-animate', 'modules/'.$this->name.'/views/css/animate.css', ['media' => 'all', 'priority' => 1]);
+        $this->context->controller->addJS('modules/'.$this->name.'/views/js/owl.carousel.js', 'all');
         $this->context->controller->addJS('modules/'.$this->name.'/views/js/jquery.plugin.js', 'all');
         $this->context->controller->addJS('modules/'.$this->name.'/views/js/jquery.countdown.js', 'all');
         $this->context->controller->addJqueryPlugin('fancybox');
