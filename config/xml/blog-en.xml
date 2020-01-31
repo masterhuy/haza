@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>The future of delivery: what will it look like?</title>
+    <link>https://www.prestashop.com/en/blog/future-of-delivery</link>
+    <description>From the robotic solutions tested in China or the United States, to improving local coverage, what are the advances that will </description>
+     <pubDate>Thu, 30 Jan 2020 17:26:58 +0100</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/future-of-delivery</guid>
+  </item>
+  <item>
     <title>Does your shopping cart page have all these features? We made a checklist</title>
     <link>https://www.prestashop.com/en/blog/does-your-shopping-cart-page-have-all-these-features-we-made-a-checklist</link>
     <description>If you own an e-commerce website, then one of the most important things to think about would be your shopping cart usability.</description>
@@ -26,7 +34,7 @@
     <link>https://www.prestashop.com/en/blog/five-tips-for-setting-up-effective-content-strategy</link>
     <description>Content – whether that’s a video how-to-guide, a funny post on social media about your niche, or a list of helpful pointers – helps differentiate you from other webshops, builds your brand, and dri</description>
      <pubDate>Thu, 09 Jan 2020 14:12:31 +0100</pubDate>
- <dc:creator>Teapot</dc:creator>
+ <dc:creator>bulldesign</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/five-tips-for-setting-up-effective-content-strategy</guid>
   </item>
   <item>
@@ -77,14 +85,6 @@ Dear PrestaShop user,</description>
      <pubDate>Mon, 09 Dec 2019 15:00:47 +0100</pubDate>
  <dc:creator>Teapot</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/choosing-best-domain-name</guid>
-  </item>
-  <item>
-    <title>Expand your e-commerce business with local payments</title>
-    <link>https://www.prestashop.com/en/blog/expand-your-e-commerce-business-local-payments</link>
-    <description>Have you ever been in Latin America? Asia Pacific? The Middle East? Africa?</description>
-     <pubDate>Mon, 02 Dec 2019 15:00:23 +0100</pubDate>
- <dc:creator>Sharon Franko</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/expand-your-e-commerce-business-local-payments</guid>
   </item>
   </channel>
 </rss>

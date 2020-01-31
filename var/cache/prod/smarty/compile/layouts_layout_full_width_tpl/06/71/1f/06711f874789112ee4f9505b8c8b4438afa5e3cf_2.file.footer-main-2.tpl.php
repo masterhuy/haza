@@ -1,27 +1,26 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-30 09:51:21
+/* Smarty version 3.1.33, created on 2020-01-31 10:21:29
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\footers\footer-main-2.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e32a71949e2c9_34034222',
+  'unifunc' => 'content_5e33ffa9472418_11767537',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '06711f874789112ee4f9505b8c8b4438afa5e3cf' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\_partials\\footers\\footer-main-2.tpl',
-      1 => 1574301384,
+      1 => 1580445299,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
-    'file:_partials/socials.tpl' => 1,
   ),
 ),false)) {
-function content_5e32a71949e2c9_34034222 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e33ffa9472418_11767537 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -29,21 +28,19 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <div class="container">
         <div class="row">
             <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11243152945e32a71949a441_77537227', 'hook_footer');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8886443865e33ffa946a716_47832792', 'hook_footer');
 ?>
 
-            <div class="layout-column">
+            <div class="layout-column newsletter">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6392752265e32a71949a443_95078848', 'footer-newsletter');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11238145845e33ffa946e595_27414767', 'footer-newsletter');
 ?>
 
-                <?php $_smarty_tpl->_subTemplateRender('file:_partials/socials.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?>
             </div>
         </div>
         <div class="row">
             <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1805426895e32a71949e2c8_18579159', 'hook_footer_after');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6031613065e33ffa9472416_37577494', 'hook_footer_after');
 ?>
 
         </div>
@@ -51,12 +48,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1805426895e32a7194
 </div>
 <?php }
 /* {block 'hook_footer'} */
-class Block_11243152945e32a71949a441_77537227 extends Smarty_Internal_Block
+class Block_8886443865e33ffa946a716_47832792 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'hook_footer' => 
   array (
-    0 => 'Block_11243152945e32a71949a441_77537227',
+    0 => 'Block_8886443865e33ffa946a716_47832792',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -69,12 +66,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'hook_footer'} */
 /* {block 'footer-newsletter'} */
-class Block_6392752265e32a71949a443_95078848 extends Smarty_Internal_Block
+class Block_11238145845e33ffa946e595_27414767 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'footer-newsletter' => 
   array (
-    0 => 'Block_6392752265e32a71949a443_95078848',
+    0 => 'Block_11238145845e33ffa946e595_27414767',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -89,12 +86,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'footer-newsletter'} */
 /* {block 'hook_footer_after'} */
-class Block_1805426895e32a71949e2c8_18579159 extends Smarty_Internal_Block
+class Block_6031613065e33ffa9472416_37577494 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'hook_footer_after' => 
   array (
-    0 => 'Block_1805426895e32a71949e2c8_18579159',
+    0 => 'Block_6031613065e33ffa9472416_37577494',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

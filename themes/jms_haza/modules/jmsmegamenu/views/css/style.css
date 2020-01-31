@@ -41,10 +41,10 @@
     letter-spacing: 0.8px;
     margin-top: 9px;
     transition: all 400ms;
--webkit-transition: all 400ms;
--moz-transition: all 400ms;
--ms-transition: all 400ms;
--o-transition: all 400ms;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -ms-transition: all 400ms;
+    -o-transition: all 400ms;
 }
 .jms-megamenu .nav > li.sub-home .mod-content .image{
     display: block;

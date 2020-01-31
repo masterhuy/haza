@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-30 09:51:21
+/* Smarty version 3.1.33, created on 2020-01-31 10:21:29
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\headers\logo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e32a71933e972_64449085',
+  'unifunc' => 'content_5e33ffa92dfe34_46120599',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e32a71933e972_64449085 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e33ffa92dfe34_46120599 (Smarty_Internal_Template $_smarty_tpl) {
 ?><a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
 ">
 <?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['logo_source'] == 'default') {?>

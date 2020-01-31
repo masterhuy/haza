@@ -24,21 +24,23 @@
 *}
 
 <div class="email_subscription block">
-  <h4 class="block-title">{l s='Newsletter' d='Modules.Emailsubscription.Shop'}<i class="fa fa-plus"></i></h4>
+  	<h4 class="block-title">{l s='Newsletter' d='Modules.Emailsubscription.Shop'}<i class="fa fa-plus"></i></h4>
 	<div class="block-content">
-	  {if $msg}
-	    <p class="alert {if $nw_error}alert-error{else}alert-success{/if}">{$msg}</p>
-	  {/if}
-	  <form action="{$urls.pages.index}" method="post">
+		{if $msg}
+			<p class="alert {if $nw_error}alert-error{else}alert-success{/if}">{$msg}</p>
+		{/if}
+		<form action="{$urls.pages.index}" method="post">
 			{if $conditions}
-	      <p class="newsletter-desc">{$conditions}</p>
-	    {/if}
+				<p class="newsletter-desc">{$conditions}</p>
+			{/if}
 			<div class="input-group newsletter-input-group">
-	    		<input type="text" name="email" value="{$value}" class="form-control" placeholder="{l s='Your e-mail' d='Modules.Emailsubscription.Shop'}" />
-	    		<button type="submit" class="" name="submitNewsletter"><i class="fa fa-send-o"></i></button>
+				<input type="text" name="email" value="{$value}" class="form-control" placeholder="{l s='Your email address' d='Modules.Emailsubscription.Shop'}" />
+				<button type="submit" class="btn active" name="submitNewsletter">
+					{l s='Subscribe' d='Modules.Emailsubscription.Shop'}
+				</button>
 			</div>
-	    {hook h='displayGDPRConsent' id_module=$id_module}
-	    <input type="hidden" name="action" value="0" />
-	  </form>
+			{hook h='displayGDPRConsent' id_module=$id_module}
+			<input type="hidden" name="action" value="0" />
+		</form>
 	</div>
 </div>

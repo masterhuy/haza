@@ -12,7 +12,7 @@ html {
 input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
     border-radius: 0px;
     width: 100%;
-    border: 1px solid #ebebeb;
+    border: 1px solid #e1e1e1;
     padding: 0 15px;
 }
 ul {
@@ -33,8 +33,8 @@ input[type=number] {
 }
 .form-control {
     border-radius: 0px;
-    height: 35px;
-    line-height: 40px;
+    height: 46px;
+    line-height: 46px;
     border: 1px solid #eee;
     padding: 0 15px;
 }
@@ -100,7 +100,6 @@ header .row {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-    padding:0px 15px;
 }
 footer .layout-column {
     -ms-flex-preferred-size: 0;
@@ -619,11 +618,6 @@ header .row .col-auto {
   90% {
     transform: translate3d(0, -5px, 0); } }
 /***** Footer *****/
-#footer {
-  background:#F6F5F6;
-  margin-top:90px;
-}
-
 #footer-main .layout-column {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
@@ -664,6 +658,7 @@ header .row .col-auto {
   padding-bottom:10px;
   margin-bottom:10px;
   color:#000;
+  letter-spacing: 0.4px;
 }
 #footer-main .block .block-title i {
   float:right;
@@ -677,12 +672,16 @@ header .row .col-auto {
 #footer ul {
   list-style: none;
   padding:0px;
+  margin-bottom: 0;
 }
 #footer input {
   border-radius: 0px;
 }
 #footer li a {
   line-height: 26px;
+  font-size: 14px;
+  text-transform: capitalize;
+  letter-spacing: 0.1px;
 }
 #footer-copyright p {
   margin-bottom:0px;

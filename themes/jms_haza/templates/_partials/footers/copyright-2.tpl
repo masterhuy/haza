@@ -28,15 +28,18 @@
     <div class="container">
         <div class="row align-items-center">
             {if isset($jmsSetting.footer_copyright_content) && $jmsSetting.footer_copyright_content}
-                <div class="layout-column col-auto">
+                <div class="layout-column col-6">
                     {$jmsSetting.footer_copyright_content nofilter}
                 </div>
             {/if}
-            {if isset($jmsSetting.footer_payment_image) && $jmsSetting.footer_payment_image}
-                <div class="layout-column col-auto payment-img text-right">
-                    <img src="{$jmsSetting.footer_payment_image}" class="img-fluid" alt="{l s='Payments' d='Shop.jmstheme'}"/>
-                </div>
-            {/if}
+            
+            <div class="layout-column quick-links col-6">
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Careers</a>
+                <a href="#">Affiliates</a>
+            </div>
+            
         </div>
     </div>
 </div>

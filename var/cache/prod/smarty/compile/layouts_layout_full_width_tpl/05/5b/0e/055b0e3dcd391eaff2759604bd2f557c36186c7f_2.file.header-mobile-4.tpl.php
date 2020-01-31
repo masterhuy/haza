@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-30 09:51:21
+/* Smarty version 3.1.33, created on 2020-01-31 10:21:29
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\headers\header-mobile-4.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e32a719327272_05898640',
+  'unifunc' => 'content_5e33ffa92c0a30_52166420',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -27,7 +27,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl' => 1,
   ),
 ),false)) {
-function content_5e32a719327272_05898640 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e33ffa92c0a30_52166420 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div id="header-mobile-top" class="header-mobile-top<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['header_mobile_sticky'] == 1) {?> header-sticky<?php }
 if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_mobile_sticky'] == 1) && ($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky_effect'] != '')) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky_effect'], ENT_QUOTES, 'UTF-8');
 }?>">

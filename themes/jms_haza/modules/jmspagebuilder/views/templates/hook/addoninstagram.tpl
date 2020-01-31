@@ -24,7 +24,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 {if $addon_title}
-<div class="addon-title title-blog">
+<div class="addon-title">
     <h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
 </div>
 {/if}

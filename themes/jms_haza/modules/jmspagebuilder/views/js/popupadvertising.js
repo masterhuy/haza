@@ -78,9 +78,15 @@ $(document).ready(function() {
 		setCookie("showpopup", "show", 365);	
 	} 
 	$('.jms-popup-overlay').on('click', function() {
-		$('.jms-popup-overlay').hide();
+		$('.jms-popup-overlay').fadeOut(400);
 	});
-	$(".jms-popup-content").on('click', function (e) {
+	$('.jms-popup .popup-close').on('click', function() {
+		$('.jms-popup-overlay').fadeOut(400);
+	});
+	$('.jms-popup .btn-grey').on('click', function() {
+		$('.jms-popup-overlay').fadeOut(400);
+	});
+	$(".jms-popup").on('click', function (e) {
 	     e.stopPropagation();
 	});
 	$('#dontshowagain').click(function (e) {
