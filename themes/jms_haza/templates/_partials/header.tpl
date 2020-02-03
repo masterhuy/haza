@@ -38,6 +38,8 @@
         {include file='_partials/headers/header-6.tpl'}
     {elseif $jmsSetting.header_layout == 7}
         {include file='_partials/headers/header-7.tpl'}
+    {elseif $jmsSetting.header_layout == 8}
+        {include file='_partials/headers/header-8.tpl'}
     {/if}
 </div>
 <div id="mobile-header" class="header-mobile-{$jmsSetting.header_mobile_layout} {if $jmsSetting.header_class} {$jmsSetting.header_class}{/if}">

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-31 10:21:29
+/* Smarty version 3.1.33, created on 2020-02-03 10:28:33
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\footers\footer-main-2.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e33ffa9472418_11767537',
+  'unifunc' => 'content_5e37f5d149b8e3_17317767',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e33ffa9472418_11767537 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e37f5d149b8e3_17317767 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -28,19 +28,19 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <div class="container">
         <div class="row">
             <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8886443865e33ffa946a716_47832792', 'hook_footer');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6142918635e37f5d14747e7_79321112', 'hook_footer');
 ?>
 
             <div class="layout-column newsletter">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11238145845e33ffa946e595_27414767', 'footer-newsletter');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5856709375e37f5d14747e4_71729677', 'footer-newsletter');
 ?>
 
             </div>
         </div>
         <div class="row">
             <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6031613065e33ffa9472416_37577494', 'hook_footer_after');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9037940365e37f5d149b8e5_81082761', 'hook_footer_after');
 ?>
 
         </div>
@@ -48,12 +48,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6031613065e33ffa94
 </div>
 <?php }
 /* {block 'hook_footer'} */
-class Block_8886443865e33ffa946a716_47832792 extends Smarty_Internal_Block
+class Block_6142918635e37f5d14747e7_79321112 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'hook_footer' => 
   array (
-    0 => 'Block_8886443865e33ffa946a716_47832792',
+    0 => 'Block_6142918635e37f5d14747e7_79321112',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -66,12 +66,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'hook_footer'} */
 /* {block 'footer-newsletter'} */
-class Block_11238145845e33ffa946e595_27414767 extends Smarty_Internal_Block
+class Block_5856709375e37f5d14747e4_71729677 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'footer-newsletter' => 
   array (
-    0 => 'Block_11238145845e33ffa946e595_27414767',
+    0 => 'Block_5856709375e37f5d14747e4_71729677',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -86,12 +86,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'footer-newsletter'} */
 /* {block 'hook_footer_after'} */
-class Block_6031613065e33ffa9472416_37577494 extends Smarty_Internal_Block
+class Block_9037940365e37f5d149b8e5_81082761 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'hook_footer_after' => 
   array (
-    0 => 'Block_6031613065e33ffa9472416_37577494',
+    0 => 'Block_9037940365e37f5d149b8e5_81082761',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

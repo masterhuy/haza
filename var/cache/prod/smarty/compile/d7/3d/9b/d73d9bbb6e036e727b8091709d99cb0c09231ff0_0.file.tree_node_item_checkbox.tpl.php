@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-30 09:51:07
+/* Smarty version 3.1.33, created on 2020-02-03 09:33:16
   from 'D:\xamppp\htdocs\jms_haza\admin041sahknz\themes\default\template\helpers\tree\tree_node_item_checkbox.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e32a70b5013c0_24739421',
+  'unifunc' => 'content_5e37e8dc8a5140_57122020',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e32a70b5013c0_24739421 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e37e8dc8a5140_57122020 (Smarty_Internal_Template $_smarty_tpl) {
 ?><li class="tree-item<?php if (isset($_smarty_tpl->tpl_vars['node']->value['disabled']) && $_smarty_tpl->tpl_vars['node']->value['disabled'] == true) {?> tree-item-disable<?php }?>">
 	<span class="tree-item-name<?php if (isset($_smarty_tpl->tpl_vars['node']->value['disabled']) && $_smarty_tpl->tpl_vars['node']->value['disabled'] == true) {?> tree-item-name-disable<?php }?>">
 		<input type="checkbox" name="<?php echo $_smarty_tpl->tpl_vars['input_name']->value;?>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-31 10:21:29
+/* Smarty version 3.1.33, created on 2020-02-03 10:28:33
   from 'module:pscustomersigninpscustome' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e33ffa93418d7_21835765',
+  'unifunc' => 'content_5e37f5d138a1e3_76737235',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e33ffa93418d7_21835765 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e37f5d138a1e3_76737235 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="_desktop_user_info" class="col-auto">
 	<div class="user-info btn-group">
       <?php $_smarty_tpl->_assignInScope('str_at', strpos($_smarty_tpl->tpl_vars['jmsSetting']->value['customersignin_icon'],"_"));?>

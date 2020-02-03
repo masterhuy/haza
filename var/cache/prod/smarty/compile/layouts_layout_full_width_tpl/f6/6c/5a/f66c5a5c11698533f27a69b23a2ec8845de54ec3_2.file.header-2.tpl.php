@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-31 10:21:28
+/* Smarty version 3.1.33, created on 2020-02-03 09:41:42
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\headers\header-2.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e33ffa8c366d8_21046192',
+  'unifunc' => 'content_5e37ead6e39584_06635392',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f66c5a5c11698533f27a69b23a2ec8845de54ec3' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\_partials\\headers\\header-2.tpl',
-      1 => 1579599428,
+      1 => 1580694919,
       2 => 'file',
     ),
   ),
@@ -28,7 +28,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl' => 1,
   ),
 ),false)) {
-function content_5e33ffa8c366d8_21046192 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e37ead6e39584_06635392 (Smarty_Internal_Template $_smarty_tpl) {
 if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_topbar'] == 1)) {?>
 <div id="header-topbar" class="<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class'], ENT_QUOTES, 'UTF-8');
 }?>">

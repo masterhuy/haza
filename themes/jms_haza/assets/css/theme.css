@@ -140,8 +140,6 @@ header .row .col-auto {
   position:unset;
 }
 .header-top {
-    padding-top: 30px;
-    padding-bottom: 30px;
     color: #777;
 }
 .header-sticky.sticky {
@@ -876,7 +874,6 @@ header .row .col-auto {
 }
 .addon-box .post-title a {
     font-size:1rem;
-    text-transform: capitalize;
 }
 .addon-box .post-meta {
     list-style:none;

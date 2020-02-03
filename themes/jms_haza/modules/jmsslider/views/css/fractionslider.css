@@ -22,8 +22,6 @@
 	top:0px;
 	left:100%;
 	z-index:700;
-	width: auto !important;
-	height: auto !important;
 }
 
 .fraction-slider .fs_fixed_obj{
@@ -48,38 +46,37 @@
 
 .fraction-slider .prev,
 .fraction-slider .next {
-	height: 50px;
+	height: 25px;
+	width: 52px;
 	position: absolute;
 	text-align: center;
 	text-transform: uppercase;
-	width: 50px;
-	top: 50%;
-	transform: translateY(-50%);
-	 opacity: 0;
-	 visibility: hidden;
+	bottom: 13px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-size: cover;
+	opacity: 0;
+	visibility: hidden;
 	z-index: 991;
-	border: 2px solid #555;
-	border-radius: 50%;
 }
 .fraction-slider .prev i,
 .fraction-slider .next i{
+	display: none;
 	position:relative;
 	font-size: 30px;
 	top: calc(50% - 16px);
 }
 .fraction-slider .prev{
-	left: 20px;
+	left: calc(50% - 33px);
 }
 .fraction-slider .next{
-	right: 20px;
+	left: calc(50% + 33px);
 }
 .fraction-slider:hover .prev{
-	left: 40px;
 	visibility: visible;
 	opacity: 1;
 }
 .fraction-slider:hover .next{
-	right: 40px;
 	visibility: visible;
 	opacity: 1;
 }

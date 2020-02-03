@@ -30,7 +30,7 @@
         {/block}
     </head>
 
-    <body id="{$page.page_name}" class="{$page.body_classes|classnames} {if isset($jpb_homeclass) && $jpb_homeclass}{$jpb_homeclass}{/if}{if $jpb_rtl} rtl{/if}{if $jmsSetting.blocktitle_layout} blocktitle-{$jmsSetting.blocktitle_layout}{/if}{if $jmsSetting.blocktab_layout} blocktab-{$jmsSetting.blocktab_layout}{/if}{if $jmsSetting.carousel_nav_type} carousel-nav-{$jmsSetting.carousel_nav_type}{/if}{if $jmsSetting.carousel_nav_show} carousel-nav-{$jmsSetting.carousel_nav_show}{/if}{if $jmsSetting.carousel_pag_show} carousel-pag-{$jmsSetting.carousel_pag_show}{/if}">
+    <body id="{$page.page_name}" class="{$page.body_classes|classnames} {if $jpb_rtl} rtl{/if}{if $jmsSetting.blocktitle_layout} blocktitle-{$jmsSetting.blocktitle_layout}{/if}{if $jmsSetting.blocktab_layout} blocktab-{$jmsSetting.blocktab_layout}{/if}{if $jmsSetting.carousel_nav_type} carousel-nav-{$jmsSetting.carousel_nav_type}{/if}{if $jmsSetting.carousel_nav_show} carousel-nav-{$jmsSetting.carousel_nav_show}{/if}{if $jmsSetting.carousel_pag_show} carousel-pag-{$jmsSetting.carousel_pag_show}{/if} {$jpb_pageclass}">
 
         {hook h='displayAfterBodyOpeningTag'}
 

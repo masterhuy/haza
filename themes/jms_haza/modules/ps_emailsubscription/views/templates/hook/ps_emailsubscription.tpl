@@ -24,17 +24,20 @@
 *}
 
 <div class="email_subscription block">
-  	<h4 class="block-title">{l s='Newsletter' d='Modules.Emailsubscription.Shop'}<i class="fa fa-plus"></i></h4>
+	<div class="title">
+		<h4 class="block-title">{l s='Newsletter' d='Modules.Emailsubscription.Shop'}<i class="fa fa-plus"></i></h4>
+		<h4 class="block-title type-1">{l s='Our Newsletter' d='Modules.Emailsubscription.Shop'}</h4>
+		{if $conditions}
+			<p class="newsletter-desc">{$conditions}</p>
+		{/if}
+	</div>
 	<div class="block-content">
 		{if $msg}
 			<p class="alert {if $nw_error}alert-error{else}alert-success{/if}">{$msg}</p>
 		{/if}
 		<form action="{$urls.pages.index}" method="post">
-			{if $conditions}
-				<p class="newsletter-desc">{$conditions}</p>
-			{/if}
 			<div class="input-group newsletter-input-group">
-				<input type="text" name="email" value="{$value}" class="form-control" placeholder="{l s='Your email address' d='Modules.Emailsubscription.Shop'}" />
+				<input type="text" name="email" value="{$value}" class="form-control" required placeholder="{l s='Your email address' d='Modules.Emailsubscription.Shop'}" />
 				<button type="submit" class="btn active" name="submitNewsletter">
 					{l s='Subscribe' d='Modules.Emailsubscription.Shop'}
 				</button>

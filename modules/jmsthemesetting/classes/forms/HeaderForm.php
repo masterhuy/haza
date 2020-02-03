@@ -105,6 +105,11 @@ class JmsHeaderForm
                                     'id_option' => 7,
                                     'name' => $this->module->l('Layout 7', 'HeaderForm'),
                                     'img' => 'headers/7.jpg'
+                                ),
+                                array(
+                                    'id_option' => 8,
+                                    'name' => $this->module->l('Layout 8', 'HeaderForm'),
+                                    'img' => 'headers/8.jpg'
                                 )
                             ),
                             'id' => 'id_option',

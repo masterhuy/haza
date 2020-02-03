@@ -23,11 +23,11 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <a href="{$urls.base_url}">
-{if $jmsSetting.logo_source == 'default'}
-    <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
-{elseif $jmsSetting.logo_source == 'image'}
-    <img class="logo img-responsive" src="{$jmsSetting.logo_image}" alt="{$shop.name}">  
-{elseif $jmsSetting.logo_source == 'text'}
-    <span class="site-logo-text">{$jmsSetting.logo_text}</span>
-{/if}
+    {if $jmsSetting.logo_source == 'default'}
+        <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
+    {elseif $jmsSetting.logo_source == 'image'}
+        <img class="logo img-responsive" src="{$jmsSetting.logo_image}" alt="{$shop.name}">  
+    {elseif $jmsSetting.logo_source == 'text'}
+        <span class="site-logo-text">{$jmsSetting.logo_text}</span>
+    {/if}
 </a>

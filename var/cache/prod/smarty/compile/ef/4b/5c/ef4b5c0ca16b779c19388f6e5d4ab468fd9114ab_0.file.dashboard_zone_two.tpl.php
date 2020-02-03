@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-30 09:50:55
+/* Smarty version 3.1.33, created on 2020-02-03 08:45:12
   from 'D:\xamppp\htdocs\jms_haza\modules\dashproducts\views\templates\hook\dashboard_zone_two.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e32a6ff755091_86339745',
+  'unifunc' => 'content_5e37dd98d91e58_27987850',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e32a6ff755091_86339745 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e37dd98d91e58_27987850 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <section id="dashproducts" class="panel widget <?php if ($_smarty_tpl->tpl_vars['allow_push']->value) {?> allow_push<?php }?>">
 	<header class="panel-heading">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-31 10:21:28
+/* Smarty version 3.1.33, created on 2020-02-03 10:28:32
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e33ffa8bffbc9_50641391',
+  'unifunc' => 'content_5e37f5d0cd5058_21935377',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9f657e58c310ca015d74c48939b2a66ffa8b40dd' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\_partials\\header.tpl',
-      1 => 1578906064,
+      1 => 1580723414,
       2 => 'file',
     ),
   ),
@@ -25,13 +25,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/headers/header-5.tpl' => 1,
     'file:_partials/headers/header-6.tpl' => 1,
     'file:_partials/headers/header-7.tpl' => 1,
+    'file:_partials/headers/header-8.tpl' => 1,
     'file:_partials/headers/header-mobile-1.tpl' => 1,
     'file:_partials/headers/header-mobile-2.tpl' => 1,
     'file:_partials/headers/header-mobile-3.tpl' => 1,
     'file:_partials/headers/header-mobile-4.tpl' => 1,
   ),
 ),false)) {
-function content_5e33ffa8bffbc9_50641391 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e37f5d0cd5058_21935377 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="desktop-header" class="header-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['header_layout'], ENT_QUOTES, 'UTF-8');?>
  <?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['header_class']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['header_class'], ENT_QUOTES, 'UTF-8');
@@ -56,6 +57,9 @@ function content_5e33ffa8bffbc9_50641391 (Smarty_Internal_Template $_smarty_tpl)
 ?>
     <?php } elseif ($_smarty_tpl->tpl_vars['jmsSetting']->value['header_layout'] == 7) {?>
         <?php $_smarty_tpl->_subTemplateRender('file:_partials/headers/header-7.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+    <?php } elseif ($_smarty_tpl->tpl_vars['jmsSetting']->value['header_layout'] == 8) {?>
+        <?php $_smarty_tpl->_subTemplateRender('file:_partials/headers/header-8.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <?php }?>
 </div>
