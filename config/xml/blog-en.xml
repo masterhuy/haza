@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Product Flow in e-commerce: What are we talking about?</title>
+    <link>https://www.prestashop.com/en/blog/e-commerce-flow</link>
+    <description>For online shoppers, it is just about placing the order and getting it delivered at their doorstep, but for e-commerce merchants, the process from order creation to its delivery is a relay race.</description>
+     <pubDate>Mon, 03 Feb 2020 11:46:53 +0100</pubDate>
+ <dc:creator>NitinSrivastavaen</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/e-commerce-flow</guid>
+  </item>
+  <item>
     <title>The future of delivery: what will it look like?</title>
     <link>https://www.prestashop.com/en/blog/future-of-delivery</link>
     <description>From the robotic solutions tested in China or the United States, to improving local coverage, what are the advances that will </description>
@@ -77,14 +85,6 @@ Dear PrestaShop user,</description>
      <pubDate>Fri, 13 Dec 2019 16:21:24 +0100</pubDate>
  <dc:creator>Sophie Mirza</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/trends-e-commerce-2020</guid>
-  </item>
-  <item>
-    <title>The key to choosing the best domain name</title>
-    <link>https://www.prestashop.com/en/blog/choosing-best-domain-name</link>
-    <description>You&#039;ve been busy laying the foundations for your start up business, and it&#039;s time to create a website that will do your vision justice.</description>
-     <pubDate>Mon, 09 Dec 2019 15:00:47 +0100</pubDate>
- <dc:creator>Teapot</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/choosing-best-domain-name</guid>
   </item>
   </channel>
 </rss>

@@ -24,10 +24,10 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div class="alert alert-{$alert_type nofilter}{if $box_class} {$box_class nofilter}{/if}">
-  {$alert_message|regex_replace:"/(<p>|<p [^>]*>|<\\/p>)/":""}
-  {if $show_close_btn}
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-  {/if}
+	{$alert_message|regex_replace:"/(<p>|<p [^>]*>|<\\/p>)/":""}
+	{if $show_close_btn}
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		    <span aria-hidden="true">&times;</span>
+		</button>
+	{/if}
 </div>

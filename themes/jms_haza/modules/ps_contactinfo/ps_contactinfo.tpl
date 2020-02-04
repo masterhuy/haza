@@ -25,15 +25,16 @@
 
 <div class="block-contact links wrapper block">
     <h3 class="block-title">
-        {l s='Contact Information' d='Shop.Theme.Global'}
+        {l s='Contact' d='Shop.Theme.Global'}
     </h3>
     <div class="block-content">
         <div class="address section">
-            <p class="info-company">{$contact_infos.company nofilter}</h3>
             <p class="info-address">{$contact_infos.address.address1 nofilter}</p>
         </div>
+
         {if $contact_infos.phone}
             <div class="phone section">
+                Call:
                 {* [1][/1] is for a HTML tag. *}
 
                 {l s='[1]%phone%[/1]'
@@ -46,23 +47,9 @@
             </div>
         {/if}
 
-        {if $contact_infos.fax}
-            <div class="fax section">
-                <span class="label">{l s='Fax:' d='Shop.Theme.Global'}</span>
-                {* [1][/1] is for a HTML tag. *}
-                    {l
-                        s='[1]%fax%[/1]'
-                        sprintf=[
-                        '[1]' => '<span>',
-                        '[/1]' => '</span>',
-                        '%fax%' => $contact_infos.fax
-                        ]
-                    d='Shop.Theme.Global'}
-            </div>
-        {/if}
-
         {if $contact_infos.email}
             <div class="email section">
+                Email:
                 {* [1][/1] is for a HTML tag. *}                    
                     {l
                         s='[1]%email%[/1]'
@@ -73,6 +60,9 @@
                         ]
                     d='Shop.Theme.Global'}
             </div>
-      {/if}
-  </div>
+        {/if}
+        <div class="opening section">
+            <p>{$contact_infos.address.address2 nofilter}</p>
+        </div>
+    </div>
 </div>

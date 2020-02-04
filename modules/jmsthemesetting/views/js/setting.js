@@ -143,6 +143,8 @@ $(document).ready(function() {
 			d.stopPropagation();
 			var form = $('#configuration_form');
 			form.action = $(this).attr('href');
+			//form.submit();
+			tinyMCE.triggerSave(true, true);
 			$.ajax({
             type: 'post',
             url: $(this).attr('href'),

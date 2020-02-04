@@ -28,11 +28,11 @@
             {block name='hook_footer'}
                 {hook h='displayFooter'}
             {/block}
-            <div class="layout-column newsletter">
-                {block name='footer-newsletter'}
-                <div class="block block-footer block-newsletter">
-                    {widget name="ps_emailsubscription" hook='displayFooter'}
-                </div>
+            <div class="layout-column contact">
+                {block name='footer-contact'}
+                    <div class="block block-footer block-contact">
+                        {widget name="ps_contactinfo"}
+                    </div>
                 {/block}
             </div>
         </div>

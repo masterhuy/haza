@@ -22,17 +22,24 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
 {block name='footer-copyright'}
-<div id="footer-copyright" class="footer-copyright">
-    <div class="container">
-          <div class="row align-items-center">
-              {if isset($jmsSetting.footer_copyright_content) && $jmsSetting.footer_copyright_content}
-              <div class="layout-column text-center">
-                    {$jmsSetting.footer_copyright_content nofilter}
-              </div>
-              {/if}
-          </div>
+    <div id="footer-copyright" class="footer-copyright{if $jmsSetting.footer_copyright_class} {$jmsSetting.footer_copyright_class}{/if}">
+        <div class="container">
+            <div class="row align-items-center">
+                {if isset($jmsSetting.footer_copyright_content) && $jmsSetting.footer_copyright_content}
+                    <div class="layout-column col-6">
+                        {$jmsSetting.footer_copyright_content nofilter}
+                    </div>
+                {/if}
+                
+                <div class="layout-column quick-links col-6">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Affiliates</a>
+                </div>
+                
+            </div>
+        </div>
     </div>
-</div>
 {/block}

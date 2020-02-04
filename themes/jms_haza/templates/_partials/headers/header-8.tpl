@@ -22,21 +22,35 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+{if ($jmsSetting.header_topbar == 1)}
+    <div id="header-topbar" class="{if $jmsSetting.topbar_class} {$jmsSetting.topbar_class}{/if}">
+        <div class="container">{$jmsSetting.topbar_content nofilter}</div>
+    </div>
+{/if}
 <div id="header-top" class="header-top{if $jmsSetting.header_sticky == 1} header-sticky{/if}{if ($jmsSetting.header_sticky == 1) && ($jmsSetting.header_sticky_effect != '')} {$jmsSetting.header_sticky_effect}{/if}">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row align-items-center">
-            <div class="layout-column col-4 megamenu">
+            <div class="layout-column col-auto header-left">
+                {include file='_partials/headers/logo.tpl'}
+            </div>
+            <div class="layout-column">
                 <div id="hor-menu" class="{if $jmsSetting.hormenu_class} {$jmsSetting.hormenu_class}{/if} {if $jmsSetting.hormenu_align} align-{$jmsSetting.hormenu_align}{/if}">
                     {widget name="jmsmegamenu" hook='HorMenu'}
                 </div>
             </div>
-            <div class="layout-column col-4 header-logo">
-                <a href="{$urls.base_url}">
-                    <img src="{$urls.theme_assets}img/logo-2.png" />
-                </a>
-            </div>
-            <div class="layout-column col-4 header-right">
+            <div class="layout-column col-auto header-right">
                 <div class="row">
+                    {if $jmsSetting.search}
+                        {if $jmsSetting.search_box_type != 'dropdown'}
+                            {widget_block name="jmsajaxsearch"}
+                                {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-button.tpl'}
+                            {/widget_block}
+                        {else}
+                            {widget_block name="jmsajaxsearch"}
+                                {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-dropdown.tpl'}
+                            {/widget_block}
+                        {/if}
+                    {/if}
                     {if ($jmsSetting.customersignin == 1)}
                         {widget_block name="ps_customersignin"}
                             {include 'module:ps_customersignin/ps_customersignin-dropdown.tpl'}

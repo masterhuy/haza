@@ -1,5 +1,6 @@
 <div class="btn-group blockcart cart-preview dropdown col-auto{if $jmsSetting.addtocart_type !=''} {$jmsSetting.addtocart_type}{/if}" id="cart_block" data-refresh-url="{$refresh_url}">
 	<a href="#" class="cart-icon" data-toggle="dropdown" data-display="static" aria-expanded="false">
+		<span class="text-cart text-uppercase">{l s='Cart' d='Shop.Theme.Actions'}</span>
 		{assign var="str_at" value=$jmsSetting.cart_icon|strpos:"_"}
 		{if $str_at && $jmsSetting.cart_icon_thickness}
 			{assign var="cart_icon" value=$jmsSetting.cart_icon|substr:0:($str_at)}
@@ -29,10 +30,12 @@
 			<div class="billing-info">
 				{if $jmsSetting.cart_subtotal == 1}
 					{foreach from=$cart.subtotals item="subtotal"}
-					<div class="{$subtotal.type} cart-prices-line">
-							<span class="label">{$subtotal.label}</span>
-							<span class="value">{$subtotal.value}</span>
-					</div>
+						{if $subtotal.type != ''}
+							<div class="{$subtotal.type} cart-prices-line">
+								<span class="label">{$subtotal.label}</span>
+								<span class="value">{$subtotal.value}</span>
+							</div>
+						{/if}
 					{/foreach}
 				{/if}
 				{if $jmsSetting.cart_total == 1}

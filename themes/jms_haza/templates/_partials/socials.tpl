@@ -33,6 +33,5 @@
     {if isset($jmsSetting.social_youtube) && $jmsSetting.social_youtube != ''}<li class="youtube"><a href="{$jmsSetting.social_youtube}" target="_blank"><i class="fa fa-youtube" ></i></a></li>{/if}
     {if isset($jmsSetting.social_vimeo) && $jmsSetting.social_vimeo != ''}<li class="vimeo"><a href="{$jmsSetting.social_vimeo}" target="_blank"><i class="fa fa-vimeo" ></i></a></li>{/if}
     {if isset($jmsSetting.social_linkedin) && $jmsSetting.social_linkedin != ''}<li class="linkedin"><a href="{$jmsSetting.social_linkedin}" target="_blank"><i class="fa fa-linkedin" ></i></a></li>{/if}
-
 </ul>
 {/block}
