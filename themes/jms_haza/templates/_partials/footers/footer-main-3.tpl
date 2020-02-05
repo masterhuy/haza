@@ -26,12 +26,7 @@
     <div class="container">
         <div class="row">
             <div class="layout-column">
-                {block name='footer-contact'}
-                <div class="block block-footer block-newsletter">
-                    {widget name="ps_contactinfo" hook='displayFooter'}
-                </div>
-                {/block}
-                {include file='_partials/socials.tpl'}
+                {include file='_partials/socials-2.tpl'}
             </div>
             {block name='hook_footer'}
                 {hook h='displayFooter'}

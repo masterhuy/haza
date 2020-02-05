@@ -28,21 +28,25 @@
 <link href="{$urls.base_url}modules/jmsthemesetting/views/fonts/font-icon.css" rel="stylesheet">
 
 {if $jmsSetting.body_font == 'google' && isset($jmsSetting.body_font_google)}
-    <link href="https://fonts.googleapis.com/css?family={$jmsSetting.body_font_google}:{$jmsSetting.body_font_google_weightstyle}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family={$jmsSetting.body_font_google}:{$jmsSetting.body_font_google_weightstyle}" rel="stylesheet">
 {elseif $jmsSetting.body_font == 'fontface' && isset($jmsSetting.body_fontface_css)}
-    <link href="{$urls.base_url}/modules/jmsthemesetting/views/fonts/{$jmsSetting.body_fontface_css}" rel="stylesheet">
+<link href="{$urls.base_url}/modules/jmsthemesetting/views/fonts/{$jmsSetting.body_fontface_css}" rel="stylesheet">
 {/if}
+
 {if $jmsSetting.heading_font == 'google' && isset($jmsSetting.heading_font_google)}
     <link href="https://fonts.googleapis.com/css?family={$jmsSetting.heading_font_google}:{$jmsSetting.heading_font_google_weightstyle}&display=swap" rel="stylesheet">
 {elseif $jmsSetting.heading_font == 'fontface' && isset($jmsSetting.heading_fontface_css)}
     <link href="{$urls.base_url}/modules/jmsthemesetting/views/fonts/{$jmsSetting.heading_fontface_css}" rel="stylesheet">
 {/if}
+
 {if $jmsSetting.body_icon_font != ''}
-    <link href="{$urls.base_url}/modules/jmsthemesetting/views/fonts/{$jmsSetting.body_icon_font}" rel="stylesheet">
+<link href="{$urls.base_url}/modules/jmsthemesetting/views/fonts/{$jmsSetting.body_icon_font}" rel="stylesheet">
 {/if}
+
 {foreach $stylesheets.external as $stylesheet}
 <link rel="stylesheet" href="{$stylesheet.uri}" type="text/css" media="{$stylesheet.media}">
 {/foreach}
+
 {foreach $stylesheets.inline as $stylesheet}
 <style>
 {$stylesheet.content}

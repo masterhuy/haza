@@ -263,7 +263,9 @@
 }
 .jms-modal .media-preview {
 	display:block;
-	margin-bottom:20px;
+  margin-bottom:20px;
+  max-width: 538px;
+  background: rgba(0,0,0,0.1);
 }
 .jms-modal .remove-media {
 	margin-left:10px;

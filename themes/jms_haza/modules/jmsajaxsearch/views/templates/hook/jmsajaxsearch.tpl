@@ -19,7 +19,8 @@
             <input type="hidden" name="orderby" value="position" />
             <input type="hidden" name="orderway" value="desc" />
             <div class="input-group">
-    			<input type="text" name="search_query" placeholder="{l s='Search for products, brands,...' d='Modules.JmsAjaxsearch'}" class="jms-search-input form-control search-input" />
+    			<input type="text" name="search_query" placeholder="{l s='Search for products, brands,...' d='Modules.JmsAjaxsearch'}" class="jms-search-input form-control search-input type-1" />
+                <input type="text" name="search_query" placeholder="{l s='Search...' d='Modules.JmsAjaxsearch'}" class="jms-search-input form-control search-input type-2" />
                 <button type="submit" name="submit_search" class="button-search">
                     <i class="far fa-search"></i>
                 </button>

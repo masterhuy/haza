@@ -18,8 +18,8 @@ $(document).ready(function() {
         });
     })
 
-    insta_container2 = $(".instagram-cs");
-    insta_container2.each((key, e) => {
+    insta_container_cs = $(".instagram-cs");
+    insta_container_cs.each((key, e) => {
         let index = $(e).data('index');
         let rtl = false;
         $(e).instagram({
@@ -61,6 +61,48 @@ $(document).ready(function() {
         });
     })
 
+    insta_container_cs2 = $(".instagram-cs-2");
+    insta_container_cs2.each((key, e) => {
+        let index = $(e).data('index');
+        let rtl = false;
+        $(e).instagram({
+            accessToken: blockInstaSettings[index].accessToken
+            , clientId: blockInstaSettings[index].clientId
+            // , hash: hash
+            , userId: blockInstaSettings[index].userId
+            // , next_url: insta_next_url
+            , show: blockInstaSettings[index].count
+            // , image_size: image_size
+            , onComplete: function (photos, data) {
+                // $(e).fancybox();
+                if ($("body").hasClass("rtl")) rtl = true;
+                $(e).owlCarousel({
+                    responsiveClass:true,
+                    responsive:{
+                        1199:{
+                            items:blockInstaSettings[index].count   //{$count|escape:'htmlall':'UTF-8'}
+                        },
+                        991:{
+                            items:5
+                        },
+                        768:{
+                            items:3
+                        },
+                        318:{
+                            items:2
+                        } 
+                    },
+                    rtl: rtl,
+                    margin: 6,
+                    nav: false,
+                    dots: false,
+                    autoplay: false,
+                    loop: true,
+                    slideSpeed: 800,
+                });
+            }
+        });
+    })
 });
 
 (function ($) {
