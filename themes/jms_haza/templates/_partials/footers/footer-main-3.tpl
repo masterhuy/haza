@@ -25,12 +25,19 @@
 <div id="footer-main" class="footer-main">
     <div class="container">
         <div class="row">
-            <div class="layout-column">
-                {include file='_partials/socials-2.tpl'}
-            </div>
             {block name='hook_footer'}
                 {hook h='displayFooter'}
             {/block}
+            <div class="layout-column wrapper block">
+                {include file='_partials/socials-2.tpl'}
+            </div>
+            <div class="layout-column wrapper block contact">
+                {block name='footer-contact'}
+                    <div class="block block-footer block-contact">
+                        {widget name="ps_contactinfo"}
+                    </div>
+                {/block}
+            </div>
         </div>
         <div class="row">
             {block name='hook_footer_after'}

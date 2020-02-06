@@ -29,7 +29,7 @@
         <ul id="social-links" class="social-links">
             {if isset($jmsSetting.social_facebook) && $jmsSetting.social_facebook != ''}
                 <li class="facebook">
-                    <a href="{$jmsSetting.social_facebook}" target="_blank"><i class="fa fa-facebook" ></i>Facebook</a>
+                    <a href="{$jmsSetting.social_facebook}" target="_blank"><i class="fa fa-facebook-square" ></i>Facebook</a>
                 </li>
             {/if}
             {if isset($jmsSetting.social_twitter) && $jmsSetting.social_twitter != ''}
@@ -39,7 +39,7 @@
             {/if}
             {if isset($jmsSetting.social_gplus) && $jmsSetting.social_gplus != ''}
                 <li class="google-plus">
-                    <a href="{$jmsSetting.social_gplus}" target="_blank"><i class="fa fa-google-plus" ></i>Google</a>
+                    <a href="{$jmsSetting.social_gplus}" target="_blank"><i class="fa fa-google" ></i>Google</a>
                 </li>
             {/if}
             {if isset($jmsSetting.social_instagram) && $jmsSetting.social_instagram != ''}

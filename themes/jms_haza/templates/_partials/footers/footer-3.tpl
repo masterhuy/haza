@@ -23,4 +23,4 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {include file='_partials/footers/footer-main-3.tpl'}
-{include file='_partials/footers/copyright-2.tpl'}
+{include file='_partials/footers/copyright-3.tpl'}

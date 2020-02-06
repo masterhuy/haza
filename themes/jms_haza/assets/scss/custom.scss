@@ -228,9 +228,6 @@ a{
 	#header-topbar{
 		.header-left{
 			letter-spacing: 0.2px;
-			.text-2{
-				display: none;
-			}
 		}
 		.header-center{
 			letter-spacing: 0.15px;
@@ -397,9 +394,6 @@ a{
 	#header-topbar{
 		.header-left{
 			letter-spacing: 0.2px;
-			.text-1{
-				display: none;
-			}
 		}
 		.header-center{
 			letter-spacing: 0.15px;
@@ -1083,6 +1077,43 @@ a{
 	}
 }
 
+/* home 4 */
+.home_4{
+	.jms-row.banner.type-1{
+		.banner-content{
+			position: absolute;
+			bottom: 80px;
+			width: 100%;
+			text-align: center;
+			color: #fff;
+			.text-1{
+				font-family: 'Old Standard TT', serif;
+				font-size: 34px;
+				letter-spacing: 0.6px;
+				margin-bottom: 36px;
+			}
+			p{
+				margin-bottom: 0;
+			}
+			.btn{
+				color: #fff;
+				border-color: #fff;
+				font-size: 14px;
+				font-weight: 400;
+				border-width: 1px;
+				letter-spacing: 0.3px;
+				padding: 6px 23px;
+				&:hover{
+					border-color: #111;
+				}
+			}
+		}
+	}
+	.jms-banner{
+		position: relative;
+	}
+}
+
 /* footer */
 #footer{
 	.block-content{
@@ -1096,6 +1127,30 @@ a{
 		display: block;
 		&.type-1{
 			display: none;
+		}
+	}
+	.block-contact{
+		.block-title{
+			.text-2{
+				display: none;
+			}
+		}
+		.block-content{
+			margin-top: 11px;
+			border: 0;
+			padding: 0;
+			font-style: italic;
+			line-height: 2;
+			font-size: 14px;
+			letter-spacing: -0.001px;
+			.info-address{
+				margin-bottom: 10px;
+			}
+			.section{
+				&.phone, &.email{
+					margin-bottom: 7px;
+				}
+			}
 		}
 	}
 }
@@ -1120,31 +1175,35 @@ a{
 	}
 }
 .footer-2{
-	.block-contact{
-		.block-content{
-			margin-top: 11px;
-			border: 0;
-			padding: 0;
-			font-style: italic;
-			line-height: 2;
-			font-size: 14px;
-			letter-spacing: -0.001px;
-			.info-address{
-				margin-bottom: 10px;
-			}
-			.section{
-				&.phone, &.email{
-					margin-bottom: 7px;
-				}
-			}
-		}
-	}
+	
 }
 .footer-3{
 	&#footer{
 		.social-links li{
 			display: block;
 			margin: 0;
+			line-height: 30px;
+			.fa{
+				font-size: 15px;
+				margin-right: 10px;
+			}
+		}
+		.block-contact{
+			.block-title{
+				.text-1{
+					display: none;
+				}
+				.text-2{
+					display: block;
+				}
+			}
+			.block-content{
+				.section{
+					&.address{
+						display: none;
+					}
+				}
+			}
 		}
 	}
 }
