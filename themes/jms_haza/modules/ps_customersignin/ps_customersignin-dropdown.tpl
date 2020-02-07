@@ -56,7 +56,7 @@
 			<div id="login" class="dropdown-menu user-info-content{if $jmsSetting.customersignin_type =='sidebar'} user-info-sidebar{/if}{if $jmsSetting.customersignin_class} {$jmsSetting.customersignin_class}{/if}">
 				<ul>
 					{if $jmsSetting.customersignin_logged_links && 'register'|in_array:$jmsSetting.customersignin_notlogged_links}
-						<li><a href="{$urls.pages.register}" title="{l s='Register' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Register' d='Shop.Theme.CustomerAccount'} </a></li>
+						<li><a href="{$urls.pages.register}" title="{l s='Register' d='Shop.Theme.CustomerAccount'}" rel="nofollow">{l s='Register' d='Shop.Theme.CustomerAccount'} </a></li>
 					{/if}
 					{if $jmsSetting.customersignin_logged_links && 'login'|in_array:$jmsSetting.customersignin_notlogged_links}
 						<li><a class="login" href="{$my_account_url}" title="{l s='Login' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >{l s='Log In' d='Shop.Theme.Actions'}</a></li>
@@ -66,3 +66,4 @@
 		{/if}
 	</div>
 </div>
+

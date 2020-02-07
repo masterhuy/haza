@@ -29,9 +29,7 @@
 			{$alert_message nofilter}
 		</div>
 		{if $show_close_btn}
-			<a href="#" class="close" data-toggle="collapse" data-target="#alert-box">
-				<img src="{$urls.theme_assets}img/icons/alert-close.png" />
-			</a>
+			<a href="#" class="close" data-toggle="collapse" data-target="#alert-box"></a>
 		{/if}
 	</div>
 </div>

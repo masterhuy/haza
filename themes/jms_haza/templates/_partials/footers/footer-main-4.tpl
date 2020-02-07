@@ -25,14 +25,13 @@
 <div id="footer-main" class="footer-main">
     <div class="container">
         <div class="row">
-            {block name='hook_footer'}
-                {hook h='displayFooter'}
-            {/block}
-        </div>
-        <div class="row">
-            {block name='hook_footer_after'}
-                {hook h='displayFooterAfter'}
-            {/block}
+            <div class="layout-column newsletter">
+                {block name='footer-newsletter'}
+                <div class="block block-footer block-newsletter">
+                    {widget name="ps_emailsubscription" hook='displayFooter'}
+                </div>
+                {/block}
+            </div>
         </div>
     </div>
 </div>

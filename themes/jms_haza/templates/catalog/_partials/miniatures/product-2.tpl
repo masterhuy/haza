@@ -22,7 +22,6 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
 <div class="product-miniature js-product-miniature productbox-2" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
 	<div class="product-preview">
 		{block name='product_thumbnail'}

@@ -22,59 +22,55 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
- <div id="header-top" class="header-top">
- 		<div class="container">
- 				<div class="row align-items-center">
- 						<div class="layout-column col-auto header-left">
-              {include file='_partials/headers/logo.tpl'}
- 						</div>
- 						<div class="layout-column">
-              {if $jmsSetting.search}
-                  {widget_block name="jmsajaxsearch"}
-                      {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch.tpl'}
-                  {/widget_block}
-              {/if}    
- 						</div>
- 						<div class="layout-column col-auto header-right">
-              <div class="row">
-                  {if ($jmsSetting.customersignin == 1)}
-                  {widget_block name="ps_customersignin"}
-                      {include 'module:ps_customersignin/ps_customersignin-dropdown.tpl'}
-                  {/widget_block}
-                  {/if}
-                  {if ($jmsSetting.wishlist == 1)}
-                  {include file='_partials/headers/wishlist.tpl'}
-                  {/if}
-                  {if ($jmsSetting.cart == 1)}
-                  {widget_block name="ps_shoppingcart"}
-                      {include 'module:ps_shoppingcart/ps_shoppingcart.tpl'}
-                  {/widget_block}
-                  {/if}
+<div id="header-top" class="header-top{if $jmsSetting.header_sticky == 1} header-sticky{/if}{if ($jmsSetting.header_sticky == 1) && ($jmsSetting.header_sticky_effect != '')} {$jmsSetting.header_sticky_effect}{/if}">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="layout-column col-auto header-left">
+                <a href="{$urls.base_url}">
+                    <img src="{$urls.theme_assets}img/logo-2.png" />
+                </a>
+            </div>
+            <div class="layout-column megamenu">
+                <div id="hor-menu" class="{if $jmsSetting.hormenu_class} {$jmsSetting.hormenu_class}{/if} {if $jmsSetting.hormenu_align} align-{$jmsSetting.hormenu_align}{/if}">
+                    {widget name="jmsmegamenu" hook='HorMenu'}
                 </div>
- 						</div>
- 				</div>
- 		</div>
- </div>
- <div id="header-bottom" class="{if $jmsSetting.header_sticky == 1} header-sticky{/if}{if ($jmsSetting.header_sticky == 1) && ($jmsSetting.header_sticky_effect != '')} {$jmsSetting.header_sticky_effect}{/if}">
-   <div class="container">
-       <div class="row align-items-center">
-           <div class="layout-column col-auto header-left">
-               <a data-toggle="collapse" data-target="#ver-menu" class="vermenu-btn collapsed align-items-center" aria-expanded="false">
-                 <i class="ptw-icon icon-menu-3"></i> {$jmsSetting.vermenu_button_text nofilter}
-               </a>
-               <div id="ver-menu" class="navbar collapse{if $jmsSetting.vermenu_class} {$jmsSetting.vermenu_class}{/if}" aria-expanded="false">
-               {widget name="jmsmegamenu" hook='VerMenu'}
-               </div>
-           </div>
-           <div class="layout-column">
-               <div id="hor-menu" class="{if $jmsSetting.hormenu_class} {$jmsSetting.hormenu_class}{/if} {if $jmsSetting.hormenu_align} align-{$jmsSetting.hormenu_align}{/if}">
-               {widget name="jmsmegamenu" hook='HorMenu'}
-               </div>
-           </div>
-           <div class="layout-column col-auto header-right margin-right-15">
-             {$jmsSetting.topbar_content nofilter}
-           </div>
-       </div>
-
-   </div>
+            </div>
+            <div class="layout-column col-auto header-right">
+                <div class="row">
+                    {if $jmsSetting.search}
+                        {if $jmsSetting.search_box_type != 'dropdown'}
+                            {widget_block name="jmsajaxsearch"}
+                                {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-button.tpl'}
+                            {/widget_block}
+                        {else}
+                            {widget_block name="jmsajaxsearch"}
+                                {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-dropdown.tpl'}
+                            {/widget_block}
+                        {/if}
+                    {/if}
+                    <div class="store-link">
+                        <a href="#" class="text-uppercase">
+                            <i class="fal fa-map-marker-alt"></i>
+                            <span>Store</span>
+                        </a>
+                    </div>
+                    {if ($jmsSetting.customersignin == 1)}
+                        {widget_block name="ps_customersignin"}
+                            {include 'module:ps_customersignin/ps_customersignin-dropdown.tpl'}
+                        {/widget_block}
+                    {/if}
+                    {if ($jmsSetting.cart == 1)}
+                        {widget_block name="ps_shoppingcart"}
+                            {include 'module:ps_shoppingcart/ps_shoppingcart.tpl'}
+                        {/widget_block}
+                    {/if}
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+{if $jmsSetting.search && $jmsSetting.search_box_type != 'dropdown'}
+    {widget_block name="jmsajaxsearch"}
+        {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl'}
+    {/widget_block}
+{/if}

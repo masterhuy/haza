@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-06 10:26:57
+/* Smarty version 3.1.33, created on 2020-02-07 02:56:45
   from 'module:pscurrencyselectorpscurre' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e3be9f1448ff9_74599974',
+  'unifunc' => 'content_5e3cd1ed505576_40229330',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e3be9f1448ff9_74599974 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e3cd1ed505576_40229330 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info">
    	<a href="#" class="title btn-xs" data-toggle="dropdown">
 		<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['current_currency']->value['iso_code'], ENT_QUOTES, 'UTF-8');?>
