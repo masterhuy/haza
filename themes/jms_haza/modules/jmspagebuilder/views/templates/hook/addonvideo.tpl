@@ -32,12 +32,22 @@
     {if $addon_desc}
         <p class="addon-desc">{$addon_desc nofilter}</p>
     {/if}
-    <span class="btn-close"><i class="ptw-icon icon-closed_light" aria-hidden="true"></i></span>
-    <div class="jms-addon jms-video">
+    <div class="jms-video">
+        <div class="video-image" data-toggle="modal" data-target="#video">
+            <img class="w-100" src="{$urls.theme_assets}img/video-bg.jpg" />
+        </div>
 
-        {if $src}
-            <iframe width="{$width nofilter}" height="{$height nofilter}" src="{$src nofilter}" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-        {/if}
-        <div class="bg-overlay"></div>
+        <div class="modal" id="video">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                    <div class="modal-body">
+                        {if $src}
+                            <iframe width="{$width nofilter}" height="{$height nofilter}" src="{$src nofilter}" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                        {/if}
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

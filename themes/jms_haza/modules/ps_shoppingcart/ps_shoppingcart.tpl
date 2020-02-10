@@ -1,6 +1,12 @@
 <div class="btn-group blockcart cart-preview dropdown col-auto{if $jmsSetting.addtocart_type !=''} {$jmsSetting.addtocart_type}{/if}" id="cart_block" data-refresh-url="{$refresh_url}">
 	<a href="#" class="cart-icon" data-toggle="dropdown" data-display="static" aria-expanded="false">
 		<span class="text-cart text-uppercase">{l s='Cart' d='Shop.Theme.Actions'}</span>
+		{if $jmsSetting.addtocart_type == 'circle-filled'}
+			{if $cart.products_count > 0}<span class="circle-notify"></span>{/if}
+		{else}
+			<span class="ajax_cart_quantity">{$cart.products_count}</span>
+			<span class="ajax_cart_quantity type-2">({$cart.products_count})</span>
+		{/if}
 		{assign var="str_at" value=$jmsSetting.cart_icon|strpos:"_"}
 		{if $str_at && $jmsSetting.cart_icon_thickness}
 			{assign var="cart_icon" value=$jmsSetting.cart_icon|substr:0:($str_at)}
@@ -9,11 +15,6 @@
 			{assign var="cart_icon" value=$jmsSetting.cart_icon}
 		{/if}
 		<i class="fal fa-shopping-bag"></i>
-		{if $jmsSetting.addtocart_type == 'circle-filled'}
-			{if $cart.products_count > 0}<span class="circle-notify"></span>{/if}
-		{else}
-			<span class="ajax_cart_quantity">{$cart.products_count}</span>
-		{/if}
 	</a>
 	<div class="dropdown-menu shoppingcart-box{if $jmsSetting.cart_type =='sidebar'} shoppingcart-sidebar{/if}">
 		<div class="cart-title">{l s='Shopping Cart' d='Shop.Theme.Actions'} ({$cart.products_count})</div>

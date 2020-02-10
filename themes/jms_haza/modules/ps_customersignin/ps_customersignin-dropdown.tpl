@@ -33,6 +33,7 @@
 		{/if}
 		<a href="#" class="account" data-toggle="dropdown" data-display="static">
 			<span class="text text-uppercase">{l s='Login' d='Shop.Theme.Actions'}</span>
+			<span class="text type-2 text-uppercase">{l s='Sign In' d='Shop.Theme.Actions'}</span>
 			<i class="fal fa-user"></i>
 		</a>
       	{if $logged}

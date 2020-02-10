@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-07 10:28:29
+/* Smarty version 3.1.33, created on 2020-02-10 10:25:16
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\footers\copyright-4.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e3d3bcd2f3774_62268343',
+  'unifunc' => 'content_5e412f8c8576e6_20843031',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,23 +21,23 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/socials.tpl' => 1,
   ),
 ),false)) {
-function content_5e3d3bcd2f3774_62268343 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e412f8c8576e6_20843031 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17500238245e3d3bcd2cc675_55015125', 'footer-copyright');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6389499365e412f8c8576e0_44008814', 'footer-copyright');
 ?>
 
 <?php }
 /* {block 'footer-copyright'} */
-class Block_17500238245e3d3bcd2cc675_55015125 extends Smarty_Internal_Block
+class Block_6389499365e412f8c8576e0_44008814 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'footer-copyright' => 
   array (
-    0 => 'Block_17500238245e3d3bcd2cc675_55015125',
+    0 => 'Block_6389499365e412f8c8576e0_44008814',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
