@@ -65,7 +65,7 @@
  			</div>
             {if $jmsSetting.header_sidebar == 1}
                 <div class="layout-column sidebar col-auto">
-                    <a id="sidebar-btn" class="vermenu-small-btn collapsed align-items-center" aria-expanded="false"></a>
+                    <a href="#" id="sidebar-btn" class="vermenu-small-btn collapsed align-items-center" aria-expanded="false"></a>
                 </div>
             {/if}
  		</div>
@@ -73,9 +73,26 @@
 </div>
 {if $jmsSetting.header_sidebar == 1}
     <div id="header-sidebar" class="header-sidebar {$jmsSetting.sidebar_position}" aria-expanded="false">
-        <div id="ver-menu" class="{if $jmsSetting.vermenu_class}{$jmsSetting.vermenu_class}{/if}" aria-expanded="false">
-            {widget name="jmsmegamenu" hook='VerMenu'}
+        <a class="btn-close" href="#"></a>
+        <a href="{$urls.base_url}" class="logo-sidebar">
+            <img src="{$urls.theme_assets}img/logo-2.png" />
+        </a>
+        <div class="desc">New Fashion Lookbook!</div>
+        <div class="banner">
+            <a href="#">
+                <img src="{$urls.theme_assets}img/banner-sidebar.jpg" />
+            </a>
         </div>
+        {block name='footer-newsletter'}
+            <div class="block block-newsletter">
+                {widget name="ps_emailsubscription" hook='displayFooter'}
+            </div>
+        {/block}
+        {block name='footer-contact'}
+            <div class="block block-contact">
+                {widget name="ps_contactinfo"}
+            </div>
+        {/block}
         {include file='_partials/socials.tpl'}
     </div>
 {/if}

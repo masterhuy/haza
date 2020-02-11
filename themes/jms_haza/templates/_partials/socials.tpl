@@ -25,7 +25,7 @@
 
 {block name='footer-social'}
     <ul id="social-links" class="social-links">
-        {if isset($jmsSetting.social_facebook) && $jmsSetting.social_facebook != ''}<li class="facebook"><a href="{$jmsSetting.social_facebook}" target="_blank"><i class="fa fa-facebook" ></i></a></li>{/if}
+        {if isset($jmsSetting.social_facebook) && $jmsSetting.social_facebook != ''}<li class="facebook"><a href="{$jmsSetting.social_facebook}" target="_blank"><i class="fa fa-facebook-square" ></i></a></li>{/if}
         {if isset($jmsSetting.social_twitter) && $jmsSetting.social_twitter != ''}<li class="twitter"><a href="{$jmsSetting.social_twitter}" target="_blank"><i class="fa fa-twitter" ></i></a></li>{/if}
         {if isset($jmsSetting.social_gplus) && $jmsSetting.social_gplus != ''}<li class="google-plus"><a href="{$jmsSetting.social_gplus}" target="_blank"><i class="fa fa-google-plus" ></i></a></li>{/if}
         {if isset($jmsSetting.social_instagram) && $jmsSetting.social_instagram != ''}<li class="instagram"><a href="{$jmsSetting.social_instagram}" target="_blank"><i class="fa fa-instagram" ></i></a></li>{/if}

@@ -334,23 +334,25 @@ header .row .col-auto {
 }
 /***** Sidebar *****/
 #header-sidebar {
-  width: 343px!important;
-  top:0px;
+  width: 350px !important;
+  top: 0px;
   -webkit-box-shadow: unset;
   box-shadow: unset;
-  background: #222;
+  background: #ebebeb;
   float: left;
   height: 100%;
   margin-left: 0;
   position: fixed;
   z-index: 9999;
+  padding: 40px;
+  text-align: center;
 }
 .left-sidebar {
-  left: -343px;
+  left: -350px;
   right: auto;
 }
 .right-sidebar {
-  right: -343px;
+  right: -350px;
   left: auto;
 }
 .main-site {
@@ -374,35 +376,30 @@ header .row .col-auto {
 }
 .sidebar-left-open .main-site {
     overflow: unset;
-    left: 343px;
+    left: 0;
     right:auto;
     position: relative;
 }
 .sidebar-right-open .main-site {
     overflow: unset;
     left:auto;
-    right: 343px;
+    right: 0;
     position: relative;
+}
+.sidebar-right-open .bg-overlay,
+.sidebar-left-open .bg-overlay{
+  opacity: 1;
+  visibility: visible;
 }
 .sidebar-open {
   overflow-x: hidden;
 }
-#header-sidebar .social-links {
-  position: absolute;
-  bottom:20px;
-  margin: 0px 30px;
-  width:calc(100% - 60px);
-  text-align: center;
-  padding:20px 0px 0px 0px;
-  border-top:1px solid #2e2e2e;
-}
 #header-sidebar .social-links li {
   display: inline-block;
-  margin: 0px 15px;
 }
 #header-sidebar .social-links li i {
-  font-size:16px;
-  color:#8f8f8f;
+  font-size: 18px;
+  color: #777;
 }
 #header-sidebar #ver-menu {
   box-shadow: none;

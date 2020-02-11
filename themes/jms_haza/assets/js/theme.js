@@ -2060,7 +2060,7 @@
             }), e(document).on("click", function() {
                 e("body").hasClass("sidebar-right-open") && e("body").removeClass("sidebar-right-open"), e("body").hasClass("sidebar-left-open") && e("body").removeClass("sidebar-left-open")
             }), e("#header-sidebar, #sidebar-btn").on("click", function(e) {
-                e.stopPropagation()
+                e.stopPropagation();
             });
             var n = !1;
             if (jmsSetting.carousel_lazyload) var n = !0;

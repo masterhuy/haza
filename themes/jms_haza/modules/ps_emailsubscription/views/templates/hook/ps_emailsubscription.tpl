@@ -22,7 +22,6 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-
 <div class="email_subscription block">
 	<div class="title">
 		<h4 class="block-title">{l s='Newsletter' d='Modules.Emailsubscription.Shop'}<i class="fa fa-plus"></i></h4>
@@ -38,8 +37,12 @@
 		<form action="{$urls.pages.index}" method="post">
 			<div class="input-group newsletter-input-group">
 				<input type="text" name="email" value="{$value}" class="form-control" required placeholder="{l s='Your email address' d='Modules.Emailsubscription.Shop'}" />
+				<input type="text" name="email" value="{$value}" class="form-control sidebar" required placeholder="{l s='Email@exemple.com' d='Modules.Emailsubscription.Shop'}" />
 				<button type="submit" class="btn active" name="submitNewsletter">
 					{l s='Subscribe' d='Modules.Emailsubscription.Shop'}
+				</button>
+				<button type="submit" class="btn btn-icon" name="submitNewsletter">
+					<i class="far fa-envelope"></i>
 				</button>
 			</div>
 			{hook h='displayGDPRConsent' id_module=$id_module}
