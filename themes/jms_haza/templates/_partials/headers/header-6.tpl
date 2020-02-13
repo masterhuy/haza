@@ -23,33 +23,33 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {if ($jmsSetting.header_topbar == 1)}
-<div id="header-topbar" class="{if $jmsSetting.topbar_class} {$jmsSetting.topbar_class}{/if}">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="layout-column col-6 col-left">
-                <div class="position-relative">
-                    <a href="#">Store Locator</a>
-                </div>
-                {widget_block name="ps_languageselector"}
-                    {include 'module:ps_languageselector/ps_languageselector-dropdown.tpl'}
-                {/widget_block}
-                {widget_block name="ps_currencyselector"}
-                    {include 'module:ps_currencyselector/ps_currencyselector-dropdown.tpl'}
-                {/widget_block}
-                <div class="position-relative">
-                    <a href="#">Help & FAQ’s</a>
-                </div>
-            </div>
-            <div class="layout-column col-6 col-right">
-                {if $jmsSetting.search}
-                    {widget_block name="jmsajaxsearch"}
-                        {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch.tpl'}
+    <div id="header-topbar" class="{if $jmsSetting.topbar_class} {$jmsSetting.topbar_class}{/if}">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="layout-column col-6 col-left">
+                    <div class="position-relative">
+                        <a href="#">Store Locator</a>
+                    </div>
+                    {widget_block name="ps_languageselector"}
+                        {include 'module:ps_languageselector/ps_languageselector-dropdown.tpl'}
                     {/widget_block}
-                {/if}
+                    {widget_block name="ps_currencyselector"}
+                        {include 'module:ps_currencyselector/ps_currencyselector-dropdown.tpl'}
+                    {/widget_block}
+                    <div class="position-relative">
+                        <a href="#">Help & FAQ’s</a>
+                    </div>
+                </div>
+                <div class="layout-column col-6 col-right">
+                    {if $jmsSetting.search}
+                        {widget_block name="jmsajaxsearch"}
+                            {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch.tpl'}
+                        {/widget_block}
+                    {/if}
+                </div>
             </div>
         </div>
     </div>
-</div>
 {/if}
 <div id="header-top" class="header-top{if $jmsSetting.header_sticky == 1} header-sticky{/if}{if ($jmsSetting.header_sticky == 1) && ($jmsSetting.header_sticky_effect != '')} {$jmsSetting.header_sticky_effect}{/if}">
     <div class="container-fluid">

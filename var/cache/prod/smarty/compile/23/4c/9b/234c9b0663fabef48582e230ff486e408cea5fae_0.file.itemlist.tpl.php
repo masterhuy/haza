@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-03 03:29:17
+/* Smarty version 3.1.33, created on 2020-02-13 05:00:23
   from 'D:\xamppp\htdocs\jms_haza\modules\jmsmegamenu\views\templates\admin\jmsmegamenu_manager\itemlist.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e37938d837522_04865834',
+  'unifunc' => 'content_5e44d7e75ee825_09979425',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e37938d837522_04865834 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e44d7e75ee825_09979425 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="note">
 	<p class="col-lg-6 pull-left"><i class="icon-info"></i> Drap &amp; Drop Menu Item to Change Order.</p>

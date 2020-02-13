@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-30 01:54:30
+/* Smarty version 3.1.33, created on 2020-02-13 07:18:58
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\notifications.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e32375643d349_61825224',
+  'unifunc' => 'content_5e44f862e58ff1_81509874',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e32375643d349_61825224 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e44f862e58ff1_81509874 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <aside id="notifications">
   <div class="container">

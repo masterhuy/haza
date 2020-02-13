@@ -763,30 +763,34 @@ a{
 	}
 }
 
-/* home 7 */
-.home_7{
-	.col-left{
-		.addon-box{
-			text-align: right;
-		}
-		.level-1{
-			> li{
-				line-height: 37px;
-				> a{
-					font-size: 20px;
-					font-weight: 600;
-					color: #111;
-				}
+/* header 7 */
+.header-7{
+	padding: 60px 0px;
+	.header-sticky.sticky{
+		background-color: #fff !important;
+		height: auto !important;
+		padding: 19px 0 !important;
+	}
+	.layout-column.logo{
+		min-width: 180px;
+		text-align: right;
+	}
+	#search-form{
+		max-width: 433px;
+		margin: auto;
+		.jms-search-input{
+			display: none;
+			&.type-2{
+				display: inline-block;
+				max-width: 326px;
+				background: url("../img/icons/search-black.png") 0px no-repeat;
+				border-bottom: 1px solid #ccc;
+				border-radius: 0;
+				padding: 4px 29px;
 			}
 		}
-		.level-2{
-			margin: 3px 0 20px;
-			> li{
-				line-height: 28px;
-				> a{
-					letter-spacing: 0.3px;
-				}
-			}
+		.button-search{
+			display: none;
 		}
 	}
 }
@@ -888,7 +892,44 @@ a{
 	}
 }
 
-
+/* vermenu btn */
+.vermenu-btn{
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	background: url("../img/icons/menu.png") no-repeat;
+}
+#ver-menu{
+	position: fixed;
+	width: 100%;
+	.ver-content{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		position: relative;
+	}
+	.jms-megamenu ul li a {
+		line-height: 50px;
+	}
+	.nav > li{
+		text-align: center;
+		a{
+			text-transform: uppercase;
+		}
+	}
+	.close-vermenu{
+		border: 0;
+		display: inline-block;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 90px;
+		width: 32px;
+		height: 32px;
+		background: url("../img/icons/close-vermenu.png") no-repeat;
+	}
+}
 
 
 /* alertbox */
@@ -1830,6 +1871,164 @@ a{
 					background-color: #000;
 					border-color: #000;
 				}
+			}
+		}
+	}
+}
+
+/* home 7 */
+.home_7{
+	.col-sidebar{
+		flex: 0 0 10%;
+		max-width: 10%;
+		.dropdown-toggle::after{
+			display: none;
+		}
+		.store-locator{
+			text-transform: uppercase;
+		}
+		#_desktop_user_info{
+			margin-bottom: 16px;
+			a{
+				color: #111;
+				font-size: 13px;
+			}
+		}
+		.store-locator{
+			color: #111;
+			font-size: 13px;
+			letter-spacing: 0.3px;
+		}
+		#cart_block{
+			font-size: 13px;
+			padding: 0;
+			margin-bottom: 16px;
+			.cart-icon{
+				display: flex;
+				align-items: center;
+			}
+			.ajax_cart_quantity{
+				display: none;
+				&.type-2{
+					display: inline-block;
+					position: static;
+					font-size: 13px;
+				}
+			}
+			.fa-shopping-bag{
+				display: none;
+			}
+			.text-cart{
+				display: inline-block;
+				color: #111;
+				margin-right: 3px;
+			}
+		}
+		.addon-box{
+			text-align: right;
+			&:first-child{
+				margin-bottom: 178px;
+				margin-top: -11px;
+			}
+		}
+		.level-1{
+			> li{
+				line-height: 37px;
+				> a{
+					font-size: 20px;
+					font-weight: 600;
+					color: #111;
+					letter-spacing: -0.1px;
+				}
+			}
+		}
+		.level-2{
+			margin: 3px 0 20px;
+			> li{
+				line-height: 28px;
+				> a{
+					letter-spacing: 0.3px;
+				}
+			}
+		}
+	}
+	.col-main{
+		flex: 0 0 90%;
+		max-width: 90%;
+		.item .js-product-miniature{
+			margin-bottom: 47px;
+		}
+	}
+}
+
+/* home 8 */
+.home_8{
+	.banner-type-1{
+		margin-top: 8px;
+		.container-fluid{
+			max-width: 100%;
+			padding: 0 8px;
+			> .row{
+				margin-left: -4px;
+				margin-right: -4px;
+			}
+		}
+		.layout-column{
+			padding: 0 4px;
+		}
+		.jms-banner{
+			position: relative;
+		}
+		.banner-content{
+			position: absolute;
+			bottom: 20px;
+			background-color: rgba(255,255,255,0.9);
+			text-align: center;
+			padding: 8px 10px;
+			min-width: 300px;
+			left: 50%;
+			transform: translateX(-50%);
+			p{
+				margin-bottom: 0;
+				font-size: 19px;
+				font-weight: 600;
+				color: #000;
+				letter-spacing: 2px;
+			}
+		}
+	}
+	.banner-type-2{
+		.container-fluid{
+			max-width: 100%;
+			padding: 0;
+		}
+		.jms-banner{
+			position: relative;
+		}
+		.banner-content{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 80px;
+			.text-1{
+				font-size: 20px;
+				color: #000;
+				font-family: 'Old Standard TT', serif;
+				margin-bottom: 13px;
+				letter-spacing: 0.4px;
+			}
+			.text-2{
+				font-size: 32px;
+				color: #000;
+				font-weight: 600;
+				margin-bottom: 23px;
+				letter-spacing: 1.3px;
+			}
+			.text-3{
+				letter-spacing: 0.7px;
+			}
+			p{
+				margin-bottom: 0;
 			}
 		}
 	}

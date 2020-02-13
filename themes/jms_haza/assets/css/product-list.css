@@ -544,64 +544,104 @@
 }
 
 /***** Product Box *****/
-.productbox-1 {
-	text-align:center;
+.productbox-1 .product-action{
+	justify-content: center;
+}
+.productbox-1 .product-preview{
+	overflow: hidden;
+}
+.productbox-1 .product-info {
+	position: relative;
+	margin-top: 22px;
+}
+.productbox-1 .product-action {
+	align-items: center;
+	display: flex;
 }
 .productbox-1 .variant-links {
+	opacity: 0;
+	visibility: hidden;
+	margin: 0;
 	display: inline-block;
-	text-align: center;
+	line-height: 1;
+	position: absolute;
+	top: 30px;
+	right: 26px;
+	transition: all 400ms;
+	-webkit-transition: all 400ms;
+	-moz-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
 }
-.productbox-1 .content_price {
-	margin-bottom:0.5rem;
+.productbox-1:hover .variant-links{
+	opacity: 1;
+	visibility: visible;
+}
+.productbox-1.js-product-miniature .product-preview .product-image::before{
+	display: none;
+}
+.productbox-1.js-product-miniature .content_price{
+	margin-top: 0;
+}
+.productbox-1.js-product-miniature .addToWishlist{
+	position: static;
+	width: auto;
+	height: auto;
+}
+.productbox-1 .text-addcart,
+.productbox-1 .text-outofstock {
+		font-weight: 700;
+		font-size: 0.8125em;
+		text-transform: uppercase;
+		display: inline-block;
+}
+.productbox-1 .product-cart .ptw-icon {
+		font-size:20px;
+		margin-right:5px;
 }
 .productbox-1 .product-buttons {
-    display: inline-flex;
-    align-items: stretch;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding-left: 7px;
-    padding-right: 7px;
-    max-width: calc(100% - 20px);
-	background: #FFF;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.1);
-    transition: all .3s ease;
+	padding: 30px 0;
+	opacity: 0;
+	visibility: hidden;
+	list-style: none;
+	margin: 0px;
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background: #fbfbfb;
+	transition: all 400ms;
+	-webkit-transition: all 400ms;
+	-moz-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
 }
-.productbox-1 .wrapp-buttons {
-    visibility: hidden;
-    text-align: center;
-    transition: opacity .3s ease,visibility .3s ease,-webkit-transform .3s ease;
-    transition: opacity .3s ease,visibility .3s ease,transform .3s ease;
-    transition: opacity .3s ease,visibility .3s ease,transform .3s ease,-webkit-transform .3s ease;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+.productbox-1:hover .product-buttons{
+	opacity: 1;
+	visibility: visible;
+	bottom: 0;
 }
-.productbox-1 .wrapp-buttons {
-    position: absolute;
-    right: 0;
-    bottom: 10px;
-    left: 0;
+.productbox-1 .product-buttons li{
+	padding: 0 36px;
+	position: relative;
 }
-.productbox-1 .wrapp-buttons {
-    opacity: 0;
-    -webkit-transform: translateY(25px) translateZ(0);
-    transform: translateY(25px) translateZ(0);
+.productbox-1 .product-buttons li:not(:last-child)::after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 1px;
+	width: 1px;
+	height: 32px;
+	background: #ccc;
 }
-.productbox-1:hover .wrapp-buttons {
-    visibility: visible;
+.productbox-1 .product-buttons i {
+	font-size: 22px;
 }
-.productbox-1:hover .wrapp-buttons {
-    opacity: 1;
-    -webkit-transform: translateY(0) translateZ(0);
-    transform: translateY(0) translateZ(0);
-}
-.product-buttons .btn-icon {
-    max-width: 43px;
-    width: 100vw;
-    flex: 1 1 auto;
-	padding:5px;
-}
-.productbox-1 .btn-icon i {
-	font-size:30px;
+.productbox-1 .product-buttons i:hover{
+	color: #ff794f;
 }
 /***** Product Box 2 *****/
 .productbox-2 .product-preview{
@@ -687,21 +727,12 @@
 .productbox-2 .product-buttons i:hover{
 	color: #ff794f;
 }
-/*.productbox-2 .quick-view {
-	position: absolute;
-	bottom:10px;
-	right:10px;
-	opacity: 0;
-}
 
-.productbox-2 .quick-view i {
-	font-size:24px;
-}*/
 /***** Product Box 3 *****/
 .productbox-3 .product-button {
 	display: flex;
-	position:absolute;
-	top:calc(50% - 40px);
+	position: absolute;
+	top: calc(50% - 40px);
 	left: 50%;
 	transform: translate(-50%,-50%);
 	opacity: 0;
