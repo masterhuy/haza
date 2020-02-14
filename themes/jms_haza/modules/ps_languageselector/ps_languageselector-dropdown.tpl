@@ -24,7 +24,7 @@
 *}
 <!-- Block languages module -->
 {if count($languages) > 1}
-	<div class="btn-group languages-info">
+	<div class="btn-group languages-info type-1">
 		<a href="#" class="btn-xs text-uppercase" data-toggle="dropdown">
 			{$current_language.name_simple|truncate:3:''}
 		</a>
@@ -34,6 +34,22 @@
 					<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>
 						<a href="{url entity='language' id=$language.id_lang}" class="collapse-item text-uppercase">
 							{$language.name_simple|truncate:3:''}
+						</a>
+					</li>
+				{/foreach}
+			</ul>
+		</div>
+	</div>
+	<div class="btn-group languages-info type-2">
+		<a href="#" class="btn-xs" data-toggle="dropdown">
+			{$current_language.name_simple}
+		</a>
+		<div class="dropdown-menu">
+			<ul>
+				{foreach from=$languages key=k item=language name="languages"}
+					<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>
+						<a href="{url entity='language' id=$language.id_lang}" class="collapse-item">
+							{$language.name_simple}
 						</a>
 					</li>
 				{/foreach}

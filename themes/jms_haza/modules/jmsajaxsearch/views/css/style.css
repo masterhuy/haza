@@ -110,9 +110,6 @@
 #search-form-full .search-result-content {
   position:relative;
 }
-.search_product_list .row{
-  margin: 0;
-}
 .search_product_list .row:not(:last-child) {
     margin: 0px 0px 15px 0px;
 }

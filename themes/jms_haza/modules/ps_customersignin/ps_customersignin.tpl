@@ -26,23 +26,23 @@
 	<div class="user-info menu-collapse btn-group compact-hidden">
 		{if $logged}
 			<a href="#" class="account dropdown-toggle text-uppercase" data-toggle="dropdown">
-				{l s='Logout' d='Shop.Theme.CustomerAccount'}
+				{l s='Logout' d='Shop.Theme.Customeraccount'}
 			</a>
 			<div class="dropdown-menu">
 				<ul>
 					<li><a href="{$link->getPageLink('my-account', true)}">{$customerName}</a></li>
-					<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.CustomerAccount'}" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
+					<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.Customeraccount'}" rel="nofollow">{l s='Checkout' d='Shop.Theme.Customeraccount'} </a></li>
 					<li><a class="logout" href="{$logout_url}" rel="nofollow" >{l s='Log out' d='Shop.Theme.Actions'}</a></li>
 				</ul>
 			</div>
 		{else}
 			<a href="#" class="account dropdown-toggle text-uppercase" data-toggle="dropdown">
-				{l s='Login' d='Shop.Theme.CustomerAccount'}
+				{l s='Login' d='Shop.Theme.Customeraccount'}
 			</a>
 			<div class="dropdown-menu">
 				<ul>
-					<li><a href="{$urls.pages.register}" title="{l s='Register' d='Shop.Theme.CustomerAccount'}" rel="nofollow">{l s='Register' d='Shop.Theme.CustomerAccount'} </a></li>
-					<li><a class="login" href="{$my_account_url}" title="{l s='Login' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >{l s='Log In' d='Shop.Theme.Actions'}</a></li>
+					<li><a href="{$urls.pages.register}" title="{l s='Register' d='Shop.Theme.Customeraccount'}" rel="nofollow">{l s='Register' d='Shop.Theme.Customeraccount'} </a></li>
+					<li><a class="login" href="{$my_account_url}" title="{l s='Login' d='Shop.Theme.Customeraccount'}" rel="nofollow" >{l s='Log In' d='Shop.Theme.Actions'}</a></li>
 				</ul>
 			</div>
 		{/if}

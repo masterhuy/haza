@@ -25,7 +25,7 @@
     <div class="authentication-links">
         <div class="forgot-password">
           <a href="{$urls.pages.password}" rel="nofollow">
-            {l s='Forgot Your Password?' d='Shop.Theme.CustomerAccount'}
+            {l s='Forgot Your Password?' d='Shop.Theme.Customeraccount'}
           </a>
         </div>
         <div class="return-store">

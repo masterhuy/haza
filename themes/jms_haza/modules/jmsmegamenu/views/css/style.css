@@ -62,6 +62,7 @@
     font-size: 1.125rem;
     padding: 0px;
     position: relative;
+    color: #000;
 }
 .jms-megamenu .nav > li.open > a,
 .jms-megamenu .nav > li > a:hover {

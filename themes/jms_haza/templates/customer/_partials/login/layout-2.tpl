@@ -33,7 +33,7 @@
           </div>
           <div class="col-md-6">
               <div class="login-box login-form">
-                  <h3>{l s='Login' d='Shop.Theme.CustomerAccount'}</h3>
+                  <h3>{l s='Login' d='Shop.Theme.Customeraccount'}</h3>
                   {render file='customer/_partials/login-form.tpl' ui=$login_form}
                   {block name='display_after_login_form'}
                       {hook h='displayCustomerLoginFormAfter'}
@@ -41,7 +41,7 @@
               </div>
               <div class="login-row">
                   <div class="login-box signup-form">
-                      <h3>{l s='Sign Up' d='Shop.Theme.CustomerAccount'}</h3>
+                      <h3>{l s='Sign Up' d='Shop.Theme.Customeraccount'}</h3>
                       <div class="signup-content">
                           {$jmsSetting.login_page_signup_content nofilter}
                       </div>
