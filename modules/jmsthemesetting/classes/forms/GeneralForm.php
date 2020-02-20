@@ -762,6 +762,11 @@ class JmsGeneralForm
                                     'name' => $this->module->l('Box 3', 'GeneralForm'),
                                     'img' => 'productbox/box-3.jpg'
                                 ),
+                                array(
+                                    'id_option' => 'product-4',
+                                    'name' => $this->module->l('Box 4', 'GeneralForm'),
+                                    'img' => 'productbox/box-4.jpg'
+                                ),
                             ),
                             'id' => 'id_option',
                             'name' => 'name',

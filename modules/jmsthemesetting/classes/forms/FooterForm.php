@@ -89,11 +89,6 @@ class JmsFooterForm
                                     'id_option' => 6,
                                     'name' => $this->module->l('Layout 6', 'FooterForm'),
                                     'img' => 'footers/6.jpg'
-                                ),
-                                array(
-                                    'id_option' => 7,
-                                    'name' => $this->module->l('Layout 7', 'FooterForm'),
-                                    'img' => 'footers/7.jpg'
                                 )
                             ),
                             'id' => 'id_option',

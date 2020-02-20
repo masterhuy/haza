@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-14 10:15:35
+/* Smarty version 3.1.33, created on 2020-02-20 07:51:24
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\footers\footer-main-5.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e467347da6e04_05928822',
+  'unifunc' => 'content_5e4e3a7cede4c8_82113682',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/socials.tpl' => 1,
   ),
 ),false)) {
-function content_5e467347da6e04_05928822 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e4e3a7cede4c8_82113682 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -45,7 +45,7 @@ img/logo-2.png" />
                 </a>
                 <div class="desc">New Fashion Lookbook!</div>
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12936607035e467347da6e03_94822004', 'footer-newsletter');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_970875365e4e3a7cede4c6_02979795', 'footer-newsletter');
 ?>
 
                 <?php $_smarty_tpl->_subTemplateRender('file:_partials/socials.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
@@ -65,12 +65,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12936607035e467347
 </div>
 <?php }
 /* {block 'footer-newsletter'} */
-class Block_12936607035e467347da6e03_94822004 extends Smarty_Internal_Block
+class Block_970875365e4e3a7cede4c6_02979795 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'footer-newsletter' => 
   array (
-    0 => 'Block_12936607035e467347da6e03_94822004',
+    0 => 'Block_970875365e4e3a7cede4c6_02979795',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

@@ -75,3 +75,5 @@
         {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl'}
     {/widget_block}
 {/if}
+
+

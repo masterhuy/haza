@@ -23,10 +23,12 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 
- {if $jmsSetting.productbox_type == 'product-1'}
+{if $jmsSetting.productbox_type == 'product-1'}
     {include file='catalog/_partials/miniatures/product-1.tpl' product=$product}
- {elseif $jmsSetting.productbox_type == 'product-2'}
+{elseif $jmsSetting.productbox_type == 'product-2'}
     {include file='catalog/_partials/miniatures/product-2.tpl' product=$product}
- {elseif $jmsSetting.productbox_type == 'product-3'}
+{elseif $jmsSetting.productbox_type == 'product-3'}
     {include file='catalog/_partials/miniatures/product-3.tpl' product=$product}
- {/if}
+{elseif $jmsSetting.productbox_type == 'product-4'}
+    {include file='catalog/_partials/miniatures/product-4.tpl' product=$product}
+{/if}

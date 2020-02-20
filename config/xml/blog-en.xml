@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Discover new perspectives of page building</title>
+    <link>https://www.prestashop.com/en/blog/new-perspectives-page-building</link>
+    <description>Today an increasing number of users feel that the website’s design determines whether to trust a business or not.</description>
+     <pubDate>Mon, 17 Feb 2020 12:30:30 +0100</pubDate>
+ <dc:creator>Janos Biro</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/new-perspectives-page-building</guid>
+  </item>
+  <item>
     <title>Four ways to make returns better</title>
     <link>https://www.prestashop.com/en/blog/better-returns-shipping-ecommerce</link>
     <description>Returns happen to the best of us. They’re not fun for customers or merchants, and worst of all, they can be costly.</description>
@@ -77,14 +85,6 @@ Dear PrestaShop user,</description>
      <pubDate>Wed, 18 Dec 2019 14:42:55 +0100</pubDate>
  <dc:creator>Teapot</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/five-steps-create-customer-persona</guid>
-  </item>
-  <item>
-    <title>Online retail: a list of ten mistakes to avoid</title>
-    <link>https://www.prestashop.com/en/blog/online-retail-a-list-of-ten-mistakes-to-avoid</link>
-    <description>To convert a customer and build customer loyalty, your site should provide a flawless experience.</description>
-     <pubDate>Mon, 16 Dec 2019 12:13:47 +0100</pubDate>
- <dc:creator>PrestaShop Team</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/online-retail-a-list-of-ten-mistakes-to-avoid</guid>
   </item>
   </channel>
 </rss>

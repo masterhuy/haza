@@ -22,6 +22,5 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
- {include file='_partials/footers/footer-top-2.tpl'}
-{include file='_partials/footers/footer-main-4.tpl'}
-{include file='_partials/footers/copyright-2.tpl'}
+{include file='_partials/footers/footer-main-6.tpl'}
+{include file='_partials/footers/copyright-6.tpl'}

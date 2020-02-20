@@ -10,11 +10,13 @@ $(document).ready(function(){
         e.stopPropagation();
     });
 
-    // $('#header-sidebar .btn-close').click(function(e){
-    //     e.preventDefault();
-    //     $('body').removeClass('sidebar-right-open');
-    //     $('body').removeClass('sidebar-left-open');
-    // });
+    var promobarHeight = $("#promobar").innerHeight();
+    if(promobarHeight > 0){
+        $("body").css("margin-top", promobarHeight)
+    }
+    $("#promobar .close").click(function(){
+        $("body").css({"margin-top": "0", "transition": "all .4s"})
+    });
 });
 jQuery(window).load(function() {
     /*
