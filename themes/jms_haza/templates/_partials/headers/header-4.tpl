@@ -48,7 +48,7 @@
                             {/widget_block}
                         {/if}
                     {/if}
-                    <div class="store-link">
+                    <div class="store-link btn-group">
                         <a href="#" class="text-uppercase">
                             <i class="fal fa-map-marker-alt"></i>
                             <span>Store</span>

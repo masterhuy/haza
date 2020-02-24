@@ -22,10 +22,9 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div id="js-product-list-header">
-    {if $listing.pagination.items_shown_from == 1}
+{if $listing.pagination.items_shown_from == 1}
+    <div id="js-product-list-header">
         <div class="block-category">
-            <h1 class="h1">{$category.name}</h1>
             <div class="block-category-inner">
                 {if $category.description && $jmsSetting.shop_cat_desc}
                     <div id="category-description" class="text-muted">{$category.description nofilter}</div>
@@ -37,5 +36,5 @@
                 {/if}
             </div>
         </div>
-    {/if}
-</div>
+    </div>
+{/if}

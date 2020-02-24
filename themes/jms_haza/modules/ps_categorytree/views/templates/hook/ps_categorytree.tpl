@@ -34,7 +34,7 @@
                         </a>
                         {if $node.children}
                             <span class="navbar-toggler collapse-icons collapsed" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
-                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                <i class="fal fa-plus" aria-hidden="true"></i>
                             </span>
                         {/if}
                         {if $node.children}
@@ -46,7 +46,7 @@
                         <a class="category-sub-link" href="{$node.link}">{$node.name}
                             {if $node.children}
                                 <span class="navbar-toggler collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    <i class="fal fa-plus" aria-hidden="true"></i>
                                 </span>
                             {/if}
                         </a>

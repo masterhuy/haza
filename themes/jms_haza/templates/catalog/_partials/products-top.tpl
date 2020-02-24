@@ -25,20 +25,23 @@
 <div id="js-product-list-top" class="filters-panel">
 	<div class="row align-items-center">
 		<div class="col-4 col-md-6 col-sm-5 text-left">
-      {if $jmsSetting.shop_switchlist == 1}
-			<div class="view-mode">
-				<a class="switch-view view-grid {if $jmsSetting.shop_list == 'grid'}active{/if}" href="#"><i class="ptw-icon icon-grid-3"></i></a>
-				<a class="switch-view view-list {if $jmsSetting.shop_list == 'list'}active{/if}" href="#"><i class="ptw-icon icon-list-7"></i></a>
-			</div>
-      {/if}
+			{if $jmsSetting.shop_switchlist == 1}
+				<div class="view-mode">
+					<a class="switch-view view-grid {if $jmsSetting.shop_list == 'grid'}active{/if}"></a>
+					<a class="switch-view view-list {if $jmsSetting.shop_list == 'list'}active{/if}"></a>
+				</div>
+			{/if}
 		</div>
 		<div class="col-8 col-md-6 col-sm-7 text-right">
 			<div class="sort-by">
-        {if $jmsSetting.shop_sortby == 1}
-				{block name='sort_by'}
-					{include file='catalog/_partials/sort-orders.tpl' sort_orders=$listing.sort_orders}
+				{block name='pagination'}
+					{include file='_partials/pagination.tpl' pagination=$listing.pagination}
 				{/block}
-        {/if}
+				{if $jmsSetting.shop_sortby == 1}
+					{block name='sort_by'}
+						{include file='catalog/_partials/sort-orders.tpl' sort_orders=$listing.sort_orders}
+					{/block}
+				{/if}
 			</div>
 		</div>
 	</div>

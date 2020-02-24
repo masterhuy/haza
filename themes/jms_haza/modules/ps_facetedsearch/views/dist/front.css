@@ -66,22 +66,21 @@
 
 #search_filters .ui-slider .ui-slider-handle {
   top: -6px;
-  background: #303030;
-  border: 0;
-  width: 15px;
-  height: 15px;
+  background: #fff;
+  width: 17px;
+  height: 17px;
   border-radius: 50%;
+  border: 4px solid #ff794f;
 }
 #search_filters .ui-slider-horizontal {
-  height: 4px;
+  height: 5px;
   border-radius: 0;
   border: 0;
-  background: #ebebeb;
-  margin-top: 37px;
+  background: #ccc;
+  margin-top: 15px;
   width: calc(100% - 15px);
 }
 .ranger{
-  margin-top: 29px;
   letter-spacing: 0.3px;
 }
 .ranger::before {

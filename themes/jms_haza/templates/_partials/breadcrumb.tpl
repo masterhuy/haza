@@ -23,20 +23,21 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="breadcrumb-wrapper">
-<div class="breadcrumb">
-    <div class="container">
-        <div data-depth="{$breadcrumb.count}" class="row align-items-center{if $jmsSetting.breadcrumb_seperator} seperator-{$jmsSetting.breadcrumb_seperator}{/if}">
-            <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="{if $jmsSetting.breadcrumb_align}align-{$jmsSetting.breadcrumb_align}{/if}">
-                {foreach from=$breadcrumb.links item=path name=breadcrumb}
-                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                        <a itemprop="item" href="{$path.url}">
-                            <span itemprop="name">{$path.title}</span>
-                        </a>
-                        <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
-                    </li>
-                {/foreach}
-            </ul>
+    <div class="breadcrumb">
+        <div class="container">
+            <div data-depth="{$breadcrumb.count}" class="row align-items-center{if $jmsSetting.breadcrumb_seperator} seperator-{$jmsSetting.breadcrumb_seperator}{/if}">
+                <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="{if $jmsSetting.breadcrumb_align}align-{$jmsSetting.breadcrumb_align}{/if}">
+                    <div class="title-meta">{$page.meta.title}</div>
+                    {foreach from=$breadcrumb.links item=path name=breadcrumb}
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="{$path.url}">
+                                <span itemprop="name">{$path.title}</span>
+                            </a>
+                            <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
+                        </li>
+                    {/foreach}
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 </div>

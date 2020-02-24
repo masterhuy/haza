@@ -1198,6 +1198,7 @@ class AdminContainer extends Container
                 75 => 'jmswishlist',
                 76 => 'jmsthemesetting',
                 77 => 'jmslicense',
+                78 => 'ps_bestsellers',
             ],
             'ps_cache_dir' => 'D:\\xamppp\\htdocs\\jms_haza/var/cache/prod\\',
             'mail_themes_uri' => '/mails/themes',

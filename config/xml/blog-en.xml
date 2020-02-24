@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>The KPIs that matter for an online store</title>
+    <link>https://www.prestashop.com/en/blog/kpis-ecommerce</link>
+    <description>Data? What we think of the term &amp;amp; does it hold that much importance in your business? The answer is absolute “yes”.</description>
+     <pubDate>Thu, 20 Feb 2020 18:04:49 +0100</pubDate>
+ <dc:creator>Webkul</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/kpis-ecommerce</guid>
+  </item>
+  <item>
     <title>Discover new perspectives of page building</title>
     <link>https://www.prestashop.com/en/blog/new-perspectives-page-building</link>
     <description>Today an increasing number of users feel that the website’s design determines whether to trust a business or not.</description>
@@ -77,14 +85,6 @@ Dear PrestaShop user,</description>
      <pubDate>Tue, 07 Jan 2020 16:32:09 +0100</pubDate>
  <dc:creator>PrestaShop Team</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-year-2019-in-numbers</guid>
-  </item>
-  <item>
-    <title>Five steps to create your customer persona</title>
-    <link>https://www.prestashop.com/en/blog/five-steps-create-customer-persona</link>
-    <description>When we create a customer persona, we create a vivid impression of an imaginary member of our target demographic.</description>
-     <pubDate>Wed, 18 Dec 2019 14:42:55 +0100</pubDate>
- <dc:creator>Teapot</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/five-steps-create-customer-persona</guid>
   </item>
   </channel>
 </rss>
