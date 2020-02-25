@@ -26,7 +26,7 @@
     <div class="left-pagination">
         {block name='pagination_summary'}
         <span>
-            {l s='Showing' d='Shop.Theme.Catalog'}
+            {l s='Showing' d='Shop.Theme.Catalog'} {$pagination.items_shown_from} - {$pagination.items_shown_to} of
             {l s='%total%' d='Shop.Theme.Catalog' sprintf=['%from%' => $pagination.items_shown_from ,'%to%' => $pagination.items_shown_to, '%total%' => $pagination.total_items]}
             {l s='results' d='Shop.Theme.Catalog'}
         </span>

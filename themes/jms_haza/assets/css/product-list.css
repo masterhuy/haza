@@ -282,7 +282,7 @@
   margin-bottom: 40px;
 }
 #products-top .pagination {
-	margin: 0;
+	margin: 0 29px 0 0;
 	padding: 0;
 	border: 0;
 	width: auto;
@@ -291,6 +291,9 @@
 #products-top .pagination .left-pagination{
 	width: 100%;
 	max-width: 100%;
+	display: inline-block;
+	font-size: 13px;
+	letter-spacing: 0.1px;
 }
 #products-top .pagination .right-pagination{
 	display: none;
@@ -476,18 +479,9 @@
 .js-product-miniature .preview img {
 	width: 100%;
 }
-.products-list .product-preview {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-bottom: 30px;
-}
 .pagination {
     margin: 0;
-    padding-top: 20px;
+    padding-top: 30px;
 	padding-right:0px;
     border-top: 1px solid #ebebeb;
     justify-content: center;
@@ -497,12 +491,37 @@
 }
 .pagination ul {
 	list-style: none;
-	float:right;
+	display: flex;
+	align-items: center;
 }
 .pagination li {
-    display: inline-block;
-    float: none;
-    margin-left: 15px;
+	display: inline-flex;
+	float: none;
+	margin: 0 3.5px;
+}
+.pagination li.current a{
+	color: #fff;
+	background-color: #ff794f;
+}
+.pagination li a.next{
+	background: url("../img/icons/next-2.png") center no-repeat;
+}
+.pagination li a.previous{
+	background: url("../img/icons/prev-2.png") center no-repeat;
+}
+.pagination li a.next i,
+.pagination li a.previous i{
+	display: none;
+}
+.pagination .js-search-link {
+	font-size: 20px;
+	color: #010101;
+	font-weight: 700;
+	width: 38px;
+	height: 38px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 }
 /***** PRODUCT BOX *****/
 .js-product-miniature .product-info {
@@ -553,6 +572,9 @@
 }
 
 /***** Product Box *****/
+.productbox-1 .product-title{
+	text-align: center;
+}
 .productbox-1 .product-action{
 	justify-content: center;
 }
@@ -562,6 +584,12 @@
 .productbox-1 .product-info {
 	position: relative;
 	margin-top: 22px;
+}
+.productbox-1 .product-info .variant-links{
+	display: none;
+}
+.productbox-1 .product-info .product-buttons{
+	display: none;
 }
 .productbox-1 .product-action {
 	align-items: center;
@@ -660,6 +688,9 @@
 	position: relative;
 	margin-top: 20px;
 }
+.productbox-2 .product-info .product-buttons{
+	display: none;
+}
 .productbox-2 .product-action {
 	align-items: center;
 	display: flex;
@@ -750,7 +781,7 @@
 	justify-content: center;
 	align-items: center;
 }
-.productbox-3 .product-button {
+.productbox-3 .product-buttons {
 	display: flex;
 	position: absolute;
 	top: calc(50% - 40px);
@@ -760,11 +791,11 @@
 	transition: all 0.4s;
 	z-index: 9;
 }
-.productbox-3:hover .product-button {
+.productbox-3:hover .product-buttons {
 	top: 50%;
 	opacity: 1;
 }
-.productbox-3 .product-button a {
+.productbox-3 .product-buttons a {
 	min-width: 150px;
 	margin: 0 5px;
 	background: transparent;
@@ -776,9 +807,12 @@
 	letter-spacing: 0.3px;
 	padding: 7px 21px;
 }
-.productbox-3 .product-button a:hover{
+.productbox-3 .product-buttons a:hover{
 	background: #fff;
 	color: #000;
+}
+.productbox-3 .product-info .product-buttons{
+	display: none;
 }
 
 
@@ -865,6 +899,9 @@
 .productbox-4 .product-preview .product-image::before {
 	background: rgba(0,0,0,0.12);
 }
+.productbox-4 .product-info .product-buttons{
+	display: none;
+}
 
 /***** Product Box 5 *****/
 .productbox-5{
@@ -900,28 +937,115 @@
 .item .js-product-miniature {
 	margin-bottom: 0;
 }
-.products-list .js-product-miniature {
+
+/* product list */
+.products-list .productbox-4 .product-action .product-cart{
+	display: none;
+}
+.products-list .productbox-4 .product-info .product-buttons .product-cart{
+	position: static;
+	opacity: 1;
+	visibility: visible;
+}
+.products-list .productbox-4:hover .content_price {
+	opacity: 1;
+	visibility: visible;
+}
+.products-list .product-preview {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+.products-list .js-product-miniature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-bottom: 28px;
 	width:100%;
 }
+.products-list .js-product-miniature .product-preview .product-buttons,
+.products-list .js-product-miniature .product-preview .variant-links,
+.products-list .js-product-miniature .product-preview .addToWishlist{
+	display: none;
+}
+.products-list .product-preview .product-image::before {
+	display: none;
+}
+.products-list .js-product-miniature .product-info .variant-links {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+	position: static;
+	margin-bottom: 9px;
+	margin-top: 3px;
+}
+.products-list .js-product-miniature .product-info .product-buttons {
+	display: flex;
+	position: static;
+	opacity: 1;
+	visibility: visible;
+	background: transparent;
+	justify-content: flex-start;
+	padding-top: 27px;
+	transform: none;
+	transition: none;
+}
+.products-list .productbox-3 .product-info .product-buttons a {
+	min-width: auto;
+	position: static;
+	font-size: 22px;
+	padding: 0;
+	margin: 0;
+	width: auto;
+	height: auto;
+}
+.products-list .js-product-miniature .product-info .product-buttons .cart-button{
+	border: 1px solid #636363;
+	padding: 9px 40px;
+	text-transform: uppercase;
+	color: #000;
+	font-size: 14px;
+	letter-spacing: 0.3px;
+}
+.products-list .product-buttons li::after {
+	display: none;
+}
+.products-list .product-buttons li {
+	padding: 0;
+	margin-right: 23px;
+}
+.products-list .product-buttons li .fal{
+	color: #000;
+}
+.products-list .product-title {
+	text-align: left;
+}
+.products-list .product-action{
+	justify-content: flex-start;
+}
 .products-list .product-preview {
-    width: 31.5%;
+    width: 31.05%;
 }
 .products-list .product-info {
-	width: 68.5%;
+	width: 68.95%;
     border-top: 0 none;
-    padding: 0 30px;
+    padding: 0 28px;
     text-align: left;
-    margin-top: -3px;
+    margin-top: 0;
+}
+.products-list .variant-links{
+	margin-top: 0;
 }
 .products-list .product-short-desc {
-	display:block;
+	display: block;
+	letter-spacing: -0.09px;
+	line-height: 1.75;
+	border-top: 1px solid #ebebeb;
+	margin-top: 26px;
+	padding-top: 22px;
 }
 .variant-links{
 	margin-top: 20px;
@@ -929,7 +1053,7 @@
 }
 .variant-links a {
 	position: relative;
-	display: inline-block;
+	display: inline-block !important;
 	width:14px;
 	height:14px;
 	border-radius: 50%;

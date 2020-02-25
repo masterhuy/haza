@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-24 10:16:56
+/* Smarty version 3.1.33, created on 2020-02-25 09:35:18
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\headers\mobile-menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e53a298ce7be8_78305862',
+  'unifunc' => 'content_5e54ea56498270_61298469',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e53a298ce7be8_78305862 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e54ea56498270_61298469 (Smarty_Internal_Template $_smarty_tpl) {
 ?><a id="mobile-menu-toggle" class="open-button hidden-lg">
 		<i class="ptw-icon icon-menu-3"></i>
 </a>

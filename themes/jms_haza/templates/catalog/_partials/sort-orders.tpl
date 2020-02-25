@@ -24,7 +24,7 @@
  *}
 <div class="inlude_sort_by">
 	<div class="{if !empty($listing.rendered_facets)}{else}{/if}  products-sort-order dropdown">
-		<a class="select-title" rel="nofollow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<a class="select-title" rel="nofollow" data-toggle="dropdown">
 			<span>{if isset($listing.sort_selected)}{$listing.sort_selected}{else}{l s='Select' d='Shop.Theme.Actions'}{/if}</span>
 		</a>
 		<div class="dropdown-menu">

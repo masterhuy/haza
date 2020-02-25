@@ -29,9 +29,6 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance:textfield;
 }
-#content-wrapper {
-    overflow-x: hidden;
-}
 .form-control {
     border-radius: 0px;
     height: 46px;
