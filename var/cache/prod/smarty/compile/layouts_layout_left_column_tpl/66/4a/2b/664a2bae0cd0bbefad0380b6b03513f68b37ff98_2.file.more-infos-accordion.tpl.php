@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-25 03:14:22
+/* Smarty version 3.1.33, created on 2020-02-27 08:38:58
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\catalog\more-infos-accordion.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e54910e6f8e32_51710964',
+  'unifunc' => 'content_5e578022831993_56937407',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,19 +21,19 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/product-details.tpl' => 1,
   ),
 ),false)) {
-function content_5e54910e6f8e32_51710964 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e578022831993_56937407 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <div id="more_info_block" class="accordion">
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21337805415e54910e6d9a24_07855234', 'product_tabs');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21345804705e578022812582_98055230', 'product_tabs');
 ?>
 
 </div>
 <?php }
 /* {block 'product_description'} */
-class Block_755739645e54910e6dd8a8_52267296 extends Smarty_Internal_Block
+class Block_1956726025e578022816400_44462857 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -45,7 +45,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_description'} */
 /* {block 'product_details'} */
-class Block_7735219305e54910e6e1720_86805364 extends Smarty_Internal_Block
+class Block_4787471385e57802281a283_64794091 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -57,7 +57,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_details'} */
 /* {block 'product_attachments'} */
-class Block_7554139675e54910e6e55a1_71174583 extends Smarty_Internal_Block
+class Block_13694539305e57802281e116_91450096 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -97,24 +97,24 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block 'product_attachments'} */
 /* {block 'product_tabs'} */
-class Block_21337805415e54910e6d9a24_07855234 extends Smarty_Internal_Block
+class Block_21345804705e578022812582_98055230 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_tabs' => 
   array (
-    0 => 'Block_21337805415e54910e6d9a24_07855234',
+    0 => 'Block_21345804705e578022812582_98055230',
   ),
   'product_description' => 
   array (
-    0 => 'Block_755739645e54910e6dd8a8_52267296',
+    0 => 'Block_1956726025e578022816400_44462857',
   ),
   'product_details' => 
   array (
-    0 => 'Block_7735219305e54910e6e1720_86805364',
+    0 => 'Block_4787471385e57802281a283_64794091',
   ),
   'product_attachments' => 
   array (
-    0 => 'Block_7554139675e54910e6e55a1_71174583',
+    0 => 'Block_13694539305e57802281e116_91450096',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -132,7 +132,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
               <div id="description" class="panel-collapse collapse show">
                     <div class="panel-body">
                         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_755739645e54910e6dd8a8_52267296', 'product_description', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1956726025e578022816400_44462857', 'product_description', $this->tplIndex);
 ?>
 
                     </div>
@@ -149,7 +149,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_755739645e54910e6d
               <div id="product-details" class="panel-collapse collapse">
                   <div class="panel-body">
                     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7735219305e54910e6e1720_86805364', 'product_details', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4787471385e57802281a283_64794091', 'product_details', $this->tplIndex);
 ?>
 
                   </div>
@@ -166,7 +166,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7735219305e54910e6
               <div id="attachments" class="panel-collapse collapse">
                   <div class="panel-body">
                   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7554139675e54910e6e55a1_71174583', 'product_attachments', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13694539305e57802281e116_91450096', 'product_attachments', $this->tplIndex);
 ?>
 
                   </div>

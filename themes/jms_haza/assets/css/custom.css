@@ -2200,12 +2200,13 @@ a {
     #footer-copyright .quick-links a:not(:first-child) {
       margin-left: 35px; }
 
-.footer-1 .layout-column.newsletter {
-  min-width: 449px; }
-
-.footer-1 #footer-copyright {
-  background-color: #ebebeb;
-  padding: 16px 0; }
+.footer-1 {
+  border-top: 1px solid #ebebeb; }
+  .footer-1 .layout-column.newsletter {
+    min-width: 449px; }
+  .footer-1 #footer-copyright {
+    background-color: #ebebeb;
+    padding: 16px 0; }
 
 .footer-2 #footer-copyright {
   background-color: #ebebeb;

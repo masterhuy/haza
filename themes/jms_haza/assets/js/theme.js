@@ -2064,6 +2064,35 @@
             });
             var n = !1;
             if (jmsSetting.carousel_lazyload) var n = !0;
+            e.each(e(".owl-carousel.customs-carousel-product"), function(t, i) {
+                e(this).owlCarousel({
+                    loop: !0,
+                    margin: 28,
+                    nav: e(this).data("nav"),
+                    dots: e(this).data("dots"),
+                    autoplay: e(this).data("auto"),
+                    rewind: e(this).data("rewind"),
+                    slideBy: e(this).data("slidebypage"),
+                    lazyLoad: n,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        768: {
+                            items: 2
+                        },
+                        991: {
+                            items: 2
+                        },
+                        1199: {
+                            items: 3
+                        },
+                        1440: {
+                            items: 4
+                        }
+                    }
+                })
+            }),
             e.each(e(".owl-carousel"), function(t, i) {
                 e(this).owlCarousel({
                     loop: !0,
@@ -4580,7 +4609,7 @@
             var t = [];
             (0, r.default)(".js-qv-product-images").slick({
                 slidesToShow: 4,
-                slidesToScroll: 4,
+                slidesToScroll: 1,
                 infinite: !1,
                 dots: !1,
                 arrows: !0,
@@ -4695,7 +4724,7 @@
 
         function t() {
             var e = !1,
-                t = 4,
+                t = 5,
                 i = "ondemand",
                 o = [];
             "thumbs-left" != jmsSetting.product_content_layout && "thumbs-right" != jmsSetting.product_content_layout || (e = !0, t = 4, i = "progressive"), "thumbs-left" == jmsSetting.product_content_layout && (o = [{

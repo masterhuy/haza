@@ -57,19 +57,22 @@
                         <span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>
                         {/if}
                     </button>
-                    {if $jmsSetting.productbox_wishlist}
-                        {assign var="str_at" value=$jmsSetting.wishlist_icon|strpos:"_"}
-                        {if $str_at && $jmsSetting.wishlist_icon_thickness}
-                          {assign var="wishlist_icon" value=$jmsSetting.wishlist_icon|substr:0:($str_at)}
-                          {assign var="wishlist_icon" value=$wishlist_icon|cat:$jmsSetting.wishlist_icon_thickness}
-                        {else}
-                          {assign var="wishlist_icon" value=$jmsSetting.wishlist_icon}
-                        {/if}
-                        <a href="#" class="addToWishlist btn btn-default" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}"><i class="ptw-icon {$wishlist_icon}"></i></a>
-                    {/if}
                 </div>
                 {hook h='displayProductActions' product=$product}
             </div>
+            {if $jmsSetting.productbox_wishlist}
+                {assign var="str_at" value=$jmsSetting.wishlist_icon|strpos:"_"}
+                {if $str_at && $jmsSetting.wishlist_icon_thickness}
+                    {assign var="wishlist_icon" value=$jmsSetting.wishlist_icon|substr:0:($str_at)}
+                    {assign var="wishlist_icon" value=$wishlist_icon|cat:$jmsSetting.wishlist_icon_thickness}
+                {else}
+                    {assign var="wishlist_icon" value=$jmsSetting.wishlist_icon}
+                {/if}
+                <a href="#" class="addToWishlist" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
+                    <i class="fal fa-heart" aria-hidden="true"></i>
+                    <span>{l s='Add to wishlist'}</span>
+                </a>
+            {/if}
             <div class="clearfix"></div>
         {/block}
         {block name='product_minimal_quantity'}

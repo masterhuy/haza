@@ -1261,7 +1261,7 @@ header .row .col-auto {
   }
 }
 .zoomContainer {
-	z-index: 5000;
+	z-index: 1000;
 }
 .store-item {
   border-bottom: 1px solid #dedede;

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-25 03:13:59
+/* Smarty version 3.1.33, created on 2020-02-27 10:15:01
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\javascript.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e5490f7627b65_75277762',
+  'unifunc' => 'content_5e5796a5cba6f0_79422319',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'af4371f6bdf2f56931416c731d45966896e4a9bd' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\_partials\\javascript.tpl',
-      1 => 1580379703,
+      1 => 1582692310,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e5490f7627b65_75277762 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e5796a5cba6f0_79422319 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['javascript']->value['external'], 'js');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['js']->value) {
@@ -69,6 +69,11 @@ foreach ($_from as $_smarty_tpl->tpl_vars['var_name']->value => $_smarty_tpl->tp
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
   <?php echo '</script'; ?>
 >
+<?php }?>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+<?php echo '<script'; ?>
+ type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d4d1d554851509f"><?php echo '</script'; ?>
+> 
 <?php }
-}
 }

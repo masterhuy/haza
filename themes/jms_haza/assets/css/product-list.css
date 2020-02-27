@@ -1010,6 +1010,11 @@
 	font-size: 14px;
 	letter-spacing: 0.3px;
 }
+.products-list .js-product-miniature .product-info .product-buttons .cart-button:hover{
+	border-color: #000;
+	background: #000;
+	color: #fff;
+}
 .products-list .product-buttons li::after {
 	display: none;
 }
@@ -1019,6 +1024,14 @@
 }
 .products-list .product-buttons li .fal{
 	color: #000;
+	transition: all 400ms;
+	-webkit-transition: all 400ms;
+	-moz-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+}
+.products-list .product-buttons li .fal:hover{
+	color: #ff794f;
 }
 .products-list .product-title {
 	text-align: left;
