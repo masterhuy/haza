@@ -22,26 +22,26 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
- {block name='page_header_container'}{/block}
- {block name='page_content'}
+{block name='page_header_container'}{/block}
+{block name='page_content'}
 <div class="contact-layout-1" id="contact-wrapper">
     <div class="contact-map" id="contact-map">
         <div class="contact-box">
-          <iframe width="100%" height="500" style="border:0" src="{$jmsSetting.contact_page_map_src}" allowfullscreen=""></iframe>
+            <iframe width="100%" height="500" style="border:0" src="{$jmsSetting.contact_page_map_src}" allowfullscreen=""></iframe>
         </div>
     </div>
     <div class="row contact-row">
-          <div class="col-md-5" id="contact-info">
+        <div class="col-md-6" id="contact-info">
             <div class="contact-box">
-              {widget name="ps_contactinfo" hook='displayRightColumn'}
+                {widget name="ps_contactinfo" hook='displayRightColumn'}
             </div>
-          </div>
-          <div class="col-md-7" id="contact-form">
+            {include file='_partials/socials.tpl'}
+        </div>
+        <div class="col-md-6" id="contact-form">
             <div class="contact-box">
-              {widget name="contactform"}
+                {widget name="contactform"}
             </div>
-          </div>
+        </div>
     </div>
 </div>
 {/block}

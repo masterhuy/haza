@@ -75,7 +75,7 @@
                     {/block}
 
                     {block name="right_column"}
-                        <div id="right-column" class="col-xs-12 col-sm-12 col-md-4">
+                        <div id="right-column" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                             {if $page.page_name == 'product'}
                                 {hook h='displayRightColumnProduct'}
                             {else}

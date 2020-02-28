@@ -29,11 +29,14 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance:textfield;
 }
+.form-control:disabled{
+  background: #fff;
+}
 .form-control {
     border-radius: 0px;
     height: 46px;
     line-height: 46px;
-    border: 1px solid #eee;
+    border: 1px solid #ebebeb;
     padding: 0 15px;
 }
 .label {
@@ -1107,12 +1110,12 @@ header .row .col-auto {
     padding: 0px;
 }
 .input-group-btn .btn .buttonText {
-    line-height: 1;
-    display: inline-block;
-    vertical-align: sub;
-    text-transform: capitalize;
-    font-size:0.75rem;
-    padding:0px 5px;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: sub;
+  text-transform: capitalize;
+  font-size: 14px;
+  padding: 0;
 }
 /***** Navigation Style *****/
 .owl-nav {

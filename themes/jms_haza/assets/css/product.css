@@ -10,9 +10,8 @@
 	max-width:none;
 }
 #product .block-categories {
-    margin-bottom: 12px;
+    margin-bottom: 36px;
     padding-bottom: 0;
-    margin-top: -10px;
 }
 #product #content {
     position: relative;
@@ -191,13 +190,26 @@
     width: 100%;
 }
 .product-images .thumb-container > .thumb.selected{
-    border: 1px solid #ff794f;
+    border: 1px solid #ff794f !important;
+}
+
+.product-layout-3columns .product-cover{
+    display: none;
+}
+.product-layout-3columns .product-images .thumb-container > .thumb {
+    border: 1px solid transparent;
+}
+.product-layout-3columns .horizonal-thumbs .thumb-container {
+    margin: 0 0 10px;
 }
 .product-layout-3columns .product-quantity {
     display: inline-block;
 }
 .product-layout-3columns .horizonal-thumbs .js-qv-mask{
     position: relative;
+    margin-top: 0;
+    bottom: 0;
+    padding: 0;
 }
 .product-layout-3columns .product-quantity .customs {
     margin-bottom: 20px;
@@ -331,6 +343,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.product-variants-item input:checked ~ .radio-label{
+    border-color: #ff794f;
 }
 .product-variants .product-variants-item {
     position: relative;
@@ -468,6 +483,7 @@
     justify-content: center;
     align-items: center;
     font-weight: 400;
+    background: #fff;
 }
 .bootstrap-touchspin .input-group-btn-vertical i {
     display: none;
@@ -504,8 +520,10 @@
     display: none;
 }
 #block-reassurance {
-	width:100%;
-	clear:both;
+    width: 100%;
+    clear: both;
+    margin-top: 30px;
+    display: block;
 }
 #block-reassurance .block-reassurance-item {
 	display:flex;
@@ -533,19 +551,17 @@
 	margin-bottom:0;
 }
 .block-social ul li i {
-		font-size:14px;
-		color:#666;
+	font-size:14px;
+	color:#666;
 }
 
 .block-social .social-title {
-    color: #9e9e9e;
     margin-right:10px;
 }
 .block-social ul li {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: medium none;
     display: inline-block;
-    float: left;
     height: 40px;
     margin-right: 10px;
     min-width: 40px;
@@ -823,7 +839,7 @@
     margin-left: 5px;
 }
 .column-right {
-    border: 1px solid #f2f3f4;
+    border: 1px solid #ccc;
     padding: 20px 20px;
 }
 

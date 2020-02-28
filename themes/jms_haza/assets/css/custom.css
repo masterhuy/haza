@@ -130,10 +130,14 @@
 #_desktop_user_info .account .text {
   display: none; }
 
-a {
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s; }
+a,
+.btn,
+.btn-default {
+  transition: all 400ms;
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -ms-transition: all 400ms;
+  -o-transition: all 400ms; }
 
 /* header! */
 #header .container-fluid > .row {
@@ -1447,7 +1451,7 @@ a {
         margin-bottom: 0; }
 
 /* newsletter */
-.block-title {
+.email_subscription .block-title {
   display: none; }
 
 .newsletter-type-1 {
@@ -1599,6 +1603,53 @@ a {
 
 .jms-video .modal-body {
   padding: 25px; }
+
+/* contact page */
+#contact #contact-info .block-content {
+  border: 0;
+  padding: 0; }
+
+#contact #contact-wrapper .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 31px; }
+  #contact #contact-wrapper .social-links li {
+    margin: 0; }
+    #contact #contact-wrapper .social-links li.facebook a {
+      background-color: #3c5a99; }
+    #contact #contact-wrapper .social-links li.twitter a {
+      background-color: #309cea; }
+    #contact #contact-wrapper .social-links li.google-plus a {
+      background-color: #d9002f; }
+    #contact #contact-wrapper .social-links li.instagram a {
+      background-color: #c94836; }
+    #contact #contact-wrapper .social-links li.pinterest a {
+      background-color: #BD2129; }
+    #contact #contact-wrapper .social-links li.youtube a {
+      background-color: #F40000; }
+    #contact #contact-wrapper .social-links li.vimeo a {
+      background-color: #01A7EA; }
+    #contact #contact-wrapper .social-links li.linkedin a {
+      background-color: #0271AE; }
+  #contact #contact-wrapper .social-links a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 9px; }
+    #contact #contact-wrapper .social-links a i {
+      color: #fff;
+      font-size: 17px; }
 
 /* home 2 */
 .home_2.page-index .header-2 {

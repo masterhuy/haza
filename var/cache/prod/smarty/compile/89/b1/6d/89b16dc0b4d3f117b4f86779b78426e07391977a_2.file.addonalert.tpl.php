@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-14 04:08:34
+/* Smarty version 3.1.33, created on 2020-02-28 09:18:33
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\modules\jmspagebuilder\views\templates\hook\addonalert.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e461d42dd4a26_87435413',
+  'unifunc' => 'content_5e58dae9f04c74_88040225',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e461d42dd4a26_87435413 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e58dae9f04c74_88040225 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="addon-alertbox">
 	<div id="alert-box" class="collapse show">
 		<div class="alert alert-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['alert_type']->value, ENT_QUOTES, 'UTF-8');

@@ -26,10 +26,6 @@
 .block-categories .sub-list {
 	padding-left:15px;
 }
-.block-categories.hidden-sm-down {
-	margin-bottom: 34px;
-	display: none;
-}
 #search_filters .filter-box {
 	margin-bottom: 12px;
 	border-bottom: 1px solid #e5e5e5;
@@ -198,10 +194,13 @@
 	transform: translate(-50%, -50%);
 	left: 50%;
 }
-/**/
-.facet-label.active a{
-	color: $active !important;
+#category #footer{
+	margin-top: 8rem;
 }
+#category .block-categories{
+	display: none;
+}
+/**/
 .facet.color ul li a {
 	display: none;
 }
@@ -493,6 +492,7 @@
 	list-style: none;
 	display: flex;
 	align-items: center;
+	margin-bottom: 0;
 }
 .pagination li {
 	display: inline-flex;

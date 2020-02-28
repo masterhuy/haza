@@ -52,7 +52,7 @@
                 <div id="product_list" class="product_list {if $jmsSetting.shop_list == 'grid'}products-grid grid-{$jmsSetting.shop_grid_column}{else}products-list{/if}">
                     {if $jmsSetting.shop_grid_column == '1-2-1-2' || $jmsSetting.shop_grid_column == '1-3-1-3' || $jmsSetting.shop_grid_column == '2-1-2-1' || $jmsSetting.shop_grid_column == '3-1-3-1'}
                         {block name='product_list'}
-                            {include file='catalog/_partials/products-big.tpl' listing=$listing}
+                            {include file='catalog/_partials/products.tpl' listing=$listing}
                         {/block}
                     {else}
                         {block name='product_list'}

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-27 10:20:36
+/* Smarty version 3.1.33, created on 2020-02-28 10:28:31
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e5797f49ff161_62291181',
+  'unifunc' => 'content_5e58eb4f9d11b9_64590987',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e5797f49ff161_62291181 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e58eb4f9d11b9_64590987 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="email_subscription block">
 	<div class="title">
 		<h4 class="block-title"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Newsletter','d'=>'Modules.Emailsubscription.Shop'),$_smarty_tpl ) );?>

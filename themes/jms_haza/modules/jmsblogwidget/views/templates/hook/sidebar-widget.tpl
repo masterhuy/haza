@@ -28,7 +28,7 @@
 <aside class="blog-widget widget-categories">
 	<h3 class="widget-title"><span>{l s='Categories' d='Modules.JmsBlogwidget'}</span></h3>
 	<ul>
-	{$category_menu nofilter}
+		{$category_menu nofilter}
 	</ul>
 </aside>
 {/if}

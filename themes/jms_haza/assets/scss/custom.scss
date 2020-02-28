@@ -136,8 +136,14 @@
 #_desktop_user_info .account .text{
 	display: none;
 }
-a{
-	transition: all .4s;
+a,
+.btn, 
+.btn-default{
+	transition: all 400ms;
+	-webkit-transition: all 400ms;
+	-moz-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
 }
 
 
@@ -1613,7 +1619,7 @@ a{
 }
 
 /* newsletter */
-.block-title{
+.email_subscription .block-title{
 	display: none;
 }
 .newsletter-type-1{
@@ -1759,6 +1765,64 @@ a{
 	}
 	.modal-body{
 		padding: 25px;
+	}
+}
+
+/* contact page */
+#contact{
+	#contact-info{
+		.block-content{
+			border: 0;
+			padding: 0;
+		}
+	}
+	#contact-wrapper{
+		.social-links{
+			display: flex;
+			position: relative;
+			margin-top: 31px;
+			li{
+				margin: 0;
+				&.facebook a{
+					background-color: #3c5a99;
+				}
+				&.twitter a{
+					background-color: #309cea;
+				}
+				&.google-plus a{
+					background-color: #d9002f;
+				}
+				&.instagram a{
+					background-color: #c94836;
+				}
+				&.pinterest a{
+					background-color: #BD2129;
+				}
+				&.youtube a{
+					background-color: #F40000;
+				}
+				&.vimeo a{
+					background-color: #01A7EA;
+				}
+				&.linkedin a{
+					background-color: #0271AE;
+				}
+
+			}
+			a{
+				width: 36px;
+				height: 36px;
+				border-radius: 50%;
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				margin-right: 9px;
+				i{
+					color: #fff;
+					font-size: 17px;
+				}
+			}
+		}
 	}
 }
 

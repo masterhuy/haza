@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-03 07:10:32
+/* Smarty version 3.1.33, created on 2020-02-28 10:24:25
   from 'D:\xamppp\htdocs\jms_haza\modules\jmsblog\views\templates\admin\jmsblog_post\listposts.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e37c768217c81_48924537',
+  'unifunc' => 'content_5e58ea59a9bf81_06086299',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e37c768217c81_48924537 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e58ea59a9bf81_06086299 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="panel"><h3><i class="icon-list-ul"></i> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Posts','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
 
 	<span class="panel-heading-action">
