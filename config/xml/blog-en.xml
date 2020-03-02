@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>UX Pro tips to improve your menu and labels’ design</title>
+    <link>https://www.prestashop.com/en/blog/ux-tips-menu-design</link>
+    <description>User experience, or UX, is fundamentally about creating an experience that fits the needs of your visitors.</description>
+     <pubDate>Thu, 27 Feb 2020 18:05:28 +0100</pubDate>
+ <dc:creator>Vytaure Banyte</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/ux-tips-menu-design</guid>
+  </item>
+  <item>
     <title>The KPIs that matter for an online store</title>
     <link>https://www.prestashop.com/en/blog/kpis-ecommerce</link>
     <description>Data? What we think of the term &amp;amp; does it hold that much importance in your business? The answer is absolute “yes”.</description>
@@ -18,7 +26,7 @@
     <link>https://www.prestashop.com/en/blog/new-perspectives-page-building</link>
     <description>Today an increasing number of users feel that the website’s design determines whether to trust a business or not.</description>
      <pubDate>Mon, 17 Feb 2020 12:30:30 +0100</pubDate>
- <dc:creator>Janos Biro</dc:creator>
+ <dc:creator>Janos Biro EN</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/new-perspectives-page-building</guid>
   </item>
   <item>
@@ -77,14 +85,6 @@ Dear PrestaShop user,</description>
      <pubDate>Tue, 07 Jan 2020 18:36:49 +0100</pubDate>
  <dc:creator>PrestaShop Team</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/security-announcement-your-store-vulnerable-malware</guid>
-  </item>
-  <item>
-    <title>The PrestaShop year 2019 in numbers</title>
-    <link>https://www.prestashop.com/en/blog/prestashop-year-2019-in-numbers</link>
-    <description>2020 has just begun and this is a very special year to come for PrestaShop.</description>
-     <pubDate>Tue, 07 Jan 2020 16:32:09 +0100</pubDate>
- <dc:creator>PrestaShop Team</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-year-2019-in-numbers</guid>
   </item>
   </channel>
 </rss>

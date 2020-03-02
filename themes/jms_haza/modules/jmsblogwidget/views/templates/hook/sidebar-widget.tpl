@@ -54,6 +54,22 @@
 </div>
 {/if}
 
+{if $widget_setting.JBW_SB_SHOW_ARCHIVES}
+<aside class="blog-widget widget-archives">
+	<h3 class="widget-title"><span>{l s='Archives' d='Modules.JmsBlogwidget'}</span></h3>
+	<ul>
+	{foreach from=$archives item=archive}
+		{assign var=aparams value=['archive' => $archive.postmonth]}
+		<li>
+			<a href="{jmsblog::getPageLink('jmsblog-archive', $aparams)}">
+				{$archive.postmonth|escape:'html':'UTF-8'|date_format:"%B %Y" nofilter}
+			</a>
+		</li>
+	{/foreach}
+	</ul>
+</aside>
+{/if}
+
 {if $widget_setting.JBW_SB_SHOW_RECENT}
 <aside class="blog-widget widget-recent-post">
 	<h3 class="widget-title"><span>{l s='Recent Posts' d='Modules.JmsBlogwidget'}</span></h3>				
@@ -70,28 +86,16 @@
 						{/if}
 					</a>
 				</div>
-				<div class="left">
-					<p class="post-created">
-						{$post.created|escape:'html':'UTF-8'|date_format:"%b %e, %Y"}
-					</p>
+				<div class="content">
 					<a href="{jmsblog::getPageLink('jmsblog-post', $params) nofilter}" class="post-title">
-						{$post.title|truncate:40:'...' nofilter}
+						{$post.title|truncate:35:'...' nofilter}
 					</a>
+					<p class="post-created">
+						{$post.created|escape:'html':'UTF-8'|date_format:"%B %e, %Y"}
+					</p>
 				</div>
 			</article>
 		{/foreach}				
-</aside>
-{/if}
-
-{if $widget_setting.JBW_SB_SHOW_ARCHIVES}
-<aside class="blog-widget widget-archives">
-	<h3 class="widget-title"><span>{l s='Archives' d='Modules.JmsBlogwidget'}</span></h3>
-	<ul>
-	{foreach from=$archives item=archive}
-		{assign var=aparams value=['archive' => $archive.postmonth]}
-		<li><a href="{jmsblog::getPageLink('jmsblog-archive', $aparams)}">{$archive.postmonth nofilter}</a></li>
-	{/foreach}
-	</ul>
 </aside>
 {/if}
 
@@ -100,7 +104,7 @@
 	<h3 class="widget-title"><span>{l s='Recent Comments' d='Modules.JmsBlogwidget'}</span></h3>
 	{foreach from=$latestcomment key=k item=comment}
 		<article class="comment-item">
-			<p>{$comment.customer_name nofilter} on {$comment.comment|truncate:80:'...' nofilter}</p>
+			<p>{$comment.customer_name nofilter} on {$comment.comment|truncate:45:'...' nofilter}</p>
 		</article>
 	{/foreach}	
 </aside>

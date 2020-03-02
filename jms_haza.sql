@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th2 28, 2020 lúc 11:29 AM
+-- Thời gian đã tạo: Th3 02, 2020 lúc 11:31 AM
 -- Phiên bản máy phục vụ: 10.1.31-MariaDB
 -- Phiên bản PHP: 7.0.29
 
@@ -5836,7 +5836,7 @@ INSERT INTO `ps_condition` (`id_condition`, `id_ps_condition`, `type`, `request`
 (20, 20, 'install', '', '>=', '7', '1', 'time', '1', 1, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (21, 21, 'configuration', 'PS_LOGO', '!=', 'logo.jpg', '1', 'hook', 'actionAdminThemesControllerUpdate_optionsAfter', 1, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (22, 22, 'sql', 'SELECT COUNT(*) FROM PREFIX_theme WHERE directory != \"default\" AND directory != \"prestashop\" AND directory ! \"default-bootstrap\"', '>', '0', '0', 'hook', 'actionObjectShopUpdateAfter', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
-(23, 23, 'configuration', 'PS_LOGGED_ON_ADDONS', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:54', '2020-02-28 01:38:19'),
+(23, 23, 'configuration', 'PS_LOGGED_ON_ADDONS', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
 (24, 24, 'configuration', 'PS_MULTISHOP_FEATURE_ACTIVE', '==', '1', '', 'hook', 'actionAdminPreferencesControllerUpdate_optionsAfter', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (25, 25, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '1', '1', 'hook', 'actionObjectShopAddAfter', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (26, 26, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '4', '1', 'hook', 'actionObjectShopAddAfter', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
@@ -5846,43 +5846,43 @@ INSERT INTO `ps_condition` (`id_condition`, `id_ps_condition`, `type`, `request`
 (30, 30, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '2', '0', 'hook', 'actionObjectCarrierAddAfter', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (31, 31, 'sql', 'SELECT SUM(total_paid_tax_excl / c.conversion_rate)\r\nFROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '200', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (32, 32, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '2000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
-(33, 33, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '20000', '178', 'time', '1', 0, '2020-02-26 04:54:54', '2020-02-28 01:38:19'),
+(33, 33, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '20000', '178', 'time', '1', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
 (34, 34, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '200000', '0', 'time', '7', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (35, 35, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '2000000', '0', 'time', '7', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (36, 36, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '20000000', '0', 'time', '7', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (37, 37, 'install', '', '>=', '30', '1', 'time', '1', 1, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
-(38, 38, 'install', '', '>=', '182', '', 'time', '2', 0, '2020-02-26 04:54:54', '2020-02-28 01:38:19'),
-(39, 39, 'install', '', '>=', '365', '', 'time', '2', 0, '2020-02-26 04:54:54', '2020-02-28 01:38:19'),
-(40, 40, 'install', '', '>=', '730', '', 'time', '2', 0, '2020-02-26 04:54:54', '2020-02-28 01:38:19'),
+(38, 38, 'install', '', '>=', '182', '', 'time', '2', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
+(39, 39, 'install', '', '>=', '365', '', 'time', '2', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
+(40, 40, 'install', '', '>=', '730', '', 'time', '2', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
 (41, 41, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10', '10', 'time', '1', 1, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
-(42, 42, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100', '25', 'time', '1', 0, '2020-02-26 04:54:54', '2020-02-28 01:38:19'),
-(43, 43, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000', '25', 'time', '1', 0, '2020-02-26 04:54:54', '2020-02-28 01:38:19'),
-(44, 44, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10000', '25', 'time', '2', 0, '2020-02-26 04:54:54', '2020-02-28 01:38:19'),
-(45, 45, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100000', '21', 'time', '3', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
-(46, 46, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000000', '21', 'time', '4', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
+(42, 42, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100', '25', 'time', '1', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
+(43, 43, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000', '25', 'time', '1', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
+(44, 44, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10000', '25', 'time', '2', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
+(45, 45, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100000', '25', 'time', '3', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
+(46, 46, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000000', '25', 'time', '4', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
 (47, 47, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '2', '2', 'hook', 'actionObjectCartAddAfter', 1, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (48, 48, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10', '6', 'hook', 'actionObjectCartAddAfter', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (49, 49, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100', '6', 'hook', 'actionObjectCartAddAfter', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
-(50, 50, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '1000', '6', 'time', '1', 0, '2020-02-26 04:54:54', '2020-02-28 01:38:19'),
-(51, 51, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10000', '5', 'time', '4', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
+(50, 50, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '1000', '6', 'time', '1', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
+(51, 51, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10000', '6', 'time', '4', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
 (52, 52, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100000', '5', 'time', '8', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (53, 53, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1', '1', 'hook', 'actionObjectOrderAddAfter', 1, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (54, 54, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10', '2', 'hook', 'actionObjectOrderAddAfter', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (55, 55, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100', '2', 'hook', 'actionObjectOrderAddAfter', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
-(56, 56, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1000', '2', 'time', '2', 0, '2020-02-26 04:54:54', '2020-02-28 01:38:19'),
-(57, 57, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10000', '1', 'time', '4', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
+(56, 56, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1000', '2', 'time', '2', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
+(57, 57, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10000', '2', 'time', '4', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
 (58, 58, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100000', '1', 'time', '8', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (59, 59, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1', '1', 'hook', 'actionObjectCustomerAddAfter', 1, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (60, 60, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10', '3', 'hook', 'actionObjectCustomerAddAfter', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (61, 61, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100', '3', 'hook', 'actionObjectCustomerAddAfter', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
-(62, 62, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1000', '3', 'time', '1', 0, '2020-02-26 04:54:54', '2020-02-28 01:38:19'),
-(63, 63, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10000', '3', 'time', '2', 0, '2020-02-26 04:54:54', '2020-02-28 01:38:19'),
-(64, 64, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100000', '2', 'time', '4', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
+(62, 62, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1000', '3', 'time', '1', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
+(63, 63, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10000', '3', 'time', '2', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
+(64, 64, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100000', '3', 'time', '4', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
 (65, 65, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (66, 66, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (67, 67, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
-(68, 68, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1000', '0', 'time', '2', 0, '2020-02-26 04:54:54', '2020-02-28 01:38:19'),
-(69, 69, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10000', '0', 'time', '4', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
+(68, 68, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1000', '0', 'time', '2', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
+(69, 69, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10000', '0', 'time', '4', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
 (70, 70, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100000', '0', 'time', '8', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (71, 76, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"CA\",\r\n\"GL\",\r\n\"PM\",\r\n\"US\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (72, 79, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"UM\",\r\n\"AS\",\r\n\"AU\",\r\n\"CK\",\r\n\"FJ\",\r\n\"FM\",\r\n\"GU\",\r\n\"KI\",\r\n\"MH,\"\r\n\"MP\",\r\n\"NC\",\r\n\"NF\",\r\n\"NR\",\r\n\"NU\",\r\n\"NZ\",\r\n\"PF\",\r\n\"PG\",\r\n\"PN\",\r\n\"PW\",\r\n\"SB\",\r\n\"TK\",\r\n\"TO\",\r\n\"TV\",\r\n\"VU\",\r\n\"WF\",\r\n\"WS\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
@@ -5900,8 +5900,8 @@ INSERT INTO `ps_condition` (`id_condition`, `id_ps_condition`, `type`, `request`
 (84, 96, 'sql', 'SELECT id_image FROM PREFIX_image WHERE id_image > 26', '>', '0', '27', 'hook', 'actionObjectImageAddAfter', 1, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (85, 97, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50', '50', 'hook', 'actionObjectImageAddAfter', 1, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (86, 98, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '100', '100', 'hook', 'actionObjectImageAddAfter', 1, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
-(87, 99, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '1000', '100', 'time', '2', 0, '2020-02-26 04:54:54', '2020-02-28 01:38:19'),
-(88, 100, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '10000', '100', 'time', '4', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
+(87, 99, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '1000', '100', 'time', '2', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
+(88, 100, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '10000', '100', 'time', '4', 0, '2020-02-26 04:54:54', '2020-03-02 01:40:16'),
 (89, 101, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50000', '100', 'time', '8', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (90, 102, 'sql', 'SELECT id_cms FROM PREFIX_cms WHERE id_cms > 5', '>', '0', '0', 'hook', 'actionObjectCMSAddAfter', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
 (91, 103, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2020-02-26 04:54:54', '2020-02-26 04:54:54'),
@@ -5933,128 +5933,128 @@ INSERT INTO `ps_condition` (`id_condition`, `id_ps_condition`, `type`, `request`
 (117, 173, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '3', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (118, 174, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '4', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (119, 175, 'sql', 'SELECT count(*) FROM	 PREFIX_configuration WHERE name = \'PS_HOSTED_MODE\'', '==', '0', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
-(120, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:19'),
+(120, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:16'),
 (121, 320, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(122, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:19'),
+(122, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:16'),
 (123, 323, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
 (124, 324, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '==', '0', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
-(125, 325, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'', '>=', '1', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:19'),
-(126, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:19'),
-(127, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(128, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(129, 375, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(130, 376, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(131, 377, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(132, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(125, 325, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'', '>=', '1', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:16'),
+(126, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(127, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(128, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(129, 375, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(130, 376, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(131, 377, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(132, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (133, 399, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '499', '', 'hook', 'actionObjectProductAddAfter', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (134, 424, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%alliance3%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(135, 425, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(136, 426, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(135, 425, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(136, 426, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (137, 427, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (138, 428, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(139, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(140, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(139, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(140, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (141, 431, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (142, 434, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluepay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(143, 435, 'configuration', 'BLUEPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(144, 436, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(143, 435, 'configuration', 'BLUEPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(144, 436, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (145, 437, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (146, 438, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(147, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(148, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(147, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(148, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (149, 441, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '10000', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (150, 442, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(151, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(151, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (152, 446, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(153, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(154, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(153, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(154, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (155, 449, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (156, 450, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(157, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(158, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(157, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(158, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (159, 453, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (160, 454, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(161, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(162, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(161, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(162, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (163, 457, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (164, 458, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(165, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(166, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(165, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(166, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (167, 461, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (168, 462, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
 (169, 463, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
-(170, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(170, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (171, 465, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 365 DAY)', '>=', '500', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (172, 467, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(173, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(173, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (174, 469, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (175, 470, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (176, 471, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(177, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(177, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (178, 473, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (179, 474, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (180, 475, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(181, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(182, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(181, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(182, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (183, 478, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (184, 479, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(185, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(186, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(185, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(186, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (187, 482, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (188, 483, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(189, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(190, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(189, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(190, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (191, 486, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (192, 487, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(193, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(193, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (194, 489, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (195, 490, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (196, 491, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(197, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(198, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(197, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(198, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (199, 494, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (200, 496, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(201, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(202, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(201, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(202, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (203, 499, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (204, 500, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(205, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(206, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(205, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(206, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (207, 503, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (208, 505, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(209, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(210, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(209, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(210, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (211, 508, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (212, 509, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(213, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(214, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(213, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(214, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (215, 512, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (216, 513, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(217, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(217, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (218, 515, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (219, 516, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (220, 517, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:11'),
-(221, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(222, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(221, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(222, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (223, 520, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (224, 521, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:12'),
-(225, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(226, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(225, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(226, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (227, 524, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (228, 525, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:12'),
-(229, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
-(230, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(229, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
+(230, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (231, 528, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (232, 529, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:12'),
-(233, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(233, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (234, 531, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (235, 532, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (236, 533, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:12'),
-(237, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(237, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (238, 535, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (239, 536, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (240, 537, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-02-26 04:54:55', '2020-02-28 09:18:12'),
-(241, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-28 01:38:20'),
+(241, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-03-02 01:40:17'),
 (242, 539, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (243, 540, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55'),
 (244, 542, 'sql', 'SELECT \'{config} PS_VERSION_DB{/config}\' >= \'1.7.0.0\' AND < \'1.8.0.0\'', '==', '1', '', 'time', '1', 0, '2020-02-26 04:54:55', '2020-02-26 04:54:55');
@@ -7418,7 +7418,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (427, NULL, NULL, 'JRB_TIME_SIZE', '11', '2019-10-01 08:54:48', '2019-10-01 08:54:48'),
 (428, NULL, NULL, 'JRB_CUSTOM_CSS', NULL, '2019-10-01 08:54:48', '2019-10-01 08:54:48'),
 (429, NULL, NULL, 'JMSBLOG_INTROTEXT_LIMIT', '300', '2019-10-01 08:54:48', '2019-10-01 08:54:48'),
-(430, NULL, NULL, 'JMSBLOG_SHOW_CATEGORY', '1', '2019-10-01 08:54:48', '2019-10-01 08:54:48'),
+(430, NULL, NULL, 'JMSBLOG_SHOW_CATEGORY', '0', '2019-10-01 08:54:48', '2020-03-02 04:31:25'),
 (431, NULL, NULL, 'JMSBLOG_SHOW_VIEWS', '1', '2019-10-01 08:54:48', '2019-10-01 08:54:48'),
 (432, NULL, NULL, 'JMSBLOG_SHOW_COMMENTS', '1', '2019-10-01 08:54:48', '2019-10-01 08:54:48'),
 (433, NULL, NULL, 'JMSBLOG_SHOW_MEDIA', '1', '2019-10-01 08:54:48', '2019-10-01 08:54:48'),
@@ -8867,7 +8867,8 @@ INSERT INTO `ps_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_
 (528, 1, 1, 23, 14, 0, '2020-02-28 03:53:28', ''),
 (529, 1, 1, 23, 14, 0, '2020-02-28 04:35:01', ''),
 (530, 1, 1, 23, 14, 0, '2020-02-28 06:32:53', ''),
-(531, 1, 1, 23, 14, 2130706433, '2020-02-28 08:53:04', '');
+(531, 1, 1, 23, 14, 2130706433, '2020-02-28 08:53:04', ''),
+(532, 1, 1, 23, 15, 0, '2020-03-02 02:56:50', '');
 
 -- --------------------------------------------------------
 
@@ -10626,7 +10627,7 @@ CREATE TABLE `ps_employee` (
 --
 
 INSERT INTO `ps_employee` (`id_employee`, `id_profile`, `id_lang`, `lastname`, `firstname`, `email`, `passwd`, `last_passwd_gen`, `stats_date_from`, `stats_date_to`, `stats_compare_from`, `stats_compare_to`, `stats_compare_option`, `preselect_date_range`, `bo_color`, `bo_theme`, `bo_css`, `default_tab`, `bo_width`, `bo_menu`, `active`, `optin`, `id_last_order`, `id_last_customer_message`, `id_last_customer`, `last_connection_date`, `reset_password_token`, `reset_password_validity`) VALUES
-(1, 1, 1, 'Hai', 'Nguyen', 'admin@admin.com', '$2y$10$o6sKx08m1zsFhBG1INiHfu1dAouk8DpNZFTZfOvafrzLQHc9s.Ozq', '2019-10-01 02:19:41', '2019-09-01', '2019-10-01', '0000-00-00', '0000-00-00', 1, '', '', 'default', 'theme.css', 1, 0, 1, 1, 1, 7, 0, 4, '2020-02-28', '', '0000-00-00 00:00:00');
+(1, 1, 1, 'Hai', 'Nguyen', 'admin@admin.com', '$2y$10$o6sKx08m1zsFhBG1INiHfu1dAouk8DpNZFTZfOvafrzLQHc9s.Ozq', '2019-10-01 02:19:41', '2019-09-01', '2019-10-01', '0000-00-00', '0000-00-00', 1, '', '', 'default', 'theme.css', 1, 0, 1, 1, 1, 7, 0, 4, '2020-03-02', '', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -11864,6 +11865,7 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (57, 1, 402, 6),
 (67, 1, 14, 6),
 (69, 1, 413, 6),
+(75, 1, 12, 6),
 (77, 1, 65, 6),
 (37, 1, 49, 7),
 (69, 1, 14, 7),
@@ -12037,7 +12039,87 @@ INSERT INTO `ps_hook_module_exceptions` (`id_hook_module_exceptions`, `id_shop`,
 (367, 1, 85, 12, 'module-psgdpr-gdpr'),
 (368, 1, 85, 12, 'module-ps_checkpayment-payment'),
 (369, 1, 85, 12, 'module-ps_checkpayment-validation'),
-(370, 1, 85, 12, 'module-ps_shoppingcart-ajax');
+(370, 1, 85, 12, 'module-ps_shoppingcart-ajax'),
+(371, 1, 75, 12, 'address'),
+(372, 1, 75, 12, 'addresses'),
+(373, 1, 75, 12, 'attachment'),
+(374, 1, 75, 12, 'auth'),
+(375, 1, 75, 12, 'bestsales'),
+(376, 1, 75, 12, 'cart'),
+(377, 1, 75, 12, 'category'),
+(378, 1, 75, 12, 'changecurrency'),
+(379, 1, 75, 12, 'cms'),
+(380, 1, 75, 12, 'contact'),
+(381, 1, 75, 12, 'discount'),
+(382, 1, 75, 12, 'getfile'),
+(383, 1, 75, 12, 'guesttracking'),
+(384, 1, 75, 12, 'history'),
+(385, 1, 75, 12, 'identity'),
+(386, 1, 75, 12, 'index'),
+(387, 1, 75, 12, 'manufacturer'),
+(388, 1, 75, 12, 'myaccount'),
+(389, 1, 75, 12, 'newproducts'),
+(390, 1, 75, 12, 'order'),
+(391, 1, 75, 12, 'orderconfirmation'),
+(392, 1, 75, 12, 'orderdetail'),
+(393, 1, 75, 12, 'orderfollow'),
+(394, 1, 75, 12, 'orderreturn'),
+(395, 1, 75, 12, 'orderslip'),
+(396, 1, 75, 12, 'pagenotfound'),
+(397, 1, 75, 12, 'password'),
+(398, 1, 75, 12, 'pdfinvoice'),
+(399, 1, 75, 12, 'pdforderreturn'),
+(400, 1, 75, 12, 'pdforderslip'),
+(401, 1, 75, 12, 'pricesdrop'),
+(402, 1, 75, 12, 'product'),
+(403, 1, 75, 12, 'search'),
+(404, 1, 75, 12, 'sitemap'),
+(405, 1, 75, 12, 'statistics'),
+(406, 1, 75, 12, 'stores'),
+(407, 1, 75, 12, 'supplier'),
+(408, 1, 75, 12, 'module-ps_buybuttonlite-AdminAjaxPs_buybuttonliteController'),
+(409, 1, 75, 12, 'module-dashgoals-AdminDashgoalsController'),
+(410, 1, 75, 12, 'module-jmsblog-AdminJmsblogCategories'),
+(411, 1, 75, 12, 'module-jmsblog-AdminJmsblogComment'),
+(412, 1, 75, 12, 'module-jmsblog-AdminJmsblogDashboard'),
+(413, 1, 75, 12, 'module-jmsblog-AdminJmsblogPost'),
+(414, 1, 75, 12, 'module-jmsblog-AdminJmsblogSetting'),
+(415, 1, 75, 12, 'module-jmsmegamenu-AdminJmsmegamenuManager'),
+(416, 1, 75, 12, 'module-jmsmegamenu-AdminJmsmegamenuStyle'),
+(417, 1, 75, 12, 'module-jmspagebuilder-AdminJmspagebuilderMedia'),
+(418, 1, 75, 12, 'module-jmspagebuilder-AdminJmspagebuilderPages'),
+(419, 1, 75, 12, 'module-jmspagebuilder-AdminJmspagebuilderSetting'),
+(420, 1, 75, 12, 'module-ps_mbo-AdminPsMboModuleController'),
+(421, 1, 75, 12, 'module-ps_mbo-AdminPsMboThemeController'),
+(422, 1, 75, 12, 'module-gamification-AdminGamificationController'),
+(423, 1, 75, 12, 'module-psgdpr-AdminAjaxPsgdprController'),
+(424, 1, 75, 12, 'module-psgdpr-AdminDownloadInvoicesPsgdprController'),
+(425, 1, 75, 12, 'module-ps_faviconnotificationbo-AdminAjaxFaviconBOController'),
+(426, 1, 75, 12, 'module-jmslicense-AdminJmsLicensePackages'),
+(427, 1, 75, 12, 'module-jmsthemesetting-AdminJmsThemeSetting'),
+(428, 1, 75, 12, 'module-jmsthemesetting-AdminJmsThemeSettingLicense'),
+(429, 1, 75, 12, 'module-ps_themecusto-AdminPsThemeCustoAdvanced'),
+(430, 1, 75, 12, 'module-ps_themecusto-AdminPsThemeCustoConfiguration'),
+(431, 1, 75, 12, 'module-welcome-AdminWelcomeController'),
+(432, 1, 75, 12, 'module-ps_wirepayment-payment'),
+(433, 1, 75, 12, 'module-ps_wirepayment-validation'),
+(434, 1, 75, 12, 'module-ps_buybuttonlite-RedirectManager'),
+(435, 1, 75, 12, 'module-jmsadvsearch-search'),
+(436, 1, 75, 12, 'module-jmsflashsales-flashsales'),
+(437, 1, 75, 12, 'module-jmspagebuilder-page'),
+(438, 1, 75, 12, 'module-jmswishlist-mywishlist'),
+(439, 1, 75, 12, 'module-jmswishlist-view'),
+(440, 1, 75, 12, 'module-responsivemenu-ajax'),
+(441, 1, 75, 12, 'module-responsivemenu-ajaxssl'),
+(442, 1, 75, 12, 'module-ps_emailsubscription-subscription'),
+(443, 1, 75, 12, 'module-ps_emailsubscription-verification'),
+(444, 1, 75, 12, 'module-psgdpr-ExportDataToCsv'),
+(445, 1, 75, 12, 'module-psgdpr-ExportDataToPdf'),
+(446, 1, 75, 12, 'module-psgdpr-FrontAjaxGdpr'),
+(447, 1, 75, 12, 'module-psgdpr-gdpr'),
+(448, 1, 75, 12, 'module-ps_checkpayment-payment'),
+(449, 1, 75, 12, 'module-ps_checkpayment-validation'),
+(450, 1, 75, 12, 'module-ps_shoppingcart-ajax');
 
 -- --------------------------------------------------------
 
@@ -12774,10 +12856,13 @@ CREATE TABLE `ps_jmsblog_posts` (
 --
 
 INSERT INTO `ps_jmsblog_posts` (`post_id`, `ordering`, `active`, `category_id`, `created`, `link_video`, `modified`, `views`) VALUES
-(1, 0, 1, 1, '2019-10-01 08:54:48', '', '2019-10-01 08:54:48', 83),
+(1, 0, 1, 1, '2019-10-01 08:54:48', '', '2019-10-01 08:54:48', 174),
 (2, 0, 1, 1, '2019-10-01 08:54:48', '', '2019-10-01 08:54:48', 7),
 (3, 0, 1, 1, '2019-10-01 08:54:48', '', '2019-10-01 08:54:48', 5),
-(7, 0, 1, 0, '2020-01-16 08:30:19', '', '2020-01-16 08:30:19', 2);
+(7, 0, 1, 0, '2020-01-16 08:30:19', '', '2020-01-16 08:30:19', 2),
+(8, 0, 1, 1, '2020-03-12 04:26:00', '', '2020-03-18 09:08:00', 2),
+(9, 0, 1, 1, '2020-03-06 13:19:00', '', '2020-03-20 06:27:00', 0),
+(10, 0, 1, 1, '2020-03-02 13:23:00', '', '2020-03-11 13:44:00', 0);
 
 -- --------------------------------------------------------
 
@@ -12796,6 +12881,15 @@ CREATE TABLE `ps_jmsblog_posts_comments` (
   `time_add` datetime NOT NULL,
   `status` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `ps_jmsblog_posts_comments`
+--
+
+INSERT INTO `ps_jmsblog_posts_comments` (`comment_id`, `post_id`, `title`, `comment`, `customer_name`, `email`, `customer_site`, `time_add`, `status`) VALUES
+(1, 1, 'Autumn streetwear with vintage style', 'Donec nex volutpat ornare metus rutrum extock. Lacus ultrices mollis, sapien ut aliquam eros. Lorem\r\nipsum dolor sit amet, consectetur adipiscing elit. Fusce et vestibulum lacus.', 'MS. KAREN MORALES', 'karen@gmail.com', '', '2020-03-02 02:24:46', 1),
+(2, 1, 'Autumn streetwear with vintage style', 'Donec nex volutpat ornare metus in rutrum extock. Lacus ultrices mollis, sapien ut aliquam eros.\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et vestibulum lacus.', 'MR. MARK HICKS', 'mark@gmail.com', '', '2020-03-02 02:27:02', 1),
+(3, 1, 'Autumn streetwear with vintage style', 'Donec nex volutpat ornare metus rutrum extock. Lacus ultrices mollis, sapien ut aliquam eros. Lorem\r\nipsum dolor sit amet, consectetur adipiscing elit. Fusce et vestibulum lacus.', 'MS. HELEN MURPHY', 'helen@gmail.com', '', '2020-03-02 02:27:28', 1);
 
 -- --------------------------------------------------------
 
@@ -12822,13 +12916,22 @@ CREATE TABLE `ps_jmsblog_posts_lang` (
 --
 
 INSERT INTO `ps_jmsblog_posts_lang` (`post_id`, `id_lang`, `title`, `alias`, `introtext`, `fulltext`, `meta_desc`, `meta_key`, `key_ref`, `image`, `tags`) VALUES
-(1, 1, 'Autumn streetwear with vintage style', 'autumn-streetwear-with-vintage-style', '<p>Lorem ipsum accusamus iusto odio digniss ducimus qui blanditiis praesentium. Perspiciatis unde omnis iste natus error sit voluptatem</p>', '<div class=\"post-fulltext\">\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_haza/assets/img/blog-post/img-1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_haza/assets/img/blog-post/img-2.jpg\" /></div>\r\n</div>\r\n<p>Proin varius metus eget leo interdum fringilla vel non tellus. Phasellus id est nunc. Pellentesque congue lorem vel tristique semper. In cursus, nunc a facilisis consequat, odio lacus condimentum leo, at convallis nisl nibh semper libero. Etiam sollicitudin mi id tellus fringilla scelerisque, justo rhoncus accumsan dapibus</p>\r\n<p>Maximus mauris vitae nisi cursus, in finibus sapien finibus, in accumsan nibh posuere. Vivamus dapibus vitae diam nec tristique. Sed eleifend metus vel sollicitudin faucibus. Cras varius metus at enim consequat scelerisque. Suspen disse erosest, ultrices non lectusat, hendrerit convallis odio. Mauris consectetur nulla in scelerisque hendrerit. Aliquam ante metus, efficitur ut porta in, rhocus et arcu. Suspendisse potenti. Praesent ac consectetur nequee fermentum</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condim entum. Nullam dignissim neque odio, ac blandit sapien hendrerit loremse. Nulla acex fringilla, volutpat mauris sit amet, consequat massa. Susendisse feugiat, elit sed fringilla pellentesque, neque felis sapien pharetra nulla, sed aliquet ante nisamet nibh. Mauris purus consequat auctor libero sed molestie. Nam convallis felis varius. Aliquam sollicitudin tincidunt nunc suscipit</p>\r\n</div>', '', '', '', 'b726294d3055debdeb90c1eebdff2815.jpg', 'fashion'),
+(1, 1, 'Autumn streetwear with vintage style', 'autumn-streetwear-with-vintage-style', '<p>Lorem ipsum accusamus iusto odio digniss ducimus qui blanditiis praesentium. Perspiciatis unde omnis iste natus error sit voluptatem</p>', '<div class=\"post-fulltext\">\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_haza/assets/img/blog-post/img-1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_haza/assets/img/blog-post/img-2.jpg\" /></div>\r\n</div>\r\n<p>Proin varius metus eget leo interdum fringilla vel non tellus. Phasellus id est nunc. Pellentesque congue lorem vel tristique semper. In cursus, nunc a facilisis consequat, odio lacus condimentum leo, at convallis nisl nibh semper libero. Etiam sollicitudin mi id tellus fringilla scelerisque, justo rhoncus accumsan dapibus</p>\r\n<p>Maximus mauris vitae nisi cursus, in finibus sapien finibus, in accumsan nibh posuere. Vivamus dapibus vitae diam nec tristique. Sed eleifend metus vel sollicitudin faucibus. Cras varius metus at enim consequat scelerisque. Suspen disse erosest, ultrices non lectusat, hendrerit convallis odio. Mauris consectetur nulla in scelerisque hendrerit. Aliquam ante metus, efficitur ut porta in, rhocus et arcu. Suspendisse potenti. Praesent ac consectetur nequee fermentum</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">Aliquam aliquam tincidunt metus, imperdiet quam tristique. Orci varius natoque penatibus magnis dis parturient montes nascetur ridiculus. Nunc rhoncus eleifend vehicula scelerisque lorem ipsum vitae.</div>\r\n<div class=\"testimonial-author\">\r\n<div class=\"name\">MS. BARBARA SILVA</div>\r\n<div class=\"career\">Art Director</div>\r\n</div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condim entum. Nullam dignissim neque odio, ac blandit sapien hendrerit loremse. Nulla acex fringilla, volutpat mauris sit amet, consequat massa. Susendisse feugiat, elit sed fringilla pellentesque, neque felis sapien pharetra nulla, sed aliquet ante nisamet nibh. Mauris purus consequat auctor libero sed molestie. Nam convallis felis varius. Aliquam sollicitudin tincidunt nunc suscipit</p>\r\n</div>', '', '', '', 'b726294d3055debdeb90c1eebdff2815.jpg', 'fashion'),
 (1, 4, 'Balnarring Retreat By Branch Studio', 'balnarring-retreat-by-branch-studio', '', '', '', '', '', '', ''),
 (1, 5, 'Autumn streetwear with vintage style', 'autumn-streetwear-with-vintage-style', '', '', '', '', '', '', ''),
 (2, 1, 'Made up for youthful style of women', 'made-up-for-youthful-style-of-women', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', '17479e8db6ca6da7a8ce65afa9777852.jpg', 'fashion'),
 (2, 4, 'Balnarring Retreat By Branch Studio', 'balnarring-retreat-by-branch-studio', '', '', '', '', '', '', ''),
 (2, 5, 'Made up for youthful style of women', 'made-up-for-youthful-style-of-women', '', '', '', '', '', '', ''),
-(3, 1, 'Balnarring Retreat By Branch Studio', 'balnarring-retreat-by-branch-studio', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', '424195c502e2050f0135c937101182c2.jpg', 'fashion');
+(3, 1, 'Balnarring Retreat By Branch Studio', 'balnarring-retreat-by-branch-studio', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', '424195c502e2050f0135c937101182c2.jpg', 'fashion'),
+(8, 1, 'Elegant and gentle style', 'elegant-and-gentle-style', '<p>Lorem ipsum accusamus iusto odio digniss ducimus qui blanditiis praesentium. Perspiciatis unde omnis iste natus error sit voluptatem</p>', '<div class=\"post-fulltext\">\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_haza/assets/img/blog-post/img-1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_haza/assets/img/blog-post/img-2.jpg\" /></div>\r\n</div>\r\n<p>Proin varius metus eget leo interdum fringilla vel non tellus. Phasellus id est nunc. Pellentesque congue lorem vel tristique semper. In cursus, nunc a facilisis consequat, odio lacus condimentum leo, at convallis nisl nibh semper libero. Etiam sollicitudin mi id tellus fringilla scelerisque, justo rhoncus accumsan dapibus</p>\r\n<p>Maximus mauris vitae nisi cursus, in finibus sapien finibus, in accumsan nibh posuere. Vivamus dapibus vitae diam nec tristique. Sed eleifend metus vel sollicitudin faucibus. Cras varius metus at enim consequat scelerisque. Suspen disse erosest, ultrices non lectusat, hendrerit convallis odio. Mauris consectetur nulla in scelerisque hendrerit. Aliquam ante metus, efficitur ut porta in, rhocus et arcu. Suspendisse potenti. Praesent ac consectetur nequee fermentum</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condim entum. Nullam dignissim neque odio, ac blandit sapien hendrerit loremse. Nulla acex fringilla, volutpat mauris sit amet, consequat massa. Susendisse feugiat, elit sed fringilla pellentesque, neque felis sapien pharetra nulla, sed aliquet ante nisamet nibh. Mauris purus consequat auctor libero sed molestie. Nam convallis felis varius. Aliquam sollicitudin tincidunt nunc suscipit</p>\r\n</div>', '', '', '', '72f48d726641b7affe5cea84374c105d.jpg', ''),
+(8, 4, 'Elegant and gentle style', 'elegant-and-gentle-style', '', '', '', '', '', '', ''),
+(8, 5, 'Elegant and gentle style', 'elegant-and-gentle-style', '', '', '', '', '', '', ''),
+(9, 1, 'Winter streetwaer with jacket style', 'winter-streetwaer-with-jacket-style', '<p>Lorem ipsum accusamus iusto odio digniss ducimus qui blanditiis praesentium. Perspiciatis unde omnis iste natus error sit voluptatem</p>', '<div class=\"post-fulltext\">\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_haza/assets/img/blog-post/img-1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_haza/assets/img/blog-post/img-2.jpg\" /></div>\r\n</div>\r\n<p>Proin varius metus eget leo interdum fringilla vel non tellus. Phasellus id est nunc. Pellentesque congue lorem vel tristique semper. In cursus, nunc a facilisis consequat, odio lacus condimentum leo, at convallis nisl nibh semper libero. Etiam sollicitudin mi id tellus fringilla scelerisque, justo rhoncus accumsan dapibus</p>\r\n<p>Maximus mauris vitae nisi cursus, in finibus sapien finibus, in accumsan nibh posuere. Vivamus dapibus vitae diam nec tristique. Sed eleifend metus vel sollicitudin faucibus. Cras varius metus at enim consequat scelerisque. Suspen disse erosest, ultrices non lectusat, hendrerit convallis odio. Mauris consectetur nulla in scelerisque hendrerit. Aliquam ante metus, efficitur ut porta in, rhocus et arcu. Suspendisse potenti. Praesent ac consectetur nequee fermentum</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condim entum. Nullam dignissim neque odio, ac blandit sapien hendrerit loremse. Nulla acex fringilla, volutpat mauris sit amet, consequat massa. Susendisse feugiat, elit sed fringilla pellentesque, neque felis sapien pharetra nulla, sed aliquet ante nisamet nibh. Mauris purus consequat auctor libero sed molestie. Nam convallis felis varius. Aliquam sollicitudin tincidunt nunc suscipit</p>\r\n</div>', '', '', '', 'c6817594db43b88f41da187f065f92cc.jpg', ''),
+(9, 4, 'Winter streetwaer with jacket style', 'winter-streetwaer-with-jacket-style', '', '', '', '', '', '', ''),
+(9, 5, 'Winter streetwaer with jacket style', 'winter-streetwaer-with-jacket-style', '', '', '', '', '', '', ''),
+(10, 1, 'Make up for youthful style', 'make-up-for-youthful-style', '<p>Lorem ipsum accusamus iusto odio digniss ducimus qui blanditiis praesentium. Perspiciatis unde omnis iste natus error sit voluptatem</p>', '<div class=\"post-fulltext\">\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_haza/assets/img/blog-post/img-1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_haza/assets/img/blog-post/img-2.jpg\" /></div>\r\n</div>\r\n<p>Proin varius metus eget leo interdum fringilla vel non tellus. Phasellus id est nunc. Pellentesque congue lorem vel tristique semper. In cursus, nunc a facilisis consequat, odio lacus condimentum leo, at convallis nisl nibh semper libero. Etiam sollicitudin mi id tellus fringilla scelerisque, justo rhoncus accumsan dapibus</p>\r\n<p>Maximus mauris vitae nisi cursus, in finibus sapien finibus, in accumsan nibh posuere. Vivamus dapibus vitae diam nec tristique. Sed eleifend metus vel sollicitudin faucibus. Cras varius metus at enim consequat scelerisque. Suspen disse erosest, ultrices non lectusat, hendrerit convallis odio. Mauris consectetur nulla in scelerisque hendrerit. Aliquam ante metus, efficitur ut porta in, rhocus et arcu. Suspendisse potenti. Praesent ac consectetur nequee fermentum</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condim entum. Nullam dignissim neque odio, ac blandit sapien hendrerit loremse. Nulla acex fringilla, volutpat mauris sit amet, consequat massa. Susendisse feugiat, elit sed fringilla pellentesque, neque felis sapien pharetra nulla, sed aliquet ante nisamet nibh. Mauris purus consequat auctor libero sed molestie. Nam convallis felis varius. Aliquam sollicitudin tincidunt nunc suscipit</p>\r\n</div>', '', '', '', '04d480b0e70c1d0c055c9a436be1bd7f.jpg', ''),
+(10, 4, 'Make up for youthful style', 'make-up-for-youthful-style', '', '', '', '', '', '', ''),
+(10, 5, 'Make up for youthful style', 'make-up-for-youthful-style', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -13057,7 +13160,9 @@ CREATE TABLE `ps_jmshtml_left_lang` (
 --
 
 INSERT INTO `ps_jmshtml_left_lang` (`html_id`, `id_lang`, `html`) VALUES
-(1, 1, '<p><a href=\"#\"><img class=\"img-responsive\" src=\"themes/ptw_base/assets/img/customhtml.jpg\" alt=\"Banner HTML\" /></a></p>');
+(1, 1, '<p><a href=\"#\"><img class=\"img-responsive\" src=\"themes/jms_haza/assets/img/banner-sidebar-2.jpg\" alt=\"Banner HTML\" /></a></p>'),
+(1, 4, ''),
+(1, 5, '');
 
 -- --------------------------------------------------------
 
@@ -15906,7 +16011,8 @@ INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_typ
 (924, 1, 0, 'Back office connection from ::1', '', 0, 1, '2020-02-27 01:38:31', '2020-02-27 01:38:31'),
 (925, 1, 0, 'Back office connection from 127.0.0.1', '', 0, 1, '2020-02-27 08:34:56', '2020-02-27 08:34:56'),
 (926, 1, 0, 'Back office connection from ::1', '', 0, 1, '2020-02-28 01:38:13', '2020-02-28 01:38:13'),
-(927, 1, 0, 'Back office connection from 127.0.0.1', '', 0, 1, '2020-02-28 08:55:04', '2020-02-28 08:55:04');
+(927, 1, 0, 'Back office connection from 127.0.0.1', '', 0, 1, '2020-02-28 08:55:04', '2020-02-28 08:55:04'),
+(928, 1, 0, 'Back office connection from ::1', '', 0, 1, '2020-03-02 01:40:08', '2020-03-02 01:40:08');
 
 -- --------------------------------------------------------
 
@@ -17052,7 +17158,8 @@ INSERT INTO `ps_module_history` (`id`, `id_employee`, `id_module`, `date_add`, `
 (12, 1, 17, '2020-01-31 03:57:42', '2020-02-03 08:45:13'),
 (13, 1, 63, '2020-02-05 06:48:31', '2020-02-05 06:48:31'),
 (14, 1, 61, '2020-02-24 03:01:35', '2020-02-24 03:01:35'),
-(15, 1, 83, '2020-02-24 06:51:35', '2020-02-24 06:51:35');
+(15, 1, 83, '2020-02-24 06:51:35', '2020-02-24 06:51:35'),
+(16, 1, 75, '2020-03-02 02:35:18', '2020-03-02 02:35:18');
 
 -- --------------------------------------------------------
 
@@ -17854,7 +17961,8 @@ INSERT INTO `ps_page` (`id_page`, `id_page_type`, `id_object`) VALUES
 (11, 9, NULL),
 (12, 5, 10),
 (13, 6, 24),
-(14, 10, NULL);
+(14, 10, NULL),
+(15, 11, NULL);
 
 -- --------------------------------------------------------
 
@@ -17896,6 +18004,7 @@ INSERT INTO `ps_page_type` (`id_page_type`, `name`) VALUES
 (8, 'latest'),
 (9, 'page'),
 (1, 'pagenotfound'),
+(11, 'post'),
 (6, 'product');
 
 -- --------------------------------------------------------
@@ -27159,7 +27268,7 @@ ALTER TABLE `ps_configuration_kpi`
 -- AUTO_INCREMENT cho bảng `ps_connections`
 --
 ALTER TABLE `ps_connections`
-  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=532;
+  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=533;
 
 --
 -- AUTO_INCREMENT cho bảng `ps_connections_source`
@@ -27303,7 +27412,7 @@ ALTER TABLE `ps_hook_alias`
 -- AUTO_INCREMENT cho bảng `ps_hook_module_exceptions`
 --
 ALTER TABLE `ps_hook_module_exceptions`
-  MODIFY `id_hook_module_exceptions` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=371;
+  MODIFY `id_hook_module_exceptions` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=451;
 
 --
 -- AUTO_INCREMENT cho bảng `ps_image`
@@ -27345,19 +27454,19 @@ ALTER TABLE `ps_jmsblog_categories_lang`
 -- AUTO_INCREMENT cho bảng `ps_jmsblog_posts`
 --
 ALTER TABLE `ps_jmsblog_posts`
-  MODIFY `post_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `post_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT cho bảng `ps_jmsblog_posts_comments`
 --
 ALTER TABLE `ps_jmsblog_posts_comments`
-  MODIFY `comment_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `comment_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT cho bảng `ps_jmsblog_posts_lang`
 --
 ALTER TABLE `ps_jmsblog_posts_lang`
-  MODIFY `post_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `post_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT cho bảng `ps_jmsbrands`
@@ -27555,7 +27664,7 @@ ALTER TABLE `ps_link_block_shop`
 -- AUTO_INCREMENT cho bảng `ps_log`
 --
 ALTER TABLE `ps_log`
-  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=928;
+  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=929;
 
 --
 -- AUTO_INCREMENT cho bảng `ps_mail`
@@ -27597,7 +27706,7 @@ ALTER TABLE `ps_module`
 -- AUTO_INCREMENT cho bảng `ps_module_history`
 --
 ALTER TABLE `ps_module_history`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT cho bảng `ps_module_preference`
@@ -27687,7 +27796,7 @@ ALTER TABLE `ps_order_state`
 -- AUTO_INCREMENT cho bảng `ps_page`
 --
 ALTER TABLE `ps_page`
-  MODIFY `id_page` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_page` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT cho bảng `ps_pagenotfound`
@@ -27699,7 +27808,7 @@ ALTER TABLE `ps_pagenotfound`
 -- AUTO_INCREMENT cho bảng `ps_page_type`
 --
 ALTER TABLE `ps_page_type`
-  MODIFY `id_page_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_page_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT cho bảng `ps_product`

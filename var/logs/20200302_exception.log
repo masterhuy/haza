@@ -1,0 +1,12 @@
+*ERROR* 	v1.7.6.1	2020/03/02 - 08:08:43: Link to database cannot be established: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.6.1	2020/03/02 - 08:08:45: Link to database cannot be established: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.6.1	2020/03/02 - 08:08:46: Link to database cannot be established: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.6.1	2020/03/02 - 08:08:47: Link to database cannot be established: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.6.1	2020/03/02 - 08:08:47: Link to database cannot be established: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.6.1	2020/03/02 - 08:08:48: Link to database cannot be established: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at line 127 in file classes/db/DbPDO.php

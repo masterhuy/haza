@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-27 10:14:21
+/* Smarty version 3.1.33, created on 2020-03-02 02:44:49
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\catalog\_partials\product-cover-thumbnails.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e57967dcdd130_99953328',
+  'unifunc' => 'content_5e5c7321e52442_28046002',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -24,7 +24,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/product-cover-thumbnails-bottom.tpl' => 1,
   ),
 ),false)) {
-function content_5e57967dcdd130_99953328 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e5c7321e52442_28046002 (Smarty_Internal_Template $_smarty_tpl) {
 ?> 
  <?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['product_content_layout'] == 'thumbs-gallery') {?>
    <?php $_smarty_tpl->_subTemplateRender('file:catalog/_partials/product-cover-thumbnails-gallery.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);

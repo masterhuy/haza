@@ -109,10 +109,11 @@ class JmsBlogWidget extends Module
                 'slug' => $category['alias']
             );
             $_link = JmsBlog::getPageLink('jmsblog-category', $params);
-            $this->menu .= '<a href="'.$_link.'" data-toggle="collapse" data-target="#child">';
+            $this->menu .= '<a class="collapsed" href="'.$_link.'" data-toggle="collapse" data-target="#child">';
             $this->menu .=  $category['title'];
             if ($category['level'] == 0 && isset($this->child[$category['category_id']])) {
-                $this->menu .= '<span class="navbar-toggler"><i class="fa fa-plus"></i></span>';
+                $this->menu .= '<i class="fal fa-chevron-down"></i>';
+                $this->menu .= '<i class="fal fa-chevron-up"></i>';
             }
             $this->menu .= '</a>';
             if (isset($this->child[$category['category_id']])) {
