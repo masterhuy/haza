@@ -30,6 +30,7 @@
 }
 
 .fraction-slider .fs_obj *{
+	background: transparent;
 	display:inline-flex;
 	position:relative;
 	top:0px;

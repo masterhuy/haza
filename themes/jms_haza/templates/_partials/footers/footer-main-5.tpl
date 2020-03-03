@@ -27,11 +27,11 @@
         <div class="row">
             <div class="layout-column block-content col-left">
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Help & Support</a></li>          
+                    <li><a href="index.php?id_cms=4&controller=cms">About Us</a></li>
+                    <li><a href="index.php?id_cms=14&controller=cms">Privacy Policy</a></li>
+                    <li><a href="index.php?id_cms=7&controller=cms">Shipping</a></li>
+                    <li><a href="index.php?id_cms=13&controller=cms">Terms & Conditions</a></li>
+                    <li><a href="index.php?id_cms=8&controller=cms">Help & Support</a></li>          
                 </ul>
             </div>
             <div class="layout-column col-center">
@@ -48,11 +48,11 @@
             </div>
             <div class="layout-column block-content col-right">
                 <ul>
-                    <li><a href="#">Account</a></li>
-                    <li><a href="#">My Address</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Return Exchanges</a></li>
-                    <li><a href="#">Shopping FAQs</a></li>          
+                    <li><a href="index.php?controller=my-account">Account</a></li>
+                    <li><a href="index.php?controller=addresses">My Address</a></li>
+                    <li><a href="index.php?controller=contact">Contact Us</a></li>
+                    <li><a href="index.php?id_cms=16&controller=cms">Return Exchanges</a></li>
+                    <li><a href="index.php?id_cms=12&controller=cms">Shopping FAQs</a></li>          
                 </ul>
             </div>
         </div>

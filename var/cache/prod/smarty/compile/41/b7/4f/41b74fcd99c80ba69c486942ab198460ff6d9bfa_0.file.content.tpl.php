@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-02 07:42:23
+/* Smarty version 3.1.33, created on 2020-03-03 09:46:09
   from 'D:\xamppp\htdocs\jms_haza\admin041sahknz\themes\default\template\content.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e5cb8dff07515_99987248',
+  'unifunc' => 'content_5e5e27612c3355_28370982',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e5cb8dff07515_99987248 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e5e27612c3355_28370982 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="ajax_confirmation" class="alert alert-success hide"></div>
 <div id="ajaxBox" style="display:none"></div>
 

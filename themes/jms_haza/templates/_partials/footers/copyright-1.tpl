@@ -31,14 +31,12 @@
                         {$jmsSetting.footer_copyright_content nofilter}
                     </div>
                 {/if}
-                
                 <div class="layout-column quick-links col-6">
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Affiliates</a>
+                    <a href="index.php?id_cms=13&controller=cms">Terms of Use</a>
+                    <a href="index.php?id_cms=14&controller=cms">Privacy Policy</a>
+                    <a href="index.php?id_cms=15&controller=cms">Careers</a>
+                    <a href="index.php?id_cms=10&controller=cms">Affiliates</a>
                 </div>
-                
             </div>
         </div>
     </div>

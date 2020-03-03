@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-02 10:27:36
+/* Smarty version 3.1.33, created on 2020-03-03 03:35:48
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e5cdf98650bc4_54120505',
+  'unifunc' => 'content_5e5dd094563e99_05333921',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b36993c0d34db5ea77cd8170bf4687eca675df27' => 
     array (
       0 => 'module:jmsblogviewstemplatesfron',
-      1 => 1583144390,
+      1 => 1583201991,
       2 => 'module',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:modules/jmsblog/views/templates/front/comment_facebook.tpl' => 1,
   ),
 ),false)) {
-function content_5e5cdf98650bc4_54120505 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e5dd094563e99_05333921 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 if ($_smarty_tpl->tpl_vars['page_layout']->value == 'no') {
@@ -33,20 +33,20 @@ $_smarty_tpl->_assignInScope('layout', "layouts/layout-left-column.tpl");
 }?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10507642845e5cdf985c8026_57447929', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13682495655e5dd0944df173_93630701', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, $_smarty_tpl->tpl_vars['layout']->value);
 }
 /* {block 'page_content_top'} */
-class Block_5058479075e5cdf985c8020_04194378 extends Smarty_Internal_Block
+class Block_20462969245e5dd0944df170_47996804 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 }
 /* {/block 'page_content_top'} */
 /* {block "page_content"} */
-class Block_16428687435e5cdf985cbea7_78002810 extends Smarty_Internal_Block
+class Block_7427446465e5dd0944df175_46593901 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_haza\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
@@ -216,8 +216,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 								<?php }?>
 								<?php if ($_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_ALLOW_GUEST_COMMENT'] || (!$_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_ALLOW_GUEST_COMMENT'] && $_smarty_tpl->tpl_vars['logged']->value)) {?>
 								<div class="commentForm">
-									<div class="addon-title text-center">
-										<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Leave Your Comment','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
+									<div class="addon-title text-left">
+										<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Leave a Comment','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
 </h3>
 									</div>
 									<form id="commentForm" enctype="multipart/form-data" method="post" action="index.php?fc=module&module=jmsblog&controller=post&post_id=<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['post_id'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
@@ -244,16 +244,14 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['customer']->value['lastname'], ENT
 										</div>
 
 										<div class="form-group">
-											<textarea id="comment" placeholder="Your message" class="form-control" name="comment" rows="2" required></textarea>
+											<textarea id="comment" placeholder="Your message" class="form-control" name="comment" rows="3" required></textarea>
 										</div>
 										<div id="new_comment_form_footer">
 											<input id="item_id_comment_send" name="post_id" type="hidden" value="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['post_id'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 " />
 											<input id="item_id_comment_reply" name="post_id_comment_reply" type="hidden" value="" />
-											<p class="">
-												<button id="submitComment" class="btn-default" name="submitComment" type="submit"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Send message','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
+											<button id="submitComment" class="btn-default" name="submitComment" type="submit"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Submit','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
 </button>
-											</p>
 										</div>
 									</form>
 								</div>
@@ -273,18 +271,18 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['customer']->value['lastname'], ENT
 }
 /* {/block "page_content"} */
 /* {block 'page_content_container'} */
-class Block_568133315e5cdf985c8027_85254334 extends Smarty_Internal_Block
+class Block_12275116865e5dd0944df174_46746609 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
             <section id="content" class="page-content">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5058479075e5cdf985c8020_04194378', 'page_content_top', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20462969245e5dd0944df170_47996804', 'page_content_top', $this->tplIndex);
 ?>
 
 				<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16428687435e5cdf985cbea7_78002810', "page_content", $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7427446465e5dd0944df175_46593901', "page_content", $this->tplIndex);
 ?>
 
             </section>
@@ -293,7 +291,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16428687435e5cdf98
 }
 /* {/block 'page_content_container'} */
 /* {block 'page_footer_container'} */
-class Block_17494613705e5cdf9864cd36_74809519 extends Smarty_Internal_Block
+class Block_20420362245e5dd094563e97_29481720 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -303,28 +301,28 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'page_footer_container'} */
 /* {block 'content'} */
-class Block_10507642845e5cdf985c8026_57447929 extends Smarty_Internal_Block
+class Block_13682495655e5dd0944df173_93630701 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_10507642845e5cdf985c8026_57447929',
+    0 => 'Block_13682495655e5dd0944df173_93630701',
   ),
   'page_content_container' => 
   array (
-    0 => 'Block_568133315e5cdf985c8027_85254334',
+    0 => 'Block_12275116865e5dd0944df174_46746609',
   ),
   'page_content_top' => 
   array (
-    0 => 'Block_5058479075e5cdf985c8020_04194378',
+    0 => 'Block_20462969245e5dd0944df170_47996804',
   ),
   'page_content' => 
   array (
-    0 => 'Block_16428687435e5cdf985cbea7_78002810',
+    0 => 'Block_7427446465e5dd0944df175_46593901',
   ),
   'page_footer_container' => 
   array (
-    0 => 'Block_17494613705e5cdf9864cd36_74809519',
+    0 => 'Block_20420362245e5dd094563e97_29481720',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -332,11 +330,11 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
     <section id="main">
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_568133315e5cdf985c8027_85254334', 'page_content_container', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12275116865e5dd0944df174_46746609', 'page_content_container', $this->tplIndex);
 ?>
 
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17494613705e5cdf9864cd36_74809519', 'page_footer_container', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20420362245e5dd094563e97_29481720', 'page_footer_container', $this->tplIndex);
 ?>
 
     </section>

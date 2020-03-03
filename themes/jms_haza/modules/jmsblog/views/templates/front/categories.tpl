@@ -34,36 +34,35 @@
     <section id="main">
         {block name='page_content_container'}
             <section id="content" class="page-content">
-							{block name="page_content"}
-							{capture name=path}{l s='Categories' d='Modules.JmsBlog'}{/capture}
-              <h1 class="page-heading">{l s='Categories' d='Modules.JmsBlog'}</h1>
-							{if isset($categories) AND $categories}
-								<div class="cat-post-list more-columns row">
-										{foreach from=$categories item=category}
-											{assign var=catparams value=['category_id' => $category.category_id, 'slug' => $category.alias]}
-											<div class="item col-6">
-												{if $category.image && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
-													<div class="post-thumb">
-														<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}"><img src="{$image_baseurl|escape:'html':'UTF-8'}{$category.image|escape:'html':'UTF-8'}" alt="{$category.title|escape:'htmlall':'UTF-8'}" class="img-responsive" /></a>
-													</div>
-												{/if}
-												<div class="category-info">
-													<h4 class="category-title"><a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{$category.title|escape:'htmlall':'UTF-8'}</a></h4>
-													<div class="cat-intro">{$category.introtext nofilter}</div>
-												</div>
-                        <a class="blog-readmore" href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">
-                          {l s='Read more' d='Modules.JmsBlog'}
-                        </a>
-											</div>
-										{/foreach}
+				{block name="page_content"}
+					{capture name=path}{l s='Categories' d='Modules.JmsBlog'}{/capture}
+
+					{if isset($categories) AND $categories}
+						<div class="cat-post-list more-columns row">
+							{foreach from=$categories item=category}
+								{assign var=catparams value=['category_id' => $category.category_id, 'slug' => $category.alias]}
+								<div class="item col-6">
+									{if $category.image && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
+										<div class="post-thumb">
+											<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}"><img src="{$image_baseurl|escape:'html':'UTF-8'}{$category.image|escape:'html':'UTF-8'}" alt="{$category.title|escape:'htmlall':'UTF-8'}" class="img-responsive" /></a>
+										</div>
+									{/if}
+									<div class="category-info">
+										<h4 class="category-title"><a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{$category.title|escape:'htmlall':'UTF-8'}</a></h4>
+										<div class="cat-intro">{$category.introtext nofilter}</div>
 									</div>
-							{else}
-							{l s='Sorry, dont have any category in this section' d='Modules.JmsBlog'}
-							{/if}
-							{/block}
+									<a class="blog-readmore" href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">
+										{l s='Read more' d='Modules.JmsBlog'}
+									</a>
+								</div>
+							{/foreach}
+						</div>
+					{else}
+						{l s='Sorry, dont have any category in this section' d='Modules.JmsBlog'}
+					{/if}
+				{/block}
             </section>
         {/block}
-        {block name='page_footer_container'}
-        {/block}
+        {block name='page_footer_container'}{/block}
     </section>
 {/block}

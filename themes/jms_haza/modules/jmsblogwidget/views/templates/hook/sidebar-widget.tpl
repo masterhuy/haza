@@ -40,14 +40,13 @@
 		{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
 		<article class="item-post clearfix">
 				<a href="{jmsblog::getPageLink('jmsblog-post', $params) nofilter}" class="post-img">
-				{if $post.image}
-					<img src="{$image_baseurl nofilter}thumb_{$post.image nofilter}" class="img-responsive" />
-				{else}	
-					<img src="{$image_baseurl nofilter}no-img.jpg" class="img-responsive" />
-				{/if}
-				<p class="post-created">{$post.created|escape:'htmlall':'UTF-8'|date_format:"%B %e, %Y"}</p>
-				<h6>{$post.title nofilter}</h6>
-				
+					{if $post.image}
+						<img src="{$image_baseurl nofilter}thumb_{$post.image nofilter}" class="img-responsive" />
+					{else}	
+						<img src="{$image_baseurl nofilter}no-img.jpg" class="img-responsive" />
+					{/if}
+					<p class="post-created">{$post.created|escape:'htmlall':'UTF-8'|date_format:"%B %e, %Y"}</p>
+					<h6>{$post.title nofilter}</h6>
 				</a>
 		</article>
 	{/foreach}				
@@ -91,7 +90,7 @@
 						{$post.title|truncate:35:'...' nofilter}
 					</a>
 					<p class="post-created">
-						{$post.created|escape:'html':'UTF-8'|date_format:"%B %e, %Y"}
+						{$post.created|escape:'html':'UTF-8'|date_format:"%B %e, %Y"} 
 					</p>
 				</div>
 			</article>

@@ -108,3 +108,4 @@
 {if !$jmsblog_setting.JMSBLOG_ALLOW_GUEST_COMMENT && !$logged}
 	{l s='Please Login to comment' d='Modules.JmsBlog'}
 {/if}
+

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-02 10:27:37
+/* Smarty version 3.1.33, created on 2020-03-03 08:34:21
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\modules\jmsblogwidget\views\templates\hook\sidebar-widget.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e5cdf991a97b6_70898589',
+  'unifunc' => 'content_5e5e168db57c57_52856010',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f369b2ddee0c42332d3a52ae56a114d9ac4e0345' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\modules\\jmsblogwidget\\views\\templates\\hook\\sidebar-widget.tpl',
-      1 => 1583133082,
+      1 => 1583204034,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e5cdf991a97b6_70898589 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e5e168db57c57_52856010 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_haza\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 if ($_smarty_tpl->tpl_vars['widget_setting']->value['JBW_SB_SHOW_CATEGORYMENU']) {?>
 <aside class="blog-widget widget-categories">
@@ -45,19 +45,18 @@ foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars[
 		<article class="item-post clearfix">
 				<a href="<?php echo jmsblog::getPageLink('jmsblog-post',$_smarty_tpl->tpl_vars['params']->value);?>
 " class="post-img">
-				<?php if ($_smarty_tpl->tpl_vars['post']->value['image']) {?>
-					<img src="<?php echo $_smarty_tpl->tpl_vars['image_baseurl']->value;?>
+					<?php if ($_smarty_tpl->tpl_vars['post']->value['image']) {?>
+						<img src="<?php echo $_smarty_tpl->tpl_vars['image_baseurl']->value;?>
 thumb_<?php echo $_smarty_tpl->tpl_vars['post']->value['image'];?>
 " class="img-responsive" />
-				<?php } else { ?>	
-					<img src="<?php echo $_smarty_tpl->tpl_vars['image_baseurl']->value;?>
+					<?php } else { ?>	
+						<img src="<?php echo $_smarty_tpl->tpl_vars['image_baseurl']->value;?>
 no-img.jpg" class="img-responsive" />
-				<?php }?>
-				<p class="post-created"><?php echo htmlspecialchars(smarty_modifier_date_format(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['created'],'htmlall','UTF-8' )),"%B %e, %Y"), ENT_QUOTES, 'UTF-8');?>
+					<?php }?>
+					<p class="post-created"><?php echo htmlspecialchars(smarty_modifier_date_format(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['created'],'htmlall','UTF-8' )),"%B %e, %Y"), ENT_QUOTES, 'UTF-8');?>
 </p>
-				<h6><?php echo $_smarty_tpl->tpl_vars['post']->value['title'];?>
+					<h6><?php echo $_smarty_tpl->tpl_vars['post']->value['title'];?>
 </h6>
-				
 				</a>
 		</article>
 	<?php
@@ -126,7 +125,7 @@ no-img.jpg" class="img-responsive" />
 					</a>
 					<p class="post-created">
 						<?php echo htmlspecialchars(smarty_modifier_date_format(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['created'],'html','UTF-8' )),"%B %e, %Y"), ENT_QUOTES, 'UTF-8');?>
-
+ 
 					</p>
 				</div>
 			</article>
