@@ -5,6 +5,9 @@
 	width: 100%;
 	z-index: 9999;
 }
+.promobar.promobar-fixed .container-fluid{
+	position: relative;
+}
 .promobar.top {
 	top: 0;
 }

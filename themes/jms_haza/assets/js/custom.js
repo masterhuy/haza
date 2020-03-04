@@ -1,7 +1,12 @@
-$(document).ready(function(){
-    $(".home_2 .addon-alertbox .close").click(function(){
-        $(".home_2 .header-2 ").css("margin-top", 0)
+showAllDemo = () => {
+    $(".js-show-all-demo").click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $(".menu-item.sub-home").removeClass("show-8-demo");
     });
+}
+
+$(document).ready(function(){
     $("#header-sidebar, #sidebar-btn").on("click", function(e) {
         e.preventDefault();
     });
@@ -11,17 +16,19 @@ $(document).ready(function(){
     });
 
     var promobarHeight = $("#promobar").innerHeight();
+    console.log(promobarHeight);
     if(promobarHeight > 0){
         $("body").css("margin-top", promobarHeight)
     }
     $("#promobar .close").click(function(){
         $("body").css({"margin-top": "0", "transition": "all .4s"})
     });
+
+    showAllDemo();
+
 });
 jQuery(window).load(function() {
-    /*
-        Stop carousel
-    */
+    /* Stop carousel */
     $('.carousel').carousel('pause');
 });
 

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-03 09:50:53
+/* Smarty version 3.1.33, created on 2020-03-04 10:29:33
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\modules\jmsrecentlybought\views\templates\hook\jrb-popup.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e5e287dbab2b9_37460456',
+  'unifunc' => 'content_5e5f830d823c67_83306538',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e5e287dbab2b9_37460456 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e5f830d823c67_83306538 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_haza\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
 <style type="text/css">

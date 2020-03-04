@@ -2068,8 +2068,8 @@
                 e(this).owlCarousel({
                     loop: !0,
                     margin: 28,
-                    nav: e(this).data("nav"),
-                    dots: e(this).data("dots"),
+                    nav: false,
+                    dots: false,
                     autoplay: e(this).data("auto"),
                     rewind: e(this).data("rewind"),
                     slideBy: e(this).data("slidebypage"),

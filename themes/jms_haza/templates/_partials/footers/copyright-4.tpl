@@ -22,7 +22,6 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
 {block name='footer-copyright'}
 	<div id="footer-copyright" class="footer-copyright{if $jmsSetting.footer_copyright_class} {$jmsSetting.footer_copyright_class}{/if}">
 		<div class="container">

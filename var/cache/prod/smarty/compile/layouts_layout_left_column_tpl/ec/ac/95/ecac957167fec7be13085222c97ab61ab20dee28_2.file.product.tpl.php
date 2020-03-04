@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-03 08:35:48
+/* Smarty version 3.1.33, created on 2020-03-04 06:46:37
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\catalog\_partials\miniatures\product.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e5e16e4738ec9_96911083',
+  'unifunc' => 'content_5e5f4ecdefe710_56355158',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -24,7 +24,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product-4.tpl' => 1,
   ),
 ),false)) {
-function content_5e5e16e4738ec9_96911083 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e5f4ecdefe710_56355158 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['jmsSetting']->value['productbox_type'] == 'product-1') {?>
     <?php $_smarty_tpl->_subTemplateRender('file:catalog/_partials/miniatures/product-1.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('product'=>$_smarty_tpl->tpl_vars['product']->value), 0, false);
 } elseif ($_smarty_tpl->tpl_vars['jmsSetting']->value['productbox_type'] == 'product-2') {?>

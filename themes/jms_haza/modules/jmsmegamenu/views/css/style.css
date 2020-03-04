@@ -18,6 +18,9 @@
     margin-bottom: 16px;
     margin-top: -7px;
 }
+#hor-menu .jms-megamenu li.group > a span::after{
+    display: none;
+}
 .jms-megamenu a {
   text-decoration:none;
 }

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-30 04:05:25
+/* Smarty version 3.1.33, created on 2020-03-04 10:09:18
   from 'D:\xamppp\htdocs\jms_haza\modules\gamification\views\templates\admin\gamification\helpers\view\view_bt.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e325605c04655_09793840',
+  'unifunc' => 'content_5e5f7e4e2b89f9_41897748',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./filters_bt.tpl' => 1,
   ),
 ),false)) {
-function content_5e325605c04655_09793840 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e5f7e4e2b89f9_41897748 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
 >
     var current_level_percent_tab = <?php echo intval($_smarty_tpl->tpl_vars['current_level_percent']->value);?>

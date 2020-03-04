@@ -133,7 +133,7 @@ class __TwigTemplate_f84d57a74fd91dadb19add912c37ce126aa0102d682ea2705f6bf4627da
 
             ";
         // line 86
-        $this->loadTemplate("@PrestaShop/Admin/Improve/Design/Theme/index.html.twig", "@PrestaShop/Admin/Improve/Design/Theme/index.html.twig", 86, "271333584")->display(twig_array_merge($context, ["themeName" => $this->getAttribute(        // line 87
+        $this->loadTemplate("@PrestaShop/Admin/Improve/Design/Theme/index.html.twig", "@PrestaShop/Admin/Improve/Design/Theme/index.html.twig", 86, "917670006")->display(twig_array_merge($context, ["themeName" => $this->getAttribute(        // line 87
 ($context["currentlyUsedTheme"] ?? null), "name", []), "themeVersion" => $this->getAttribute(        // line 88
 ($context["currentlyUsedTheme"] ?? null), "get", [0 => "version"], "method"), "themeAuthor" => $this->getAttribute(        // line 89
 ($context["currentlyUsedTheme"] ?? null), "get", [0 => "author.name"], "method"), "isActive" => true]));
@@ -162,7 +162,7 @@ class __TwigTemplate_f84d57a74fd91dadb19add912c37ce126aa0102d682ea2705f6bf4627da
             foreach ($context['_seq'] as $context["_key"] => $context["theme"]) {
                 // line 105
                 echo "                ";
-                $this->loadTemplate("@PrestaShop/Admin/Improve/Design/Theme/index.html.twig", "@PrestaShop/Admin/Improve/Design/Theme/index.html.twig", 105, "488429089")->display(twig_array_merge($context, ["themeName" => $this->getAttribute(                // line 106
+                $this->loadTemplate("@PrestaShop/Admin/Improve/Design/Theme/index.html.twig", "@PrestaShop/Admin/Improve/Design/Theme/index.html.twig", 105, "1758692372")->display(twig_array_merge($context, ["themeName" => $this->getAttribute(                // line 106
 $context["theme"], "name", []), "themeVersion" => $this->getAttribute(                // line 107
 $context["theme"], "get", [0 => "version"], "method"), "themeAuthor" => $this->getAttribute(                // line 108
 $context["theme"], "get", [0 => "author.name"], "method"), "isActive" => false]));
@@ -195,7 +195,7 @@ $context["theme"], "get", [0 => "author.name"], "method"), "isActive" => false])
         echo "
             ";
         // line 140
-        $this->loadTemplate("@PrestaShop/Admin/Improve/Design/Theme/index.html.twig", "@PrestaShop/Admin/Improve/Design/Theme/index.html.twig", 140, "1825636436")->display($context);
+        $this->loadTemplate("@PrestaShop/Admin/Improve/Design/Theme/index.html.twig", "@PrestaShop/Admin/Improve/Design/Theme/index.html.twig", 140, "1238536990")->display($context);
         // line 156
         echo "
             ";
@@ -256,7 +256,7 @@ $context["theme"], "get", [0 => "author.name"], "method"), "isActive" => false])
 
 
 /* @PrestaShop/Admin/Improve/Design/Theme/index.html.twig */
-class __TwigTemplate_f84d57a74fd91dadb19add912c37ce126aa0102d682ea2705f6bf4627da473f1___271333584 extends \Twig\Template
+class __TwigTemplate_f84d57a74fd91dadb19add912c37ce126aa0102d682ea2705f6bf4627da473f1___917670006 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -338,7 +338,7 @@ class __TwigTemplate_f84d57a74fd91dadb19add912c37ce126aa0102d682ea2705f6bf4627da
 
 
 /* @PrestaShop/Admin/Improve/Design/Theme/index.html.twig */
-class __TwigTemplate_f84d57a74fd91dadb19add912c37ce126aa0102d682ea2705f6bf4627da473f1___488429089 extends \Twig\Template
+class __TwigTemplate_f84d57a74fd91dadb19add912c37ce126aa0102d682ea2705f6bf4627da473f1___1758692372 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -447,7 +447,7 @@ class __TwigTemplate_f84d57a74fd91dadb19add912c37ce126aa0102d682ea2705f6bf4627da
 
 
 /* @PrestaShop/Admin/Improve/Design/Theme/index.html.twig */
-class __TwigTemplate_f84d57a74fd91dadb19add912c37ce126aa0102d682ea2705f6bf4627da473f1___1825636436 extends \Twig\Template
+class __TwigTemplate_f84d57a74fd91dadb19add912c37ce126aa0102d682ea2705f6bf4627da473f1___1238536990 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {

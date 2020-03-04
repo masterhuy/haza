@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-03 09:46:15
+/* Smarty version 3.1.33, created on 2020-03-04 07:24:50
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\modules\jmspagebuilder\views\templates\hook\addonsliderlayer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e5e27671070f0_31205077',
+  'unifunc' => 'content_5e5f57c27f2192_03444478',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e5e27671070f0_31205077 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e5f57c27f2192_03444478 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-slider-wrapper">
 	<div class="responisve-container">
 		<div

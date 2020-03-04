@@ -23,11 +23,11 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {if $jmsSetting.product_page_layout == 'right-sidebar'}
-  {assign var='layout' value='layouts/layout-right-column.tpl'}
+    {assign var='layout' value='layouts/layout-right-column.tpl'}
 {elseif $jmsSetting.product_page_layout == 'left-sidebar'}
-  {assign var='layout' value='layouts/layout-left-column.tpl'}
+    {assign var='layout' value='layouts/layout-left-column.tpl'}
 {elseif $jmsSetting.product_page_layout == 'no-sidebar'}
-  {assign var='layout' value='layouts/layout-full-width.tpl'}
+    {assign var='layout' value='layouts/layout-full-width.tpl'}
 {/if}
 {extends file=$layout}
 {block name='head_seo' prepend}

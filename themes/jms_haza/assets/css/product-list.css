@@ -790,6 +790,9 @@
 	opacity: 0;
 	transition: all 0.4s;
 	z-index: 9;
+	width: 90%;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .productbox-3:hover .product-buttons {
 	top: 50%;
@@ -797,7 +800,7 @@
 }
 .productbox-3 .product-buttons a {
 	min-width: 150px;
-	margin: 0 5px;
+	margin: 5px;
 	background: transparent;
 	color: #fff;
 	border: 1px solid #fff;
@@ -806,6 +809,7 @@
 	font-weight: 600;
 	letter-spacing: 0.3px;
 	padding: 7px 21px;
+	opacity: 1;
 }
 .productbox-3 .product-buttons a:hover{
 	background: #fff;
@@ -989,9 +993,10 @@
 	visibility: visible;
 	background: transparent;
 	justify-content: flex-start;
-	padding-top: 27px;
+	margin-top: 38px;
 	transform: none;
 	transition: none;
+	align-items: center;
 }
 .products-list .productbox-3 .product-info .product-buttons a {
 	min-width: auto;
@@ -1020,7 +1025,7 @@
 }
 .products-list .product-buttons li {
 	padding: 0;
-	margin-right: 23px;
+	margin-right: 20px;
 }
 .products-list .product-buttons li .fal{
 	color: #000;
@@ -1029,6 +1034,10 @@
 	-moz-transition: all 400ms;
 	-ms-transition: all 400ms;
 	-o-transition: all 400ms;
+}
+.products-list .product-buttons li .fa-external-link-square-alt{
+	position: relative;
+	top: 1px;
 }
 .products-list .product-buttons li .fal:hover{
 	color: #ff794f;

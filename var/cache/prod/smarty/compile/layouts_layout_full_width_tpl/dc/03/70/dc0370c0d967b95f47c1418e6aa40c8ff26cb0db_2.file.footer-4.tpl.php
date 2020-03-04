@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-03 09:41:18
+/* Smarty version 3.1.33, created on 2020-03-04 02:04:21
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\footers\footer-4.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e5e263e786857_11379418',
+  'unifunc' => 'content_5e5f0ca5badcb2_75488656',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/footers/copyright-4.tpl' => 1,
   ),
 ),false)) {
-function content_5e5e263e786857_11379418 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e5f0ca5badcb2_75488656 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:_partials/footers/footer-main-4.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender('file:_partials/footers/copyright-4.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 }

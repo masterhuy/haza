@@ -22,12 +22,19 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div id="footer-top" class="footer-top{if $jmsSetting.footer_top_class} {$jmsSetting.footer_top_class}{/if}">
+<div id="footer-top" class="footer-top-1 {if $jmsSetting.footer_top_class} {$jmsSetting.footer_top_class}{/if}">
     <div class="container">
         <div class="row align-items-center">
-          <div class="layout-column text-center">
-              {include file='_partials/socials.tpl'}
-          </div>
+            {if isset($jmsSetting.footer_copyright_content) && $jmsSetting.footer_copyright_content}
+                <div class="layout-column col-6 socials">
+                    {include file='_partials/socials.tpl'}
+                </div>
+            {/if}
+            {if isset($jmsSetting.footer_payment_image) && $jmsSetting.footer_payment_image}
+                <div class="layout-column col-6 payment-img">
+                    <img src="{$jmsSetting.footer_payment_image}" class="img-fluid" alt="{l s='Payments' d='Shop.jmstheme'}"/>
+                </div>
+            {/if}
         </div>
     </div>
 </div>

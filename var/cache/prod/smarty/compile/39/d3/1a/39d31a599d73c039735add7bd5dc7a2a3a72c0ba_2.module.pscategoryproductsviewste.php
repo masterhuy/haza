@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-02 02:44:50
+/* Smarty version 3.1.33, created on 2020-03-04 10:29:33
   from 'module:pscategoryproductsviewste' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e5c73222b9851_15965080',
+  'unifunc' => 'content_5e5f830d541740_45529567',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5e5c73222b9851_15965080 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e5f830d541740_45529567 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="same-category">
     <div class="addon-title">
         <h3>
