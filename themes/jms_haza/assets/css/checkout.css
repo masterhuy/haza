@@ -150,6 +150,7 @@
 }
 #checkout section#content #cart-summary-product-list .media-list .media-body .product-quantity {
 	display: inline-block;
+	margin-bottom: 0;
 }
 #checkout section#content #cart-summary-product-list .media-list .media {
 	margin-bottom:15px;
@@ -157,6 +158,10 @@
 
 #checkout #conditions-to-approve ul li{
 	display:flex;
+}
+#js-checkout-summary {
+	border: 0;
+	border-bottom: 1px solid #ebebeb;
 }
 .custom-checkbox input[type=checkbox]+span .checkbox-checked {
     display: none;
@@ -192,7 +197,6 @@ body#checkout section.checkout-step .step-title {
 	margin: 0;
 	padding: 1rem;
 	color: #000;
-	font-size:1.2rem;
 }
 body#checkout section.checkout-step h2 {
 	font-size:1.1rem;
@@ -282,6 +286,9 @@ body#checkout section.checkout-step.-current .content .form-control-select {
 	padding-right: 2rem;
 	width:100%;
 }
+body#checkout .content #modal .modal-content{
+	padding: 30px;
+}
 #order-confirmation .mail-sent-info {
     padding: 1rem;
     background: hsla(0,0%,80%,.15);
@@ -310,14 +317,26 @@ body#checkout section.checkout-step.-current .content .form-control-select {
     margin: .125rem;
 }
 .order-confirmation-table .order-line {
-	margin-bottom:0.5rem;
+	margin-bottom: 15px;
 }
 .order-confirmation-table .order-line .image img {
 		width: 100%;
+}
+.order-confirmation-table table{
+	line-height: 1.85;
+}
+#content-hook-order-confirmation-footer {
+	margin-top: 8rem;
+}
+#order-details ul{
+	line-height: 1.85;
 }
 #order-items table {
     width: 100%;
 }
 #order-items table tr td:last-child {
     text-align: right;
+}
+#delivery {
+	margin-bottom: 15px;
 }

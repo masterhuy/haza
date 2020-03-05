@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Social selling: what&amp;#039;s behind the latest buzz word?</title>
+    <link>https://www.prestashop.com/en/blog/social-selling-2020</link>
+    <description>I bet you’ve heard of social selling before, but you might not be completely sure what the term implies?</description>
+     <pubDate>Wed, 04 Mar 2020 17:56:26 +0100</pubDate>
+ <dc:creator>bulldesign</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/social-selling-2020</guid>
+  </item>
+  <item>
     <title>UX Pro tips to improve your menu and labels’ design</title>
     <link>https://www.prestashop.com/en/blog/ux-tips-menu-design</link>
     <description>User experience, or UX, is fundamentally about creating an experience that fits the needs of your visitors.</description>
@@ -76,15 +84,6 @@
      <pubDate>Thu, 09 Jan 2020 14:12:31 +0100</pubDate>
  <dc:creator>bulldesign</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/five-tips-for-setting-up-effective-content-strategy</guid>
-  </item>
-  <item>
-    <title>Security announcement: your store may be vulnerable to malware. Here is what you need to do</title>
-    <link>https://www.prestashop.com/en/security-announcement-your-store-vulnerable-malware</link>
-    <description>updated on 09/01/2020, 10 h 20
-Dear PrestaShop user,</description>
-     <pubDate>Tue, 07 Jan 2020 18:36:49 +0100</pubDate>
- <dc:creator>PrestaShop Team</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/security-announcement-your-store-vulnerable-malware</guid>
   </item>
   </channel>
 </rss>

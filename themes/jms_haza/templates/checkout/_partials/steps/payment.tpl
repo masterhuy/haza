@@ -107,7 +107,7 @@
                         value = "1"
                         class = "ps-shown-by-js"
                 >
-                <span><i class="fa fa-check rtl-no-flip checkbox-checked"></i></span>
+                <span><i class="fal fa-check rtl-no-flip checkbox-checked"></i></span>
               </span>
             </div>
             <div class="condition-label">

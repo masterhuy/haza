@@ -1,6 +1,6 @@
 {foreach $linkBlocks as $linkBlock}
     <div class="layout-column wrapper block">
-      <h3 class="h3 block-title">{$linkBlock.title}<i class="fa fa-plus"></i></h3>
+      <h3 class="h3 block-title">{$linkBlock.title}<i class="fal fa-plus"></i></h3>
       <div class="block-content">
         <ul>
           {foreach $linkBlock.links as $link}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-04 10:29:33
+/* Smarty version 3.1.33, created on 2020-03-05 08:55:15
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\modules\jmsrecentlybought\views\templates\hook\jrb-popup.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e5f830d823c67_83306538',
+  'unifunc' => 'content_5e60be73aeb800_59386432',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5257b2749e90a755679b0ea48b798f5e92bd8eb9' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\modules\\jmsrecentlybought\\views\\templates\\hook\\jrb-popup.tpl',
-      1 => 1576744826,
+      1 => 1583390714,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e5f830d823c67_83306538 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e60be73aeb800_59386432 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_haza\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
 <style type="text/css">
@@ -64,7 +64,7 @@ px !important;
     <div class="woorebought-content"></div>
     <?php if ($_smarty_tpl->tpl_vars['setting']->value['JRB_CLOSE_ICON']) {?>
         <span id="popup-close">
-            <i class="fa fa-remove"></i>
+            <i class="ptw-icon icon-closed_light"></i>
         </span>
     <?php }?>
 </div>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-04 10:29:33
+/* Smarty version 3.1.33, created on 2020-03-05 04:19:08
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\catalog\_partials\product-cover.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e5f830d126a70_13222929',
+  'unifunc' => 'content_5e607dbcc73586_51183489',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e5f830d126a70_13222929 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e607dbcc73586_51183489 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div class="product-cover">
     <?php if (count($_smarty_tpl->tpl_vars['product']->value['flags']) > 0) {?>
     <ul class="product-flags">

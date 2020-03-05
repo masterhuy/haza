@@ -41,7 +41,7 @@
 </div>
 <div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info type-2">
    	<a href="#" class="title btn-xs dropdown-toggle" data-toggle="dropdown">
-		{$current_currency.iso_code} <i class="fa fa-angle-down" aria-hidden="true"></i>
+		{$current_currency.iso_code} <i class="fal fa-angle-down" aria-hidden="true"></i>
 	</a>
 	<div class="dropdown-menu">
 		<ul>

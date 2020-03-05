@@ -32,9 +32,9 @@
       <div class="cart-summary-products">
 
         <div>{$cart.summary_string}
-          <a href="#" data-toggle="collapse" data-target="#cart-summary-product-list" class="text-small pull-right">
-            {l s='show details' d='Shop.Theme.Actions'}
-            <i class="fa fa-angle-down"></i>
+          <a href="#" data-toggle="collapse" data-target="#cart-summary-product-list" class="float-right">
+            {l s='Show details' d='Shop.Theme.Actions'}
+            <i class="fal fa-angle-down"></i>
           </a>
         </div>
 

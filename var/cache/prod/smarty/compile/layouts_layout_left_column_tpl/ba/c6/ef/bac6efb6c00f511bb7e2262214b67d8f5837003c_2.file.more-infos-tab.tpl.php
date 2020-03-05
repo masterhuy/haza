@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-04 10:29:33
+/* Smarty version 3.1.33, created on 2020-03-05 04:19:08
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\catalog\more-infos-tab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e5f830d291f43_91751401',
+  'unifunc' => 'content_5e607dbcd36a87_01343444',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,20 +21,20 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/product-details.tpl' => 1,
   ),
 ),false)) {
-function content_5e5f830d291f43_91751401 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e607dbcd36a87_01343444 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <div id="more_info_block" class="tabs tab-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['product_page_tab_align'], ENT_QUOTES, 'UTF-8');?>
 ">
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6034440025e5f830d266fc3_06099790', 'product_tabs');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10888773795e607dbcd36a84_24912090', 'product_tabs');
 ?>
 
 </div>
 <?php }
 /* {block 'product_description'} */
-class Block_18427285055e5f830d266fc2_39617212 extends Smarty_Internal_Block
+class Block_7018803195e607dbcd36a85_94123637 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -46,7 +46,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_description'} */
 /* {block 'product_details'} */
-class Block_4168731005e5f830d266fc6_98242410 extends Smarty_Internal_Block
+class Block_313673205e607dbcd36a85_09662073 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -58,20 +58,20 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_details'} */
 /* {block 'product_tabs'} */
-class Block_6034440025e5f830d266fc3_06099790 extends Smarty_Internal_Block
+class Block_10888773795e607dbcd36a84_24912090 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_tabs' => 
   array (
-    0 => 'Block_6034440025e5f830d266fc3_06099790',
+    0 => 'Block_10888773795e607dbcd36a84_24912090',
   ),
   'product_description' => 
   array (
-    0 => 'Block_18427285055e5f830d266fc2_39617212',
+    0 => 'Block_7018803195e607dbcd36a85_94123637',
   ),
   'product_details' => 
   array (
-    0 => 'Block_4168731005e5f830d266fc6_98242410',
+    0 => 'Block_313673205e607dbcd36a85_09662073',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -113,14 +113,14 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <?php if ($_smarty_tpl->tpl_vars['product']->value['description']) {?>
                 <div class="tab-pane active" id="description" role="tabpanel" aria-labelledby="description-tab">
                     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18427285055e5f830d266fc2_39617212', 'product_description', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7018803195e607dbcd36a85_94123637', 'product_description', $this->tplIndex);
 ?>
 
                 </div>
             <?php }?>
             <div class="tab-pane fade" id="product-details" role="tabpanel" aria-labelledby="product-details-tab">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4168731005e5f830d266fc6_98242410', 'product_details', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_313673205e607dbcd36a85_09662073', 'product_details', $this->tplIndex);
 ?>
 
             </div>

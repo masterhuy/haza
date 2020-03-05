@@ -49,7 +49,7 @@
     <div class="woorebought-content"></div>
     {if $setting.JRB_CLOSE_ICON}
         <span id="popup-close">
-            <i class="fa fa-remove"></i>
+            <i class="ptw-icon icon-closed_light"></i>
         </span>
     {/if}
 </div>

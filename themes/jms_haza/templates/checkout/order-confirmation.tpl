@@ -9,7 +9,7 @@
       <div class="row">
         <div class="col-sm-12 col-md-7 order-confirmation-title-payment">
           <h1 class="h1 page-title">
-            <span><i class="fa fa-check rtl-no-flip" aria-hidden="true"></i> {l s='Your order is confirmed' d='Shop.Theme.Checkout'}</span>
+            <span><i class="fal fa-check rtl-no-flip" aria-hidden="true"></i> {l s='Your order is confirmed' d='Shop.Theme.Checkout'}</span>
           </h1>
 
           <div class="mail-sent-info">

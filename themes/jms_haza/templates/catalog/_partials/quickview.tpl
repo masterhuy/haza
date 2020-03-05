@@ -32,12 +32,12 @@
             </div>
             <div class="modal-body" id="main">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 left">
+                    <div class="col-lg-5 col-md-5 col-sm-12 left">
                         {block name='product_cover_thumbnails'}
                             {include file='catalog/_partials/product-cover-thumbnails.tpl'}
                         {/block}
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 right">
+                    <div class="col-lg-7 col-md-7 col-sm-12 right">
                         {block name='page_header_container'}
                             {block name='page_header'}
                                 <h2 itemprop="name" class="product-name">{block name='page_title'}{$product.name}{/block}</h2>
@@ -65,34 +65,6 @@
                                         <input type="hidden" name="token" value="{$static_token}">
                                         <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
                                         <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id">
-
-                                        {block name='product_pack'}
-                                            {if $packItems}
-                                                <section class="product-pack">
-                                                    <h3 class="h4">{l s='This pack contains' d='Shop.Theme.Catalog'}</h3>
-                                                    <article>
-                                                        <div class="card">
-                                                            <div class="pack-product-container">
-                                                                <table class="table">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>Products</th>
-                                                                            <th>Price</th>
-                                                                            <th>Quantity</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    {foreach from=$packItems item="product_pack"}
-                                                                        {block name='product_miniature'}
-                                                                            {include file='catalog/_partials/miniatures/pack-product.tpl' product=$product_pack}
-                                                                        {/block}
-                                                                    {/foreach}
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                </section>
-                                            {/if}
-                                        {/block}
 
                                         {block name='product_discounts'}
                                             {include file='catalog/_partials/product-discounts.tpl'}
@@ -143,7 +115,7 @@
                             </ul>
                         </div>
                         {if $jmsSetting.quickview_sharing}
-                        {hook h='displayProductButtons' product=$product}
+                            {hook h='displayProductButtons' product=$product}
                         {/if}
                     </div>
                 </div>

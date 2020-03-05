@@ -33,10 +33,10 @@
                     ]|classnames}"
   >
     <h1 class="step-title h3">
-      <i class="fa fa-check rtl-no-flip done"></i>
+      <i class="fal fa-check rtl-no-flip done"></i>
       <span class="step-number">{$position}</span>
       {$title}
-      <span class="step-edit text-muted"><i class="fa fa-edit edit"></i> {l s='Edit' d='Shop.Theme.Actions'}</span>
+      <span class="step-edit text-muted"><i class="fal fa-edit edit"></i> {l s='Edit' d='Shop.Theme.Actions'}</span>
     </h1>
 
     <div class="content">

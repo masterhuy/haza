@@ -47,8 +47,8 @@
           {/block}
           {if $imagesCount > 4}
             <div class="arrows js-modal-arrows">
-              <i class="fa fa-angle-up arrow-up js-modal-arrow-up">&#xE5C7;</i>
-              <i class="fa fa-angle-down arrow-down js-modal-arrow-down">&#xE5C5;</i>
+              <i class="fal fa-angle-up arrow-up js-modal-arrow-up">&#xE5C7;</i>
+              <i class="fal fa-angle-down arrow-down js-modal-arrow-down">&#xE5C5;</i>
             </div>
           {/if}
         </aside>

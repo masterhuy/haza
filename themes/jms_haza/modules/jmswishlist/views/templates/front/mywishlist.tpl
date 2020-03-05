@@ -24,91 +24,88 @@
 *}
 {extends file='page.tpl'}
 {block name='page_content_container'}
-<div id="mywishlist">
-    {capture name=path}
-        <a href="{$link->getPageLink('my-account', true)|escape:'html'}">{l s='My account' d='Shop.Theme'}</a>
-        <span class="navigation-pipe">{$navigationPipe}</span>
-        <a href="{$link->getModuleLink('jmswishlist', 'mywishlist')|escape:'html'}">{l s='My wishlists' d='Shop.Theme'}</a>
-		{if isset($current_wishlist)}
-	        <span class="navigation-pipe">{$navigationPipe}</span>
-	        {$current_wishlist.name}
+	<div id="mywishlist">
+		{capture name=path}
+			<a href="{$link->getPageLink('my-account', true)|escape:'html'}">{l s='My account' d='Shop.Theme'}</a>
+			<span class="navigation-pipe">{$navigationPipe}</span>
+			<a href="{$link->getModuleLink('jmswishlist', 'mywishlist')|escape:'html'}">{l s='My wishlists' d='Shop.Theme'}</a>
+			{if isset($current_wishlist)}
+				<span class="navigation-pipe">{$navigationPipe}</span>
+				{$current_wishlist.name}
+			{/if}
+		{/capture}
+
+		<h1>{l s='My wishlists' d='Shop.Theme'}</h1>
+
+		{include file='_partials/form-errors.tpl' errors=$errors}
+		{if $id_customer|intval neq 0}
+			<form method="post" id="form_wishlist">
+				<input type="hidden" name="token" value="{$token|escape:'html':'UTF-8'}" />
+				<div class="row align-items-center">
+					<div class="col"><span>{l s='Wishlist Name' d='Shop.Theme'}</span></div>
+					<div class="col-8"><input type="text" id="name" name="name" class="inputTxt form-control" value="{if isset($smarty.post.name) and $errors|@count > 0}{$smarty.post.name|escape:'html':'UTF-8'}{/if}" /></div>
+					<div class="col text-right"><button type="submit" name="submitWishlist" id="submitWishlist" class="btn btn-default form-control" value="{l s='Save' d='Shop.Theme'}" class="exclusive" />{l s='Add' d='Shop.Theme'}</button></div>
+				</div>
+			</form>
+			{if $wishlists}
+			<div id="block-history" class="block-center">
+				<table class="table">
+					<thead>
+						<tr>
+							<th class="first_item">{l s='Name' d='Shop.Theme'}</th>
+							<th class="item mywishlist_first">{l s='Qty' d='Shop.Theme'}</th>
+							<th class="item mywishlist_first">{l s='Viewed' d='Shop.Theme'}</th>
+							<th class="item mywishlist_second">{l s='Created' d='Shop.Theme'}</th>
+							<th class="item mywishlist_second">{l s='Direct Link' d='Shop.Theme'}</th>
+							<th class="item mywishlist_second">{l s='Default' d='Shop.Theme'}</th>
+							<th class="last_item mywishlist_first">{l s='Delete' d='Shop.Theme'}</th>
+						</tr>
+					</thead>
+					<tbody>
+						{section name=i loop=$wishlists}
+							<tr id="wishlist_{$wishlists[i].id_wishlist|intval}">
+								<td style="width:200px;">
+									<a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '{$wishlists[i].id_wishlist|intval}');">{$wishlists[i].name|truncate:30:'...'|escape:'html':'UTF-8'}</a>
+								</td>
+								<td class="bold align_center">
+									{assign var=n value=0}
+									{foreach from=$nbProducts item=nb name=i}
+										{if $nb.id_wishlist eq $wishlists[i].id_wishlist}
+											{assign var=n value=$nb.nbProducts|intval}
+										{/if}
+									{/foreach}
+									{if $n}
+										{$n|intval}
+									{else}
+										0
+									{/if}
+								</td>
+								<td>{$wishlists[i].counter|intval}</td>
+								<td>{$wishlists[i].date_add|date_format:"%Y-%m-%d"}</td>
+								<td><a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '{$wishlists[i].id_wishlist|intval}');">{l s='View' d='Shop.Theme'}</a></td>
+								<td class="wishlist_default">
+									{if isset($wishlists[i].default) && $wishlists[i].default == 1}
+										<span class="is_wish_list_default">
+											<i class="fal fa-check"></i>
+										</span>
+									{else}
+										<a href="#" onclick="javascript:event.preventDefault();(WishlistDefault('wishlist_{$wishlists[i].id_wishlist|intval}', '{$wishlists[i].id_wishlist|intval}'));">
+											<i class="fal fa-times"></i>
+										</a>
+									{/if}
+								</td>
+								<td class="wishlist_delete">
+									<a class="icon" href="#" onclick="javascript:event.preventDefault();return (WishlistDelete('wishlist_{$wishlists[i].id_wishlist|intval}', '{$wishlists[i].id_wishlist|intval}', '{l s='Do you really want to delete this wishlist ?' mod='blockwishlist' js=1}'));">
+										<i class="fal fa-trash"></i>
+									</a>
+								</td>
+							</tr>
+						{/section}
+					</tbody>
+				</table>
+			</div>
+			<div id="block-order-detail">&nbsp;</div>
+			{/if}
 		{/if}
-    {/capture}
-
-	<h1>{l s='My wishlists' d='Shop.Theme'}</h1>
-
-	{include file='_partials/form-errors.tpl' errors=$errors}
-	{if $id_customer|intval neq 0}
-		<form method="post" id="form_wishlist">
-      <input type="hidden" name="token" value="{$token|escape:'html':'UTF-8'}" />
-      <div class="container">
-      <div class="row">
-          <div class="col"><label for="name">{l s='Wishlist Name' d='Shop.Theme'}</label></div>
-          <div class="col-8"><input type="text" id="name" name="name" class="inputTxt form-control" value="{if isset($smarty.post.name) and $errors|@count > 0}{$smarty.post.name|escape:'html':'UTF-8'}{/if}" /></div>
-          <div class="col text-right"><button type="submit" name="submitWishlist" id="submitWishlist" class="btn btn-default form-control" value="{l s='Save' d='Shop.Theme'}" class="exclusive" />{l s='Add' d='Shop.Theme'}</button></div>
-      </div>
-      </div>
-
-		</form>
-		{if $wishlists}
-		<div id="block-history" class="block-center">
-			<table class="table">
-				<thead>
-					<tr>
-						<th class="first_item">{l s='Name' d='Shop.Theme'}</th>
-						<th class="item mywishlist_first">{l s='Qty' d='Shop.Theme'}</th>
-						<th class="item mywishlist_first">{l s='Viewed' d='Shop.Theme'}</th>
-						<th class="item mywishlist_second">{l s='Created' d='Shop.Theme'}</th>
-						<th class="item mywishlist_second">{l s='Direct Link' d='Shop.Theme'}</th>
-						<th class="item mywishlist_second">{l s='Default' d='Shop.Theme'}</th>
-						<th class="last_item mywishlist_first">{l s='Delete' d='Shop.Theme'}</th>
-					</tr>
-				</thead>
-				<tbody>
-				{section name=i loop=$wishlists}
-					<tr id="wishlist_{$wishlists[i].id_wishlist|intval}">
-						<td style="width:200px;">
-							<a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '{$wishlists[i].id_wishlist|intval}');">{$wishlists[i].name|truncate:30:'...'|escape:'html':'UTF-8'}</a>
-						</td>
-						<td class="bold align_center">
-							{assign var=n value=0}
-							{foreach from=$nbProducts item=nb name=i}
-								{if $nb.id_wishlist eq $wishlists[i].id_wishlist}
-									{assign var=n value=$nb.nbProducts|intval}
-								{/if}
-							{/foreach}
-							{if $n}
-								{$n|intval}
-							{else}
-								0
-							{/if}
-						</td>
-						<td>{$wishlists[i].counter|intval}</td>
-						<td>{$wishlists[i].date_add|date_format:"%Y-%m-%d"}</td>
-						<td><a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '{$wishlists[i].id_wishlist|intval}');">{l s='View' d='Shop.Theme'}</a></td>
-						<td class="wishlist_default">
-							{if isset($wishlists[i].default) && $wishlists[i].default == 1}
-								<p class="is_wish_list_default">
-									<i class="fa fa-check"></i>
-								</p>
-							{else}
-								<a href="#" onclick="javascript:event.preventDefault();(WishlistDefault('wishlist_{$wishlists[i].id_wishlist|intval}', '{$wishlists[i].id_wishlist|intval}'));">
-									<i class="fa fa-remove"></i>
-								</a>
-							{/if}
-						</td>
-						<td class="wishlist_delete">
-							<a class="icon" href="#" onclick="javascript:event.preventDefault();return (WishlistDelete('wishlist_{$wishlists[i].id_wishlist|intval}', '{$wishlists[i].id_wishlist|intval}', '{l s='Do you really want to delete this wishlist ?' mod='blockwishlist' js=1}'));">
-								<i class="fa fa-trash"></i>
-							</a>
-						</td>
-					</tr>
-				{/section}
-				</tbody>
-			</table>
-		</div>
-		<div id="block-order-detail">&nbsp;</div>
-		{/if}
-	{/if}
-</div>
+	</div>
 {/block}

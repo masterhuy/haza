@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-04 08:35:52
+/* Smarty version 3.1.33, created on 2020-03-05 08:43:32
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\modules\jmswishlist\jmswishlist-ajax.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e5f68684eece2_44597400',
+  'unifunc' => 'content_5e60bbb423be98_60804763',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e5f68684eece2_44597400 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e60bbb423be98_60804763 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['products']->value) {?>
 	<dl class="products" style="<?php if ($_smarty_tpl->tpl_vars['products']->value) {?>border-bottom:1px solid #fff;<?php }?>">
 	<?php

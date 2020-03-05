@@ -61,9 +61,12 @@
 	text-align: center;
 	margin-right: 20px;
 }
+#cart-summary-product-list {
+	margin-top: 20px;
+}
 body#checkout #cart-summary-product-list .media-left {
-    max-width: 60px;
-		margin-right:1rem;
+    max-width: 90px;
+	margin-right:1rem;
 }
 body#checkout #cart-summary-product-list .media-left img {
 	width:100%;
@@ -248,9 +251,8 @@ body#checkout #cart-summary-product-list .media-left img {
 	border-bottom:0px;
 }
 .cart-grid-right .right-box {
-	border: 2px solid #303030;
+	border: 1px solid #ebebeb;
 }
-
 .cart-grid-right #block-reassurance {
 	padding: 1.5rem;
 	clear: both;
