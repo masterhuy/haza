@@ -22,7 +22,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div id="_desktop_user_info" class="col-auto">
+<div class="_desktop_user_info" class="col-auto">
 	<div class="user-info btn-group">
 		{assign var="str_at" value=$jmsSetting.customersignin_icon|strpos:"_"}
 		{if $str_at && $jmsSetting.customersignin_icon_thickness}

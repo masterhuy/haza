@@ -23,16 +23,14 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div class="jms-banner{if $box_class} {$box_class|escape:'htmlall':'UTF-8'}{/if}">
-{if $banner}
-	
+	{if $banner}
 		<a href="{if $banner_link}{$banner_link|escape:'htmlall':'UTF-8'}{else}#{/if}"{if $target == 'new window'} target="_blank"{/if}>
-			<img class="img-responsive" src="{$root_url|escape:'html':'UTF-8'}{$banner|escape:'html':'UTF-8'}" alt="{$alt_text|escape:'htmlall':'UTF-8'}" />
+			<img class="img-responsive w-100" src="{$root_url|escape:'html':'UTF-8'}{$banner|escape:'html':'UTF-8'}" alt="{$alt_text|escape:'htmlall':'UTF-8'}" />
 		</a>
-
-{/if}
-{if $html_content}
-	<div class="banner-content">
-		{$html_content nofilter}
-	</div>
-{/if}
+	{/if}
+	{if $html_content}
+		<div class="banner-content">
+			{$html_content nofilter}
+		</div>
+	{/if}
 </div>	

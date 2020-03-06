@@ -781,6 +781,9 @@
 	justify-content: center;
 	align-items: center;
 }
+.productbox-3 .addToWishlist i{
+	font-size: 22px;
+}
 .productbox-3 .product-buttons {
 	display: flex;
 	position: absolute;

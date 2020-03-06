@@ -23,4 +23,4 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div class="jms-empty-space clearfix{if isset($space_class) && $space_class} {$space_class}{/if}" style="margin-bottom:{$spacegap}px;"></div>
+<div class="jms-empty-space clearfix{if isset($space_class) && $space_class} {$space_class}{/if}" style="margin-top:{$spacegap}rem;"></div>

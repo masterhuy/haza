@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-05 08:55:15
+/* Smarty version 3.1.33, created on 2020-03-06 09:09:50
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\stylesheets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e60be731237a8_83788615',
+  'unifunc' => 'content_5e62135ebbe595_59450175',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '87688cb8b273a14d6c1bf45c342d4fdf24606e8f' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\_partials\\stylesheets.tpl',
-      1 => 1581330140,
+      1 => 1583483066,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e60be731237a8_83788615 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e62135ebbe595_59450175 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
 css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
@@ -54,6 +54,8 @@ modules/jmsthemesetting/views/fonts/font-icon.css" rel="stylesheet">
 /modules/jmsthemesetting/views/fonts/<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['body_icon_font'], ENT_QUOTES, 'UTF-8');?>
 " rel="stylesheet">
 <?php }?>
+
+
 
 <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['stylesheets']->value['external'], 'stylesheet');

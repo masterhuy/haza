@@ -12,12 +12,17 @@
 	font-size: 18px;
 }
 #module-jmsblog-category .block-categories,
-#module-jmsblog-post .block-categories,
-#module-jmsblog-post .contact-rich,
-#module-jmsblog-post .topseller-block,
 #module-jmsblog-category .topseller-block,
+#module-jmsblog-post .block-categories,
+#module-jmsblog-post .topseller-block,
 #module-jmsblog-categories .topseller-block,
-#module-jmsblog-categories .block-categories{
+#module-jmsblog-categories .block-categories,
+#module-jmsblog-latest .topseller-block,
+#module-jmsblog-latest .block-categories,
+#module-jmsblog-archive .topseller-block,
+#module-jmsblog-archive .block-categories,
+#module-jmsblog-tag .topseller-block,
+#module-jmsblog-tag .block-categories{
 	display: none;
 }
 
@@ -224,6 +229,7 @@
 .page-heading {
 	border:none;
 	font-size:30px;
+	margin-bottom: 20px;
 }
 .post-img img {
 	width:100%;
@@ -304,11 +310,8 @@
 }
 .cat-post-list .blog-readmore {
 	font-size: 0.85rem;
-	display: inline-block;
+	display: none;
 	position: relative;
-	letter-spacing: 0.6px;
-	font-weight: bold;
-	float:right;
 }
 .cat-post-list .blog-readmore::after {
 	content: "";
@@ -328,7 +331,8 @@
 .cat-post-list .post-info {
 	margin-top: 31px;
 }
-.cat-post-list .post-intro p {
+.cat-post-list .post-intro p,
+.cat-post-list .cat-intro p {
 	line-height: 1.85;
 	margin-bottom: 17px;
 }
@@ -341,6 +345,9 @@
 	padding: 0 40px;
 	text-align: justify;
 	text-align-last: center;
+}
+.cat-post-list.more-columns .col-6 .post-intro{
+	padding: 0;
 }
 .cat-post-list .item .category-title a, .cat-post-list .item .post-title a, 
 #module-jmsblog-archive .post-title a {

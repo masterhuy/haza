@@ -15,6 +15,9 @@
   	font-display: block;
 }
 
+body{
+	font-size: 15px;
+}
 .container-fluid{
 	max-width: 1790px;
 	padding: 0 15px;
@@ -50,8 +53,12 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 .label{
 	padding: 0;
 }
-.addon-title h3{
-	letter-spacing: 2.75px;
+.addon-title{
+	margin-bottom: 2.8rem;
+	h3{
+		font-size: 2rem;
+		letter-spacing: 0.18333333333333332rem;
+	}
 }
 .breadcrumb {
 	background: url("/jms_haza/img/cms/breadcrumb-bg.jpg") center no-repeat;
@@ -249,10 +256,11 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 #cart_block .text-cart,
 #cart_block .ajax_cart_quantity.type-2,
 #jms_ajax_search .btn-search .text,
-#_desktop_user_info .account .text{
+._desktop_user_info .account .text{
 	display: none;
 }
 a,
+i,
 .btn, 
 .btn-default{
 	transition: all 400ms;
@@ -354,7 +362,7 @@ header .row {
 			}
 		}
 	}
-	#_desktop_user_info .user-info-content a{
+	._desktop_user_info .user-info-content a{
 		position: relative;
 		&:hover{
 			color: #fff;
@@ -594,7 +602,7 @@ header .row {
 			background-color: #111;
 		}
 	}
-	#_desktop_user_info .account{
+	._desktop_user_info .account{
 		i{
 			display: none;
 		}
@@ -771,7 +779,7 @@ header .row {
 		display: inline-block;
 		margin-left: 3px;
 	}
-	#_desktop_user_info .account{
+	._desktop_user_info .account{
 		display: flex;
 		flex-flow: row-reverse;
 		align-items: center;
@@ -829,7 +837,7 @@ header .row {
 		height: 16px;
 		background: url("../img/icons/setting.png") no-repeat;
 	}
-	#_desktop_user_info .account{
+	._desktop_user_info .account{
 		border: 1px solid #111;
 		padding: 7px 20px;
 		i{
@@ -1473,21 +1481,28 @@ header .row {
 	.text-3{
 		letter-spacing: 0.2px;
 	}
+}
+
+.fraction-slider{
 	.btn{
-		padding: 9px 37px;
+		font-size: 1.067rem;
+		padding: 0.6rem 2.467rem;
 		border-color: #363636;
 	}
+	.prev{
+		background: url("../img/icons/prev.png") center no-repeat;
+		background-size: cover;
+	}
+	.next{
+		background: url("../img/icons/next.png") center no-repeat;
+		background-size: cover;
+	}
 }
-.fraction-slider .prev{
-	background: url("../img/icons/prev.png") center no-repeat;
-}
-.fraction-slider .next{
-	background: url("../img/icons/next.png") center no-repeat;
-}
+
 
 /* category 1! */
 .category-1{
-	padding: 112px 0 120px;
+	padding: 7.466666666666667rem 0 6.8rem;
 	background-color: $active;
 	.addon-title h3{
 		color: #fff;
@@ -2464,7 +2479,7 @@ header .row {
 		.store-locator{
 			text-transform: uppercase;
 		}
-		#_desktop_user_info{
+		._desktop_user_info{
 			margin-bottom: 16px;
 			a{
 				color: #111;
@@ -2824,8 +2839,12 @@ footer .row{
 		}
 	}
 }
-#footer-main .block .block-title {
-	letter-spacing: 0.3px;
+#footer-main{
+	padding-top: 7.667rem;
+	padding-bottom: 6.333rem;
+	.block .block-title {
+		letter-spacing: 0.3px;
+	}
 }
 #footer-copyright{
 	line-height: 30px;
@@ -3305,4 +3324,57 @@ footer .row{
 #block-order-detail .display_list{
 	margin-bottom: 0;
 	margin-left: auto;
+}
+
+
+/******** responsive *********/
+#header-mobile-top{
+	.container > .row{
+		padding: 0;
+		.col-auto{
+			padding-left: 14px;
+			padding-right: 14px;
+		}
+	}
+}
+
+
+@media (min-width: 320px){
+	html{
+		font-size: 10px;
+	}
+	.jms-row.promo-bar{
+		padding: 20px 0;
+		.col{
+			margin: 15px 0;
+			padding: 0;
+		}
+		.layout-column{
+			&.left, &.right{
+				p{
+					text-align: center;
+				}
+			}
+		}
+	}
+	.category-1{
+		.row .layout-column{
+			&:not(:last-child){
+				margin-bottom: 20px;
+			}
+			&:first-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+@media (min-width: 1200px){
+	html{
+		font-size: 15px;
+	}
+	.category-1{
+		.row .layout-column{
+			margin-bottom: 0;
+		}
+	}
 }

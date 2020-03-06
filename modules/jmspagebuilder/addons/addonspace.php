@@ -35,7 +35,7 @@ class JmsAddonSpace extends JmsAddonBase
                 'name' => 'spacegap',
                 'label' => $this->l('Space Gap'),
                 'lang' => '0',
-                'desc' => 'Set the gap for space(Height of Space).',
+                'desc' => 'Set the gap for space (rem).',
                 'default' => '20'
             ),
             array(

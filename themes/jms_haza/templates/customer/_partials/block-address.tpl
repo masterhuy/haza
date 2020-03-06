@@ -29,11 +29,11 @@
   </div>
   <div class="address-footer">
     <a href="{url entity=address id=$address.id params=['delete' => 1, 'token' => $token]}" data-link-action="delete-address" class="btn-delete">
-      <i class="ptw-icon icon-delete-2"></i>
+      <i class="fal fa-trash-alt"></i>
       <span>{l s='Delete' d='Shop.Theme.Actions'}</span>
     </a>
 	 <a href="{url entity=address id=$address.id}" data-link-action="edit-address">
-      <i class="fa fa-pencil-square-o"></i>
+      <i class="fal fa-edit"></i>
       <span>{l s='Update' d='Shop.Theme.Actions'}</span>
     </a>
   </div>

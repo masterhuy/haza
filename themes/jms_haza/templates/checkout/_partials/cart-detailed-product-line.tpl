@@ -155,7 +155,7 @@
                 data-id-customization   	  = "{$product.id_customization|escape:'javascript'}"
             >
               {if !isset($product.is_gift) || !$product.is_gift}
-              <i class="ptw-icon icon-delete-2"></i>
+              <i class="fal fa-trash-alt"></i>
               {/if}
             </a>
 

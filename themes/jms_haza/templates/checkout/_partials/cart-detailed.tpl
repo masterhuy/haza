@@ -33,7 +33,7 @@
                 <div class="row">
                     <div class="col">{l s='Qty' d='Shop.Theme.Checkout'}</div>
                     <div class="col">{l s='Price' d='Shop.Theme.Checkout'}</div>
-                    <div class="col text-xs-right"><i class="ptw-icon icon-delete-2 invisible" aria-hidden="true"></i></div>
+                    <div class="col text-xs-right"><i class="fal fa-trash-alt invisible" aria-hidden="true"></i></div>
                 </div>
             </div>
           </div>

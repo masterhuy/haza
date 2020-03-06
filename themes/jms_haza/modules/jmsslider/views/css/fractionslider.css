@@ -45,14 +45,13 @@
 
 /** CONTROLS **/
 
-.fraction-slider .prev,
-.fraction-slider .next {
-	height: 25px;
-	width: 52px;
+.fraction-slider .prev, .fraction-slider .next {
+	height: 1.667rem;
+	width: 3.467rem;
 	position: absolute;
 	text-align: center;
 	text-transform: uppercase;
-	bottom: 13px;
+	bottom: 0.8667rem;
 	left: 50%;
 	transform: translateX(-50%);
 	background-size: cover;
@@ -68,10 +67,10 @@
 	top: calc(50% - 16px);
 }
 .fraction-slider .prev{
-	left: calc(50% - 33px);
+	left: calc(50% - 2.2rem);
 }
 .fraction-slider .next{
-	left: calc(50% + 33px);
+	left: calc(50% + 2.2rem);
 }
 .fraction-slider:hover .prev{
 	visibility: visible;

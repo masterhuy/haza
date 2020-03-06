@@ -15,6 +15,6 @@
 
 <a id="identity-link" href="{$link->getModuleLink('psgdpr', 'gdpr')}">
     <span class="link-item">
-        <i class="fa fa-user"></i> {l s='GDPR - Personal data' mod='psgdpr'}
+        <i class="fal fa-user"></i> {l s='GDPR - Personal data' mod='psgdpr'}
     </span>
 </a>

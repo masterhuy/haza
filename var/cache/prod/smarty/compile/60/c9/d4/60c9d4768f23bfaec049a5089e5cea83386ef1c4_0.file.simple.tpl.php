@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-30 03:30:31
+/* Smarty version 3.1.33, created on 2020-03-06 09:24:57
   from 'D:\xamppp\htdocs\jms_haza\admin041sahknz\themes\default\template\helpers\uploader\simple.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e324dd73ac746_45640710',
+  'unifunc' => 'content_5e6216e9b44c55_36059361',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e324dd73ac746_45640710 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e6216e9b44c55_36059361 (Smarty_Internal_Template $_smarty_tpl) {
 if (isset($_smarty_tpl->tpl_vars['files']->value) && count($_smarty_tpl->tpl_vars['files']->value) > 0) {?>
 	<?php $_smarty_tpl->_assignInScope('show_thumbnail', false);?>
 	<?php

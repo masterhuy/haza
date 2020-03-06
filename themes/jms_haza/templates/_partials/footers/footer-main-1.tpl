@@ -30,9 +30,9 @@
             {/block}
             <div class="layout-column newsletter">
                 {block name='footer-newsletter'}
-                <div class="block block-footer block-newsletter">
-                    {widget name="ps_emailsubscription" hook='displayFooter'}
-                </div>
+                    <div class="block block-footer block-newsletter">
+                        {widget name="ps_emailsubscription" hook='displayFooter'}
+                    </div>
                 {/block}
             </div>
         </div>

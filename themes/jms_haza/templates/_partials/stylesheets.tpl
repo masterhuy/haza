@@ -43,6 +43,8 @@
 <link href="{$urls.base_url}/modules/jmsthemesetting/views/fonts/{$jmsSetting.body_icon_font}" rel="stylesheet">
 {/if}
 
+
+
 {foreach $stylesheets.external as $stylesheet}
 <link rel="stylesheet" href="{$stylesheet.uri}" type="text/css" media="{$stylesheet.media}">
 {/foreach}
