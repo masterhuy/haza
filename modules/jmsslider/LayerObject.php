@@ -149,8 +149,8 @@ class LayerObject extends ObjectModel
         foreach ($this->styles as $style) {
             $dupStyle = $this->$style->duplicateObject();
             $dupStyle->id_layer = $dupObj->id;
-            $dupStyle->data_x += 20;
-            $dupStyle->data_y += 20;
+            $dupStyle->data_x += 0;
+            $dupStyle->data_y += 0;
             $dupStyle->update();
         }
         return $dupObj;

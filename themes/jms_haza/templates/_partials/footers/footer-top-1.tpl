@@ -26,12 +26,12 @@
     <div class="container">
         <div class="row align-items-center">
             {if isset($jmsSetting.footer_copyright_content) && $jmsSetting.footer_copyright_content}
-                <div class="layout-column col-6 socials">
+                <div class="layout-column col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 socials">
                     {include file='_partials/socials.tpl'}
                 </div>
             {/if}
             {if isset($jmsSetting.footer_payment_image) && $jmsSetting.footer_payment_image}
-                <div class="layout-column col-6 payment-img">
+                <div class="layout-column col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 payment-img">
                     <img src="{$jmsSetting.footer_payment_image}" class="img-fluid" alt="{l s='Payments' d='Shop.jmstheme'}"/>
                 </div>
             {/if}

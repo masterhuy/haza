@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-06 03:37:12
+/* Smarty version 3.1.33, created on 2020-03-09 08:56:42
   from 'module:jmsajaxsearchviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e61c568e66ff8_33171404',
+  'unifunc' => 'content_5e6604ca9ac6c8_41910155',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e61c568e66ff8_33171404 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e6604ca9ac6c8_41910155 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="btn-group jms_ajax_search col-auto" id="jms_ajax_search">
     <?php $_smarty_tpl->_assignInScope('str_at', strpos($_smarty_tpl->tpl_vars['jmsSetting']->value['search_icon'],"_"));?>
     <?php if ($_smarty_tpl->tpl_vars['str_at']->value && $_smarty_tpl->tpl_vars['jmsSetting']->value['search_icon_thickness']) {?>

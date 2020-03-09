@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-06 09:06:34
+/* Smarty version 3.1.33, created on 2020-03-09 09:03:39
   from 'D:\xamppp\htdocs\jms_haza\modules\jmspagebuilder\views\templates\admin\jmspagebuilder_pages\pagelayout.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e62129ab34cd2_10186380',
+  'unifunc' => 'content_5e66066b7bccf8_14856042',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4981ea7e65f5959ffe1d111cc82730b26ba16085' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\modules\\jmspagebuilder\\views\\templates\\admin\\jmspagebuilder_pages\\pagelayout.tpl',
-      1 => 1575274990,
+      1 => 1583744500,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e62129ab34cd2_10186380 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e66066b7bccf8_14856042 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -191,6 +191,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['cindex']->value => $_smarty_tpl->tpl_
 						<div class="<?php echo $_smarty_tpl->tpl_vars['column']->value->className;?>
 " data-custom_class="<?php if (isset($_smarty_tpl->tpl_vars['column']->value->settings->custom_class)) {
 echo $_smarty_tpl->tpl_vars['column']->value->settings->custom_class;
+}?>" data-lg_col="<?php if (isset($_smarty_tpl->tpl_vars['column']->value->settings->lg_col)) {
+echo $_smarty_tpl->tpl_vars['column']->value->settings->lg_col;
 }?>" data-md_col="<?php if (isset($_smarty_tpl->tpl_vars['column']->value->settings->md_col)) {
 echo $_smarty_tpl->tpl_vars['column']->value->settings->md_col;
 }?>" data-sm_col="<?php if (isset($_smarty_tpl->tpl_vars['column']->value->settings->sm_col)) {
@@ -395,7 +397,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 			<p class="help-block">use this field to add a class name and then refer to it in your css file.</p>
 		</div>
 		<div class="form-group md_col">
-			<label><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Medium Layout','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
+			<label><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Tablet Layout','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
 </label>
 			<select data-attrname="md_col" class="form-control addon-input">
 				<option selected="" value=""></option>
@@ -412,10 +414,10 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 				<option value="col-md-11">col-md-11</option>
 				<option value="col-md-12">col-md-12</option>
 			</select>
-			<p class="help-block">Set the class of this column for medium devices.</p>
+			<p class="help-block">Set the class of this column for tablets >=768px</p>
 		</div>
 		<div class="form-group sm_col">
-			<label><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Tablet Layout','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
+			<label><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Mobile Layout 1','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
 </label>
 			<select data-attrname="sm_col" class="form-control addon-input">
 				<option selected="" value=""></option>
@@ -432,27 +434,27 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 				<option value="col-sm-11">col-sm-11</option>
 				<option value="col-sm-12">col-sm-12</option>
 			</select>
-			<p class="help-block">Set the class of this column for tablets.</p>
+			<p class="help-block">Set the class of this column for mobile 1 >=576px</p>
 		</div>
 		<div class="form-group xs_col">
-			<label><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Mobile Layout','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
+			<label><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Mobile Layout 2','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
 </label>
 			<select data-attrname="xs_col" class="form-control addon-input">
 				<option selected="" value=""></option>
-				<option value="col-xs-1">col-xs-1</option>
-				<option value="col-xs-2">col-xs-2</option>
-				<option value="col-xs-3">col-xs-3</option>
-				<option value="col-xs-4">col-xs-4</option>
-				<option value="col-xs-5">col-xs-5</option>
-				<option value="col-xs-6">col-xs-6</option>
-				<option value="col-xs-7">col-xs-7</option>
-				<option value="col-xs-8">col-xs-8</option>
-				<option value="col-xs-9">col-xs-9</option>
-				<option value="col-xs-10">col-xs-10</option>
-				<option value="col-xs-11">col-xs-11</option>
-				<option value="col-xs-12">col-xs-12</option>
+				<option value="col-1">col-1</option>
+				<option value="col-2">col-2</option>
+				<option value="col-3">col-3</option>
+				<option value="col-4">col-4</option>
+				<option value="col-5">col-5</option>
+				<option value="col-6">col-6</option>
+				<option value="col-7">col-7</option>
+				<option value="col-8">col-8</option>
+				<option value="col-9">col-9</option>
+				<option value="col-10">col-10</option>
+				<option value="col-11">col-11</option>
+				<option value="col-12">col-12</option>
 			</select>
-			<p class="help-block">Set the class of this column for mobile.</p>
+			<p class="help-block">Set the class of this column for mobile 2.</p>
 		</div>
 		<div class="form-group">
 			<label><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Background Image','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
@@ -619,7 +621,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
 	$(document).ready(function(){
 		<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9812016245e62129ab30e59_61027502', "autoload_tinyMCE");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20841429835e66066b7b8e70_29119023', "autoload_tinyMCE");
 ?>
 
 	});
@@ -630,12 +632,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9812016245e62129ab
 >
 <?php }
 /* {block "autoload_tinyMCE"} */
-class Block_9812016245e62129ab30e59_61027502 extends Smarty_Internal_Block
+class Block_20841429835e66066b7b8e70_29119023 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'autoload_tinyMCE' => 
   array (
-    0 => 'Block_9812016245e62129ab30e59_61027502',
+    0 => 'Block_20841429835e66066b7b8e70_29119023',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

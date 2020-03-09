@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>PrestaShop has unveiled a range of new features for your online store</title>
+    <link>https://www.prestashop.com/en/blog/new-features-prestashop-2020</link>
+    <description>A wave of new features to help retailers sell better</description>
+     <pubDate>Fri, 06 Mar 2020 17:06:36 +0100</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/new-features-prestashop-2020</guid>
+  </item>
+  <item>
     <title>Social selling: what&amp;#039;s behind the latest buzz word?</title>
     <link>https://www.prestashop.com/en/blog/social-selling-2020</link>
     <description>I bet you’ve heard of social selling before, but you might not be completely sure what the term implies?</description>
@@ -76,14 +84,6 @@
      <pubDate>Thu, 16 Jan 2020 18:09:57 +0100</pubDate>
  <dc:creator>Webkul</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/5-templates-for-google-analytics-reports</guid>
-  </item>
-  <item>
-    <title>Five tips for setting up an effective content strategy </title>
-    <link>https://www.prestashop.com/en/blog/five-tips-for-setting-up-effective-content-strategy</link>
-    <description>Content – whether that’s a video how-to-guide, a funny post on social media about your niche, or a list of helpful pointers – helps differentiate you from other webshops, builds your brand, and dri</description>
-     <pubDate>Thu, 09 Jan 2020 14:12:31 +0100</pubDate>
- <dc:creator>bulldesign</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/five-tips-for-setting-up-effective-content-strategy</guid>
   </item>
   </channel>
 </rss>

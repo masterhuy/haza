@@ -13,7 +13,9 @@
 	{else}
 		{assign var="search_icon" value=$jmsSetting.search_icon}
 	{/if}
-	<a href="#" class="btn-search" data-toggle="dropdown" data-display="static"><i class="ptw-icon {$search_icon}"></i></a>
+	<a href="#" class="btn-search" data-toggle="dropdown" data-display="static">
+		<i class="fal fa-search"></i>
+	</a>
 	<div id="search-form-dropdown" class="search-form dropdown-menu">
 		<div class="search-box">
 			<form method="get" action="{$link->getPageLink('search')|escape:'html':'UTF-8'}">

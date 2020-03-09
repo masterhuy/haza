@@ -107,7 +107,6 @@ footer .layout-column {
     flex-basis: 0;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    max-width: 100%;
 }
 footer .row .layout-column,
 header .row .layout-column {

@@ -118,7 +118,7 @@
 				</div>
 				<div class="row-columns">
 					{foreach from=$row->cols key=cindex item=column}
-						<div class="{$column->className nofilter}" data-custom_class="{if isset($column->settings->custom_class)}{$column->settings->custom_class nofilter}{/if}" data-md_col="{if isset($column->settings->md_col)}{$column->settings->md_col nofilter}{/if}" data-sm_col="{if isset($column->settings->sm_col)}{$column->settings->sm_col nofilter}{/if}" data-xs_col="{if isset($column->settings->xs_col)}{$column->settings->xs_col nofilter}{/if}" data-background_img="{if isset($column->settings->background_img)}{$column->settings->background_img nofilter}{/if}" data-background_size="{if isset($column->settings->background_size)}{$column->settings->background_size nofilter}{/if}" data-background_repeat="{if isset($column->settings->background_repeat)}{$column->settings->background_repeat nofilter}{/if}" data-background_position="{if isset($column->settings->background_position)}{$column->settings->background_position nofilter}{/if}" data-background_attachment="{if isset($column->settings->background_attachment)}{$column->settings->background_attachment nofilter}{/if}">
+						<div class="{$column->className nofilter}" data-custom_class="{if isset($column->settings->custom_class)}{$column->settings->custom_class nofilter}{/if}" data-lg_col="{if isset($column->settings->lg_col)}{$column->settings->lg_col nofilter}{/if}" data-md_col="{if isset($column->settings->md_col)}{$column->settings->md_col nofilter}{/if}" data-sm_col="{if isset($column->settings->sm_col)}{$column->settings->sm_col nofilter}{/if}" data-xs_col="{if isset($column->settings->xs_col)}{$column->settings->xs_col nofilter}{/if}" data-background_img="{if isset($column->settings->background_img)}{$column->settings->background_img nofilter}{/if}" data-background_size="{if isset($column->settings->background_size)}{$column->settings->background_size nofilter}{/if}" data-background_repeat="{if isset($column->settings->background_repeat)}{$column->settings->background_repeat nofilter}{/if}" data-background_position="{if isset($column->settings->background_position)}{$column->settings->background_position nofilter}{/if}" data-background_attachment="{if isset($column->settings->background_attachment)}{$column->settings->background_attachment nofilter}{/if}">
 							<div class="column">
 								{foreach from=$column->addons key=aindex item=addon}
 									{$addon->addon_box nofilter}
@@ -278,7 +278,7 @@
 			<p class="help-block">use this field to add a class name and then refer to it in your css file.</p>
 		</div>
 		<div class="form-group md_col">
-			<label>{l s='Medium Layout' d='Modules.JmsPagebuilder'}</label>
+			<label>{l s='Tablet Layout' d='Modules.JmsPagebuilder'}</label>
 			<select data-attrname="md_col" class="form-control addon-input">
 				<option selected="" value=""></option>
 				<option value="col-md-1">col-md-1</option>
@@ -294,10 +294,10 @@
 				<option value="col-md-11">col-md-11</option>
 				<option value="col-md-12">col-md-12</option>
 			</select>
-			<p class="help-block">Set the class of this column for medium devices.</p>
+			<p class="help-block">Set the class of this column for tablets >=768px</p>
 		</div>
 		<div class="form-group sm_col">
-			<label>{l s='Tablet Layout' d='Modules.JmsPagebuilder'}</label>
+			<label>{l s='Mobile Layout 1' d='Modules.JmsPagebuilder'}</label>
 			<select data-attrname="sm_col" class="form-control addon-input">
 				<option selected="" value=""></option>
 				<option value="col-sm-1">col-sm-1</option>
@@ -313,26 +313,26 @@
 				<option value="col-sm-11">col-sm-11</option>
 				<option value="col-sm-12">col-sm-12</option>
 			</select>
-			<p class="help-block">Set the class of this column for tablets.</p>
+			<p class="help-block">Set the class of this column for mobile 1 >=576px</p>
 		</div>
 		<div class="form-group xs_col">
-			<label>{l s='Mobile Layout' d='Modules.JmsPagebuilder'}</label>
+			<label>{l s='Mobile Layout 2' d='Modules.JmsPagebuilder'}</label>
 			<select data-attrname="xs_col" class="form-control addon-input">
 				<option selected="" value=""></option>
-				<option value="col-xs-1">col-xs-1</option>
-				<option value="col-xs-2">col-xs-2</option>
-				<option value="col-xs-3">col-xs-3</option>
-				<option value="col-xs-4">col-xs-4</option>
-				<option value="col-xs-5">col-xs-5</option>
-				<option value="col-xs-6">col-xs-6</option>
-				<option value="col-xs-7">col-xs-7</option>
-				<option value="col-xs-8">col-xs-8</option>
-				<option value="col-xs-9">col-xs-9</option>
-				<option value="col-xs-10">col-xs-10</option>
-				<option value="col-xs-11">col-xs-11</option>
-				<option value="col-xs-12">col-xs-12</option>
+				<option value="col-1">col-1</option>
+				<option value="col-2">col-2</option>
+				<option value="col-3">col-3</option>
+				<option value="col-4">col-4</option>
+				<option value="col-5">col-5</option>
+				<option value="col-6">col-6</option>
+				<option value="col-7">col-7</option>
+				<option value="col-8">col-8</option>
+				<option value="col-9">col-9</option>
+				<option value="col-10">col-10</option>
+				<option value="col-11">col-11</option>
+				<option value="col-12">col-12</option>
 			</select>
-			<p class="help-block">Set the class of this column for mobile.</p>
+			<p class="help-block">Set the class of this column for mobile 2.</p>
 		</div>
 		<div class="form-group">
 			<label>{l s='Background Image' d='Modules.JmsPagebuilder'}</label>

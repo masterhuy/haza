@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-05 06:48:09
+/* Smarty version 3.1.33, created on 2020-03-09 04:18:09
   from 'D:\xamppp\htdocs\jms_haza\modules\jmsrecentlybought\views\templates\admin\_configure\helpers\form\form.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e60a0a944d461_97504445',
+  'unifunc' => 'content_5e65c38117cc74_06578502',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,23 +20,23 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e60a0a944d461_97504445 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e65c38117cc74_06578502 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17879561965e60a0a942e050_69523035', "field");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6431571525e65c381155b76_62304289', "field");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "helpers/form/form.tpl");
 }
 /* {block "field"} */
-class Block_17879561965e60a0a942e050_69523035 extends Smarty_Internal_Block
+class Block_6431571525e65c381155b76_62304289 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'field' => 
   array (
-    0 => 'Block_17879561965e60a0a942e050_69523035',
+    0 => 'Block_6431571525e65c381155b76_62304289',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

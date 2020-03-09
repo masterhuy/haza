@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-06 09:09:51
+/* Smarty version 3.1.33, created on 2020-03-09 09:34:48
   from 'module:jmsajaxsearchviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e62135f2d5313_50613173',
+  'unifunc' => 'content_5e660db8240d07_33349859',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f4f878bb3db75158b90416b7b3dd1c45327b30b9' => 
     array (
       0 => 'module:jmsajaxsearchviewstemplat',
-      1 => 1580784339,
+      1 => 1583746479,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e62135f2d5313_50613173 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e660db8240d07_33349859 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="btn-group jms_ajax_search col-auto" id="jms_ajax_search">
     <?php $_smarty_tpl->_assignInScope('str_at', strpos($_smarty_tpl->tpl_vars['jmsSetting']->value['search_icon'],"_"));?>
     <?php if ($_smarty_tpl->tpl_vars['str_at']->value && $_smarty_tpl->tpl_vars['jmsSetting']->value['search_icon_thickness']) {?>

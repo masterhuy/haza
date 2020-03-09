@@ -17,13 +17,12 @@ body.toplevel_page_woo-notification {
     bottom: 15px;
     box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
     display: none;
-    left: 15px;
+    left: 14px;
     padding: 0;
     position: fixed;
     right: auto !important;
     text-align: left;
     top: auto !important;
-    width: auto;
     z-index: 998;
 }
 
@@ -47,11 +46,9 @@ body.toplevel_page_woo-notification {
 
 #woorebought-popup img {
     cursor: pointer;
-    float: left;
     max-height: 77px;
     max-width: 60px;
     width: auto;
-    align-self: center;
 }
 
 #woorebought-popup.img_right img {
@@ -66,6 +63,7 @@ body.toplevel_page_woo-notification {
     line-height: 18px;
     margin: 0 10px;
     padding: 0 20px 0 0;
+    width: 80%;
 }
 
 #woorebought-popup p a {
@@ -98,35 +96,28 @@ body.toplevel_page_woo-notification {
     position: absolute;
     right: 10px;
     top: 10px;
-}
-
-@media screen and (max-width: 767px) {
-    
+    font-size: 15px;
 }
 
 #woo-notification-audio {
     display: none;
 }
-
 #woorebought-popup {
     background-color: #ffffff;
     color: #0f0f0f;
 }
-
 #woorebought-popup a {
-    color: #0f0f0f;
+    width: 100%;
 }
-/*Non ajax*/
 #woorebought-popup .woorebought-content {
     display: inline-flex;
     align-items: center;
+    width: calc(100% - 20px);
+    overflow: hidden;
 }
 
-@media (max-width: 481px){
+@media (min-width: 320px){
     #woorebought-popup{
-        width: calc(100% - 30px);
-    }
-    #woorebought-popup p a{
-        max-width: 100%;
+        width: calc(100% - 28px);
     }
 }

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-04 03:20:06
+/* Smarty version 3.1.33, created on 2020-03-09 07:05:11
   from 'D:\xamppp\htdocs\jms_haza\modules\jmsmegamenu\views\templates\admin\jmsmegamenu_style\menustyle.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e5f1e66117433_83661169',
+  'unifunc' => 'content_5e65eaa707b3b6_02027005',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e5f1e66117433_83661169 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e65eaa707b3b6_02027005 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="row">
 		<div class="col-md-4 col-lg-4">
 				<div class="select-menu jms-config">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-05 04:19:09
+/* Smarty version 3.1.33, created on 2020-03-09 08:56:43
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\catalog\_partials\product-images-modal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e607dbd14fc83_78533886',
+  'unifunc' => 'content_5e6604cb38a3e6_71158222',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '621f7744cf159f7137f96ee8e9be9559b12de0cb' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\catalog\\_partials\\product-images-modal.tpl',
-      1 => 1577330408,
+      1 => 1583393661,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e607dbd14fc83_78533886 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e6604cb38a3e6_71158222 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -41,13 +41,13 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         </figure>
         <aside id="thumbnails" class="thumbnails js-thumbnails text-xs-center">
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8400187195e607dbd128b82_84833632', 'product_images');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15309774215e6604cb3826e0_04669895', 'product_images');
 ?>
 
           <?php if ($_smarty_tpl->tpl_vars['imagesCount']->value > 4) {?>
             <div class="arrows js-modal-arrows">
-              <i class="fa fa-angle-up arrow-up js-modal-arrow-up">&#xE5C7;</i>
-              <i class="fa fa-angle-down arrow-down js-modal-arrow-down">&#xE5C5;</i>
+              <i class="fal fa-angle-up arrow-up js-modal-arrow-up">&#xE5C7;</i>
+              <i class="fal fa-angle-down arrow-down js-modal-arrow-down">&#xE5C5;</i>
             </div>
           <?php }?>
         </aside>
@@ -57,12 +57,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8400187195e607dbd1
 </div><!-- /.modal -->
 <?php }
 /* {block 'product_images'} */
-class Block_8400187195e607dbd128b82_84833632 extends Smarty_Internal_Block
+class Block_15309774215e6604cb3826e0_04669895 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_images' => 
   array (
-    0 => 'Block_8400187195e607dbd128b82_84833632',
+    0 => 'Block_15309774215e6604cb3826e0_04669895',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
