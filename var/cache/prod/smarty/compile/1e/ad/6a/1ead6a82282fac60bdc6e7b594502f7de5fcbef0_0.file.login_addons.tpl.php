@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-09 03:58:45
+/* Smarty version 3.1.33, created on 2020-03-10 02:56:57
   from 'D:\xamppp\htdocs\jms_haza\admin041sahknz\themes\new-theme\template\controllers\modules\login_addons.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e65bef5c2b547_93218039',
+  'unifunc' => 'content_5e6701f9467e26_35629867',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e65bef5c2b547_93218039 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e6701f9467e26_35629867 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="modal-body">
 <?php if ($_smarty_tpl->tpl_vars['add_permission']->value == '1') {?>

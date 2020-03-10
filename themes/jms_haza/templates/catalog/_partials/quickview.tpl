@@ -27,7 +27,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <i class="ptw-icon icon-closed_light"></i>
+                    <i class="fal fa-times"></i>
                 </button>
             </div>
             <div class="modal-body" id="main">

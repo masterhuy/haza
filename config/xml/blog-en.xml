@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>The PrestaShop 2020 Essentials</title>
+    <link>https://www.prestashop.com/en/blog/prestashop-awards-2020</link>
+    <description>The PrestaShop team is pleased to present our selection of modules and themes for your online shop.</description>
+     <pubDate>Mon, 09 Mar 2020 16:37:40 +0100</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-awards-2020</guid>
+  </item>
+  <item>
     <title>PrestaShop has unveiled a range of new features for your online store</title>
     <link>https://www.prestashop.com/en/blog/new-features-prestashop-2020</link>
     <description>A wave of new features to help retailers sell better</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 27 Jan 2020 15:26:38 +0100</pubDate>
  <dc:creator>Vytaure Banyte</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/does-your-shopping-cart-page-have-all-these-features-we-made-a-checklist</guid>
-  </item>
-  <item>
-    <title>Understanding your e-commerce activity: 5 templates for Google Analytics reports</title>
-    <link>https://www.prestashop.com/en/blog/5-templates-for-google-analytics-reports</link>
-    <description>The first impression which we get when someone talks about e-commerce is very much coherent for all of us.</description>
-     <pubDate>Thu, 16 Jan 2020 18:09:57 +0100</pubDate>
- <dc:creator>Webkul</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/5-templates-for-google-analytics-reports</guid>
   </item>
   </channel>
 </rss>

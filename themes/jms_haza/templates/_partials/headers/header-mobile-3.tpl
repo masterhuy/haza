@@ -22,53 +22,53 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
- <div id="header-mobile-top" class="header-mobile-top">
- 		<div class="container">
- 				<div class="row align-items-center no-margin">
- 						<div class="layout-column text-center">
-              {include file='_partials/headers/logo.tpl'}
- 						</div>
- 				</div>
- 		</div>
- </div>
- <div id="header-mobile-bottom" class="{if $jmsSetting.header_mobile_sticky == 1} header-sticky{/if}{if ($jmsSetting.header_mobile_sticky == 1) && ($jmsSetting.header_sticky_effect != '')} {$jmsSetting.header_sticky_effect}{/if}">
+<div id="header-mobile-top" class="header-mobile-top">
     <div class="container">
-       <div class="row align-items-center no-margin">
-             <div class="layout-column text-center">
-                {include file='_partials/headers/mobile-menu.tpl'}
-             </div>
-             <div class="layout-column text-center">
-               {if $jmsSetting.search}
-                   {if $jmsSetting.search_box_type != 'dropdown'}
-                    {widget_block name="jmsajaxsearch"}
-                        {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-button.tpl'}
-                    {/widget_block}
-                   {else}
-                    {widget_block name="jmsajaxsearch"}
-                        {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-dropdown.tpl'}
-                    {/widget_block}
-                   {/if}
-               {/if}
-             </div>
-            {if ($jmsSetting.customersignin == 1)}
-            <div class="layout-column text-center header-right">
-              {widget_block name="ps_customersignin"}
-                  {include 'module:ps_customersignin/ps_customersignin-dropdown.tpl'}
-              {/widget_block}
+        <div class="row align-items-center no-margin">
+            <div class="layout-column text-center">
+                {include file='_partials/headers/logo.tpl'}
             </div>
+        </div>
+    </div>
+</div>
+<div id="header-mobile-bottom" class="{if $jmsSetting.header_mobile_sticky == 1} header-sticky{/if}{if ($jmsSetting.header_mobile_sticky == 1) && ($jmsSetting.header_sticky_effect != '')} {$jmsSetting.header_sticky_effect}{/if}">
+    <div class="container">
+        <div class="row align-items-center no-padding">
+            <div class="layout-column text-center">
+                {include file='_partials/headers/mobile-menu.tpl'}
+            </div>
+            <div class="layout-column text-center">
+                {if $jmsSetting.search}
+                    {if $jmsSetting.search_box_type != 'dropdown'}
+                        {widget_block name="jmsajaxsearch"}
+                            {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-button.tpl'}
+                        {/widget_block}
+                    {else}
+                        {widget_block name="jmsajaxsearch"}
+                            {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-dropdown.tpl'}
+                        {/widget_block}
+                   {/if}
+                {/if}
+            </div>
+            {if ($jmsSetting.customersignin == 1)}
+                <div class="layout-column text-center header-right">
+                    {widget_block name="ps_customersignin"}
+                        {include 'module:ps_customersignin/ps_customersignin-dropdown.tpl'}
+                    {/widget_block}
+                </div>
             {/if}
             {if ($jmsSetting.cart == 1)}
-            <div class="layout-column text-center header-right">
-            {widget_block name="ps_shoppingcart"}
-                {include 'module:ps_shoppingcart/ps_shoppingcart.tpl'}
-            {/widget_block}
-            </div>
+                <div class="layout-column text-center header-right">
+                    {widget_block name="ps_shoppingcart"}
+                        {include 'module:ps_shoppingcart/ps_shoppingcart.tpl'}
+                    {/widget_block}
+                </div>
             {/if}
        </div>
     </div>
 </div>
- {if $jmsSetting.search && $jmsSetting.search_box_type != 'dropdown'}
- {widget_block name="jmsajaxsearch"}
-     {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl'}
- {/widget_block}
- {/if}
+{if $jmsSetting.search && $jmsSetting.search_box_type != 'dropdown'}
+    {widget_block name="jmsajaxsearch"}
+        {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl'}
+    {/widget_block}
+{/if}

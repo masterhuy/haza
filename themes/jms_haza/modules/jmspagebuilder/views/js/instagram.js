@@ -43,9 +43,12 @@ $(document).ready(function() {
                             items:5
                         },
                         768:{
+                            items:4
+                        },
+                        576:{
                             items:3
                         },
-                        318:{
+                        320:{
                             items:2
                         } 
                     },

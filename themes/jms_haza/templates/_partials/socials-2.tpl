@@ -24,8 +24,11 @@
  *}
 
 {block name='footer-social'}
-    <div class="block">
-        <h3 class="h3 block-title">FOLLOW US<i class="fal fa-plus" aria-hidden="true"></i></h3>
+    <h3 class="h3 block-title">
+        FOLLOW US
+        <i class="fal fa-plus" aria-hidden="true"></i>
+    </h3>
+    <div class="block-content">
         <ul id="social-links" class="social-links">
             {if isset($jmsSetting.social_facebook) && $jmsSetting.social_facebook != ''}
                 <li class="facebook">

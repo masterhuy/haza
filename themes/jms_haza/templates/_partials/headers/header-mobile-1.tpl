@@ -23,44 +23,44 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
  <div id="header-mobile-top" class="header-mobile-top{if $jmsSetting.header_mobile_sticky == 1} header-sticky{/if}{if ($jmsSetting.header_mobile_sticky == 1) && ($jmsSetting.header_sticky_effect != '')} {$jmsSetting.header_sticky_effect}{/if}">
- 		<div class="container">
- 				<div class="row align-items-center no-margin">
- 						<div class="layout-column col-auto header-left">
-              {include file='_partials/headers/mobile-menu.tpl'}
- 						</div>
- 						<div class="layout-column text-center">
-              {include file='_partials/headers/logo.tpl'}
- 						</div>
- 						<div class="layout-column col-auto header-right">
-              <div class="row">
-                 {if $jmsSetting.search}
-                     {if $jmsSetting.search_box_type != 'dropdown'}
-                      {widget_block name="jmsajaxsearch"}
-                          {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-button.tpl'}
-                      {/widget_block}
-                      {else}
-                      {widget_block name="jmsajaxsearch"}
-                          {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-dropdown.tpl'}
-                      {/widget_block}
-                      {/if}
-                  {/if}
-                  {if ($jmsSetting.customersignin == 1)}
-                  {widget_block name="ps_customersignin"}
-                      {include 'module:ps_customersignin/ps_customersignin-dropdown.tpl'}
-                  {/widget_block}
-                  {/if}
-                  {if ($jmsSetting.cart == 1)}
-                  {widget_block name="ps_shoppingcart"}
-                      {include 'module:ps_shoppingcart/ps_shoppingcart.tpl'}
-                  {/widget_block}
-                  {/if}
+    <div class="container">
+        <div class="row align-items-center no-padding">
+            <div class="layout-column col-4 header-left">
+                {include file='_partials/headers/mobile-menu.tpl'}
+            </div>
+            <div class="layout-column col-4 text-center">
+                {include file='_partials/headers/logo.tpl'}
+            </div>
+            <div class="layout-column col-4 header-right">
+                <div class="row justify-content-end">
+                    {if $jmsSetting.search}
+                        {if $jmsSetting.search_box_type != 'dropdown'}
+                            {widget_block name="jmsajaxsearch"}
+                                {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-button.tpl'}
+                            {/widget_block}
+                        {else}
+                            {widget_block name="jmsajaxsearch"}
+                                {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-dropdown.tpl'}
+                            {/widget_block}
+                        {/if}
+                    {/if}
+                    {if ($jmsSetting.customersignin == 1)}
+                        {widget_block name="ps_customersignin"}
+                            {include 'module:ps_customersignin/ps_customersignin-dropdown.tpl'}
+                        {/widget_block}
+                    {/if}
+                    {if ($jmsSetting.cart == 1)}
+                        {widget_block name="ps_shoppingcart"}
+                            {include 'module:ps_shoppingcart/ps_shoppingcart.tpl'}
+                        {/widget_block}
+                    {/if}
                 </div>
- 						</div>
- 				</div>
- 		</div>
- </div>
- {if $jmsSetting.search && $jmsSetting.search_box_type != 'dropdown'}
- {widget_block name="jmsajaxsearch"}
-     {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl'}
- {/widget_block}
- {/if}
+            </div>
+        </div>
+    </div>
+</div>
+{if $jmsSetting.search && $jmsSetting.search_box_type != 'dropdown'}
+    {widget_block name="jmsajaxsearch"}
+        {include 'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl'}
+    {/widget_block}
+{/if}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-09 10:05:32
+/* Smarty version 3.1.33, created on 2020-03-10 09:14:36
   from 'module:pscurrencyselectorpscurre' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e6614ec0933b0_06443962',
+  'unifunc' => 'content_5e675a7c8ec518_26161086',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'eefc2ea735fa48d5e06513ebfda709a2f2686b5a' => 
     array (
       0 => 'module:pscurrencyselectorpscurre',
-      1 => 1579592642,
+      1 => 1583825074,
       2 => 'module',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e6614ec0933b0_06443962 (Smarty_Internal_Template $_smarty_tpl) {
-?><div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info">
+function content_5e675a7c8ec518_26161086 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="_desktop_currency_selector btn-group compact-hidden currency-info">
    	<a href="#" class="title btn-xs" data-toggle="dropdown">
 		<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['current_currency']->value['iso_code'], ENT_QUOTES, 'UTF-8');?>
  

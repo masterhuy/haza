@@ -28,12 +28,12 @@
 		<div class="container">
 			<div class="row align-items-center">
 				{if isset($jmsSetting.footer_copyright_content) && $jmsSetting.footer_copyright_content}
-					<div class="layout-column col-6">
+					<div class="layout-column col-12 col-sm-12 col-md-12 col-lg-6">
 						{$jmsSetting.footer_copyright_content nofilter}
 					</div>
 				{/if}
 				{if isset($jmsSetting.footer_payment_image) && $jmsSetting.footer_payment_image}
-					<div class="layout-column col-6 payment-img text-right">
+					<div class="layout-column col-12 col-sm-12 col-md-12 col-lg-6 payment-img">
 						<img src="{$jmsSetting.footer_payment_image}" class="img-fluid" alt="{l s='Payments' d='Shop.jmstheme'}"/>
 					</div>
 				{/if}

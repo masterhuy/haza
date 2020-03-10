@@ -1,4 +1,4 @@
-<div class="row align-items-center">
+<div class="d-flex align-items-center">
 	{if $product.cover.bySize.cart_default.url}
 		<a class="cart-product-image layout-column" href="{$product.url}" title="{$product.name|escape:'html':'UTF-8'}">
 			<img alt="{$product.name|escape:'html':'UTF-8'}" src="{$product.cover.bySize.cart_default.url}" class="preview img-responsive" data-full-size-image-url = "{$product.cover.large.url}">

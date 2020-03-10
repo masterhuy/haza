@@ -22,7 +22,7 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info">
+<div class="_desktop_currency_selector btn-group compact-hidden currency-info">
    	<a href="#" class="title btn-xs" data-toggle="dropdown">
 		{$current_currency.iso_code} 
 	</a>

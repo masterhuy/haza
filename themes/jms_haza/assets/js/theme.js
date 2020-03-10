@@ -2078,16 +2078,16 @@
                         0: {
                             items: 1
                         },
+                        576: {
+                            items: 2
+                        },
                         768: {
                             items: 2
                         },
-                        991: {
-                            items: 2
-                        },
-                        1199: {
+                        992: {
                             items: 3
                         },
-                        1440: {
+                        1200: {
                             items: 4
                         }
                     }
@@ -2107,16 +2107,16 @@
                         0: {
                             items: e(this).data("xs")
                         },
-                        768: {
+                        576: {
                             items: e(this).data("sm")
                         },
-                        991: {
+                        768: {
                             items: e(this).data("md")
                         },
-                        1199: {
+                        992: {
                             items: e(this).data("lg")
                         },
-                        1440: {
+                        1200: {
                             items: e(this).data("items")
                         }
                     }

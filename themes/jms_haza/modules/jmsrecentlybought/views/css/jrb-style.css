@@ -62,8 +62,8 @@ body.toplevel_page_woo-notification {
 #woorebought-popup p {
     line-height: 18px;
     margin: 0 10px;
-    padding: 0 20px 0 0;
-    width: 80%;
+    width: 100%;
+    display: inline-grid;
 }
 
 #woorebought-popup p a {
@@ -71,7 +71,7 @@ body.toplevel_page_woo-notification {
     width: 100%;
     margin: 0;
     padding: 1px 0;
-    max-width: 220px;
+    max-width: 100%;
     font-weight: 600;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -107,7 +107,9 @@ body.toplevel_page_woo-notification {
     color: #0f0f0f;
 }
 #woorebought-popup a {
-    width: 100%;
+    width: 60px;
+    max-width: 60px;
+    min-width: 60px;
 }
 #woorebought-popup .woorebought-content {
     display: inline-flex;
@@ -119,5 +121,10 @@ body.toplevel_page_woo-notification {
 @media (min-width: 320px){
     #woorebought-popup{
         width: calc(100% - 28px);
+    }
+}
+@media (min-width: 576px){
+    #woorebought-popup{
+        max-width: 400px;
     }
 }

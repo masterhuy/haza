@@ -25,7 +25,8 @@
 
 <div class="block-contact links wrapper block">
     <h3 class="block-title">
-        {l s='Contact info' d='Shop.Theme.Global'}</span>
+        {l s='Contact info' d='Shop.Theme.Global'}
+        <i class="fal fa-plus"></i>
     </h3>
     <div class="block-content">
         <div class="address section">
