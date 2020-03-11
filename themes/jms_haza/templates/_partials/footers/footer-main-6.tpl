@@ -25,16 +25,16 @@
 <div id="footer-main" class="footer-main">
     <div class="container">
         <div class="row">
-            <div class="layout-column col-3 col-logo">
+            <div class="layout-column col-12 col-sm-12 col-md-3 col-lg-3 col-logo">
                 {include file='_partials/headers/logo.tpl'}
             </div>
-            <div class="layout-column col-9 block-content col-right">
+            <div class="layout-column col-12 col-sm-12 col-md-9 col-lg-9 block-content col-right">
                 <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Faq's</a></li>
-                    <li><a href="#">Term & policies</a></li>
-                    <li><a href="#">Affiliate</a></li>
-                    <li><a href="#">Our blog</a></li>          
+                    <li><a href="index.php?id_cms=4&controller=cms">About us</a></li>
+                    <li><a href="index.php?id_cms=12&controller=cms">Faq's</a></li>
+                    <li><a href="index.php?id_cms=14&controller=cms">Term & policies</a></li>
+                    <li><a href="index.php?id_cms=10&controller=cms">Affiliate</a></li>
+                    <li><a href="index.php?fc=module&module=jmsblog&category_id=1&controller=category">Our blog</a></li>          
                 </ul>
             </div>
         </div>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-03 09:46:04
+/* Smarty version 3.1.33, created on 2020-03-11 04:39:17
   from 'D:\xamppp\htdocs\jms_haza\modules\jmspagebuilder\views\templates\hook\pagebuilder_cmsbutton.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e5e275c0ce211_06801909',
+  'unifunc' => 'content_5e686b759e20d5_58518528',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e5e275c0ce211_06801909 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e686b759e20d5_58518528 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/template" id="tmpl-btn-add-page-cms">
     <div class="form-group row">

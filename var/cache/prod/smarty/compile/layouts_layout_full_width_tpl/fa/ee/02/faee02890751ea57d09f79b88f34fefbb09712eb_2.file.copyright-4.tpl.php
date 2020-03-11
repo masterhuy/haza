@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-10 09:14:37
+/* Smarty version 3.1.33, created on 2020-03-11 02:13:45
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\footers\copyright-4.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e675a7d0d6020_50978921',
+  'unifunc' => 'content_5e6849596f4ba2_20420931',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'faee02890751ea57d09f79b88f34fefbb09712eb' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\_partials\\footers\\copyright-4.tpl',
-      1 => 1583831669,
+      1 => 1583892745,
       2 => 'file',
     ),
   ),
@@ -21,20 +21,20 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/socials.tpl' => 1,
   ),
 ),false)) {
-function content_5e675a7d0d6020_50978921 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e6849596f4ba2_20420931 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14793898075e675a7d0d6022_96853172', 'footer-copyright');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18267488925e6849596cdaa7_88078944', 'footer-copyright');
 ?>
 
 <?php }
 /* {block 'footer-copyright'} */
-class Block_14793898075e675a7d0d6022_96853172 extends Smarty_Internal_Block
+class Block_18267488925e6849596cdaa7_88078944 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'footer-copyright' => 
   array (
-    0 => 'Block_14793898075e675a7d0d6022_96853172',
+    0 => 'Block_18267488925e6849596cdaa7_88078944',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -45,7 +45,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 		<div class="container">
 			<div class="row align-items-center">
 				<?php if (isset($_smarty_tpl->tpl_vars['jmsSetting']->value['footer_copyright_content']) && $_smarty_tpl->tpl_vars['jmsSetting']->value['footer_copyright_content']) {?>
-					<div class="layout-column col-12">
+					<div class="layout-column col-12 text-center">
 						<?php echo $_smarty_tpl->tpl_vars['jmsSetting']->value['footer_copyright_content'];?>
 
 					</div>

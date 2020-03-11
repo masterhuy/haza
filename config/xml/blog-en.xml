@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>The search engine, a strategic feature of your e-shop</title>
+    <link>https://www.prestashop.com/en/blog/search-engine-e-shop</link>
+    <description>You have worked on the structure and contents of your catalog, put in place a detailed menu and integrated a faceted filter on your categories… But you still notice that your customers can’t always</description>
+     <pubDate>Tue, 10 Mar 2020 17:31:24 +0100</pubDate>
+ <dc:creator>Richard Stefan</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/search-engine-e-shop</guid>
+  </item>
+  <item>
     <title>The PrestaShop 2020 Essentials</title>
     <link>https://www.prestashop.com/en/blog/prestashop-awards-2020</link>
     <description>The PrestaShop team is pleased to present our selection of modules and themes for your online shop.</description>
@@ -76,14 +84,6 @@
      <pubDate>Thu, 30 Jan 2020 17:26:58 +0100</pubDate>
  <dc:creator>PrestaShop Team</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/future-of-delivery</guid>
-  </item>
-  <item>
-    <title>Does your shopping cart page have all these features? We made a checklist</title>
-    <link>https://www.prestashop.com/en/blog/does-your-shopping-cart-page-have-all-these-features-we-made-a-checklist</link>
-    <description>If you own an e-commerce website, then one of the most important things to think about would be your shopping cart usability.</description>
-     <pubDate>Mon, 27 Jan 2020 15:26:38 +0100</pubDate>
- <dc:creator>Vytaure Banyte</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/does-your-shopping-cart-page-have-all-these-features-we-made-a-checklist</guid>
   </item>
   </channel>
 </rss>

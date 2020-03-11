@@ -1,31 +1,32 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-10 09:14:36
+/* Smarty version 3.1.33, created on 2020-03-11 08:51:14
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\modules\jmspagebuilder\views\templates\hook\addonpopupadvertising.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e675a7c0d6003_38782251',
+  'unifunc' => 'content_5e68a682286a09_81383576',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '62f962235a2f6b47e6253120c68f50264457f7d0' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\modules\\jmspagebuilder\\views\\templates\\hook\\addonpopupadvertising.tpl',
-      1 => 1580463388,
+      1 => 1583895232,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
+    'file:_partials/headers/logo.tpl' => 1,
   ),
 ),false)) {
-function content_5e675a7c0d6003_38782251 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e68a682286a09_81383576 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-popup-overlay" style="display:none;">
 	<div class="jms-popup">
-		<div class="logo">
-			<img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
-img/logo-black.png" />
+		<div class="layout-column col-auto header-left">
+			<?php $_smarty_tpl->_subTemplateRender('file:_partials/headers/logo.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 		</div>
 		<?php if ($_smarty_tpl->tpl_vars['popup_title']->value) {?>
 			<h2>

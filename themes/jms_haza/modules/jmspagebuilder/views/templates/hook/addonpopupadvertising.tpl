@@ -25,8 +25,8 @@
 *}
 <div class="jms-popup-overlay" style="display:none;">
 	<div class="jms-popup">
-		<div class="logo">
-			<img src="{$urls.theme_assets}img/logo-black.png" />
+		<div class="layout-column col-auto header-left">
+			{include file='_partials/headers/logo.tpl'}
 		</div>
 		{if $popup_title}
 			<h2>
