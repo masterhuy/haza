@@ -85,15 +85,4 @@
 	border-color: #fff;
 }
 
-/** PAGER **/
-.fs-pager-wrapper a, .fs-custom-pager-wrapper a{
-    font-weight:600;
-	font-size:16px;
-	position:relative;
-}
-.fs-pager-wrapper a.active {
-	position:relative;
-}
-.fs-pager-wrapper a.active::before {
-    position: relative;
-}
+

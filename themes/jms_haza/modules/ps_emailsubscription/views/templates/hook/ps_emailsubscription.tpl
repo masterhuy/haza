@@ -24,6 +24,12 @@
 *}
 <div class="email_subscription block">
 	<h3 class="block-title">{l s='Newsletter' d='Modules.Emailsubscription.Shop'}<i class="fal fa-plus"></i></h3>
+	<div class="title">
+		<h3 class="block-title">{l s='Newsletter' d='Modules.Emailsubscription.Shop'}</h3>
+		{if $conditions}
+			<p class="newsletter-desc">{$conditions}</p>
+		{/if}
+	</div>
 	<div class="block-content">
 		{if $conditions}
 			<p class="newsletter-desc">{$conditions}</p>

@@ -2064,6 +2064,35 @@
             });
             var n = !1;
             if (jmsSetting.carousel_lazyload) var n = !0;
+            e.each(e(".owl-carousel.content"), function(t, i) {
+                e(this).owlCarousel({
+                    loop: !0,
+                    margin: 10,
+                    nav: false,
+                    dots: false,
+                    autoplay: e(this).data("auto"),
+                    rewind: e(this).data("rewind"),
+                    slideBy: e(this).data("slidebypage"),
+                    lazyLoad: n,
+                    responsive: {
+                        0: {
+                            items: 2
+                        },
+                        576: {
+                            items: 2
+                        },
+                        768: {
+                            items: 3
+                        },
+                        992: {
+                            items: 4
+                        },
+                        1200: {
+                            items: 5
+                        }
+                    }
+                })
+            }),
             e.each(e(".owl-carousel.customs-carousel-product"), function(t, i) {
                 e(this).owlCarousel({
                     loop: !0,

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-11 08:51:15
+/* Smarty version 3.1.33, created on 2020-03-12 09:13:03
   from 'module:jmsajaxsearchviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e68a68329a629_31128158',
+  'unifunc' => 'content_5e69fd1f0c57b1_46059885',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e68a68329a629_31128158 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e69fd1f0c57b1_46059885 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="btn-group jms_ajax_search col-auto<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['search_box_type']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['search_box_type'], ENT_QUOTES, 'UTF-8');
 }?>" id="jms_ajax_search">
 	<?php $_smarty_tpl->_assignInScope('str_at', strpos($_smarty_tpl->tpl_vars['jmsSetting']->value['search_icon'],"_"));?>

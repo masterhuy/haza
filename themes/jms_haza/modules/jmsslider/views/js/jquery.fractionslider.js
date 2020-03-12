@@ -201,7 +201,7 @@
 				// pager again
 				if (options.pager || customPager) {
 					if (numb < 10) {
-						var tempObj = $('<a rel="' + index + '" href="#"><span> 0'+ numb + '</span></a>').bind('click', function() {
+						var tempObj = $('<a rel="' + index + '" href="#"><span> '+ numb + '</span></a>').bind('click', function() {
 							return pagerPressed(this);
 						});
 					}
