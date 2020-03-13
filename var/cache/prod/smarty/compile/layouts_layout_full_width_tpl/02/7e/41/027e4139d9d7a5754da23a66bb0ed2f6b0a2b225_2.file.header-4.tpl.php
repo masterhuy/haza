@@ -1,23 +1,24 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-10 07:15:18
+/* Smarty version 3.1.33, created on 2020-03-13 10:02:31
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\headers\header-4.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e410306d47692_99517650',
+  'unifunc' => 'content_5e6b5a3790a9c0_40853227',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '027e4139d9d7a5754da23a66bb0ed2f6b0a2b225' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\_partials\\headers\\header-4.tpl',
-      1 => 1581051572,
+      1 => 1584072157,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
+    'file:_partials/headers/logo.tpl' => 1,
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-button.tpl' => 1,
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-dropdown.tpl' => 1,
     'module:ps_customersignin/ps_customersignin-dropdown.tpl' => 1,
@@ -25,18 +26,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl' => 1,
   ),
 ),false)) {
-function content_5e410306d47692_99517650 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e6b5a3790a9c0_40853227 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="header-top" class="header-top<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky'] == 1) {?> header-sticky<?php }
 if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky'] == 1) && ($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky_effect'] != '')) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky_effect'], ENT_QUOTES, 'UTF-8');
 }?>">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="layout-column col-auto header-left">
-                <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
-">
-                    <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
-img/logo-2.png" />
-                </a>
+                <?php $_smarty_tpl->_subTemplateRender('file:_partials/headers/logo.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
             </div>
             <div class="layout-column megamenu">
                 <div id="hor-menu" class="<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['hormenu_class']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['hormenu_class'], ENT_QUOTES, 'UTF-8');
@@ -83,8 +81,8 @@ echo $_block_plugin2->smartyWidgetBlock(array('name'=>"jmsajaxsearch"), ob_get_c
 array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
                         <?php }?>
                     <?php }?>
-                    <div class="store-link">
-                        <a href="#" class="text-uppercase">
+                    <div class="store-link btn-group">
+                        <a href="index.php?controller=stores" class="text-uppercase">
                             <i class="fal fa-map-marker-alt"></i>
                             <span>Store</span>
                         </a>

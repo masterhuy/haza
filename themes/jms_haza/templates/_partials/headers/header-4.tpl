@@ -26,9 +26,7 @@
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="layout-column col-auto header-left">
-                <a href="{$urls.base_url}">
-                    <img src="{$urls.theme_assets}img/logo-2.png" />
-                </a>
+                {include file='_partials/headers/logo.tpl'}
             </div>
             <div class="layout-column megamenu">
                 <div id="hor-menu" class="{if $jmsSetting.hormenu_class} {$jmsSetting.hormenu_class}{/if} {if $jmsSetting.hormenu_align} align-{$jmsSetting.hormenu_align}{/if}">
@@ -49,7 +47,7 @@
                         {/if}
                     {/if}
                     <div class="store-link btn-group">
-                        <a href="#" class="text-uppercase">
+                        <a href="index.php?controller=stores" class="text-uppercase">
                             <i class="fal fa-map-marker-alt"></i>
                             <span>Store</span>
                         </a>

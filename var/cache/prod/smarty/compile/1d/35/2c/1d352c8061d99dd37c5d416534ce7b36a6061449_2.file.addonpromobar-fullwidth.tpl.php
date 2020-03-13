@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-12 04:42:17
+/* Smarty version 3.1.33, created on 2020-03-13 07:47:50
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\modules\jmspagebuilder\views\templates\hook\addonpromobar-fullwidth.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e69bda9207eb9_57174388',
+  'unifunc' => 'content_5e6b3aa647cd38_93810446',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e69bda9207eb9_57174388 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e6b3aa647cd38_93810446 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="promobar" class="promobar<?php if ($_smarty_tpl->tpl_vars['box_class']->value) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['box_class']->value, ENT_QUOTES, 'UTF-8');
 }
 if ($_smarty_tpl->tpl_vars['promobar_position']->value == 'top') {?> top<?php } else { ?> bottom<?php }

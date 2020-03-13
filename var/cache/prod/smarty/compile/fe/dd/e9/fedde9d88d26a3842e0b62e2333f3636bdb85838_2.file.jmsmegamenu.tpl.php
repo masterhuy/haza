@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-12 09:13:03
+/* Smarty version 3.1.33, created on 2020-03-13 10:02:32
   from 'D:\xamppp\htdocs\jms_haza\modules\jmsmegamenu\views\templates\hook\jmsmegamenu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e69fd1f0ae0a9_76171038',
+  'unifunc' => 'content_5e6b5a380061b6_90876860',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e69fd1f0ae0a9_76171038 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e6b5a380061b6_90876860 (Smarty_Internal_Template $_smarty_tpl) {
 echo $_smarty_tpl->tpl_vars['menu_html']->value;?>
 
 <?php }

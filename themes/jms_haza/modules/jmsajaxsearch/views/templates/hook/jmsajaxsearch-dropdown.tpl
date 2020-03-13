@@ -15,6 +15,7 @@
 	{/if}
 	<a href="#" class="btn-search" data-toggle="dropdown" data-display="static">
 		<i class="fal fa-search"></i>
+		<span class="text text-uppercase">{l s='Search' d='Modules.JmsAjaxsearch'}</span>
 	</a>
 	<div id="search-form-dropdown" class="search-form dropdown-menu">
 		<div class="search-box">

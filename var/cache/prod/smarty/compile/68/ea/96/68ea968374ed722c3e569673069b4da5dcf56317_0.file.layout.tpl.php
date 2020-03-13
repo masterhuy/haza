@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-12 01:38:42
+/* Smarty version 3.1.33, created on 2020-03-13 07:45:17
   from 'D:\xamppp\htdocs\jms_haza\admin041sahknz\themes\default\template\controllers\login\layout.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e6992a2c40354_26955424',
+  'unifunc' => 'content_5e6b3a0da3aa21_66827917',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e6992a2c40354_26955424 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e6b3a0da3aa21_66827917 (Smarty_Internal_Template $_smarty_tpl) {
 echo $_smarty_tpl->tpl_vars['header']->value;?>
 
 <?php echo $_smarty_tpl->tpl_vars['page']->value;?>
