@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-13 07:01:57
+/* Smarty version 3.1.33, created on 2020-03-17 08:39:59
   from 'D:\xamppp\htdocs\jms_haza\modules\jmsslider\views\templates\hook\layer-tool.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e6b2fe5647841_13149027',
+  'unifunc' => 'content_5e708cdf0ed386_61489059',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./quick-layer-list.tpl' => 1,
   ),
 ),false)) {
-function content_5e6b2fe5647841_13149027 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e708cdf0ed386_61489059 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="layer-tools" class="layer-tools">
     <div id="add-layer-wrap">

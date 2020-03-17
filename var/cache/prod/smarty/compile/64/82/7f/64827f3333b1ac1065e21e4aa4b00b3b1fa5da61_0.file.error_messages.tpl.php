@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-13 04:06:08
+/* Smarty version 3.1.33, created on 2020-03-17 03:52:47
   from 'D:\xamppp\htdocs\jms_haza\admin041sahknz\themes\new-theme\template\components\layout\error_messages.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e6b06b0943d81_84667853',
+  'unifunc' => 'content_5e70498f2bf4b2_66217942',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e6b06b0943d81_84667853 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e70498f2bf4b2_66217942 (Smarty_Internal_Template $_smarty_tpl) {
 if (count($_smarty_tpl->tpl_vars['errors']->value) && current($_smarty_tpl->tpl_vars['errors']->value) != '' && (!isset($_smarty_tpl->tpl_vars['disableDefaultErrorOutPut']->value) || $_smarty_tpl->tpl_vars['disableDefaultErrorOutPut']->value == false)) {?>
   <div class="bootstrap">
     <div class="alert alert-danger">

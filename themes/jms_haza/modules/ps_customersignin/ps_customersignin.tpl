@@ -22,7 +22,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div id="_desktop_user_info">
+<div class="_desktop_user_info">
 	<div class="user-info menu-collapse btn-group compact-hidden">
 		{if $logged}
 			<a href="#" class="account dropdown-toggle text-uppercase" data-toggle="dropdown">

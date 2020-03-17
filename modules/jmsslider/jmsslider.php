@@ -638,7 +638,7 @@ class Jmsslider extends Module
                     'bg' => $this->l('Background Config')
                     ),
                 'legend' => array(
-                    'title' => $this->l('Slide Seting'),
+                    'title' => $this->l('Slide Setting'),
                     'icon' => 'icon-cogs'
                     ),
                 'input' => array(

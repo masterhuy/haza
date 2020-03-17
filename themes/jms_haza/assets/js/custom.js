@@ -6,14 +6,7 @@ showAllDemo = () => {
     });
 }
 
-//back to top
-function back_to_top() {   
-    $('#back-to-top').click(function(event) {
-        event.preventDefault();
-        $('html, body').animate({scrollTop: 0}, 500);
-        return false;
-    })
-}
+
 jQuery(function ($) {
     "use strict";
     $(window).scroll(function () {
@@ -24,6 +17,15 @@ jQuery(function ($) {
 		}
     });
 });
+
+//back to top
+function back_to_top() {   
+    $('#back-to-top').click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 500);
+        return false;
+    })
+}
 
 $(window).load(function () {     
     back_to_top(); 
@@ -50,8 +52,9 @@ $(document).ready(function(){
     back_to_top();
 
 });
+
+/* Stop carousel */
 jQuery(window).load(function() {
-    /* Stop carousel */
     $('.carousel').carousel('pause');
 });
 

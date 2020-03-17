@@ -1,49 +1,10 @@
 /* Block JmsPopup */
-.jms-popup-content #newsletter_block_left .block_c_right .alert {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 3px;
-}
 .jms-popup-content h2 {
   font-size: 24px;
   letter-spacing: -1px;
   padding: 0 20px;
   line-height: 1.2;
   margin-bottom: 19px;
-}
-.jms-popup #social_block ul{
-  text-align: center;
-  margin-top: 0;
-}
-.jms-popup #social_block a {
-  width: 37px;
-  height: 37px;
-  border: 0;
-  font-size: 19px;
-  margin: 0 2.5px;
-  border-radius: 8px;
-}
-.jms-popup #social_block {
-  padding: 17px 0 19px;
-  text-align: center;
-  background: #141414;
-  border: 2px solid #fff;
-  color: #fff;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
-.jms-popup #social_block h3{
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: 0.1px;
-  padding-bottom: 16px;
-}
-.jms-popup #newsletter_block_left {
-  margin-bottom: 47px;
-  padding: 0;
-  margin-top: 18px;
 }
 .jms-popup .alert.alert-danger{
   padding: 0;
@@ -56,15 +17,18 @@
   transform: translate(-50%, -50%);
   overflow: hidden;
   background: #fff;
-  padding: 60px 109px;
+  padding: 2.8rem 7.267rem;
+}
+.jms-popup .site-logo-text{
+  font-size: 3.733rem;
 }
 .jms-popup .desc {
-  font-size: 26px;
+  font-size: 1.733rem;
   font-weight: 500;
   color: #000;
-  margin-top: 31px;
+  margin-top: 0.8667rem;
   letter-spacing: 0.2px;
-  margin-bottom: 18px;
+  margin-bottom: 1.267rem;
 }
 .jms-popup .newsletter-desc{
   display: none;
@@ -149,7 +113,7 @@
 }
 .dontshow .checkmark{
   position: absolute;
-  top: 7px;
+  top: 6px;
   left: 0;
   height: 16px;
   width: 16px;
@@ -191,12 +155,6 @@
   letter-spacing: 0.33px;
   line-height: 30px;
 }
-.jms-popup-content .textnews_h1.addon-title {
-    display: none;
-}
-.jms-popup-content  .block_c_right .newsletter-input , .jms-popup-content .newsletter-btn.buttonh1{
-    width: 100%;
-}
 .textnews_popup.addon-title > h2 {
     font-weight:500;
     font-size: 30px;
@@ -206,13 +164,6 @@
     font-size: 16px;
     margin: 0 auto;
     width: 76%;
-}
-.jms-popup-content .block_c_right #newsletter-input {
-  font-size: 12px;
-  height: 35px;
-  width: 100%;
-  padding: 0 15px;
-  margin-bottom: 0;
 }
 #newsletter-input::-webkit-input-placeholder {
   color: #555 !important;
