@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="row product-detail default">
-    <div class="pb-left-column col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <div class="pb-left-column col-lg-6 col-md-6 col-sm-6 col-12">
         <div class="pd-left-content">
             {block name='page_content_container'}
                 <section class="page-content" id="content">
@@ -36,7 +36,7 @@
             {/block}
         </div>
     </div>
-    <div class="pb-right-column col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <div class="pb-right-column col-lg-6 col-md-6 col-sm-6 col-12">
         {block name='page_header_container'}
             {block name='page_header'}
                 <h1 itemprop="name" class="product-name">{block name='page_title'}{$product.name}{/block}</h1>

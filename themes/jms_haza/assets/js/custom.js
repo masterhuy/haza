@@ -18,6 +18,12 @@ jQuery(function ($) {
     });
 });
 
+function changeShopGrid() {
+    if (jQuery(window).width() < 992) {
+        $('.products-grid.grid-1-2-1-2').removeClass('grid-1 grid-2 grid-3 grid-4');
+    } 
+}
+
 //back to top
 function back_to_top() {   
     $('#back-to-top').click(function(event) {
@@ -27,11 +33,16 @@ function back_to_top() {
     })
 }
 
+$(document).resize(function(){
+    changeShopGrid();
+});
+
 $(window).load(function () {     
     back_to_top(); 
 });
 
 $(document).ready(function(){
+    changeShopGrid();
     $("#header-sidebar, #sidebar-btn").on("click", function(e) {
         e.preventDefault();
     });

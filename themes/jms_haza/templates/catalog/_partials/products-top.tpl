@@ -24,15 +24,22 @@
  *}
 <div id="js-product-list-top" class="filters-panel">
 	<div class="row align-items-center">
-		<div class="col-4 col-md-6 col-sm-5 text-left">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-left">
 			{if $jmsSetting.shop_switchlist == 1}
 				<div class="view-mode">
 					<a class="switch-view view-grid {if $jmsSetting.shop_list == 'grid'}active{/if}"></a>
 					<a class="switch-view view-list {if $jmsSetting.shop_list == 'list'}active{/if}"></a>
 				</div>
 			{/if}
+			{if !empty($listing.rendered_facets)}
+				<div class="filter-button">
+					<button id="search_filter_toggler" class="btn-default">
+						{l s='Filter' d='Shop.Theme.Actions'}
+					</button>
+				</div>
+			{/if}
 		</div>
-		<div class="col-8 col-md-6 col-sm-7 text-right">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-9 col-right">
 			<div class="sort-by">
 				{block name='pagination'}
 					{include file='_partials/pagination.tpl' pagination=$listing.pagination}

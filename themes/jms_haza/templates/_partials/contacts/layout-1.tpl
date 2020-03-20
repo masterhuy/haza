@@ -31,13 +31,13 @@
         </div>
     </div>
     <div class="row contact-row">
-        <div class="col-md-6" id="contact-info">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6" id="contact-info">
             <div class="contact-box">
                 {widget name="ps_contactinfo" hook='displayRightColumn'}
             </div>
             {include file='_partials/socials.tpl'}
         </div>
-        <div class="col-md-6" id="contact-form">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6" id="contact-form">
             <div class="contact-box">
                 {widget name="contactform"}
             </div>

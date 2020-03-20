@@ -41,7 +41,7 @@
 						<div class="cat-post-list more-columns row">
 							{foreach from=$categories item=category}
 								{assign var=catparams value=['category_id' => $category.category_id, 'slug' => $category.alias]}
-								<div class="item col-6">
+								<div class="item col-12 col-sm-6 col-md-6 col-lg-6">
 									{if $category.image && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
 										<div class="post-thumb">
 											<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}"><img src="{$image_baseurl|escape:'html':'UTF-8'}{$category.image|escape:'html':'UTF-8'}" alt="{$category.title|escape:'htmlall':'UTF-8'}" class="img-responsive" /></a>

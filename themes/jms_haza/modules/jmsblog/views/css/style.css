@@ -90,13 +90,14 @@
 	margin-bottom: 7px;
 }
 .blog-widget {
-	margin-bottom: 37px;
+	margin-bottom: 2.467rem;
 }
 .blog-widget .comment-item p{
 	position: relative;
 	padding-bottom: 0;
 	line-height: 2;
 	margin-bottom: 0;
+	font-size: 15px;
 }
 .blog-widget .haschild > a i{
 	font-size: 12px;
@@ -121,10 +122,10 @@
 	display: inline-block;
 }
 .blog-widget.widget-recent-post {
-	margin-bottom: 48px;
+	margin-bottom: 3.2rem;
 }
-.blog-widget.widget-recent-post .widget-title{
-	padding-bottom: 20px;
+.blog-widget.widget-recent-post .widget-title {
+	padding-bottom: 1.333rem;
 }
 .blog-widget .comment-item .comment-info {
 	float:left;
@@ -285,14 +286,14 @@
 }
 #module-jmsblog-tag #footer,
 #module-jmsblog-archive #footer{
-	margin-top: 47px;
+	margin-top: 3.133rem;
 }
 .cat-post-list.more-columns .item{
 	border-bottom: 0;
 	padding-bottom: 0;
 }
 .cat-post-list.more-columns .item:not(:last-child){
-	margin-bottom: 45px;
+	margin-bottom: 3rem;
 }
 .cat-post-list.more-columns .item:hover .group{
 	opacity: 1;
@@ -334,7 +335,8 @@
 .cat-post-list .post-intro p,
 .cat-post-list .cat-intro p {
 	line-height: 1.85;
-	margin-bottom: 17px;
+	margin-bottom: 1.133rem;
+	font-size: 15px;
 }
 .cat-post-list .post-intro {
 	margin-top: 0;
@@ -447,10 +449,11 @@
 	text-align-last: center;
 	letter-spacing: 0.1px;
 	line-height: 1.82;
+	font-size: 15px;
 }
 .single-blog .post-fulltext .row{
-	margin-top: 42px;
-	margin-bottom: 42px;
+	margin-top: 2.8rem;
+	margin-bottom: 2.8rem;
 }
 .single-blog .post-fulltext .testimonial {
 	text-align: left;
@@ -549,7 +552,7 @@
 #module-jmsblog-post #footer,
 #module-jmsblog-categories #footer,
 #module-jmsblog-category #footer {
-	margin-top: 120px;
+	margin-top: 8rem;
 }
 .customs-html-left p{
 	margin-bottom: 0;
@@ -643,6 +646,7 @@ h4.heading {
 }
 #post-comments .post-info .title{
 	margin-bottom: 8px;
+	font-size: 15px;
 }
 #post-comments .post-info .title span{
 	font-size: 16px;
@@ -656,6 +660,7 @@ h4.heading {
 	width: 100px;
 }
 .post-comment-content {
+	font-size: 15px;
 	letter-spacing: -0.09px;
 	line-height: 1.8;
 }

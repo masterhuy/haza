@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="row product-detail product-layout-3columns">
-	<div class="pb-left-column col-4">
+	<div class="pb-left-column col-12 col-sm-12 col-md-4 col-lg-4">
 		<div class="pd-left-content">
 			{block name='page_content_container'}
 			<section class="page-content" id="content">
@@ -36,9 +36,9 @@
 			{/block}
 			</div>
 		</div>
-    <div class="pb-right-column col-8">
+    <div class="pb-right-column col-12 col-sm-12 col-md-8 col-lg-8">
         <div class="row">
-			<div class="column_left col-lg-7 col-sm-6 col-md-6 col-sx-12">
+			<div class="column-left col-lg-7 col-md-12 col-sm-12 col-12">
 				{block name='page_header_container'}
 					{block name='page_header'}
 						<h1 class="product-name" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
@@ -59,7 +59,7 @@
 					{/if}
 				</div>
           	</div>
-			<div class="column-right col-lg-5 col-md-6 col-sm-6 col-xs-12">
+			<div class="column-right col-lg-5 col-md-12 col-sm-12 col-12">
 				<div class="product-actions">
 					{block name='product_buy'}
 						<form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">

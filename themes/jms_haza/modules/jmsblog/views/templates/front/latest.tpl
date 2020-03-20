@@ -41,7 +41,7 @@
 						{foreach from=$posts item=post}
 							{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
 							{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}
-							<div class="item col-6">
+							<div class="item col-12 col-sm-6 col-md-6 col-lg-6">
 								<div class="blog-post">
 									{if $post.link_video && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
 										<div class="post-thumb">

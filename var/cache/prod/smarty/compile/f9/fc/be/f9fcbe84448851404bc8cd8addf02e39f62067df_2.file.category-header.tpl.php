@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-25 02:25:23
+/* Smarty version 3.1.33, created on 2020-03-18 08:33:32
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\catalog\_partials\category-header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e5485932c96a4_04403819',
+  'unifunc' => 'content_5e71dcdc80e8a0_59219899',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e5485932c96a4_04403819 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e71dcdc80e8a0_59219899 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['listing']->value['pagination']['items_shown_from'] == 1) {?>
     <div id="js-product-list-header">
         <div class="block-category">

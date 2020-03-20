@@ -118,13 +118,13 @@ $(document).on('click', '.dropdown-menu', function (e) {
 });
 
 function changeShopGrid() {
-    if (jQuery(window).width() < 480) {
+    if (jQuery(window).width() < 576) {
         $('.products-grid').removeClass('grid-1 grid-2 grid-3 grid-4');
         $('.products-grid').addClass('grid-1');
     } else if(jQuery(window).width() < 768) {
         $('.products-grid').removeClass('grid-1 grid-2 grid-3 grid-4');
         $('.products-grid').addClass('grid-2');
-    } else if(jQuery(window).width() < 991) {
+    } else if(jQuery(window).width() < 992) {
         $('.products-grid').removeClass('grid-1 grid-2 grid-3 grid-4');
         $('.products-grid').addClass('grid-3');
     } else {

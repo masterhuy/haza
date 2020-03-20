@@ -63,7 +63,7 @@
     {/strip}
 {/function}
 
-<div class="block-categories hidden-sm-down">
+<div class="block-categories">
 	{if $page.page_name != 'index'}
 		<div class="title-block">
 			<h3 class="d-flex cursor-pointer" data-toggle="collapse" data-target="#category-sub-menu">

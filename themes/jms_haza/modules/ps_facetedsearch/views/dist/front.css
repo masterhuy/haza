@@ -80,13 +80,6 @@
   margin-top: 15px;
   width: calc(100% - 15px);
 }
-.ranger{
-  letter-spacing: 0.3px;
-}
-.ranger::before {
-  content: "Ranger";
-  margin-right: 5px;
-}
 
 #search_filters .facet .facet-label {
   width: 100%;

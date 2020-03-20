@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>COVID-19: shipping and delivery situation dashboard</title>
+    <link>https://www.prestashop.com/en/blog/shipping-delivery-dashboard</link>
+    <description>Following measures taken by European governments handling the COVID-19 epidemic and depending on your local situation, ecommer</description>
+     <pubDate>Thu, 19 Mar 2020 16:34:55 +0100</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/shipping-delivery-dashboard</guid>
+  </item>
+  <item>
     <title>The search engine, a strategic feature of your e-shop</title>
     <link>https://www.prestashop.com/en/blog/search-engine-e-shop</link>
     <description>You have worked on the structure and contents of your catalog, put in place a detailed menu and integrated a faceted filter on your categories… But you still notice that your customers can’t always</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 03 Feb 2020 11:46:53 +0100</pubDate>
  <dc:creator>NitinSrivastavaen</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/e-commerce-flow</guid>
-  </item>
-  <item>
-    <title>The future of delivery: what will it look like?</title>
-    <link>https://www.prestashop.com/en/blog/future-of-delivery</link>
-    <description>From the robotic solutions tested in China or the United States, to improving local coverage, what are the advances that will </description>
-     <pubDate>Thu, 30 Jan 2020 17:26:58 +0100</pubDate>
- <dc:creator>PrestaShop Team</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/future-of-delivery</guid>
   </item>
   </channel>
 </rss>

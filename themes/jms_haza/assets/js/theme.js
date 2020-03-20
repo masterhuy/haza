@@ -1645,8 +1645,8 @@
         r.default.each((0, r.default)(u), function(e, t) {
             (0, r.default)(t).TouchSpin({
                 verticalbuttons: !0,
-                verticalupclass: "fa fa-angle-up touchspin-up",
-                verticaldownclass: "fa fa-angle-down touchspin-down",
+                verticalupclass: "fal fa-angle-up touchspin-up",
+                verticaldownclass: "fal fa-angle-down touchspin-down",
                 buttondown_class: "btn btn-touchspin  js-touchspin js-increase-product-quantity",
                 buttonup_class: "btn btn-touchspin js-decrease-product-quantity",
                 min: parseInt((0, r.default)(t).attr("min"), 10),
@@ -2038,7 +2038,16 @@
     "use strict";
 
     function o() {
-        jQuery(window).width() < 480 ? ($(".products-grid").removeClass("grid-1 grid-2 grid-3 grid-4"), $(".products-grid").addClass("grid-1")) : jQuery(window).width() < 768 ? ($(".products-grid").removeClass("grid-1 grid-2 grid-3 grid-4"), $(".products-grid").addClass("grid-2")) : jQuery(window).width() < 991 ? ($(".products-grid").removeClass("grid-1 grid-2 grid-3 grid-4"), $(".products-grid").addClass("grid-3")) : ($(".products-grid").removeClass("grid-1 grid-2 grid-3 grid-4"), $(".products-grid").addClass("grid-" + jmsSetting.shop_grid_column))
+        jQuery(window).width() < 576 ? ($(".products-grid").removeClass("grid-1 grid-2 grid-3 grid-4"), $(".products-grid").addClass("grid-1")) : jQuery(window).width() < 768 ? ($(".products-grid").removeClass("grid-1 grid-2 grid-3 grid-4"), $(".products-grid").addClass("grid-2")) : jQuery(window).width() < 992 ? ($(".products-grid").removeClass("grid-1 grid-2 grid-3 grid-4"), $(".products-grid").addClass("grid-3")) : ($(".products-grid").removeClass("grid-1 grid-2 grid-3 grid-4"), $(".products-grid").addClass("grid-" + jmsSetting.shop_grid_column))
+    }
+
+    function u() {
+        if (jQuery(window).width() < 992) {
+            $('.products-grid.grid-1-2-1-2').removeClass('grid-1 grid-2 grid-3 grid-4');
+            $('.products-grid.grid-2-1-2-1').removeClass('grid-1 grid-2 grid-3 grid-4');
+            $('.products-grid.grid-1-3-1-3').removeClass('grid-1 grid-2 grid-3 grid-4');
+            $('.products-grid.grid-3-1-3-1').removeClass('grid-1 grid-2 grid-3 grid-4');
+        } 
     }
 
     function n() {
@@ -2154,7 +2163,7 @@
                 zoomType: "inner",
                 cursor: "crosshair",
                 zoomWindowFadeIn: 500,
-                zoomWindowFadeOut: 750
+                zoomWindowFadeOut: 750,
             }), e.each(e(".countdown"), function(t, i) {
                 var o = e(this).html(),
                     n = o.split(" "),
@@ -2179,9 +2188,9 @@
         $(".jms-megamenu").jmsMegaMenu({
             event: "hover",
             duration: 100
-        }), o(), n()
+        }), o(), n(), u()
     }), jQuery(window).resize(function() {
-        o(), n()
+        o(), n(), u()
     }), $(document).on("click", "#footer-main .block-title i", function(e) {
         $(this).parent().parent().find(".block-content").toggleClass("collapse"), $(this).parent().parent().find(".block-content").hasClass("collapse") ? ($(this).removeClass("fa-minus"), $(this).addClass("fa-plus")) : ($(this).removeClass("fa-plus"), $(this).addClass("fa-minus"))
     })
@@ -4670,11 +4679,11 @@
             })
         };
         (0, r.default)("body").on("click", "#search_filter_toggler", function() {
-            (0, r.default)("#search_filters_wrapper").removeClass("hidden-sm-down"), (0, r.default)("#content-wrapper").addClass("hidden-sm-down"), (0, r.default)("#footer").addClass("hidden-sm-down")
+            (0, r.default)("#search_filters_wrapper").removeClass("hidden-md-down"), (0, r.default)("#content-wrapper").addClass("hidden-md-down"), (0, r.default)("#footer").addClass("hidden-md-down")
         }), (0, r.default)("#search_filter_controls .clear").on("click", function() {
-            (0, r.default)("#search_filters_wrapper").addClass("hidden-sm-down"), (0, r.default)("#content-wrapper").removeClass("hidden-sm-down"), (0, r.default)("#footer").removeClass("hidden-sm-down")
+            (0, r.default)("#search_filters_wrapper").addClass("hidden-md-down"), (0, r.default)("#content-wrapper").removeClass("hidden-md-down"), (0, r.default)("#footer").removeClass("hidden-md-down")
         }), (0, r.default)("#search_filter_controls .ok").on("click", function() {
-            (0, r.default)("#search_filters_wrapper").addClass("hidden-sm-down"), (0, r.default)("#content-wrapper").removeClass("hidden-sm-down"), (0, r.default)("#footer").removeClass("hidden-sm-down")
+            (0, r.default)("#search_filters_wrapper").addClass("hidden-md-down"), (0, r.default)("#content-wrapper").removeClass("hidden-md-down"), (0, r.default)("#footer").removeClass("hidden-md-down")
         }), (0, r.default)("body").on("change", "#search_filters input[data-search-url]", function(e) {
             l.default.emit("updateFacets", e.target.dataset.searchUrl)
         }), (0, r.default)("body").on("click", ".js-search-filters-clear-all", function(e) {
@@ -4757,7 +4766,7 @@
                 i = "ondemand",
                 o = [];
             "thumbs-left" != jmsSetting.product_content_layout && "thumbs-right" != jmsSetting.product_content_layout || (e = !0, t = 4, i = "progressive"), "thumbs-left" == jmsSetting.product_content_layout && (o = [{
-                breakpoint: 769,
+                // breakpoint: 769,
                 settings: {
                     slidesToShow: 5,
                     slidesToScroll: 5,

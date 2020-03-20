@@ -28,7 +28,7 @@
 {block name='right_column'}{/block}
 
 {block name='content_wrapper'}
-  <div id="content-wrapper" {if $page.page_name != "index"}class="col-lg-12 col-md-12 col-sm-12 col-xs-12"{/if}>
+  <div id="content-wrapper" {if $page.page_name != "index"}class="col-lg-12 col-md-12 col-sm-12 col-12"{/if}>
     {block name='content'}
       <p>Hello world! This is HTML5 Boilerplate.</p>
     {/block}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-06 03:37:13
+/* Smarty version 3.1.33, created on 2020-03-20 06:36:56
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\contacts\layout-1.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e61c56905d3f1_85021651',
+  'unifunc' => 'content_5e746488edfe07_13252879',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '853aaf17ed09a636d2f07e8583f8de1c190f9427' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\_partials\\contacts\\layout-1.tpl',
-      1 => 1582871733,
+      1 => 1584677745,
       2 => 'file',
     ),
   ),
@@ -21,24 +21,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/socials.tpl' => 1,
   ),
 ),false)) {
-function content_5e61c56905d3f1_85021651 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e746488edfe07_13252879 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6914543625e61c56905d3f0_63778600', 'page_header_container');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5289546355e746488ed8100_62372029', 'page_header_container');
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1664750515e61c56905d3f3_17579325', 'page_content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10448332655e746488ed8103_29259745', 'page_content');
 ?>
 
 <?php }
 /* {block 'page_header_container'} */
-class Block_6914543625e61c56905d3f0_63778600 extends Smarty_Internal_Block
+class Block_5289546355e746488ed8100_62372029 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_header_container' => 
   array (
-    0 => 'Block_6914543625e61c56905d3f0_63778600',
+    0 => 'Block_5289546355e746488ed8100_62372029',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -46,12 +46,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'page_header_container'} */
 /* {block 'page_content'} */
-class Block_1664750515e61c56905d3f3_17579325 extends Smarty_Internal_Block
+class Block_10448332655e746488ed8103_29259745 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_1664750515e61c56905d3f3_17579325',
+    0 => 'Block_10448332655e746488ed8103_29259745',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -65,7 +65,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
         </div>
     </div>
     <div class="row contact-row">
-        <div class="col-md-6" id="contact-info">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6" id="contact-info">
             <div class="contact-box">
                 <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['widget'][0], array( array('name'=>"ps_contactinfo",'hook'=>'displayRightColumn'),$_smarty_tpl ) );?>
 
@@ -73,7 +73,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
             <?php $_smarty_tpl->_subTemplateRender('file:_partials/socials.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
         </div>
-        <div class="col-md-6" id="contact-form">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6" id="contact-form">
             <div class="contact-box">
                 <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['widget'][0], array( array('name'=>"contactform"),$_smarty_tpl ) );?>
 

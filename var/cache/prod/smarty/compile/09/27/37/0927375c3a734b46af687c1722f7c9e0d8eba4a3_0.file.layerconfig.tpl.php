@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-17 08:39:59
+/* Smarty version 3.1.33, created on 2020-03-18 03:36:29
   from 'D:\xamppp\htdocs\jms_haza\modules\jmsslider\views\templates\hook\layerconfig.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e708cdf1feac2_25266864',
+  'unifunc' => 'content_5e71973d68ce86_39487819',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e708cdf1feac2_25266864 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e71973d68ce86_39487819 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="form_layer_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
 " class="form-layer panel-bodyclearfix" style="display:none">
     <input type="hidden" name="layer_ids[]" value="<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
