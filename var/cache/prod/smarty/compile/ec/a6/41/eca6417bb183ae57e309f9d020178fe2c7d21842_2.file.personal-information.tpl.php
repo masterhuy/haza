@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-20 08:57:42
+/* Smarty version 3.1.33, created on 2020-03-23 02:11:59
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\checkout\_partials\steps\personal-information.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e748586746990_73805381',
+  'unifunc' => 'content_5e781aef4da2f5_21209062',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'eca6417bb183ae57e309f9d020178fe2c7d21842' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\checkout\\_partials\\steps\\personal-information.tpl',
-      1 => 1583393971,
+      1 => 1584928878,
       2 => 'file',
     ),
   ),
@@ -20,25 +20,25 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e748586746990_73805381 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e781aef4da2f5_21209062 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18340259035e748586727583_82467282', 'step_content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5065932225e781aef4b31f4_23213400', 'step_content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'checkout/_partials/steps/checkout-step.tpl');
 }
 /* {block 'step_content'} */
-class Block_18340259035e748586727583_82467282 extends Smarty_Internal_Block
+class Block_5065932225e781aef4b31f4_23213400 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'step_content' => 
   array (
-    0 => 'Block_18340259035e748586727583_82467282',
+    0 => 'Block_5065932225e781aef4b31f4_23213400',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -79,7 +79,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     </div>
 
   <?php } else { ?>
-    <ul class="nav nav-inline my-2" role="tablist">
+    <ul class="nav nav-inline my-2 align-items-center" role="tablist">
       <li class="nav-item">
         <a
           class="nav-link <?php if (!$_smarty_tpl->tpl_vars['show_login_form']->value) {?>active<?php }?>"

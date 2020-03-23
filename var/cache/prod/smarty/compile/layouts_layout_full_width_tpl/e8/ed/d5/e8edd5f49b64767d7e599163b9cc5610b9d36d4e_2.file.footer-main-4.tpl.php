@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-20 09:03:07
+/* Smarty version 3.1.33, created on 2020-03-23 08:39:14
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\footers\footer-main-4.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e7486cb84e8c6_18095511',
+  'unifunc' => 'content_5e7875b21de3a4_61375362',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e7486cb84e8c6_18095511 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e7875b21de3a4_61375362 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -29,7 +29,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         <div class="row">
             <div class="layout-column newsletter">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2057149595e7486cb84aa44_29006722', 'footer-newsletter');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9750968565e7875b21de3a5_32213388', 'footer-newsletter');
 ?>
 
             </div>
@@ -38,12 +38,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2057149595e7486cb8
 </div>
 <?php }
 /* {block 'footer-newsletter'} */
-class Block_2057149595e7486cb84aa44_29006722 extends Smarty_Internal_Block
+class Block_9750968565e7875b21de3a5_32213388 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'footer-newsletter' => 
   array (
-    0 => 'Block_2057149595e7486cb84aa44_29006722',
+    0 => 'Block_9750968565e7875b21de3a5_32213388',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

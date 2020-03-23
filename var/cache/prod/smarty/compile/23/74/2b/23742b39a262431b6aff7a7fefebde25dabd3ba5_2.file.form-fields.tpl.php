@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-20 08:57:42
+/* Smarty version 3.1.33, created on 2020-03-23 02:06:29
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\form-fields.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e748586c7ab44_56871920',
+  'unifunc' => 'content_5e7819a5051884_73759646',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '23742b39a262431b6aff7a7fefebde25dabd3ba5' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\_partials\\form-fields.tpl',
-      1 => 1576135836,
+      1 => 1584927968,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/form-errors.tpl' => 1,
   ),
 ),false)) {
-function content_5e748586c7ab44_56871920 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e7819a5051884_73759646 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_haza\\vendor\\smarty\\smarty\\libs\\plugins\\function.html_select_date.php','function'=>'smarty_function_html_select_date',),));
 if ($_smarty_tpl->tpl_vars['field']->value['type'] == 'hidden') {?>
 
@@ -176,7 +176,7 @@ echo smarty_function_html_select_date(array('field_order'=>'DMY','time'=>$_prefi
           >
           <span class="input-group-btn show-pass">
             <button
-              class=""
+              class="btn-default"
               type="button"
               data-action="show-password"
               data-text-show="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Show','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>

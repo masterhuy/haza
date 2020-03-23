@@ -292,8 +292,8 @@ class JmsPageBuilder extends Module
             $this->context->controller->registerJavascript('jmspb-home-js', '/assets/js/'.$homepage['js_file'], ['position' => 'bottom', 'priority' => 200]);
         }
         if ((int)$jpb_rtl || $this->context->language->is_rtl) {
-            $this->context->controller->registerStylesheet('jmspb-home-rtl', '/assets/css/rtl.css', ['media' => 'all', 'priority' => 1000]);
-			$this->context->controller->registerStylesheet('jmspb-rtl-page', '/assets/css/rtl-'.$homepage['css_file'], ['media' => 'all', 'priority' => 1000]);
+            $this->context->controller->registerStylesheet('jmspb-home-rtl', '/assets/css/rtl.css', ['media' => 'all', 'priority' => 2000]);
+			$this->context->controller->registerStylesheet('jmspb-rtl-page', '/assets/css/rtl-'.$homepage['css_file'], ['media' => 'all', 'priority' => 2000]);
         }
         $this->context->smarty->assign('themename', _THEME_NAME_);
         $this->context->smarty->assign('jpb_homepage', $jpb_homepage);

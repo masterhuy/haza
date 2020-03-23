@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-05 07:42:37
+/* Smarty version 3.1.33, created on 2020-03-23 02:11:59
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\checkout\_partials\steps\payment.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e60ad6d9bc5e6_31107993',
+  'unifunc' => 'content_5e781aef6ca488_46584612',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '20bb084ea2059a4b690cd7e3de8864e3b7750b74' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\checkout\\_partials\\steps\\payment.tpl',
-      1 => 1576139890,
+      1 => 1583394223,
       2 => 'file',
     ),
   ),
@@ -21,25 +21,25 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:checkout/_partials/order-final-summary.tpl' => 1,
   ),
 ),false)) {
-function content_5e60ad6d9bc5e6_31107993 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e781aef6ca488_46584612 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17886600975e60ad6d981c51_06837835', 'step_content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_512598285e781aef693974_60912561', 'step_content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'checkout/_partials/steps/checkout-step.tpl');
 }
 /* {block 'step_content'} */
-class Block_17886600975e60ad6d981c51_06837835 extends Smarty_Internal_Block
+class Block_512598285e781aef693974_60912561 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'step_content' => 
   array (
-    0 => 'Block_17886600975e60ad6d981c51_06837835',
+    0 => 'Block_512598285e781aef693974_60912561',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -196,7 +196,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['condition_name']->value => $_smarty_t
                         value = "1"
                         class = "ps-shown-by-js"
                 >
-                <span><i class="fa fa-check rtl-no-flip checkbox-checked"></i></span>
+                <span><i class="fal fa-check rtl-no-flip checkbox-checked"></i></span>
               </span>
             </div>
             <div class="condition-label">

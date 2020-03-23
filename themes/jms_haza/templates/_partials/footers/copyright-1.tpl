@@ -27,7 +27,7 @@
         <div class="container">
             <div class="row align-items-center">
                 {if isset($jmsSetting.footer_copyright_content) && $jmsSetting.footer_copyright_content}
-                    <div class="layout-column col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="layout-column copyright-content col-lg-6 col-md-12 col-sm-12 col-12">
                         {$jmsSetting.footer_copyright_content nofilter}
                     </div>
                 {/if}

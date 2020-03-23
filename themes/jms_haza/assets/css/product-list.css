@@ -540,7 +540,7 @@
 }
 .productbox-1 .product-info {
 	position: relative;
-	margin-top: 22px;
+	margin-top: 1.467rem;
 }
 .productbox-1 .product-info .variant-links{
 	display: none;
@@ -559,8 +559,8 @@
 	display: inline-block;
 	line-height: 1;
 	position: absolute;
-	top: 30px;
-	right: 26px;
+	top: 2rem;
+	right: 1.733rem;
 	transition: all 400ms;
 	-webkit-transition: all 400ms;
 	-moz-transition: all 400ms;
@@ -584,23 +584,23 @@
 }
 .productbox-1 .text-addcart,
 .productbox-1 .text-outofstock {
-		font-weight: 700;
-		font-size: 0.8125em;
-		text-transform: uppercase;
-		display: inline-block;
+	font-weight: 700;
+	font-size: 0.8125em;
+	text-transform: uppercase;
+	display: inline-block;
 }
 .productbox-1 .product-cart .ptw-icon {
-		font-size:20px;
-		margin-right:5px;
+	font-size: 20px;
+	margin-right: 5px;
 }
 .productbox-1 .product-buttons {
-	padding: 30px 0;
+	padding: 2rem 0;
 	opacity: 0;
 	visibility: hidden;
 	list-style: none;
 	margin: 0px;
 	position: absolute;
-	bottom: -50px;
+	bottom: -3.333rem;
 	left: 0;
 	width: 100%;
 	display: flex;
@@ -618,7 +618,7 @@
 	bottom: 0;
 }
 .productbox-1 .product-buttons li{
-	padding: 0 36px;
+	padding: 0 2.4rem;
 	position: relative;
 }
 .productbox-1 .product-buttons li:not(:last-child)::after{
@@ -637,13 +637,14 @@
 .productbox-1 .product-buttons i:hover{
 	color: #ff794f;
 }
+
 /***** Product Box 2 *****/
 .productbox-2 .product-preview{
 	overflow: hidden;
 }
 .productbox-2 .product-info {
 	position: relative;
-	margin-top: 20px;
+	margin-top: 1.333rem;
 }
 .productbox-2 .product-info .product-buttons{
 	display: none;
@@ -654,7 +655,7 @@
 }
 .productbox-2 .variant-links {
 	margin: 0;
-	margin-bottom: 12px;
+	margin-bottom: 0.8rem;
 	display: inline-block;
 	line-height: 1;
 }
@@ -671,23 +672,23 @@
 }
 .productbox-2 .text-addcart,
 .productbox-2 .text-outofstock {
-		font-weight: 700;
-		font-size: 0.8125em;
-		text-transform: uppercase;
-		display: inline-block;
+	font-weight: 700;
+	font-size: 0.8125em;
+	text-transform: uppercase;
+	display: inline-block;
 }
 .productbox-2 .product-cart .ptw-icon {
-		font-size:20px;
-		margin-right:5px;
+	font-size:20px;
+	margin-right:5px;
 }
 .productbox-2 .product-buttons {
-	padding: 30px 0;
+	padding: 2rem 0;
 	opacity: 0;
 	visibility: hidden;
 	list-style: none;
 	margin: 0px;
 	position: absolute;
-	bottom: -50px;
+	bottom: -3.333rem;
 	left: 0;
 	width: 100%;
 	display: flex;
@@ -705,7 +706,7 @@
 	bottom: 0;
 }
 .productbox-2 .product-buttons li{
-	padding: 0 36px;
+	padding: 0 2.4rem;
 	position: relative;
 }
 .productbox-2 .product-buttons li:not(:last-child)::after{
@@ -729,8 +730,8 @@
 .productbox-3 .addToWishlist {
 	display: inline-flex;
 	position: absolute;
-	right: 12px;
-	bottom: 12px;
+	right: 0.8rem;
+	bottom: 0.8rem;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
@@ -778,7 +779,6 @@
 .productbox-3 .product-info .product-buttons{
 	display: none;
 }
-
 
 /***** Product Box 4 *****/
 .productbox-4 .product-buttons {

@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>COVID-19: practical tips for online retailers</title>
+    <link>https://www.prestashop.com/en/blog/coronavirus-tips</link>
+    <description>The consequences linked to the health situation are evolving day by day, and some areas of uncertainty remain to be defined.</description>
+     <pubDate>Fri, 20 Mar 2020 12:13:00 +0100</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/coronavirus-tips</guid>
+  </item>
+  <item>
     <title>COVID-19: shipping and delivery situation dashboard</title>
     <link>https://www.prestashop.com/en/blog/shipping-delivery-dashboard</link>
     <description>Following measures taken by European governments handling the COVID-19 epidemic and depending on your local situation, ecommer</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 10 Feb 2020 17:32:13 +0100</pubDate>
  <dc:creator>James Messer</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/better-returns-shipping-ecommerce</guid>
-  </item>
-  <item>
-    <title>Product Flow in e-commerce: What are we talking about?</title>
-    <link>https://www.prestashop.com/en/blog/e-commerce-flow</link>
-    <description>For online shoppers, it is just about placing the order and getting it delivered at their doorstep, but for e-commerce merchants, the process from order creation to its delivery is a relay race.</description>
-     <pubDate>Mon, 03 Feb 2020 11:46:53 +0100</pubDate>
- <dc:creator>NitinSrivastavaen</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/e-commerce-flow</guid>
   </item>
   </channel>
 </rss>

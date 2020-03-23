@@ -31,9 +31,7 @@
                 </div>
             </div>
             <div class="layout-column col-4 header-logo">
-                <a href="{$urls.base_url}">
-                    <img src="{$urls.theme_assets}img/logo-2.png" />
-                </a>
+                {include file='_partials/headers/logo.tpl'}
             </div>
             <div class="layout-column col-4 header-right">
                 <div class="row">

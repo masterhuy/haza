@@ -2072,9 +2072,12 @@
                 e.stopPropagation();
             });
             var n = !1;
+            var rtl = false;
+		    if ($("body").hasClass("rtl")) rtl = true;
             if (jmsSetting.carousel_lazyload) var n = !0;
             e.each(e(".owl-carousel.content"), function(t, i) {
                 e(this).owlCarousel({
+                    rtl: rtl,
                     loop: !0,
                     margin: 10,
                     nav: false,
@@ -2104,6 +2107,7 @@
             }),
             e.each(e(".owl-carousel.customs-carousel-product"), function(t, i) {
                 e(this).owlCarousel({
+                    rtl: rtl,
                     loop: !0,
                     margin: 28,
                     nav: false,
@@ -2133,6 +2137,7 @@
             }),
             e.each(e(".owl-carousel"), function(t, i) {
                 e(this).owlCarousel({
+                    rtl: rtl,
                     loop: !0,
                     margin: 28,
                     nav: e(this).data("nav"),

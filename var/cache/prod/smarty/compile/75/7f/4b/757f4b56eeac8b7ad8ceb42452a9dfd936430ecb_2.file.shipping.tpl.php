@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-05 07:42:37
+/* Smarty version 3.1.33, created on 2020-03-23 02:11:59
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\checkout\_partials\steps\shipping.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e60ad6d8ce137_22741684',
+  'unifunc' => 'content_5e781aef5766f0_19064020',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '757f4b56eeac8b7ad8ceb42452a9dfd936430ecb' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\checkout\\_partials\\steps\\shipping.tpl',
-      1 => 1583393975,
+      1 => 1583394229,
       2 => 'file',
     ),
   ),
@@ -20,20 +20,20 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e60ad6d8ce137_22741684 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e781aef5766f0_19064020 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17918354585e60ad6d8aed20_91335985', 'step_content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9561674345e781aef54f5f4_72411328', 'step_content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'checkout/_partials/steps/checkout-step.tpl');
 }
 /* {block 'delivery_options'} */
-class Block_14499138395e60ad6d8b2ba4_40143390 extends Smarty_Internal_Block
+class Block_11605295385e781aef5766f8_88408598 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -98,16 +98,16 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block 'delivery_options'} */
 /* {block 'step_content'} */
-class Block_17918354585e60ad6d8aed20_91335985 extends Smarty_Internal_Block
+class Block_9561674345e781aef54f5f4_72411328 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'step_content' => 
   array (
-    0 => 'Block_17918354585e60ad6d8aed20_91335985',
+    0 => 'Block_9561674345e781aef54f5f4_72411328',
   ),
   'delivery_options' => 
   array (
-    0 => 'Block_14499138395e60ad6d8b2ba4_40143390',
+    0 => 'Block_11605295385e781aef5766f8_88408598',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -129,7 +129,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
       >
         <div class="form-fields">
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14499138395e60ad6d8b2ba4_40143390', 'delivery_options', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11605295385e781aef5766f8_88408598', 'delivery_options', $this->tplIndex);
 ?>
 
           <div class="order-options">
@@ -143,7 +143,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14499138395e60ad6d
             <?php if ($_smarty_tpl->tpl_vars['recyclablePackAllowed']->value) {?>
               <span class="custom-checkbox">
                 <input type="checkbox" id="input_recyclable" name="recyclable" value="1" <?php if ($_smarty_tpl->tpl_vars['recyclable']->value) {?> checked <?php }?>>
-                <span><i class="fa fa-check rtl-no-flip checkbox-checked"></i></span>
+                <span><i class="fal fa-check rtl-no-flip checkbox-checked"></i></span>
                 <label for="input_recyclable"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'I would like to receive my order in recycled packaging.','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
 </label>
               </span>
@@ -152,7 +152,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14499138395e60ad6d
             <?php if ($_smarty_tpl->tpl_vars['gift']->value['allowed']) {?>
               <span class="custom-checkbox">
                 <input class="js-gift-checkbox" id="input_gift" name="gift" type="checkbox" value="1" <?php if ($_smarty_tpl->tpl_vars['gift']->value['isGift']) {?>checked="checked"<?php }?>>
-                <span><i class="fa fa-check rtl-no-flip checkbox-checked"></i></span>
+                <span><i class="fal fa-check rtl-no-flip checkbox-checked"></i></span>
                 <label for="input_gift"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['gift']->value['label'], ENT_QUOTES, 'UTF-8');?>
 </label >
               </span>

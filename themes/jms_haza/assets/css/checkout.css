@@ -11,19 +11,6 @@
 .content ul {
 	padding: 0px;
 }
-.content ul li:nth-child(2) span{
-	font-size:0;
-	position:relative;
-}
-.content ul li:nth-child(2) span:before{
-	content:"";
-	width:1px;
-	height:15px;
-	background:#e1e1e1;
-	position:absolute;
-	top:-2px;
-	left:0;
-}
 .content ul li:first-child a{
 	padding-left:0;
 }
@@ -53,10 +40,10 @@
 	display: block;
 }
 #checkout-personal-information-step, #checkout #checkout-addresses-step, #checkout #checkout-delivery-step, #checkout #checkout-delivery-step, #checkout #checkout-payment-step{
-	margin-bottom:30px;
+	margin-bottom: 2rem;
 }
 #checkout #checkout-guest-form {
-	margin-bottom:50px;
+	margin-bottom: 3.333rem;
 }
 .content .tab-content  #checkout-login-form.tab-pane {
 	opacity: 1;
@@ -68,7 +55,7 @@
 	top: 1px;
 }
 .form-control-comment {
-    font-size: .8rem;
+    font-size: 14px;
     opacity: .8;
     padding-top: .4rem;
     padding-bottom: .4rem;
@@ -109,6 +96,7 @@
 #checkout #checkout-personal-information-step, #checkout #checkout-addresses-step, #checkout #checkout-delivery-step, #checkout #checkout-payment-step {
 	border: 1px solid #e5e5e5;
 	width: 100%;
+	font-size: 15px;
 }
 #checkout-addresses-step .address-item label{
 	line-height:30px;
@@ -195,8 +183,9 @@ body#checkout section.checkout-step.-complete .step-title {
 body#checkout section.checkout-step .step-title {
 	cursor: pointer;
 	margin: 0;
-	padding: 1rem;
+	padding: 15px;
 	color: #000;
+	font-size: 17px;
 }
 body#checkout section.checkout-step h2 {
 	font-size:1.1rem;

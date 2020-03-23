@@ -27,6 +27,8 @@
 
 <link href="{$urls.base_url}modules/jmsthemesetting/views/fonts/font-icon.css" rel="stylesheet">
 
+
+
 {if $jmsSetting.body_font == 'google' && isset($jmsSetting.body_font_google)}
 <link href="https://fonts.googleapis.com/css?family={$jmsSetting.body_font_google}:{$jmsSetting.body_font_google_weightstyle}" rel="stylesheet">
 {elseif $jmsSetting.body_font == 'fontface' && isset($jmsSetting.body_fontface_css)}
@@ -54,4 +56,8 @@
 {$stylesheet.content}
 </style>
 {/foreach}
+{if $jpb_rtl}
+<link href="{$urls.theme_assets}css/rtl.css" rel="stylesheet">
+{/if}
+
 
