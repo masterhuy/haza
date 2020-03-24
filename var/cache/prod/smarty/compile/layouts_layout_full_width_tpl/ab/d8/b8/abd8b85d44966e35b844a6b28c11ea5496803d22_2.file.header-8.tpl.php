@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-20 08:09:11
+/* Smarty version 3.1.33, created on 2020-03-24 09:00:02
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\headers\header-8.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e4e3ea7cc2b86_25813414',
+  'unifunc' => 'content_5e79cc124a66b3_44546686',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'abd8b85d44966e35b844a6b28c11ea5496803d22' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\_partials\\headers\\header-8.tpl',
-      1 => 1582165719,
+      1 => 1585035936,
       2 => 'file',
     ),
   ),
@@ -28,12 +28,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl' => 1,
   ),
 ),false)) {
-function content_5e4e3ea7cc2b86_25813414 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e79cc124a66b3_44546686 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="header-top" class="header-top<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky'] == 1) {?> header-sticky<?php }
 if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky'] == 1) && ($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky_effect'] != '')) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky_effect'], ENT_QUOTES, 'UTF-8');
 }?>">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center no-padding">
             <div class="layout-column col-6 header-left">
                 <?php $_smarty_tpl->_subTemplateRender('file:_partials/headers/logo.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -113,7 +113,7 @@ array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
 </div>
 <div class="hor-megamenu">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center no-padding">
             <div class="layout-column col-auto megamenu">
                 <div id="hor-menu" class="<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['hormenu_class']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['hormenu_class'], ENT_QUOTES, 'UTF-8');
 }?> <?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['hormenu_align']) {?> align-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['hormenu_align'], ENT_QUOTES, 'UTF-8');

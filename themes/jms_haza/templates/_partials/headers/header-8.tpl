@@ -24,7 +24,7 @@
  *}
 <div id="header-top" class="header-top{if $jmsSetting.header_sticky == 1} header-sticky{/if}{if ($jmsSetting.header_sticky == 1) && ($jmsSetting.header_sticky_effect != '')} {$jmsSetting.header_sticky_effect}{/if}">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center no-padding">
             <div class="layout-column col-6 header-left">
                 {include file='_partials/headers/logo.tpl'}
             </div>
@@ -54,7 +54,7 @@
 </div>
 <div class="hor-megamenu">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center no-padding">
             <div class="layout-column col-auto megamenu">
                 <div id="hor-menu" class="{if $jmsSetting.hormenu_class} {$jmsSetting.hormenu_class}{/if} {if $jmsSetting.hormenu_align} align-{$jmsSetting.hormenu_align}{/if}">
                     {widget name="jmsmegamenu" hook='HorMenu'}

@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>A brief guide to AI advertising for Ecommerce</title>
+    <link>https://www.prestashop.com/en/blog/ai-advertising-ecommerce</link>
+    <description>It’s no secret that Artificial Intelligence (AI) is completely revolutionizing the world of online advertising. </description>
+     <pubDate>Mon, 23 Mar 2020 17:49:09 +0100</pubDate>
+ <dc:creator>Amit Roznak</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/ai-advertising-ecommerce</guid>
+  </item>
+  <item>
     <title>COVID-19: practical tips for online retailers</title>
     <link>https://www.prestashop.com/en/blog/coronavirus-tips</link>
     <description>The consequences linked to the health situation are evolving day by day, and some areas of uncertainty remain to be defined.</description>
@@ -16,7 +24,7 @@
   <item>
     <title>COVID-19: shipping and delivery situation dashboard</title>
     <link>https://www.prestashop.com/en/blog/shipping-delivery-dashboard</link>
-    <description>Following measures taken by European governments handling the COVID-19 epidemic and depending on your local situation, ecommer</description>
+    <description>Updated March 23rd.</description>
      <pubDate>Thu, 19 Mar 2020 16:34:55 +0100</pubDate>
  <dc:creator>PrestaShop Team</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/shipping-delivery-dashboard</guid>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 17 Feb 2020 12:30:30 +0100</pubDate>
  <dc:creator>Janos Biro EN</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/new-perspectives-page-building</guid>
-  </item>
-  <item>
-    <title>Four ways to make returns better</title>
-    <link>https://www.prestashop.com/en/blog/better-returns-shipping-ecommerce</link>
-    <description>Returns happen to the best of us. They’re not fun for customers or merchants, and worst of all, they can be costly.</description>
-     <pubDate>Mon, 10 Feb 2020 17:32:13 +0100</pubDate>
- <dc:creator>James Messer</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/better-returns-shipping-ecommerce</guid>
   </item>
   </channel>
 </rss>

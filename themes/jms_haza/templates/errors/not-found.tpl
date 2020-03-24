@@ -26,12 +26,12 @@
 	<h4>{l s='Sorry for the inconvenience.' d='Shop.Theme'}</h4>
 	<p class="small-text">{l s='Search again what you are looking for' d='Shop.Theme'}</p>
 	<div class="search-box">
-	 {block name='search'}
-      {hook h='displaySearch'}
-    {/block}
+        {block name='search'}
+            {hook h='displaySearch'}
+        {/block}
 
-    {block name='hook_not_found'}
-      {hook h='displayNotFound'}
-    {/block}
+        {block name='hook_not_found'}
+            {hook h='displayNotFound'}
+        {/block}
 	</div>
 </section>

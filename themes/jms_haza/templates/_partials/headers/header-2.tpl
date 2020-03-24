@@ -25,15 +25,15 @@
 <div id="header-top" class="header-top{if $jmsSetting.header_sticky == 1} header-sticky{/if}{if ($jmsSetting.header_sticky == 1) && ($jmsSetting.header_sticky_effect != '')} {$jmsSetting.header_sticky_effect}{/if}">
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="layout-column col-4 megamenu">
+            <div class="layout-column col-5 megamenu">
                 <div id="hor-menu" class="{if $jmsSetting.hormenu_class} {$jmsSetting.hormenu_class}{/if} {if $jmsSetting.hormenu_align} align-{$jmsSetting.hormenu_align}{/if}">
                     {widget name="jmsmegamenu" hook='HorMenu'}
                 </div>
             </div>
-            <div class="layout-column col-4 header-logo">
+            <div class="layout-column col-2 header-logo">
                 {include file='_partials/headers/logo.tpl'}
             </div>
-            <div class="layout-column col-4 header-right">
+            <div class="layout-column col-5 header-right">
                 <div class="row">
                     {if $jmsSetting.search}
                         {if $jmsSetting.search_box_type != 'dropdown'}

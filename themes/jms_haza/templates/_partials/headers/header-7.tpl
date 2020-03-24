@@ -26,9 +26,7 @@
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="layout-column col-auto logo">
-                <a href="{$urls.base_url}">
-                    <img src="{$urls.theme_assets}img/logo-2.png" />
-                </a>
+                {include file='_partials/headers/logo.tpl'}
             </div>
             <div class="layout-column">
                 {if $jmsSetting.search}

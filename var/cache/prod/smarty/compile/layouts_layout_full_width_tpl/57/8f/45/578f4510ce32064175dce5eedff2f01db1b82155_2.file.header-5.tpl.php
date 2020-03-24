@@ -1,23 +1,24 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-12 06:37:49
+/* Smarty version 3.1.33, created on 2020-03-24 06:58:37
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\headers\header-5.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e439d3d098df2_11157389',
+  'unifunc' => 'content_5e79af9d0694a5_23882037',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '578f4510ce32064175dce5eedff2f01db1b82155' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\_partials\\headers\\header-5.tpl',
-      1 => 1581403240,
+      1 => 1585022276,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
+    'file:_partials/headers/logo.tpl' => 2,
     'module:ps_customersignin/ps_customersignin-dropdown.tpl' => 1,
     'module:ps_shoppingcart/ps_shoppingcart.tpl' => 1,
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-button.tpl' => 1,
@@ -26,7 +27,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl' => 1,
   ),
 ),false)) {
-function content_5e439d3d098df2_11157389 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e79af9d0694a5_23882037 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -36,11 +37,8 @@ if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky'] == 1) && ($_sm
  	<div class="container-fluid">
  		<div class="row align-items-center">
  			<div class="layout-column col-auto header-logo">
-                <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
-">
-                    <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
-img/logo-2.png" />
-                </a>
+                <?php $_smarty_tpl->_subTemplateRender('file:_partials/headers/logo.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
             </div>
  			<div class="layout-column megamenu">
                 <div id="hor-menu" class="<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['hormenu_class']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['hormenu_class'], ENT_QUOTES, 'UTF-8');
@@ -138,11 +136,8 @@ array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
     <div id="header-sidebar" class="header-sidebar <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['sidebar_position'], ENT_QUOTES, 'UTF-8');?>
 " aria-expanded="false">
         <a class="btn-close" href="#"></a>
-        <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
-" class="logo-sidebar">
-            <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
-img/logo-2.png" />
-        </a>
+        <?php $_smarty_tpl->_subTemplateRender('file:_partials/headers/logo.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
+?>
         <div class="desc">New Fashion Lookbook!</div>
         <div class="banner">
             <a href="#">
@@ -151,11 +146,11 @@ img/banner-sidebar.jpg" />
             </a>
         </div>
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6039639505e439d3d098df5_70307424', 'footer-newsletter');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11206474055e79af9d0694a6_00200135', 'footer-newsletter');
 ?>
 
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14107410045e439d3d098df0_73507283', 'footer-contact');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14601355845e79af9d0694a1_54123677', 'footer-contact');
 ?>
 
         <?php $_smarty_tpl->_subTemplateRender('file:_partials/socials.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
@@ -182,12 +177,12 @@ array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);
 }
 }
 /* {block 'footer-newsletter'} */
-class Block_6039639505e439d3d098df5_70307424 extends Smarty_Internal_Block
+class Block_11206474055e79af9d0694a6_00200135 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'footer-newsletter' => 
   array (
-    0 => 'Block_6039639505e439d3d098df5_70307424',
+    0 => 'Block_11206474055e79af9d0694a6_00200135',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -202,12 +197,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'footer-newsletter'} */
 /* {block 'footer-contact'} */
-class Block_14107410045e439d3d098df0_73507283 extends Smarty_Internal_Block
+class Block_14601355845e79af9d0694a1_54123677 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'footer-contact' => 
   array (
-    0 => 'Block_14107410045e439d3d098df0_73507283',
+    0 => 'Block_14601355845e79af9d0694a1_54123677',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

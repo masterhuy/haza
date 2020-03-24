@@ -1,39 +1,37 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-14 02:13:38
+/* Smarty version 3.1.33, created on 2020-03-24 07:33:45
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\headers\header-7.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e460252c40266_99889031',
+  'unifunc' => 'content_5e79b7d956a016_08393090',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b10f0e93e2aaa61880415d90984fa66369d980c7' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\_partials\\headers\\header-7.tpl',
-      1 => 1581579142,
+      1 => 1585034845,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
+    'file:_partials/headers/logo.tpl' => 1,
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch.tpl' => 1,
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl' => 1,
   ),
 ),false)) {
-function content_5e460252c40266_99889031 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e79b7d956a016_08393090 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="header-top" class="header-top<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky'] == 1) {?> header-sticky<?php }
 if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky'] == 1) && ($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky_effect'] != '')) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky_effect'], ENT_QUOTES, 'UTF-8');
 }?>">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="layout-column col-auto logo">
-                <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
-">
-                    <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
-img/logo-2.png" />
-                </a>
+                <?php $_smarty_tpl->_subTemplateRender('file:_partials/headers/logo.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
             </div>
             <div class="layout-column">
                 <?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['search']) {?>

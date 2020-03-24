@@ -6,6 +6,15 @@ showAllDemo = () => {
     });
 }
 
+closeSidebar = () => {
+    $("#header-sidebar .btn-close").click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $("body").removeClass("sidebar-right-open");
+        $("body").removeClass("sidebar-left-open");
+    });
+}
+
 
 jQuery(function ($) {
     "use strict";
@@ -43,6 +52,8 @@ $(window).load(function () {
 
 $(document).ready(function(){
     changeShopGrid();
+    closeSidebar();
+    
     $("#header-sidebar, #sidebar-btn").on("click", function(e) {
         e.preventDefault();
     });

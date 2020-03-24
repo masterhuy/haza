@@ -26,9 +26,7 @@
  	<div class="container-fluid">
  		<div class="row align-items-center">
  			<div class="layout-column col-auto header-logo">
-                <a href="{$urls.base_url}">
-                    <img src="{$urls.theme_assets}img/logo-2.png" />
-                </a>
+                {include file='_partials/headers/logo.tpl'}
             </div>
  			<div class="layout-column megamenu">
                 <div id="hor-menu" class="{if $jmsSetting.hormenu_class} {$jmsSetting.hormenu_class}{/if} {if $jmsSetting.hormenu_align} align-{$jmsSetting.hormenu_align}{/if}">
@@ -74,9 +72,7 @@
 {if $jmsSetting.header_sidebar == 1}
     <div id="header-sidebar" class="header-sidebar {$jmsSetting.sidebar_position}" aria-expanded="false">
         <a class="btn-close" href="#"></a>
-        <a href="{$urls.base_url}" class="logo-sidebar">
-            <img src="{$urls.theme_assets}img/logo-2.png" />
-        </a>
+        {include file='_partials/headers/logo.tpl'}
         <div class="desc">New Fashion Lookbook!</div>
         <div class="banner">
             <a href="#">

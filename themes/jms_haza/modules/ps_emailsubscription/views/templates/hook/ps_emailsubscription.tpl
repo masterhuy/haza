@@ -40,7 +40,7 @@
 		<form action="{$urls.pages.index}" method="post">
 			<div class="input-group newsletter-input-group">
 				<input type="text" name="email" value="{$value}" class="form-control" required placeholder="{l s='Your email address' d='Modules.Emailsubscription.Shop'}" />
-				<input type="text" name="email" value="{$value}" class="form-control sidebar" required placeholder="{l s='Email@exemple.com' d='Modules.Emailsubscription.Shop'}" />
+				<input type="text" name="email" value="{$value}" class="form-control sidebar" required placeholder="{l s='Email@example.com' d='Modules.Emailsubscription.Shop'}" />
 				<button type="submit" class="btn active" name="submitNewsletter">
 					{l s='Subscribe' d='Modules.Emailsubscription.Shop'}
 				</button>

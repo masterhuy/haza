@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-23 09:10:07
+/* Smarty version 3.1.33, created on 2020-03-24 09:00:02
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e787cef9c24f2_54998105',
+  'unifunc' => 'content_5e79cc12df53c9_22297140',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '307dc6bd4724d29d1572cc301dd7148e962604ef' => 
     array (
       0 => 'module:psemailsubscriptionviewst',
-      1 => 1583983836,
+      1 => 1585025527,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e787cef9c24f2_54998105 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e79cc12df53c9_22297140 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="email_subscription block">
 	<h3 class="block-title"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Newsletter','d'=>'Modules.Emailsubscription.Shop'),$_smarty_tpl ) );?>
 <i class="fal fa-plus"></i></h3>
@@ -48,7 +48,7 @@ function content_5e787cef9c24f2_54998105 (Smarty_Internal_Template $_smarty_tpl)
 " class="form-control" required placeholder="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Your email address','d'=>'Modules.Emailsubscription.Shop'),$_smarty_tpl ) );?>
 " />
 				<input type="text" name="email" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['value']->value, ENT_QUOTES, 'UTF-8');?>
-" class="form-control sidebar" required placeholder="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Email@exemple.com','d'=>'Modules.Emailsubscription.Shop'),$_smarty_tpl ) );?>
+" class="form-control sidebar" required placeholder="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Email@example.com','d'=>'Modules.Emailsubscription.Shop'),$_smarty_tpl ) );?>
 " />
 				<button type="submit" class="btn active" name="submitNewsletter">
 					<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Subscribe','d'=>'Modules.Emailsubscription.Shop'),$_smarty_tpl ) );?>
