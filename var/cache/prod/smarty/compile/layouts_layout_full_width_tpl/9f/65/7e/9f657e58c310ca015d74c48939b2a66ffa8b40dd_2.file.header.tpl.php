@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-24 09:00:02
+/* Smarty version 3.1.33, created on 2020-03-25 10:28:48
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e79cc1247f5b9_27816917',
+  'unifunc' => 'content_5e7b32600b6e08_65019972',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -32,7 +32,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/headers/header-mobile-4.tpl' => 1,
   ),
 ),false)) {
-function content_5e79cc1247f5b9_27816917 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e7b32600b6e08_65019972 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="desktop-header" class="header-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['header_layout'], ENT_QUOTES, 'UTF-8');?>
  <?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['header_class']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['header_class'], ENT_QUOTES, 'UTF-8');

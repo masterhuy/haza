@@ -95,6 +95,8 @@ class FrontContainer extends Container
             'prestashop.core.localization.currency.repository' => 'getPrestashop_Core_Localization_Currency_RepositoryService',
             'prestashop.core.localization.locale.repository' => 'getPrestashop_Core_Localization_Locale_RepositoryService',
             'prestashop.database.naming_strategy' => 'getPrestashop_Database_NamingStrategyService',
+            'product_comment_criterion_repository' => 'getProductCommentCriterionRepositoryService',
+            'product_comment_repository' => 'getProductCommentRepositoryService',
         ];
         $this->privates = [
             'annotation_reader' => true,
@@ -303,11 +305,19 @@ class FrontContainer extends Container
     protected function getDoctrine_Orm_DefaultEntityManagerService($lazyLoad = true)
     {
         $a = new \Doctrine\ORM\Configuration();
+
+        $b = new \Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain();
+
+        $c = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver(${($_ = isset($this->services['annotation_reader']) ? $this->services['annotation_reader'] : ($this->services['annotation_reader'] = new \Doctrine\Common\Annotations\AnnotationReader())) && false ?: '_'}, [0 => 'D:\\xamppp\\htdocs\\jms_haza\\modules\\productcomments\\src\\Entity']);
+        $c->addExcludePaths([0 => 'D:\\xamppp\\htdocs\\jms_haza\\modules\\productcomments\\src\\Entity/index.php']);
+
+        $b->addDriver($c, 'PrestaShop\\Module\\ProductComment\\Entity');
+
         $a->setEntityNamespaces([]);
         $a->setMetadataCacheImpl(${($_ = isset($this->services['doctrine_cache.providers.doctrine.orm.default_metadata_cache']) ? $this->services['doctrine_cache.providers.doctrine.orm.default_metadata_cache'] : $this->getDoctrineCache_Providers_Doctrine_Orm_DefaultMetadataCacheService()) && false ?: '_'});
         $a->setQueryCacheImpl(${($_ = isset($this->services['doctrine_cache.providers.doctrine.orm.default_query_cache']) ? $this->services['doctrine_cache.providers.doctrine.orm.default_query_cache'] : $this->getDoctrineCache_Providers_Doctrine_Orm_DefaultQueryCacheService()) && false ?: '_'});
         $a->setResultCacheImpl(${($_ = isset($this->services['doctrine_cache.providers.doctrine.orm.default_result_cache']) ? $this->services['doctrine_cache.providers.doctrine.orm.default_result_cache'] : $this->getDoctrineCache_Providers_Doctrine_Orm_DefaultResultCacheService()) && false ?: '_'});
-        $a->setMetadataDriverImpl(new \Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain());
+        $a->setMetadataDriverImpl($b);
         $a->setProxyDir('D:\\xamppp\\htdocs\\jms_haza/var/cache/prod//doctrine/orm/Proxies');
         $a->setProxyNamespace('Proxies');
         $a->setAutoGenerateProxyClasses(false);
@@ -318,6 +328,7 @@ class FrontContainer extends Container
         $a->setEntityListenerResolver(${($_ = isset($this->services['doctrine.orm.default_entity_listener_resolver']) ? $this->services['doctrine.orm.default_entity_listener_resolver'] : ($this->services['doctrine.orm.default_entity_listener_resolver'] = new \Doctrine\Bundle\DoctrineBundle\Mapping\ContainerAwareEntityListenerResolver($this))) && false ?: '_'});
         $a->setRepositoryFactory(new \Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory(new \Symfony\Component\DependencyInjection\ServiceLocator([])));
         $a->addCustomStringFunction('regexp', 'DoctrineExtensions\\Query\\Mysql\\Regexp');
+        $a->addEntityNamespace('Moduleproductcomments', 'PrestaShop\\Module\\ProductComment\\Entity');
 
         $this->services['doctrine.orm.default_entity_manager'] = $instance = \Doctrine\ORM\EntityManager::create(${($_ = isset($this->services['doctrine.dbal.default_connection']) ? $this->services['doctrine.dbal.default_connection'] : $this->getDoctrine_Dbal_DefaultConnectionService()) && false ?: '_'}, $a);
 
@@ -568,6 +579,26 @@ class FrontContainer extends Container
     protected function getPrestashop_Core_Localization_Locale_RepositoryService()
     {
         return $this->services['prestashop.core.localization.locale.repository'] = new \PrestaShop\PrestaShop\Core\Localization\Locale\Repository(${($_ = isset($this->services['prestashop.core.localization.cldr.locale_repository']) ? $this->services['prestashop.core.localization.cldr.locale_repository'] : $this->getPrestashop_Core_Localization_Cldr_LocaleRepositoryService()) && false ?: '_'}, ${($_ = isset($this->services['prestashop.core.localization.currency.repository']) ? $this->services['prestashop.core.localization.currency.repository'] : $this->getPrestashop_Core_Localization_Currency_RepositoryService()) && false ?: '_'});
+    }
+
+    /**
+     * Gets the public 'product_comment_criterion_repository' shared service.
+     *
+     * @return \PrestaShop\Module\ProductComment\Repository\ProductCommentCriterionRepository
+     */
+    protected function getProductCommentCriterionRepositoryService()
+    {
+        return $this->services['product_comment_criterion_repository'] = new \PrestaShop\Module\ProductComment\Repository\ProductCommentCriterionRepository(${($_ = isset($this->services['doctrine.dbal.default_connection']) ? $this->services['doctrine.dbal.default_connection'] : $this->getDoctrine_Dbal_DefaultConnectionService()) && false ?: '_'}, 'ps_');
+    }
+
+    /**
+     * Gets the public 'product_comment_repository' shared service.
+     *
+     * @return \PrestaShop\Module\ProductComment\Repository\ProductCommentRepository
+     */
+    protected function getProductCommentRepositoryService()
+    {
+        return $this->services['product_comment_repository'] = new \PrestaShop\Module\ProductComment\Repository\ProductCommentRepository(${($_ = isset($this->services['doctrine.dbal.default_connection']) ? $this->services['doctrine.dbal.default_connection'] : $this->getDoctrine_Dbal_DefaultConnectionService()) && false ?: '_'}, 'ps_', ${($_ = isset($this->services['prestashop.adapter.legacy.configuration']) ? $this->services['prestashop.adapter.legacy.configuration'] : ($this->services['prestashop.adapter.legacy.configuration'] = new \PrestaShop\PrestaShop\Adapter\Configuration())) && false ?: '_'}->get("PRODUCT_COMMENTS_ALLOW_GUESTS"), ${($_ = isset($this->services['prestashop.adapter.legacy.configuration']) ? $this->services['prestashop.adapter.legacy.configuration'] : ($this->services['prestashop.adapter.legacy.configuration'] = new \PrestaShop\PrestaShop\Adapter\Configuration())) && false ?: '_'}->get("PRODUCT_COMMENTS_MINIMAL_TIME"));
     }
 
     /**
@@ -1221,6 +1252,7 @@ class FrontContainer extends Container
                 77 => 'ps_bestsellers',
                 78 => 'ps_categoryproducts',
                 79 => 'jmsblogwidget',
+                80 => 'productcomments',
             ],
             'ps_cache_dir' => 'D:\\xamppp\\htdocs\\jms_haza/var/cache/prod\\',
             'mail_themes_uri' => '/mails/themes',

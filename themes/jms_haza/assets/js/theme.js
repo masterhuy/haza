@@ -2061,9 +2061,9 @@
             t.scroll(function() {
                 o < t.scrollTop() ? (i.hasClass("sticky-slide") && i.slideDown(), i.addClass("sticky")) : (i.hasClass("sticky-slide") && i.slideUp(), i.removeClass("sticky"))
             }), e(".btn-search-full").click(function() {
-                e("#search-form-full").toggleClass("open")
+                e(".search-form-full").toggleClass("open")
             }), e(".search-box-close").click(function() {
-                e("#search-form-full").removeClass("open")
+                e(".search-form-full").removeClass("open")
             }), e("#sidebar-btn").click(function() {
                 e("#header-sidebar").hasClass("right-sidebar") ? e("body").toggleClass("sidebar-right-open") : e("body").toggleClass("sidebar-left-open")
             }), e(document).on("click", function() {

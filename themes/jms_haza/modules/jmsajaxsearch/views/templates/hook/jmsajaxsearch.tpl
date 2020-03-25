@@ -23,7 +23,7 @@
                 <input type="text" name="search_query" placeholder="{l s='Search...' d='Modules.JmsAjaxsearch'}" class="jms-search-input form-control search-input type-2" />
                 <input type="text" name="search_query" placeholder="{l s='Search everything' d='Modules.JmsAjaxsearch'}" class="jms-search-input form-control search-input type-3" />
                 <button type="submit" name="submit_search" class="button-search">
-                    <i class="fal fa-search"></i>
+                    <i class="far fa-search"></i>
                 </button>
             </div>
 		</form>

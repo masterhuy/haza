@@ -305,6 +305,12 @@ header .row {
   #header-top .header-right .dropdown-menu {
     top: calc(100% + 21px);
     right: -13px; }
+    #header-top .header-right .dropdown-menu.shoppingcart-sidebar {
+      top: 0; }
+      #header-top .header-right .dropdown-menu.shoppingcart-sidebar .cart_block_list {
+        -webkit-box-flex: initial;
+        -ms-flex: initial;
+        flex: initial; }
   #header-top .dropdown-menu.shoppingcart-box {
     min-width: 370px;
     max-width: 370px;
@@ -351,13 +357,13 @@ header .row {
     #header-top .dropdown-menu.shoppingcart-box .price.new {
       font-size: 19px;
       font-weight: 700; }
-    #header-top .dropdown-menu.shoppingcart-box .checkout-btn {
+    #header-top .dropdown-menu.shoppingcart-box .checkout-btn, #header-top .dropdown-menu.shoppingcart-box .cart-btn {
       border-color: #fff;
       background: transparent;
       padding: 7px 20px;
       letter-spacing: 0.6px;
       color: #fff; }
-      #header-top .dropdown-menu.shoppingcart-box .checkout-btn:hover {
+      #header-top .dropdown-menu.shoppingcart-box .checkout-btn:hover, #header-top .dropdown-menu.shoppingcart-box .cart-btn:hover {
         background: #fff;
         color: #111; }
   #header-top ._desktop_user_info .user-info-content a {
@@ -532,7 +538,7 @@ header .row {
 .header-2 .header-logo {
   text-align: center; }
 
-.header-2 .header-right .row {
+.header-2 .header-right > .row {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
@@ -586,6 +592,7 @@ header .row {
     font-size: 14px;
     color: #111; }
   .header-2 #jms_ajax_search .btn-search i {
+    font-family: "Font Awesome 5 Pro";
     font-size: 20px;
     margin-right: 7px; }
 
@@ -2354,6 +2361,13 @@ header .row {
       border-color: #000; }
 
 /* home 7 */
+.h7-col-sidebar .dropdown-menu.shoppingcart-box {
+  left: calc(100% + 28px);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
 .h7-col-sidebar .dropdown-toggle::after {
   display: none; }
 
@@ -2704,6 +2718,15 @@ footer .row {
 .footer-2 #footer-copyright {
   background-color: #ebebeb;
   padding: 16px 0; }
+
+.footer-3#footer .quick-links {
+  display: none; }
+
+.footer-3#footer .copyright-content .copyright-content {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
 
 .footer-3#footer .social-links li {
   display: block;
@@ -3102,6 +3125,9 @@ footer .row {
 
 .header-mobile-1 .header-right {
   position: static; }
+
+#mobile-header i {
+  font-family: "Font Awesome 5 Pro"; }
 
 #mobile-header #search-form-dropdown {
   width: calc(100% - 28px);

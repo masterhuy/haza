@@ -25,28 +25,30 @@
 <div class="search-result-content">
     {if $products}
         <div class="search_product_list">
-            {foreach from=$products item=product name=i}
-                <div class="row align-items-center clearfix">
-					          {if $show_image == 1}
-                    <a href="{$product.link nofilter}" title="{$product.name nofilter}" class="search-product-image col-auto layout-column">
-    				            <img src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'medium_default') nofilter}" alt="{$product.name nofilter}" />
-    				        </a>
-					          {/if}
-                    <div class="product-info layout-column">
-                        <a class="product-link" href="{$product.link nofilter}" title="{$product.name nofilter}">
-                            {$product.name|truncate:35:'...' nofilter}
-                        </a>
-                        {if $show_desc == 1}
-                        <p class="desc">{$product.desc|truncate:$desc_count:'...' nofilter}</p>
+            <div class="row clearfix">
+                {foreach from=$products item=product name=i}
+                    <div class="item col-6 col-sm-4 col-md-4 col-lg-2">
+                        {if $show_image == 1}
+                            <a href="{$product.link nofilter}" title="{$product.name nofilter}" class="search-product-image">
+                                <img src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default') nofilter}" alt="{$product.name nofilter}" />
+                            </a>
                         {/if}
-                        {if $show_price == 1}
-                        <div class="content_price">
-                            <span class="price new">{$product.price nofilter}</span>
+                        <div class="product-info">
+                            <a class="product-link" href="{$product.link nofilter}" title="{$product.name nofilter}">
+                                {$product.name|truncate:35:'...' nofilter}
+                            </a>
+                            {if $show_desc == 1}
+                                <p class="desc">{$product.desc|truncate:$desc_count:'...' nofilter}</p>
+                            {/if}
+                            {if $show_price == 1}
+                                <div class="content_price">
+                                    <span class="price new">{$product.price nofilter}</span>
+                                </div>
+                            {/if}
                         </div>
-                        {/if}
                     </div>
-                </div>
-            {/foreach}
+                {/foreach}
+            </div>
         </div>
     {else}
         {$no_text nofilter}

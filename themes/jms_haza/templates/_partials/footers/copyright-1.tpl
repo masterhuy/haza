@@ -25,19 +25,9 @@
 {block name='footer-copyright'}
     <div id="footer-copyright" class="footer-copyright{if $jmsSetting.footer_copyright_class} {$jmsSetting.footer_copyright_class}{/if}">
         <div class="container">
-            <div class="row align-items-center">
-                {if isset($jmsSetting.footer_copyright_content) && $jmsSetting.footer_copyright_content}
-                    <div class="layout-column copyright-content col-lg-6 col-md-12 col-sm-12 col-12">
-                        {$jmsSetting.footer_copyright_content nofilter}
-                    </div>
-                {/if}
-                <div class="layout-column quick-links col-lg-6 col-md-12 col-sm-12 col-12">
-                    <a href="index.php?id_cms=13&controller=cms">Terms of Use</a>
-                    <a href="index.php?id_cms=14&controller=cms">Privacy Policy</a>
-                    <a href="index.php?id_cms=15&controller=cms">Careers</a>
-                    <a href="index.php?id_cms=10&controller=cms">Affiliates</a>
-                </div>
-            </div>
+            {if isset($jmsSetting.footer_copyright_content) && $jmsSetting.footer_copyright_content}
+                {$jmsSetting.footer_copyright_content nofilter}
+            {/if}
         </div>
     </div>
 {/block}

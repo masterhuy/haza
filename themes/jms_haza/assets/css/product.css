@@ -944,7 +944,7 @@
 	margin-right:10px;
 }
 #product .modal-content {
-	background: none;
+	background: #fff;
 	border: none;
 }
 .js-modal-product-cover.product-cover-modal {

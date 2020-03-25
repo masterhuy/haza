@@ -81,6 +81,9 @@
                 {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
             {/block}
         {/if}
+        {block name='product_reviews'}
+            {hook h='displayProductListReviews' product=$product}
+        {/block}
         <div class="title-price">
     		{block name='product_name'}
                 {if $page.page_name == 'index'}

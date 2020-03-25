@@ -5,7 +5,7 @@
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  * @Website: http://www.joommasters.com
 *}
-<div id="search-form-full" class="search-form search-overlay{if $jmsSetting.search_box_type} {$jmsSetting.search_box_type}{/if}">
+<div id="search-form-full" class="search-form search-form-full search-overlay{if $jmsSetting.search_box_type} {$jmsSetting.search_box_type}{/if}">
     {assign var="str_at" value=$jmsSetting.search_icon|strpos:"_"}
     {if $str_at && $jmsSetting.search_icon_thickness}
 		{assign var="search_icon" value=$jmsSetting.search_icon|substr:0:($str_at)}

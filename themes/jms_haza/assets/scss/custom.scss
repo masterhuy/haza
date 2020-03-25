@@ -310,6 +310,12 @@ header .row {
 	.header-right .dropdown-menu{
 		top: calc(100% + 21px);
 		right: -13px;
+		&.shoppingcart-sidebar{
+			top: 0;
+			.cart_block_list {
+				flex: initial;
+			}
+		}
 	}
 	.dropdown-menu.shoppingcart-box{
 		min-width: 370px;
@@ -372,7 +378,7 @@ header .row {
 			font-size: 19px;
 			font-weight: 700;
 		}
-		.checkout-btn{
+		.checkout-btn, .cart-btn{
 			border-color: #fff;
 			background: transparent;
 			padding: 7px 20px;
@@ -594,7 +600,7 @@ header .row {
 		text-align: center;
 	}
 	.header-right{
-		.row{
+		> .row{
 			justify-content: flex-end;
 			align-items: center;
 		}
@@ -647,6 +653,7 @@ header .row {
 			color: #111;
 		}
 		i{
+			font-family: "Font Awesome 5 Pro";
 			font-size: 20px;
 			margin-right: 7px;
 		}
@@ -2660,6 +2667,11 @@ header .row {
 
 /* home 7 */
 .h7-col-sidebar{
+	.dropdown-menu.shoppingcart-box{
+		left: calc(100% + 28px);
+		top: 50%;
+		transform: translateY(-50%);
+	}
 	.dropdown-toggle::after{
 		display: none;
 	}
@@ -3082,6 +3094,13 @@ footer .row{
 }
 .footer-3{
 	&#footer{
+		.quick-links{
+			display: none;
+		}
+		.copyright-content .copyright-content{
+			flex:0 0 100%;
+			max-width: 100%;
+		}
 		.social-links li{
 			display: block;
 			margin: 0;
@@ -3575,6 +3594,9 @@ footer .row{
 	}
 }
 #mobile-header{
+	i{
+		font-family: "Font Awesome 5 Pro";
+	}
 	#search-form-dropdown{
 		width: calc(100% - 28px);
 		left: 14px;

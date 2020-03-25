@@ -93,6 +93,9 @@
                 {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
             {/block}
         {/if}
+        {block name='product_reviews'}
+            {hook h='displayProductListReviews' product=$product}
+        {/block}
         <div class="title-price align-items-center">
     		{block name='product_name'}
                 <h3 class="product-title" itemprop="name"><a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:50:'...'}</a></h3>

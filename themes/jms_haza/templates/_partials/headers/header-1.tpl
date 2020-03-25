@@ -26,10 +26,9 @@
 <div id="header-topbar" class="{if $jmsSetting.topbar_class} {$jmsSetting.topbar_class}{/if}">
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="layout-column col-4 header-left">
+            <div class="layout-column col-8 header-left">
                 {$jmsSetting.topbar_content nofilter}
             </div>
-            <div class="layout-column col-4 header-center text-center">Fast and free international shipping</div>
             <div class="layout-column col-4 header-right">
                 {widget_block name="ps_languageselector"}
                     {include 'module:ps_languageselector/ps_languageselector-dropdown.tpl'}
@@ -38,7 +37,7 @@
                     {include 'module:ps_currencyselector/ps_currencyselector-dropdown.tpl'}
                 {/widget_block}
                 <div class="position-relative">
-                    <a href="#">Help & FAQ’s</a>
+                    <a href="index.php?id_cms=8&controller=cms&id_lang=1">Help & FAQ’s</a>
                 </div>
             </div>
         </div>
