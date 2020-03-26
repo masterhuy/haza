@@ -22,7 +22,7 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
+{block name='product_miniature_item'}
 <div class="product-miniature js-product-miniature productbox-3" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
 	<div class="product-preview">
 		{block name='product_thumbnail'}
@@ -81,9 +81,7 @@
                 {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
             {/block}
         {/if}
-        {block name='product_reviews'}
-            {hook h='displayProductListReviews' product=$product}
-        {/block}
+        
         <div class="title-price">
     		{block name='product_name'}
                 {if $page.page_name == 'index'}
@@ -162,4 +160,8 @@
             {/if}
         </ul>
 	</div>
+    {block name='product_reviews'}
+            {hook h='displayProductListReviews' product=$product}
+        {/block}
 </div>
+{/block}

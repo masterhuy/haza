@@ -2259,6 +2259,17 @@ header .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .h5-categories .layout-column.content .jms-banner > a {
+    display: block;
+    overflow: hidden; }
+    .h5-categories .layout-column.content .jms-banner > a:hover img {
+      -webkit-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+      transform: scale(1.15); }
+    .h5-categories .layout-column.content .jms-banner > a img {
+      -webkit-transition: 1s all;
+      -o-transition: 1s all;
+      transition: 1s all; }
   .h5-categories .layout-column.content .banner-content {
     margin-top: 0.8667rem; }
   .h5-categories .layout-column.content p {
@@ -3509,7 +3520,8 @@ footer .row {
     margin-bottom: 0; }
   .quickview-modal .modal-dialog {
     max-height: 772px;
-    overflow: hidden; }
+    overflow: hidden;
+    max-width: 1200px !important; }
   .instagram_block .info-block span {
     font-size: 20px; }
   .quickview-modal .product-name {

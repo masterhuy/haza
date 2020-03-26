@@ -4648,6 +4648,13 @@
                 })
             })
         });
+        function rtl_slick(){
+            if ($('body').hasClass("rtl")) {
+               return true;
+            } else {
+               return false;
+            }
+        }
         var e = function(e) {
             var t = [];
             (0, r.default)(".js-qv-product-images").slick({
@@ -4660,7 +4667,8 @@
                 verticalSwiping: !1,
                 focusOnSelect: !0,
                 lazyLoad: "ondemand",
-                responsive: t
+                responsive: t,
+                rtl: rtl_slick()
             }), e.find(".js-thumb").on("click", function(e) {
                 (0, r.default)(".js-modal-product-cover").attr("src", (0, r.default)(e.target).data("image-large-src")), (0, r.default)(".selected").removeClass("selected"), (0, r.default)(e.target).addClass("selected"), (0, r.default)(".js-qv-product-cover").prop("src", (0, r.default)(e.currentTarget).data("image-large-src")), (0, r.default)(".zoomContainer").remove(), (0, r.default)(".product-image-zoom").removeData("elevateZoom"), (0, r.default)(".product-image-zoom").data("zoom-image", (0, r.default)(e.currentTarget).data("image-large-src")), (0, r.default)(".product-image-zoom").elevateZoom({
                     zoomType: "inner",
@@ -4765,6 +4773,14 @@
             })
         }
 
+        function rtl_slick(){
+            if ($('body').hasClass("rtl")) {
+               return true;
+            } else {
+               return false;
+            }
+        }
+
         function t() {
             var e = !1,
                 t = 5,
@@ -4788,7 +4804,8 @@
                 verticalSwiping: e,
                 focusOnSelect: !0,
                 lazyLoad: i,
-                responsive: o
+                responsive: o,
+                rtl: rtl_slick()
             })
         }
 

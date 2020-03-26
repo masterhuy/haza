@@ -472,6 +472,164 @@
  .footer-copyright .copyright-content {
   text-align: right; }
 
+  /** breadcrumb **/
+  .breadcrumb ul.align-left{
+    text-align: right;
+  }
+.breadcrumb ul.align-right{
+  text-align: left;
+}
+
+/** category **/
+#search_filters .facet .facet-label {
+  text-align: right;
+}
+#search_widget form::after {
+  right: auto;
+  left: 10px;
+}
+.products-grid.grid-3 .js-product-miniature {
+  margin-left: 30px !important;
+  margin-right: 0 !important;
+}
+.products-grid.grid-2 .js-product-miniature:nth-child(2n), .products-grid.grid-3 .js-product-miniature:nth-child(3n), .products-grid.grid-4 .js-product-miniature:nth-child(4n), .products-grid.grid-5 .js-product-miniature:nth-child(5n), .products-grid.grid-6 .js-product-miniature:nth-child(6n) {
+  margin-left: 0 !important;
+}
+.products-grid.grid-2 .js-product-miniature {
+  margin-left: 30px !important;
+  margin-right: 0 !important;
+}
+.products-grid.grid-4 .js-product-miniature {
+  margin-left: 30px !important;
+  margin-right: 0 !important;
+}
+.products-grid.grid-5 .js-product-miniature {
+  margin-left: 30px !important;
+  margin-right: 0 !important;
+}
+.products-grid.grid-6 .js-product-miniature {
+  margin-left: 30px !important;
+  margin-right: 0 !important;
+}
+.grid-1-2-1-2 #js-product-list .products,
+.grid-2-1-2-1 #js-product-list .products,
+.grid-1-3-1-3 #js-product-list .products,
+.grid-3-1-3-1 #js-product-list .products{
+  direction: initial !important;
+}
+#js-product-list-top .col-left{
+  text-align: right;
+}
+#products-top .col-right {
+  text-align: left;
+}
+.view-mode .switch-view.view-grid {
+  margin-left: 10px;
+  margin-right: 0;
+}
+#products-top .col-right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#js-active-search-filters > ul li {
+  margin-right: 0;
+  margin-left: 20px;
+}
+#js-active-search-filters .active-filter-title {
+  margin-left: 15px;
+  margin-right: 0;
+}
+#search_filters .ui-slider-horizontal {
+  margin-right: auto;
+}
+.pagination li a.next {
+  background: url("../img/icons/prev-2.png") center no-repeat;
+}
+.pagination li a.previous {
+  background: url("../img/icons/next-2.png") center no-repeat;
+}
+.quickview-modal .modal-body .right{
+  text-align: right;
+}
+.modal-dialog .close{
+  left: 14px;
+  right: auto;
+}
+
+  /** details **/
+.product-detail .pb-right-column {
+  text-align: right;
+}
+.product-variants-item.size {
+  margin-left: 65px;
+  margin-right: 0;
+}
+.product-variants-item .control-label {
+  margin-left: 14px;
+  margin-right: 0;
+}
+.product-variants-item.color ul li {
+  margin-left: 7px;
+  margin-right: 0;
+}
+.product-variants-item ul li {
+  margin-left: 5px;
+  margin-right: 0;
+}
+.product-quantity .customs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 0;
+}
+.product-quantity .qty .input-group {
+  padding-right: 48px;
+  padding-left: 0;
+}
+.input-group-btn-vertical .bootstrap-touchspin-down {
+  right: 0;
+  left: auto;
+}
+.product-add-to-cart .addToWishlist i {
+  margin-left: 8px;
+  margin-right: 0;
+}
+#more_info_block .nav.nav-tabs {
+  text-align: right;
+}
+#more_info_block .tab-content,
+#more_info_block .panel {
+  text-align: right;
+}
+#more_info_block .panel-heading a{
+  text-align: right;
+}
+.sidebar-column{
+  text-align: right;
+}
+.productbox-5 .product-preview {
+  margin-left: 15px;
+  margin-right: 0;
+}
+.thumbs-left .js-qv-mask {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.thumbs-right .js-qv-mask {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.images-container.grid .product-images > li.thumb-container:nth-child(2n+1) {
+  margin-left: 30px;
+  margin-right: 0;
+}
+.product-layout-3columns .product-quantity {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
 @media (min-width: 320px) {
   .header-right .dropdown-menu {
     left: 14px;
@@ -484,6 +642,10 @@
     text-align: center; }
   }
 @media (min-width: 576px){
+  #more_info_block.tab-left .nav-tabs .nav-item {
+    margin-left: 6px;
+    margin-right: 0;
+  }
   .newsletter-type-1 .newsletter-input-group input, 
   .newsletter-type-2 .newsletter-input-group input {
     margin-left: 10px;
@@ -520,6 +682,14 @@
 }
 
 @media (min-width: 992px) {
+  #content-wrapper.col-lg-12 #products-top .col-left {
+  text-align: right;
+}
+  #products-top .pagination {
+    margin-left: 29px;
+    margin-right: 0;
+    line-height: 44px;
+  }
   .newsletter-type-1 .title, .newsletter-type-2 .title {
     margin-left: 3.333rem;
     text-align: right;

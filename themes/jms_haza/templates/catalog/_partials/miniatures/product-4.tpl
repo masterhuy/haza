@@ -42,29 +42,31 @@
 				{/if}
 		  	</a>
 		{/block}
-        <ul class="product-buttons">
-            {if $jmsSetting.productbox_wishlist}
-                {assign var="str_at" value=$jmsSetting.wishlist_icon|strpos:"_"}
-                {if $str_at && $jmsSetting.wishlist_icon_thickness}
-                {assign var="wishlist_icon" value=$jmsSetting.wishlist_icon|substr:0:($str_at)}
-                {assign var="wishlist_icon" value=$wishlist_icon|cat:$jmsSetting.wishlist_icon_thickness}
-                {else}
-                {assign var="wishlist_icon" value=$jmsSetting.wishlist_icon}
+        <div class="product-buttons">
+            <ul>
+                {if $jmsSetting.productbox_wishlist}
+                    {assign var="str_at" value=$jmsSetting.wishlist_icon|strpos:"_"}
+                    {if $str_at && $jmsSetting.wishlist_icon_thickness}
+                    {assign var="wishlist_icon" value=$jmsSetting.wishlist_icon|substr:0:($str_at)}
+                    {assign var="wishlist_icon" value=$wishlist_icon|cat:$jmsSetting.wishlist_icon_thickness}
+                    {else}
+                    {assign var="wishlist_icon" value=$jmsSetting.wishlist_icon}
+                    {/if}
+                    <li>
+                        <a href="#" class="addToWishlist product-btn" title="{l s='Add to Whislist' d='Shop.Theme.Actions'}" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}">
+                            <i class="fal fa-heart"></i>
+                        </a>
+                    </li>
                 {/if}
-                <li>
-                    <a href="#" class="addToWishlist product-btn" title="{l s='Add to Whislist' d='Shop.Theme.Actions'}" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}">
-                        <i class="fal fa-heart"></i>
-                    </a>
-                </li>
-            {/if}
-            {if $jmsSetting.productbox_quickview}
-                <li>
-                    <a href="#" data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="quick-view">
-                        <i class="fal fa-external-link-square-alt"></i>
-                    </a>
-                </li>
-            {/if}
-        </ul>
+                {if $jmsSetting.productbox_quickview}
+                    <li>
+                        <a href="#" data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="quick-view">
+                            <i class="fal fa-external-link-square-alt"></i>
+                        </a>
+                    </li>
+                {/if}
+            </ul>
+        </div>
 	</div>
 
 	<div class="product-info">

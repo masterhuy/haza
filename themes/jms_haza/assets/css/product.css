@@ -953,3 +953,9 @@
 #thumbnails ul li {
     margin-bottom: 10px;
 }
+.modal-dialog .close{
+    margin: 0;
+    padding: 0;
+    right: 14px;
+    top: 11px;
+}
