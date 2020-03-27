@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-20 02:59:43
+/* Smarty version 3.1.33, created on 2020-03-27 03:34:59
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e74319f92a571_96539540',
+  'unifunc' => 'content_5e7d7463d08cd4_22444197',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '84ae11415e9cebb8b0f593e712edea456efea9d9' => 
     array (
       0 => 'module:jmsblogviewstemplatesfron',
-      1 => 1583206445,
+      1 => 1585276458,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e74319f92a571_96539540 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e7d7463d08cd4_22444197 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 if ($_smarty_tpl->tpl_vars['page_layout']->value == 'no') {
@@ -32,13 +32,13 @@ $_smarty_tpl->_assignInScope('layout', "layouts/layout-left-column.tpl");
 }?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10322455205e74319f8dc376_21256738', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3289490905e7d7463cbaad7_65446643', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, $_smarty_tpl->tpl_vars['layout']->value);
 }
 /* {block "page_content"} */
-class Block_19237225235e74319f8dc376_83233434 extends Smarty_Internal_Block
+class Block_8753778225e7d7463cbaad2_81042516 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_haza\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
@@ -58,21 +58,24 @@ foreach ($_from as $_smarty_tpl->tpl_vars['post']->value) {
 							<?php $_smarty_tpl->_assignInScope('catparams', array('category_id'=>$_smarty_tpl->tpl_vars['post']->value['category_id'],'slug'=>$_smarty_tpl->tpl_vars['post']->value['category_alias']));?>
 							<div class="item col-12">
 								<div class="blog-post">
-									<?php if ($_smarty_tpl->tpl_vars['post']->value['link_video'] && $_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_SHOW_MEDIA']) {?>
-										<div class="post-thumb">
+									<div class="post-thumb">
+										<?php if ($_smarty_tpl->tpl_vars['post']->value['link_video'] && $_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_SHOW_MEDIA']) {?>
 											<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['post']->value['link_video'], ENT_QUOTES, 'UTF-8');?>
 
-										</div>
-									<?php } elseif ($_smarty_tpl->tpl_vars['post']->value['image'] && $_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_SHOW_MEDIA']) {?>
-										<div class="post-thumb">
+										<?php } elseif ($_smarty_tpl->tpl_vars['post']->value['image'] && $_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_SHOW_MEDIA']) {?>
 											<a href="<?php echo htmlspecialchars(jmsblog::getPageLink('jmsblog-post',$_smarty_tpl->tpl_vars['params']->value), ENT_QUOTES, 'UTF-8');?>
 ">
 												<img src="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['image_baseurl']->value,'html','UTF-8' )), ENT_QUOTES, 'UTF-8');
 echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['image'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 " alt=""/>
 											</a>
-										</div>
-									<?php }?>
+										<?php }?>
+										<a class="btn-default btn-white btn-transparent readmore" href="<?php echo htmlspecialchars(jmsblog::getPageLink('jmsblog-post',$_smarty_tpl->tpl_vars['params']->value), ENT_QUOTES, 'UTF-8');?>
+">
+											<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Read more','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
+
+										</a>
+									</div>
 									<div class="post-info">
 										<h4 class="post-title">
 											<a class="blog-list-title" href="<?php echo htmlspecialchars(jmsblog::getPageLink('jmsblog-post',$_smarty_tpl->tpl_vars['params']->value), ENT_QUOTES, 'UTF-8');?>
@@ -144,14 +147,14 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block "page_content"} */
 /* {block 'page_content_container'} */
-class Block_8055720345e74319f8dc379_59890630 extends Smarty_Internal_Block
+class Block_21130469225e7d7463cbaad1_27281892 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
             <section id="content" class="page-content">
 				<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19237225235e74319f8dc376_83233434', "page_content", $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8753778225e7d7463cbaad2_81042516', "page_content", $this->tplIndex);
 ?>
 
             </section>
@@ -160,31 +163,31 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19237225235e74319f
 }
 /* {/block 'page_content_container'} */
 /* {block 'page_footer_container'} */
-class Block_20926954525e74319f92a574_62587438 extends Smarty_Internal_Block
+class Block_14689706655e7d7463d08cd9_49481147 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 }
 /* {/block 'page_footer_container'} */
 /* {block 'content'} */
-class Block_10322455205e74319f8dc376_21256738 extends Smarty_Internal_Block
+class Block_3289490905e7d7463cbaad7_65446643 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_10322455205e74319f8dc376_21256738',
+    0 => 'Block_3289490905e7d7463cbaad7_65446643',
   ),
   'page_content_container' => 
   array (
-    0 => 'Block_8055720345e74319f8dc379_59890630',
+    0 => 'Block_21130469225e7d7463cbaad1_27281892',
   ),
   'page_content' => 
   array (
-    0 => 'Block_19237225235e74319f8dc376_83233434',
+    0 => 'Block_8753778225e7d7463cbaad2_81042516',
   ),
   'page_footer_container' => 
   array (
-    0 => 'Block_20926954525e74319f92a574_62587438',
+    0 => 'Block_14689706655e7d7463d08cd9_49481147',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -192,11 +195,11 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
     <section id="main">
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8055720345e74319f8dc379_59890630', 'page_content_container', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21130469225e7d7463cbaad1_27281892', 'page_content_container', $this->tplIndex);
 ?>
 
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20926954525e74319f92a574_62587438', 'page_footer_container', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14689706655e7d7463d08cd9_49481147', 'page_footer_container', $this->tplIndex);
 ?>
 
     </section>

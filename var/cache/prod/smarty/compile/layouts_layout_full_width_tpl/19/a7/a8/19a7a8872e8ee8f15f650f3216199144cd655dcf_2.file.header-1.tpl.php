@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-24 03:30:01
+/* Smarty version 3.1.33, created on 2020-03-27 09:10:20
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\headers\header-1.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e797eb97b2369_51877952',
+  'unifunc' => 'content_5e7dc2fc4a81d2_03632784',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '19a7a8872e8ee8f15f650f3216199144cd655dcf' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\_partials\\headers\\header-1.tpl',
-      1 => 1580792272,
+      1 => 1585122091,
       2 => 'file',
     ),
   ),
@@ -28,17 +28,16 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl' => 1,
   ),
 ),false)) {
-function content_5e797eb97b2369_51877952 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e7dc2fc4a81d2_03632784 (Smarty_Internal_Template $_smarty_tpl) {
 if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_topbar'] == 1)) {?>
 <div id="header-topbar" class="<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class'], ENT_QUOTES, 'UTF-8');
 }?>">
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="layout-column col-4 header-left">
+            <div class="layout-column col-8 header-left">
                 <?php echo $_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_content'];?>
 
             </div>
-            <div class="layout-column col-4 header-center text-center">Fast and free international shipping</div>
             <div class="layout-column col-4 header-right">
                 <?php $_block_plugin1 = isset($_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0]) ? $_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0] : null;
 if (!is_callable(array($_block_plugin1, 'smartyWidgetBlock'))) {
@@ -71,7 +70,7 @@ echo $_block_plugin2->smartyWidgetBlock(array('name'=>"ps_currencyselector"), ob
 }
 array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
                 <div class="position-relative">
-                    <a href="#">Help & FAQ’s</a>
+                    <a href="index.php?id_cms=8&controller=cms&id_lang=1">Help & FAQ’s</a>
                 </div>
             </div>
         </div>

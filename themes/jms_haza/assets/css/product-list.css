@@ -791,9 +791,7 @@
 .productbox-3 .product-buttons a {
 	min-width: 150px;
 	margin: 5px;
-	background: transparent;
-	color: #fff;
-	border: 1px solid #fff;
+	border-width: 1px;
 	font-size: 15px;
 	white-space: nowrap;
 	font-weight: 600;
@@ -802,10 +800,6 @@
 	opacity: 1;
 	text-overflow: ellipsis;
 	overflow: hidden;
-}
-.productbox-3 .product-buttons a:hover{
-	background: #fff;
-	color: #000;
 }
 .productbox-3 .product-info .product-buttons{
 	display: none;

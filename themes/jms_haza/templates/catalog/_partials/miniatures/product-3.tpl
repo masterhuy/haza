@@ -60,17 +60,17 @@
         <div class="product-buttons">
             {if !$configuration.is_catalog && $jmsSetting.productbox_addtocart}
                 {if $product.quantity >= 1}
-                <a href="#" class="btn ajax-add-to-cart product-btn{if $product.quantity < 1} disabled{/if} cart-button" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
-                    <span class="text-addcart">{l s='Add to cart' d='Shop.Theme.Actions'}</span>
-                </a>
+                    <a href="#" class="btn btn-white btn-transparent ajax-add-to-cart product-btn{if $product.quantity < 1} disabled{/if} cart-button" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
+                        <span class="text-addcart">{l s='Add to cart' d='Shop.Theme.Actions'}</span>
+                    </a>
                 {else}
-                <a href="#" class="btn product-btn disabled" disabled title="{l s='Sold Out' d='Shop.Theme.Actions'}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}">
-                    <span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>
-                </a>
+                    <a href="#" class="btn btn-white btn-transparent product-btn disabled" disabled title="{l s='Sold Out' d='Shop.Theme.Actions'}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}">
+                        <span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>
+                    </a>
                 {/if}
             {/if}
             {if $jmsSetting.productbox_quickview}
-                <a href="#" data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="btn quick-view">{l s='Quick View' d='Shop.Theme.Actions'}</a>
+                <a href="#" data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="btn btn-white btn-transparent quick-view">{l s='Quick View' d='Shop.Theme.Actions'}</a>
             {/if}
         </div>
 	</div>

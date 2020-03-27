@@ -375,9 +375,16 @@
 .jms-megamenu .nav > .menu-item .mega-nav li {
   text-align: right;
 }
+.dropdown-menu{
+  text-align: right;
+}
 .product-miniature .old.price {
   margin-left: 12px;
   margin-right: 0;
+}
+#search-form-full .search-box .search-box-close {
+  right: auto;
+  left: 10px;
 }
 .search-result-content {
   text-align: right;
@@ -437,11 +444,10 @@
   margin-right: 5px;
   margin-left: 0;
 }
-  .productbox-3 .addToWishlist{
-    left: 0.8rem;
-    right: auto;
-  }
-
+.productbox-3 .addToWishlist{
+  left: 0.8rem;
+  right: auto;
+}
  .js-product-miniature .product-info {
   text-align: right; }
 #woorebought-popup .woorebought-content{
@@ -450,6 +456,24 @@
 #woorebought-popup #popup-close {
   right: auto;
   left: 10px;
+}
+#mywishlist{
+  text-align: right;
+}
+#hideWishlist {
+  margin-left: 10px;
+}
+.wlp_bought_list .group_btn a {
+  margin-left: 5px;
+  margin-right: 0;
+}
+#order-slip #content-wrapper,
+#history #content-wrapper{
+  text-align: right;
+}
+.links .link-item i {
+  margin-left: 10px;
+  margin-right: 0;
 }
 .footer-3#footer .social-links li .fa {
   margin-left: 10px;
@@ -556,6 +580,16 @@
   left: 14px;
   right: auto;
 }
+/**** other page ***/
+.address-body {
+  text-align: right;
+}
+.addresses-footer {
+  text-align: right;
+}
+.js-address-form{
+  text-align: right;
+}
 
   /** details **/
 .product-detail .pb-right-column {
@@ -630,7 +664,114 @@
   margin-right: 0;
 }
 
+
+/*****  blog page  *****/
+.blog-widget .item-post .post-thumb {
+  margin-left: 20px;
+  margin-right: 0;
+}
+.blog-widget .haschild > a i {
+  left: 0;
+  right: auto;
+}
+.blog-widget .haschild #child {
+  margin-right: 20px;
+  margin-left: 0;
+}
+.single-blog .post-meta .created{
+  right: 12px;
+  left: auto;
+}
+.single-blog .post-fulltext .testimonial{
+  text-align: right;
+  text-align-last: right;
+  border-right: 3px solid #ff794f;
+  border-left: 0;
+}
+.cat-post-list .post-meta .created{
+  right: 12px;
+  left: auto;
+}
+.page-heading {
+  text-align: right;
+}
+#post-comments .post-comment-info .user-image {
+  margin-left: 20px;
+  margin-right: 0;
+}
+#post-comments .post-info{
+  text-align: right;
+}
+#comments #new_comment_form_footer {
+  text-align: right;
+}
+
+/**** contact page ****/
+#contact-info{
+  text-align: right;
+}
+#contact-wrapper h3 {
+  text-align: right;
+}
+#contact-form .form-footer {
+  text-align: right;
+}
+#contact #contact-wrapper .social-links a {
+  margin-left: 9px;
+  margin-right: 0;
+}
+/*** cms ***/
+.page-cms {
+  text-align: right;
+}
+/***** cart ******/
+.cart-items {
+  text-align: right;
+}
+#block-reassurance .block-reassurance-item span.h6 {
+  text-align: right;
+}
+/**** checkout ****/
+body#checkout section.checkout-step.-complete .step-title {
+  text-align: right;
+}
+body#checkout section.checkout-step.-reachable.-complete h1 .step-edit {
+  float: left;
+}
+#checkout .checkout-step{
+  text-align: right;
+}
+.custom-checkbox input[type="checkbox"] {
+  margin-left: 3px;
+  margin-right: 0;
+}
+.custom-radio {
+  margin-left: 3px;
+  margin-right: 0;
+}
+.done {
+  margin-left: 5px;
+  margin-right: 0;
+}
+body#checkout section.checkout-step .step-edit .edit {
+  margin-left: 5px;
+  margin-right: 0;
+}
+/******* order confirm ********/
+#content-hook_order_confirmation {
+  text-align: right;
+}
+#content-wrapper .page-title{
+  text-align: right;
+}
+
+
 @media (min-width: 320px) {
+  .show .shoppingcart-box.shoppingcart-sidebar, 
+  .show .user-info-content.user-info-sidebar {
+    left: 0;
+    right: auto;
+  }
   .header-right .dropdown-menu {
     left: 14px;
     right: auto;

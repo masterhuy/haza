@@ -229,7 +229,7 @@
 }
 .page-heading {
 	border:none;
-	font-size:30px;
+	font-size:2rem;
 	margin-bottom: 20px;
 }
 .post-img img {
@@ -266,6 +266,29 @@
 }
 .cat-post-list .blog-post{
 	position: relative;
+}
+.cat-post-list .post-thumb{
+	position: relative;
+}
+.cat-post-list .post-thumb .readmore{
+	opacity: 0;
+	visibility: hidden;
+	display: inline-block;
+	width: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 7px 25px;
+	transition: all 400ms;
+	-webkit-transition: all 400ms;
+	-moz-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+}
+.cat-post-list .blog-post:hover .post-thumb .readmore{
+	opacity: 1;
+	visibility: visible;
 }
 .cat-post-list .created .day {
 	font-size: 28px;
@@ -353,12 +376,9 @@
 }
 .cat-post-list .item .category-title a, .cat-post-list .item .post-title a, 
 #module-jmsblog-archive .post-title a {
-	font-size: 26px;
+	font-size: 1.733rem;
 	display: block;
 	letter-spacing: 0.5px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
 	color: #000;
 	font-weight: 500;
 }

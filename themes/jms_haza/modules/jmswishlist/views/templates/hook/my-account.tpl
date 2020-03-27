@@ -24,7 +24,7 @@
 *}
 
 <!-- MODULE WishList -->
-<a class="wishlist_top home_page lnk_wishlist p-relative" href="{$link->getModuleLink('jmswishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}"></a>
+<a class="wishlist_top home_page lnk_wishlist" href="{$link->getModuleLink('jmswishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}"></a>
 <a class=" wishlist_top my_account lnk_wishlist" href="{$link->getModuleLink('jmswishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}" title="{l s='My wishlists' d='Shop.Theme.Actions'}">
   <span class="link-item">
 		<i class="fal fa-heart"></i>

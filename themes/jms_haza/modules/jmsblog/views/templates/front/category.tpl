@@ -43,17 +43,18 @@
 							{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}
 							<div class="item col-12">
 								<div class="blog-post">
-									{if $post.link_video && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
-										<div class="post-thumb">
+									<div class="post-thumb">
+										{if $post.link_video && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
 											{$post.link_video}
-										</div>
-									{elseif $post.image && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
-										<div class="post-thumb">
+										{elseif $post.image && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
 											<a href="{jmsblog::getPageLink('jmsblog-post', $params)}">
 												<img src="{$image_baseurl|escape:'html':'UTF-8'}{$post.image|escape:'html':'UTF-8'}" alt=""/>
 											</a>
-										</div>
-									{/if}
+										{/if}
+										<a class="btn-default btn-white btn-transparent readmore" href="{jmsblog::getPageLink('jmsblog-post', $params)}">
+											{l s='Read more' d='Modules.JmsBlog'}
+										</a>
+									</div>
 									<div class="post-info">
 										<h4 class="post-title">
 											<a class="blog-list-title" href="{jmsblog::getPageLink('jmsblog-post', $params)}" alt="{l s='Blog Images' d='Modules.JmsBlog'}">{$post.title|escape:'htmlall':'UTF-8'}</a>

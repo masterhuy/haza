@@ -30,7 +30,7 @@
 
 {block name='page_content'}
   <div class="">
-    <div class="links row">
+    <div class="links row no-margin">
       <div class="col">
           <a id="identity-link" href="{$urls.pages.identity}">
             <span class="link-item">
@@ -43,7 +43,7 @@
       <div class="col">
           <a id="addresses-link" href="{$urls.pages.addresses}">
             <span class="link-item">
-              <i class="fal fa-address-card"></i>
+              <i class="far fa-address-card"></i>
               {l s='Addresses' d='Shop.Theme.Customeraccount'}
             </span>
           </a>

@@ -2059,7 +2059,7 @@
         if (0 != i.length) {
             var o = i.offset().top;
             t.scroll(function() {
-                o < t.scrollTop() ? (i.hasClass("sticky-slide") && i.slideDown(), i.addClass("sticky")) : (i.hasClass("sticky-slide") && i.slideUp(), i.removeClass("sticky"))
+                o < t.scrollTop() ? (i.addClass("sticky")) : (i.removeClass("sticky"))
             }), e(".btn-search-full").click(function() {
                 e(".search-form-full").toggleClass("open")
             }), e(".search-box-close").click(function() {

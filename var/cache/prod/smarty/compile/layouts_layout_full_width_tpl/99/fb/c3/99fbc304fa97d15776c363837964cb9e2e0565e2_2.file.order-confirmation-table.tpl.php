@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-05 08:13:02
+/* Smarty version 3.1.33, created on 2020-03-27 04:45:33
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\checkout\_partials\order-confirmation-table.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e60b48e0d7a57_41767635',
+  'unifunc' => 'content_5e7d84ed84eb35_67107827',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '99fbc304fa97d15776c363837964cb9e2e0565e2' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\templates\\checkout\\_partials\\order-confirmation-table.tpl',
-      1 => 1583395978,
+      1 => 1585284331,
       2 => 'file',
     ),
   ),
@@ -20,33 +20,33 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e60b48e0d7a57_41767635 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e7d84ed84eb35_67107827 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <div id="order-items">
     <div class="row">
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1471097975e60b48e0a0f55_41983102', 'order_items_table_head');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13456328425e7d84ed827a30_39447841', 'order_items_table_head');
 ?>
 
     </div>
 
     <div class="order-confirmation-table">
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13658701705e60b48e0a0f57_18549996', 'order_confirmation_table');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14325822285e7d84ed827a38_47294325', 'order_confirmation_table');
 ?>
 
     </div>
 </div>
 <?php }
 /* {block 'order_items_table_head'} */
-class Block_1471097975e60b48e0a0f55_41983102 extends Smarty_Internal_Block
+class Block_13456328425e7d84ed827a30_39447841 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'order_items_table_head' => 
   array (
-    0 => 'Block_1471097975e60b48e0a0f55_41983102',
+    0 => 'Block_13456328425e7d84ed827a30_39447841',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -59,12 +59,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'order_items_table_head'} */
 /* {block 'order_confirmation_table'} */
-class Block_13658701705e60b48e0a0f57_18549996 extends Smarty_Internal_Block
+class Block_14325822285e7d84ed827a38_47294325 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'order_confirmation_table' => 
   array (
-    0 => 'Block_13658701705e60b48e0a0f57_18549996',
+    0 => 'Block_14325822285e7d84ed827a38_47294325',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -78,7 +78,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
                 <div class="order-line row">
                     <div class="col-sm-2 col-xs-3">
                         <span class="image">
-                        <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['medium']['url'], ENT_QUOTES, 'UTF-8');?>
+                        <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['large']['url'], ENT_QUOTES, 'UTF-8');?>
 " />
                         </span>
                     </div>

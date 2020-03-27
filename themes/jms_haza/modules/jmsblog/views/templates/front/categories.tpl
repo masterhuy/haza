@@ -49,7 +49,7 @@
 									{/if}
 									<div class="category-info">
 										<h4 class="category-title"><a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{$category.title|escape:'htmlall':'UTF-8'}</a></h4>
-										<div class="cat-intro">{$category.introtext nofilter}</div>
+										<div class="cat-intro">{$category.introtext|truncate:120:'...' nofilter}</div>
 									</div>
 									<a class="blog-readmore" href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">
 										{l s='Read more' d='Modules.JmsBlog'}

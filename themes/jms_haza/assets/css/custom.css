@@ -154,6 +154,17 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
   color: #fff;
   border-color: #000; }
 
+.btn-white {
+  color: #fff;
+  border-color: #fff; }
+  .btn-white:hover {
+    border-color: #000; }
+
+.btn-transparent {
+  background-color: transparent; }
+  .btn-transparent:hover {
+    background-color: #000; }
+
 .form-control {
   height: 46px;
   line-height: 46px;
@@ -310,7 +321,8 @@ header .row {
       #header-top .header-right .dropdown-menu.shoppingcart-sidebar .cart_block_list {
         -webkit-box-flex: initial;
         -ms-flex: initial;
-        flex: initial; }
+        flex: initial;
+        max-height: initial; }
   #header-top .dropdown-menu.shoppingcart-box {
     min-width: 370px;
     max-width: 370px;
@@ -432,12 +444,15 @@ header .row {
 
 .header-sticky.sticky {
   background-color: #fff;
-  -webkit-animation-duration: 0.4s;
-  animation-duration: 0.4s;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-timing-function: ease;
   animation-timing-function: ease; }
+  .header-sticky.sticky.sticky-slide {
+    -webkit-animation-name: slideDown;
+    animation-name: slideDown; }
 
 .header-1 #header-topbar .header-left {
   letter-spacing: 0.2px; }
@@ -556,7 +571,8 @@ header .row {
     -ms-flex-align: center;
     align-items: center; }
     .header-2 #cart_block .cart-icon i {
-      font-size: 24px; }
+      font-size: 24px;
+      color: #111; }
   .header-2 #cart_block .text-cart {
     display: block;
     font-size: 14px;
@@ -594,7 +610,8 @@ header .row {
   .header-2 #jms_ajax_search .btn-search i {
     font-family: "Font Awesome 5 Pro";
     font-size: 20px;
-    margin-right: 7px; }
+    margin-right: 7px;
+    color: #111; }
 
 .header-3 #header-topbar .header-left {
   letter-spacing: 0.2px; }
@@ -1363,13 +1380,7 @@ header .row {
     padding: 5px 20px;
     font-size: 16px;
     letter-spacing: 0.3px;
-    color: #fff;
-    border-color: #fff;
-    background-color: transparent;
     min-width: 109px; }
-    .jms-row.promo-bar .btn:hover {
-      border-color: #000;
-      background-color: #000; }
   .jms-row.promo-bar .right p {
     text-align: right; }
 
@@ -1787,12 +1798,7 @@ header .row {
       margin-bottom: 3.333rem; }
     .banner-lookbook .addon-box .btn {
       color: #f3f3f3;
-      border-color: #fff;
-      padding: 0.6rem 2.467rem;
-      background: transparent; }
-      .banner-lookbook .addon-box .btn:hover {
-        border-color: #111;
-        background-color: #111; }
+      padding: 0.6rem 2.467rem; }
     .banner-lookbook .addon-box p {
       line-height: 1; }
       .banner-lookbook .addon-box p:last-child {
@@ -2011,6 +2017,18 @@ header .row {
       font-size: 17px; }
 
 /* home 3 */
+.h3-banner-1 .jms-banner > a {
+  display: block;
+  overflow: hidden; }
+  .h3-banner-1 .jms-banner > a:hover img {
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15); }
+  .h3-banner-1 .jms-banner > a img {
+    -webkit-transition: 1s all;
+    -o-transition: 1s all;
+    transition: 1s all; }
+
 .h3-banner-1 .banner-content {
   margin-top: 1.267rem; }
   .h3-banner-1 .banner-content p {
@@ -2071,6 +2089,18 @@ header .row {
     letter-spacing: 0.3px;
     margin-bottom: 0; }
 
+.jms-row.h3-categories .jms-banner > a {
+  display: block;
+  overflow: hidden; }
+  .jms-row.h3-categories .jms-banner > a:hover img {
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15); }
+  .jms-row.h3-categories .jms-banner > a img {
+    -webkit-transition: 1s all;
+    -o-transition: 1s all;
+    transition: 1s all; }
+
 .jms-row.h3-categories .layout-column.content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2129,17 +2159,11 @@ header .row {
   .h4-banner.type-1 .banner-content p, .h4-banner.type-2 .banner-content p, .h4-banner.type-3 .banner-content p {
     margin-bottom: 0; }
   .h4-banner.type-1 .banner-content .btn, .h4-banner.type-2 .banner-content .btn, .h4-banner.type-3 .banner-content .btn {
-    color: #fff;
-    background: transparent;
-    border-color: #fff;
     font-size: 14px;
     font-weight: 400;
     border-width: 1px;
     letter-spacing: 0.3px;
     padding: 0.4rem 1.533rem; }
-    .h4-banner.type-1 .banner-content .btn:hover, .h4-banner.type-2 .banner-content .btn:hover, .h4-banner.type-3 .banner-content .btn:hover {
-      border-color: #111;
-      background: #111; }
 
 .h4-banner.type-2 {
   padding: 8rem 0 7.4rem;
@@ -2966,6 +2990,22 @@ footer .row {
   100% {
     opacity: 1; } }
 
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); } }
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); } }
+
 /*** off canvas menu ***/
 #mobile-menu-close {
   padding: 20px 14px; }
@@ -2994,6 +3034,17 @@ footer .row {
 /***** other page ******/
 .page-not-found #search_widget {
   margin: auto; }
+
+#history #content-wrapper .label {
+  font-size: 12px;
+  padding: 5px 10px;
+  display: inline-block; }
+
+#notifications ul {
+  margin-bottom: 0; }
+
+.links .link-item {
+  color: #000; }
 
 #blockcart-modal .modal-dialog .close {
   padding: 0;
@@ -3174,6 +3225,11 @@ footer .row {
 @media (min-width: 320px) {
   html {
     font-size: 10px; }
+  .show .shoppingcart-box.shoppingcart-sidebar,
+  .show .user-info-content.user-info-sidebar {
+    right: 0; }
+  #order-confirmation .order-confirmation-table .details {
+    margin-top: 10px; }
   .contact-layout-3 .col-image {
     margin-bottom: 20px; }
   #contact-wrapper #contact-form {
@@ -3412,6 +3468,8 @@ footer .row {
     width: calc(100% - 75px); } }
 
 @media (min-width: 576px) {
+  #order-confirmation .order-confirmation-table .details {
+    margin-top: 0; }
   .cat-post-list.more-columns .post-intro {
     padding: 0 40px; }
   .vertical-thumbs .js-qv-mask {
