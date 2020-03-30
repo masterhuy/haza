@@ -770,22 +770,27 @@
 }
 .productbox-3 .addToWishlist i{
 	font-size: 22px;
+	color: #000;
 }
 .productbox-3 .product-buttons {
 	display: flex;
 	position: absolute;
-	top: calc(50% - 40px);
+	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%,-70%);
 	opacity: 0;
-	transition: all 0.4s;
 	z-index: 9;
 	width: 90%;
 	flex-wrap: wrap;
 	justify-content: center;
+	transition: all 400ms;
+	-webkit-transition: all 400ms;
+	-moz-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
 }
 .productbox-3:hover .product-buttons {
-	top: 50%;
+	transform: translate(-50%,-50%);
 	opacity: 1;
 }
 .productbox-3 .product-buttons a {
@@ -997,6 +1002,7 @@
 	margin: 0;
 	width: auto;
 	height: auto;
+	display: inline;
 }
 .products-list .js-product-miniature .product-info .product-buttons .cart-button{
 	border: 1px solid #636363;
@@ -1192,4 +1198,7 @@
 	#content-wrapper.col-lg-12 #products-top .col-right {
 		margin-top: 0;
 	}
+}
+.fa-external-link-square-alt::before {
+	content: "\f360";
 }

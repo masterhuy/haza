@@ -32,7 +32,7 @@
             </div>
             <div class="modal-body" id="main">
                 <div class="row">
-                    <div class="col-lg-5 col-md-5 col-sm-12 left">
+                    <div class="col-lg-5 col-md-5 col-sm-12 left zzz">
                         {block name='product_cover_thumbnails'}
                             {include file='catalog/_partials/product-cover-thumbnails.tpl'}
                         {/block}

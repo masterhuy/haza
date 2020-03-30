@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-24 09:00:02
+/* Smarty version 3.1.33, created on 2020-03-30 11:21:09
   from 'module:jmsajaxsearchviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e79cc12bf96c3_56656226',
+  'unifunc' => 'content_5e81c815cd9897_32870268',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ce50c540965b5f47467f8fcf5e281750372dd4a4' => 
     array (
       0 => 'module:jmsajaxsearchviewstemplat',
-      1 => 1584072230,
+      1 => 1585562117,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e79cc12bf96c3_56656226 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e81c815cd9897_32870268 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="btn-group jms_ajax_search col-auto<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['search_box_type']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['search_box_type'], ENT_QUOTES, 'UTF-8');
 }?>" id="jms_ajax_search">
 	<?php $_smarty_tpl->_assignInScope('str_at', strpos($_smarty_tpl->tpl_vars['jmsSetting']->value['search_icon'],"_"));?>
@@ -31,7 +31,7 @@ function content_5e79cc12bf96c3_56656226 (Smarty_Internal_Template $_smarty_tpl)
 		<?php $_smarty_tpl->_assignInScope('search_icon', $_smarty_tpl->tpl_vars['jmsSetting']->value['search_icon']);?>
 	<?php }?>
 	<a href="#" class="btn-search" data-toggle="dropdown" data-display="static">
-		<i class="fal fa-search"></i>
+		<i class="far fa-search"></i>
 		<span class="text text-uppercase"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search','d'=>'Modules.JmsAjaxsearch'),$_smarty_tpl ) );?>
 </span>
 	</a>

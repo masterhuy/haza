@@ -28,6 +28,14 @@
         {l s='Contact info' d='Shop.Theme.Global'}
         <i class="fal fa-plus"></i>
     </h3>
+    <h3 class="block-title type-2">
+        {l s='Contact' d='Shop.Theme.Global'}
+        <i class="fal fa-plus"></i>
+    </h3>
+    <h3 class="block-title type-3">
+        {l s='Help' d='Shop.Theme.Global'}
+        <i class="fal fa-plus"></i>
+    </h3>
     <div class="block-content">
         <div class="address section">
             <p class="info-address">{$contact_infos.address.address1 nofilter}</p>

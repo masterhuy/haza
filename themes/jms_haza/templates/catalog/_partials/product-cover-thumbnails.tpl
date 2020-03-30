@@ -22,13 +22,12 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
- 
- {if $jmsSetting.product_content_layout == 'thumbs-gallery'}
+{if $jmsSetting.product_content_layout == 'thumbs-gallery'}
    {include file='catalog/_partials/product-cover-thumbnails-gallery.tpl'}
- {elseif $jmsSetting.product_content_layout == 'thumbs-left'}
+{elseif $jmsSetting.product_content_layout == 'thumbs-left'}
    {include file='catalog/_partials/product-cover-thumbnails-left.tpl'}
- {elseif $jmsSetting.product_content_layout == 'thumbs-right'}
+{elseif $jmsSetting.product_content_layout == 'thumbs-right'}
    {include file='catalog/_partials/product-cover-thumbnails-right.tpl'}
- {else}
+{else}
    {include file='catalog/_partials/product-cover-thumbnails-bottom.tpl'}
 {/if}

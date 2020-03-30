@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-27 09:16:58
+/* Smarty version 3.1.33, created on 2020-03-30 11:02:52
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\templates\_partials\footers\footer-top-1.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e7dc48a986581_90853634',
+  'unifunc' => 'content_5e81c3ccc88832_91638732',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/socials.tpl' => 1,
   ),
 ),false)) {
-function content_5e7dc48a986581_90853634 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e81c3ccc88832_91638732 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="footer-top" class="footer-top-1 <?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['footer_top_class']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['footer_top_class'], ENT_QUOTES, 'UTF-8');
 }?>">
     <div class="container">

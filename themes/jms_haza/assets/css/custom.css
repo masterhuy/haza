@@ -461,14 +461,19 @@ header .row {
   letter-spacing: 0.15px; }
 
 .header-1 #header-topbar .header-right {
-  text-align: right; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
   .header-1 #header-topbar .header-right > div {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     position: relative; }
     .header-1 #header-topbar .header-right > div:not(:first-child) {
-      margin-left: 37px; }
+      margin-left: 41px; }
       .header-1 #header-topbar .header-right > div:not(:first-child)::before {
         content: "";
         position: absolute;
@@ -615,9 +620,8 @@ header .row {
 
 .header-3 #header-topbar .header-left {
   letter-spacing: 0.2px; }
-
-.header-3 #header-topbar .header-center {
-  letter-spacing: 0.15px; }
+  .header-3 #header-topbar .header-left .layout-column:last-child {
+    display: none; }
 
 .header-3 #header-topbar .header-right {
   text-align: right; }
@@ -1380,7 +1384,8 @@ header .row {
     padding: 5px 20px;
     font-size: 16px;
     letter-spacing: 0.3px;
-    min-width: 109px; }
+    min-width: 109px;
+    font-weight: 400; }
   .jms-row.promo-bar .right p {
     text-align: right; }
 
@@ -1503,7 +1508,8 @@ header .row {
 .fraction-slider .btn {
   font-size: 1.067rem;
   padding: 0.6rem 2.467rem;
-  border-color: #363636; }
+  border-color: #363636;
+  width: auto !important; }
 
 .fraction-slider .prev {
   background: url("../img/icons/prev.png") center no-repeat;
@@ -1720,12 +1726,25 @@ header .row {
     .jms-row.banner-gifts .jms-banner .banner-content p {
       margin-bottom: 0;
       font-size: 2.267rem;
-      color: #010101; }
+      color: #010101;
+      letter-spacing: 0.4px; }
 
 /* blog */
 .blog-type-1 {
   background: #f8f8f8;
   padding: 7.467rem 0 6.667rem; }
+
+.post-thumb a {
+  display: block;
+  overflow: hidden; }
+  .post-thumb a:hover img {
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15); }
+  .post-thumb a img {
+    -webkit-transition: 1s all;
+    -o-transition: 1s all;
+    transition: 1s all; }
 
 .blog-carousel .post-title {
   text-align: left;
@@ -1780,7 +1799,7 @@ header .row {
       right: -4px; }
 
 .blog-carousel .post-intro {
-  margin: 1.267rem 0 1.2rem; }
+  margin: 1.4rem 0 1.2rem; }
 
 /* banner lookbook */
 .banner-lookbook {
@@ -1814,7 +1833,7 @@ header .row {
 .newsletter-type-1 {
   background-color: #111;
   padding: 7.533rem 0 7.267rem; }
-  .newsletter-type-1 .block-title {
+  .newsletter-type-1 .block-title.type-2 {
     display: block;
     color: #fff;
     font-size: 2rem;
@@ -2685,6 +2704,10 @@ header .row {
         color: #fff;
         font-size: 17px; }
 
+/*** block contact ***/
+#footer .block-contact .block-title.type-2 {
+  display: none; }
+
 /* footer */
 footer .row .layout-column {
   -ms-flex-preferred-size: initial;
@@ -2753,6 +2776,16 @@ footer .row {
 .footer-2 #footer-copyright {
   background-color: #ebebeb;
   padding: 16px 0; }
+
+.footer-2 .block-contact .block-title {
+  display: none !important; }
+  .footer-2 .block-contact .block-title.type-2 {
+    display: block !important; }
+
+.footer-3#footer .block-contact .block-title {
+  display: none; }
+  .footer-3#footer .block-contact .block-title.type-3 {
+    display: block; }
 
 .footer-3#footer .quick-links {
   display: none; }
@@ -3691,11 +3724,14 @@ footer .row {
   .newsletter-type-1 .title, .newsletter-type-2 .title {
     display: inline-block;
     margin-right: 3.333rem;
-    text-align: left; }
+    text-align: left;
+    margin-bottom: 0; }
   .newsletter-type-1 .email_subscription, .newsletter-type-2 .email_subscription {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
   .newsletter-type-1 .newsletter-input-group, .newsletter-type-2 .newsletter-input-group {
     max-width: initial; }
   .jms-row.promo-bar {
@@ -3711,7 +3747,8 @@ footer .row {
   .jms-row.service .layout-column:not(:last-child) {
     margin-bottom: 0; }
   .footer-1 .layout-column.newsletter {
-    min-width: 449px; }
+    min-width: 449px;
+    max-width: 449px !important; }
   .footer-3 #footer-copyright .layout-column.payment-img {
     text-align: right; }
   .footer-4#footer .footer-copyright .socials {

@@ -2,6 +2,28 @@
   margin: 0;
   max-width: 765px;
 }
+#search-form .search-result-area .row{
+  padding: 0;
+}
+#search-form .search-result-area .item{
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+#search-form .search-result-area .search-product-image{
+  margin-right: 14px;
+}
+#search-form .search-result-area .product-link{
+  color: #111;
+  display: block;
+  margin-bottom: 5px;
+}
+#search-form .search-result-area .price.new{
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
 #search-form .search-box input {
   border-radius: 30px;
   padding: 13px 20px;

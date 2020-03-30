@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-27 02:57:26
+/* Smarty version 3.1.33, created on 2020-03-30 11:02:52
   from 'D:\xamppp\htdocs\jms_haza\themes\jms_haza\modules\jmspagebuilder\views\templates\hook\addonblog.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e7d6b96bb9441_32250029',
+  'unifunc' => 'content_5e81c3cc358d19_25008240',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd6b38ac43672a5f376116c55034ca60bc8dc87ae' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_haza\\themes\\jms_haza\\modules\\jmspagebuilder\\views\\templates\\hook\\addonblog.tpl',
-      1 => 1580714407,
+      1 => 1585562564,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e7d6b96bb9441_32250029 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e81c3cc358d19_25008240 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_haza\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),1=>array('file'=>'D:\\xamppp\\htdocs\\jms_haza\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 ?>
 
@@ -102,7 +102,7 @@ thumb_<?php echo $_smarty_tpl->tpl_vars['post']->value['image'];?>
 					<?php if ($_smarty_tpl->tpl_vars['show_ncomments']->value == '1') {?>
 						<li class="post-comments">
 							<?php echo $_smarty_tpl->tpl_vars['post']->value['comment_count'];?>
- comment<?php if ($_smarty_tpl->tpl_vars['post']->value['comment_count'] > 0) {?>s<?php }?>
+ comment<?php if ($_smarty_tpl->tpl_vars['post']->value['comment_count'] > 1) {?>s<?php }?>
 						</li>
 					<?php }?>
 				</ul>

@@ -86,6 +86,9 @@
     font-size: 11px;
     margin-bottom: 0;
 }
+.blog-widget .post-thumb a:hover img{
+	transform: none;
+}
 .blog-widget .comment-item {
 	margin-bottom: 7px;
 }

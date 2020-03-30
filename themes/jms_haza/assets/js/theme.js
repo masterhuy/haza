@@ -2164,7 +2164,7 @@
                         }
                     }
                 })
-            }), e(".product-image-zoom").elevateZoom({
+            }), e(".product-detail .product-image-zoom").elevateZoom({
                 zoomType: "inner",
                 cursor: "crosshair",
                 zoomWindowFadeIn: 500,
@@ -4670,13 +4670,13 @@
                 responsive: t,
                 rtl: rtl_slick()
             }), e.find(".js-thumb").on("click", function(e) {
-                (0, r.default)(".js-modal-product-cover").attr("src", (0, r.default)(e.target).data("image-large-src")), (0, r.default)(".selected").removeClass("selected"), (0, r.default)(e.target).addClass("selected"), (0, r.default)(".js-qv-product-cover").prop("src", (0, r.default)(e.currentTarget).data("image-large-src")), (0, r.default)(".zoomContainer").remove(), (0, r.default)(".product-image-zoom").removeData("elevateZoom"), (0, r.default)(".product-image-zoom").data("zoom-image", (0, r.default)(e.currentTarget).data("image-large-src")), (0, r.default)(".product-image-zoom").elevateZoom({
+                (0, r.default)(".js-modal-product-cover").attr("src", (0, r.default)(e.target).data("image-large-src")), (0, r.default)(".selected").removeClass("selected"), (0, r.default)(e.target).addClass("selected"), (0, r.default)(".js-qv-product-cover").prop("src", (0, r.default)(e.currentTarget).data("image-large-src")), (0, r.default)(".zoomContainer").remove(), (0, r.default)(".product-detail .product-image-zoom").removeData("elevateZoom"), (0, r.default)(".product-image-zoom").data("zoom-image", (0, r.default)(e.currentTarget).data("image-large-src")), (0, r.default)(".product-detail .product-image-zoom").elevateZoom({
                     zoomType: "inner",
                     cursor: "crosshair",
                     zoomWindowFadeIn: 500,
                     zoomWindowFadeOut: 750
                 })
-            }), e.find(".product-image-zoom").elevateZoom({
+            }), e.find(".product-detail .product-image-zoom").elevateZoom({
                 zoomType: "inner",
                 cursor: "crosshair",
                 zoomWindowFadeIn: 500,
@@ -4759,13 +4759,13 @@
     (0, n.default)(document).ready(function() {
         function e() {
             (0, n.default)(".js-thumb").on("click", function(e) {
-                (0, n.default)(".js-modal-product-cover").attr("src", (0, n.default)(e.target).data("image-large-src")), (0, n.default)(".selected").removeClass("selected"), (0, n.default)(e.target).addClass("selected"), (0, n.default)(".js-qv-product-cover").prop("src", (0, n.default)(e.currentTarget).data("image-large-src")), (0, n.default)(".zoomContainer").remove(), (0, n.default)(".product-image-zoom").removeData("elevateZoom"), (0, n.default)(".product-image-zoom").data("zoom-image", (0, n.default)(e.currentTarget).data("image-large-src")), (0, n.default)(".product-image-zoom").elevateZoom({
+                (0, n.default)(".js-modal-product-cover").attr("src", (0, n.default)(e.target).data("image-large-src")), (0, n.default)(".selected").removeClass("selected"), (0, n.default)(e.target).addClass("selected"), (0, n.default)(".js-qv-product-cover").prop("src", (0, n.default)(e.currentTarget).data("image-large-src")), (0, n.default)(".zoomContainer").remove(), (0, n.default)(".product-detail .product-image-zoom").removeData("elevateZoom"), (0, n.default)(".product-image-zoom").data("zoom-image", (0, n.default)(e.currentTarget).data("image-large-src")), (0, n.default)(".product-detail .product-image-zoom").elevateZoom({
                     zoomType: "inner",
                     cursor: "crosshair",
                     zoomWindowFadeIn: 500,
                     zoomWindowFadeOut: 750
                 })
-            }), (0, n.default)(".product-image-zoom").elevateZoom({
+            }), (0, n.default)(".product-detail .product-image-zoom").elevateZoom({
                 zoomType: "inner",
                 cursor: "crosshair",
                 zoomWindowFadeIn: 500,

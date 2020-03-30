@@ -67,12 +67,12 @@
 					{/if}
 					{if $show_nviews == '1'}
 						<li class="post-views">
-							{$post.views nofilter} view{if $post.views > 0}s{/if}
+							{$post.views nofilter} view{if $post.views > 1}s{/if}
 						</li>
 					{/if}
 					{if $show_ncomments == '1'}
 						<li class="post-comments">
-							{$post.comment_count nofilter} comment{if $post.comment_count > 0}s{/if}
+							{$post.comment_count nofilter} comment{if $post.comment_count > 1}s{/if}
 						</li>
 					{/if}
 				</ul>
